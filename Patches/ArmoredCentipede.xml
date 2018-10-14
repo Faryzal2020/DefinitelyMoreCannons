@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>*/FactionDef[defName="Mechanoid"]/pawnGroupMakers</xpath>
+    <value>
+      <pawnGroupMakers>
+      <li>
+        <!-- All types-->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <Mech_ArmoredCentipede>10</Mech_ArmoredCentipede>
+          <Mech_Centipede>10</Mech_Centipede>
+          <Mech_Lancer>10</Mech_Lancer>
+          <Mech_Scyther>10</Mech_Scyther>
+        </options>
+      </li>
+      <li>
+        <!-- Ranged only -->
+        <kindDef>Combat</kindDef>
+        <commonality>80</commonality>
+        <options>
+          <Mech_ArmoredCentipede>10</Mech_ArmoredCentipede>
+          <Mech_Centipede>10</Mech_Centipede>
+          <Mech_Lancer>10</Mech_Lancer>
+        </options>
+      </li>
+      <li>
+        <!-- Melee only-->
+        <kindDef>Combat</kindDef>
+        <commonality>70</commonality>
+        <options>
+          <Mech_Scyther>10</Mech_Scyther>
+        </options>
+      </li>
+      <li>
+        <!-- Centipede only -->
+        <kindDef>Combat</kindDef>
+        <commonality>50</commonality>
+        <options>
+          <Mech_ArmoredCentipede>5</Mech_ArmoredCentipede>
+          <Mech_Centipede>10</Mech_Centipede>
+        </options>
+      </li>
+      <li>
+        <!-- Armored Centipede only -->
+        <kindDef>Combat</kindDef>
+        <commonality>30</commonality>
+        <options>
+          <Mech_ArmoredCentipede>20</Mech_ArmoredCentipede>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    </value>
+  </Operation>
+</Patch>

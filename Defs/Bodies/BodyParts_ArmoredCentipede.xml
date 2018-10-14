@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <BodyPartDef>
+    <defName>MechanicalArmor</defName>
+    <label>armor</label>
+    <hitPoints>500</hitPoints>
+    <permanentInjuryBaseChance>0</permanentInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <alive>false</alive>
+  </BodyPartDef>
+</Defs>

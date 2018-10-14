@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--=============== Base Shells ===============-->
+
+	<ThingDef Name="HECannonShellBase" ParentName="ResourceBase" Abstract="True">
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <tickerType>Normal</tickerType>
+    <stackLimit>30</stackLimit>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <MarketValue>70</MarketValue>
+      <Mass>4</Mass>
+      <Flammability>1.5</Flammability>
+      <DeteriorationRate>0.2</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>88mmCannonShells</li>
+    </thingCategories>
+    <tradeTags>
+      <li>88mmCannonShell</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef Name="MakeableHECannonShellBase" ParentName="HECannonShellBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <effectWorking>Cook</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <workAmount>1500</workAmount>
+      <targetCountAdjustment>5</targetCountAdjustment>
+      <workSkill>Crafting</workSkill>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef Name="APCannonShellBase" ParentName="ResourceBase" Abstract="True">
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <tickerType>Normal</tickerType>
+    <stackLimit>30</stackLimit>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>70</MarketValue>
+      <Mass>5</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>0.2</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>88mmCannonShells</li>
+    </thingCategories>
+    <tradeTags>
+      <li>88mmCannonShell</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef Name="MakeableAPCannonShellBase" ParentName="APCannonShellBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <effectWorking>Cook</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <workAmount>1500</workAmount>
+      <targetCountAdjustment>5</targetCountAdjustment>
+      <workSkill>Crafting</workSkill>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+  <!--=============== 88 HE Shell ===============-->
+
+  <ThingDef ParentName="MakeableHECannonShellBase">
+    <defName>88CannonShell_HighExplosive</defName>
+    <label>88mm HE Cannon shell</label>
+    <description>An 88mm high explosive cannon shell.</description>
+    <graphicData>
+      <texPath>Things/Projectile/88HE</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <wickTicks>
+          <min>30</min>
+          <max>60</max>
+        </wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>88CannonBullet_Shell_HighExplosive</projectileWhenLoaded>
+    <costList>
+      <Steel>18</Steel>
+      <Chemfuel>7</Chemfuel>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>88CannonBullet_Shell_HighExplosive</defName>
+    <label>HE Shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>CannonHEBullet</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>300</speed>
+      <explosionRadius>3</explosionRadius>
+      <flyOverhead>false</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>MortarBomb_Explode</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+  </ThingDef>
+
+  <!--=============== 88 AP Shell ===============-->
+
+  <ThingDef ParentName="MakeableAPCannonShellBase">
+    <defName>88CannonShell_ArmourPiercing</defName>
+    <label>88mm AP Cannon shell</label>
+    <description>An 88mm APCBC (Armour Piercing Capped Ballistic-Capped) cannon shell with some explosive filler.</description>
+    <graphicData>
+      <texPath>Things/Projectile/88APCBC</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>1</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.2</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <wickTicks>
+          <min>30</min>
+          <max>60</max>
+        </wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>88CannonBullet_Shell_ArmourPiercing</projectileWhenLoaded>
+    <costList>
+      <Steel>20</Steel>
+      <Chemfuel>2</Chemfuel>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>88CannonBullet_Shell_ArmourPiercing</defName>
+    <label>88mm AP Cannon shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>CannonAPBullet</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>400</speed>
+      <explosionRadius>1.0</explosionRadius>
+      <flyOverhead>false</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>MortarBomb_Explode</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+  </ThingDef>
+</Defs>
