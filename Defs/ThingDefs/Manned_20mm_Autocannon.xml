@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!--=============== 40mm Autocannon turret ===============-->
+  <!--=============== 20mm Autocannon turret ===============-->
 
-  <ThingDef ParentName="BuildingBase" Name="100mmNavalgun">
-    <defName>100mmNavalgun</defName>
-    <label>100mm naval gun</label>
-    <description>A manned 100mm Model 53 Naval gun that were used in the French Navy in the Earth 20th century. Uses belt-feed ammunition with capacity of 100 rounds. Consumes 300W of power for its electric-powered aiming controls, 500m max range.</description>
+  <ThingDef ParentName="BuildingBase" Name="20mmAutocannon">
+    <defName>20mmAutocannon</defName>
+    <label>20mm autocannon</label>
+    <description>A 20mm anti-aircraft cannon turret. Uses a magazine feed ammunition, 40m Max Range.</description>
     <thingClass>Building_TurretGun</thingClass>
     <graphicData>
-      <texPath>Things/Building/Manned100mmNaval</texPath>
+      <texPath>Things/Building/MannedFlak38</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(9, 9)</drawSize>
       <damageData>
@@ -17,46 +17,41 @@
       </damageData>
       <shadowData>
         <volume>(1.5,0.35,1.4)</volume>
-        <offset>(0,0,0)</offset>
+        <offset>(0,0,-0.05)</offset>
       </shadowData>
     </graphicData>
     <minifiedDef>MinifiedThing</minifiedDef>
     <uiIconPath>Things/Building/Security/TurretAutocannon_MenuIcon</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
     <hasInteractionCell>True</hasInteractionCell>
-    <interactionCellOffset>(0,0,-3)</interactionCellOffset>
+    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
     <stealable>false</stealable>
     <rotatable>true</rotatable>
-    <size>(6,6)</size>
+    <size>(3,3)</size>
     <statBases>
-      <MaxHitPoints>1200</MaxHitPoints>
+      <MaxHitPoints>200</MaxHitPoints>
       <Flammability>0.7</Flammability>
-      <WorkToBuild>12000</WorkToBuild>
-      <Mass>14000</Mass>
+      <WorkToBuild>2800</WorkToBuild>
+      <Mass>100</Mass>
       <Beauty>-20</Beauty>
     </statBases>
     <tickerType>Normal</tickerType>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>2000</basePowerConsumption>
-      </li>
-      <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Mannable">
         <manWorkType>Violent</manWorkType>
       </li>
       <li Class="CompProperties_Refuelable">
-        <fuelLabel>Ammo Belt</fuelLabel>
+        <fuelLabel>Ammo Magazine</fuelLabel>
         <fuelGizmoLabel>Ammo</fuelGizmoLabel>
         <fuelFilter>
           <thingDefs>
-            <li>OneHundredmmShell</li>
+            <li>FlakTwentyMag</li>
           </thingDefs>
         </fuelFilter>
-        <fuelCapacity>100</fuelCapacity>
+        <fuelCapacity>8</fuelCapacity>
         <initialFuelPercent>0</initialFuelPercent>
-        <autoRefuelPercent>0.5</autoRefuelPercent>
+        <autoRefuelPercent>0.25</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>0</minimumFueledThreshold>
         <atomicFueling>false</atomicFueling>
@@ -75,48 +70,45 @@
     </thingCategories>
     <hasTooltip>true</hasTooltip>
     <costList>
-      <Steel>1500</Steel>
-      <Plasteel>200</Plasteel>
-      <ComponentSpacer>3</ComponentSpacer>
+      <Steel>800</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
-    <specialDisplayRadius>33.9</specialDisplayRadius>
+    <specialDisplayRadius>40</specialDisplayRadius>
     <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
     <building>
-      <turretGunDef>Gun_100mmNavalgunTurret</turretGunDef>
-      <turretBurstCooldownTime>2</turretBurstCooldownTime>
-      <turretTopGraphicPath>Things/Building/Manned100mmNaval_Top</turretTopGraphicPath>
-      <turretTopDrawSize>12</turretTopDrawSize>
+      <turretGunDef>Gun_20mmAutocannonTurret</turretGunDef>
+      <turretBurstCooldownTime>0.4</turretBurstCooldownTime>
+      <turretTopGraphicPath>Things/Building/MannedFlak38_Top</turretTopGraphicPath>
+      <turretTopDrawSize>9</turretTopDrawSize>
     </building>
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
     </placeWorkers>
     <designationHotKey>Misc3</designationHotKey>
     <researchPrerequisites>
-      <li>100mmNaval</li>
+      <li>Flak38</li>
     </researchPrerequisites>
     <uiIconScale>0.95</uiIconScale>
   </ThingDef>
 
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_100mmNavalgunTurret</defName>
-    <label>100mm naval gun shell</label>
+    <defName>Bullet_20mmAutocannonTurret</defName>
+    <label>20mm autocannon shell</label>
     <graphicData>
-      <texPath>Things/Projectile/LargeShell</texPath>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>TransparentPostLight</shaderType>
     </graphicData>
     <projectile>
-      <damageDef>CannonAPBullet</damageDef>
-      <explosionRadius>0.5</explosionRadius>
-      <damageAmountBase>500</damageAmountBase>
-      <speed>350</speed>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+      <speed>200</speed>
     </projectile>
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanGun">
-    <defName>Gun_100mmNavalgunTurret</defName>
+    <defName>Gun_20mmAutocannonTurret</defName>
     <label>autocannon</label>
     <description>A self-loading large-bore cannon designed to attach to a turret.</description>
     <graphicData>
@@ -130,11 +122,11 @@
     <tradeability>None</tradeability>
     <useHitPoints>false</useHitPoints>
     <statBases>
-      <AccuracyTouch>0.9</AccuracyTouch>
-      <AccuracyShort>0.95</AccuracyShort>
-      <AccuracyMedium>0.99</AccuracyMedium>
-      <AccuracyLong>0.95</AccuracyLong>
-      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.25</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.60</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
       <DeteriorationRate>0</DeteriorationRate>
       <Mass>40</Mass>
       <Flammability>0</Flammability>
@@ -146,15 +138,15 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_100mmNavalgunTurret</defaultProjectile>
-        <warmupTime>1</warmupTime>
-        <minRange>14</minRange>
-        <range>500</range>
+        <defaultProjectile>Bullet_40mmAutocannonTurret</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <minRange>2</minRange>
+        <range>40</range>
         <burstShotCount>1</burstShotCount>
-        <soundCast>100mm_Cannon_Shoot</soundCast>
+        <soundCast>20mm_Autocannon_Shoot</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>12</muzzleFlashScale>
-        <consumeFuelPerShot>1</consumeFuelPerShot>
+        <consumeFuelPerShot>0.05</consumeFuelPerShot>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
@@ -165,21 +157,21 @@
   <!--=============== Ammunition Item ===============-->
 
   <ThingDef ParentName="ResourceBase">
-    <defName>OneHundredmmShell</defName>
-    <label>100mm AP Shell</label>
-    <description>A 100mm Armour Piercing Capped Ballistic Capped (APCBC) shell.</description>
+    <defName>FlakTwentyMag</defName>
+    <label>20 Rounds 20mm Magazine</label>
+    <description>An ammunition magazine containing 20 rounds of 20mm HEI-T Shells.</description>
     <graphicData>
-      <texPath>Things/Projectile/100APCBC</texPath>
+      <texPath>Things/Item/20x20mmMag</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.90</drawSize>
     </graphicData>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
-    <stackLimit>15</stackLimit>
+    <stackLimit>10</stackLimit>
     <statBases>
-      <MaxHitPoints>110</MaxHitPoints>
-      <MarketValue>70</MarketValue>
-      <Mass>10</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>20</MarketValue>
+      <Mass>2</Mass>
       <Flammability>1</Flammability>
       <DeteriorationRate>0.2</DeteriorationRate>
     </statBases>

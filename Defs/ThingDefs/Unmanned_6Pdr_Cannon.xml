@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<ThingDef Name="Base88mmCannonBuilding" ParentName="BuildingBase" Abstract="True">
+<ThingDef Name="BaseU6PdrCannonBuilding" ParentName="BuildingBase" Abstract="True">
     <thingClass>Building_TurretGun</thingClass>
     <graphicData>
-      <texPath>Things/Building/Turret88Cannon</texPath>
+      <texPath>Things/Building/Unmanned6Pdr</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(6,6)</drawSize>
+      <drawSize>(11,11)</drawSize>
       <damageData>
         <rect>(0.38,0.2,0.56375,0.8)</rect>
         <cornerTL>Damage/Corner</cornerTL>
@@ -22,7 +22,7 @@
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <stealable>false</stealable>
     <rotatable>true</rotatable>
-    <size>(4,4)</size>
+    <size>(3,3)</size>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <fillPercent>0.4</fillPercent>
@@ -35,47 +35,76 @@
     <tickerType>Normal</tickerType>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
-    <specialDisplayRadius>1000</specialDisplayRadius>
+    <specialDisplayRadius>70</specialDisplayRadius>
 		<costStuffCount>50</costStuffCount>
-    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <costList>
-			<Steel>1500</Steel>
-			<ComponentIndustrial>5</ComponentIndustrial>
+			<Steel>800</Steel>
+      <Plasteel>100</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
     <inspectorTabs>
       <li>ITab_Shells</li>
     </inspectorTabs>
     <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>3</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+      </li>
       <li Class="CompProperties_Forbiddable"/>
-      <li Class="CompProperties_Mannable">
-        <manWorkType>Violent</manWorkType>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1500</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Ammo</fuelLabel>
+        <fuelGizmoLabel>Ammo</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>6PdrCannonShell_ArmourPiercing</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>30</fuelCapacity>
+        <initialFuelPercent>0</initialFuelPercent>
+        <autoRefuelPercent>0.25</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>0</minimumFueledThreshold>
+        <atomicFueling>false</atomicFueling>
+        <fuelMultiplier>1</fuelMultiplier>
+        <factorByDifficulty>false</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Out of ammo</outOfFuelMessage>
+        <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
       </li>
     </comps>
     <statBases>
-      <MaxHitPoints>800</MaxHitPoints>
+      <MaxHitPoints>500</MaxHitPoints>
       <Flammability>0.7</Flammability>
-      <WorkToBuild>6000</WorkToBuild>
-      <Mass>500</Mass>
+      <WorkToBuild>4000</WorkToBuild>
+      <Mass>250</Mass>
       <Beauty>-10</Beauty>
     </statBases>
     <building>
+      <ai_combatDangerous>true</ai_combatDangerous>
       <turretBurstWarmupTime>2.0</turretBurstWarmupTime>
-      <turretBurstCooldownTime>11.0</turretBurstCooldownTime>
+      <turretBurstCooldownTime>4.0</turretBurstCooldownTime>
       <buildingTags>
         <li>Artillery</li>
       </buildingTags>
     </building>
     <placeWorkers>
-      <li>PlaceWorker_NotUnderRoof</li>
       <li>PlaceWorker_TurretTop</li>
     </placeWorkers>
     <researchPrerequisites>
-      <li>FlakCannon</li>
+      <li>Unmanned6PdrCannon</li>
     </researchPrerequisites>
     <uiIconScale>1.1</uiIconScale>
   </ThingDef>
 
-  <ThingDef Name="Base88mmCannonWeapon" Abstract="True">
+  <ThingDef Name="BaseU6PdrCannonWeapon" Abstract="True">
     <category>Item</category>
     <thingClass>ThingWithComps</thingClass>
     <label>artillery error</label>
@@ -99,14 +128,14 @@
       <fixedStorageSettings>
         <filter>
           <categories>
-            <li>88mmCannonShells</li>
+            <li>6PdrCannonShells</li>
           </categories>
         </filter>
       </fixedStorageSettings>
       <defaultStorageSettings>
         <filter>
           <categories>
-            <li>88mmCannonShells</li>
+            <li>6PdrCannonShells</li>
           </categories>
           <disallowedThingDefs>
           </disallowedThingDefs>
@@ -115,21 +144,21 @@
     </building>
   </ThingDef>
 
-  <ThingDef ParentName="Base88mmCannonBuilding">
-    <defName>Turret_88mmCannon</defName>
-    <label>88mm_cannon</label>
-    <description>A manned 88mm Flak cannon that shoots AP and HE shells. 11 seconds reload time, 100m max range.</description>
+  <ThingDef ParentName="BaseU6PdrCannonBuilding">
+    <defName>Turret_U6PdrCannon</defName>
+    <label>U6Pdr_cannon</label>
+    <description>An unmanned 6 Pounder cannon that shoots AP shells. Manual ammunition loading, 80m Max range.</description>
     <comps>
       <li Class="CompProperties_Explosive">
-        <explosiveRadius>4.5</explosiveRadius>
+        <explosiveRadius>3</explosiveRadius>
         <explosiveDamageType>Bomb</explosiveDamageType>
       </li>
     </comps>
     <designationHotKey>Misc4</designationHotKey>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <building>
-      <turretGunDef>88mmCannon</turretGunDef>
-      <turretTopGraphicPath>Things/Building/Turret88Cannon_Top</turretTopGraphicPath>
+      <turretGunDef>U6PdrCannon</turretGunDef>
+      <turretTopGraphicPath>Things/Building/Unmanned6Pdr_Top</turretTopGraphicPath>
       <turretTopDrawSize>11</turretTopDrawSize>
       <buildingTags>
         <li>Artillery_BaseDestroyer</li>
@@ -147,18 +176,18 @@
     -->
   </ThingDef>
   
-  <ThingDef ParentName="Base88mmCannonWeapon">
-    <defName>88mmCannon</defName>
-    <label>88mm_cannon</label>
-    <description>An 88mm cannon that based on an ancient tank gun, very accurate and has a long range.</description>
+  <ThingDef ParentName="BaseU6PdrCannonWeapon">
+    <defName>U6PdrCannon</defName>
+    <label>U6Pdr_cannon</label>
+    <description>A 6Pdr cannon that based on an ancient field antitank gun, very accurate and has a medium range.</description>
     <weaponTags>
       <li>Artillery_BaseDestroyer</li>
     </weaponTags>
     <statBases>
       <AccuracyTouch>0.4</AccuracyTouch>
-      <AccuracyShort>0.65</AccuracyShort>
-      <AccuracyMedium>0.70</AccuracyMedium>
-      <AccuracyLong>0.75</AccuracyLong>
+      <AccuracyShort>0.7</AccuracyShort>
+      <AccuracyMedium>0.99</AccuracyMedium>
+      <AccuracyLong>0.99</AccuracyLong>
     </statBases>
     <verbs>
       <li>
@@ -168,10 +197,10 @@
         <warmupTime>2.0</warmupTime>
         <requireLineOfSight>true</requireLineOfSight>
         <minRange>5</minRange>
-        <range>100</range>
+        <range>70</range>
         <burstShotCount>1</burstShotCount>
-        <soundCast>88mm_Cannon_Shoot</soundCast>
-        <muzzleFlashScale>20</muzzleFlashScale>
+        <soundCast>6Pdr_Cannon_Shoot</soundCast>
+        <muzzleFlashScale>15</muzzleFlashScale>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>

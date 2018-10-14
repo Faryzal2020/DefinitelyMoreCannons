@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<ThingDef Name="Base88mmCannonBuilding" ParentName="BuildingBase" Abstract="True">
+<ThingDef Name="Base75mmCannonBuilding" ParentName="BuildingBase" Abstract="True">
     <thingClass>Building_TurretGun</thingClass>
     <graphicData>
-      <texPath>Things/Building/Turret88Cannon</texPath>
+      <texPath>Things/Building/MannedPak40</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(6,6)</drawSize>
       <damageData>
@@ -39,7 +39,7 @@
 		<costStuffCount>50</costStuffCount>
     <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
     <costList>
-			<Steel>1500</Steel>
+			<Steel>1000</Steel>
 			<ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
     <inspectorTabs>
@@ -52,30 +52,29 @@
       </li>
     </comps>
     <statBases>
-      <MaxHitPoints>800</MaxHitPoints>
+      <MaxHitPoints>600</MaxHitPoints>
       <Flammability>0.7</Flammability>
-      <WorkToBuild>6000</WorkToBuild>
-      <Mass>500</Mass>
+      <WorkToBuild>4200</WorkToBuild>
+      <Mass>300</Mass>
       <Beauty>-10</Beauty>
     </statBases>
     <building>
       <turretBurstWarmupTime>2.0</turretBurstWarmupTime>
-      <turretBurstCooldownTime>11.0</turretBurstCooldownTime>
+      <turretBurstCooldownTime>6.0</turretBurstCooldownTime>
       <buildingTags>
         <li>Artillery</li>
       </buildingTags>
     </building>
     <placeWorkers>
-      <li>PlaceWorker_NotUnderRoof</li>
       <li>PlaceWorker_TurretTop</li>
     </placeWorkers>
     <researchPrerequisites>
-      <li>FlakCannon</li>
+      <li>75mmPak40</li>
     </researchPrerequisites>
     <uiIconScale>1.1</uiIconScale>
   </ThingDef>
 
-  <ThingDef Name="Base88mmCannonWeapon" Abstract="True">
+  <ThingDef Name="Base75mmCannonWeapon" Abstract="True">
     <category>Item</category>
     <thingClass>ThingWithComps</thingClass>
     <label>artillery error</label>
@@ -99,14 +98,14 @@
       <fixedStorageSettings>
         <filter>
           <categories>
-            <li>88mmCannonShells</li>
+            <li>75mmCannonShells</li>
           </categories>
         </filter>
       </fixedStorageSettings>
       <defaultStorageSettings>
         <filter>
           <categories>
-            <li>88mmCannonShells</li>
+            <li>75mmCannonShells</li>
           </categories>
           <disallowedThingDefs>
           </disallowedThingDefs>
@@ -115,22 +114,22 @@
     </building>
   </ThingDef>
 
-  <ThingDef ParentName="Base88mmCannonBuilding">
-    <defName>Turret_88mmCannon</defName>
-    <label>88mm_cannon</label>
-    <description>A manned 88mm Flak cannon that shoots AP and HE shells. 11 seconds reload time, 100m max range.</description>
+  <ThingDef ParentName="Base75mmCannonBuilding">
+    <defName>Turret_75mmCannon</defName>
+    <label>75mm_cannon</label>
+    <description>A manned 75mm Cannon. Manual ammo loading, 90m Max Range. Uses AP shell only.</description>
     <comps>
       <li Class="CompProperties_Explosive">
-        <explosiveRadius>4.5</explosiveRadius>
+        <explosiveRadius>3</explosiveRadius>
         <explosiveDamageType>Bomb</explosiveDamageType>
       </li>
     </comps>
     <designationHotKey>Misc4</designationHotKey>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <building>
-      <turretGunDef>88mmCannon</turretGunDef>
-      <turretTopGraphicPath>Things/Building/Turret88Cannon_Top</turretTopGraphicPath>
-      <turretTopDrawSize>11</turretTopDrawSize>
+      <turretGunDef>75mmCannon</turretGunDef>
+      <turretTopGraphicPath>Things/Building/MannedPak40_Top</turretTopGraphicPath>
+      <turretTopDrawSize>6</turretTopDrawSize>
       <buildingTags>
         <li>Artillery_BaseDestroyer</li>
       </buildingTags>
@@ -147,18 +146,18 @@
     -->
   </ThingDef>
   
-  <ThingDef ParentName="Base88mmCannonWeapon">
-    <defName>88mmCannon</defName>
-    <label>88mm_cannon</label>
-    <description>An 88mm cannon that based on an ancient tank gun, very accurate and has a long range.</description>
+  <ThingDef ParentName="Base75mmCannonWeapon">
+    <defName>75mmCannon</defName>
+    <label>75mm_cannon</label>
+    <description>A 75mm cannon that based on an ancient field antitank gun, very accurate and has a medium range.</description>
     <weaponTags>
       <li>Artillery_BaseDestroyer</li>
     </weaponTags>
     <statBases>
       <AccuracyTouch>0.4</AccuracyTouch>
-      <AccuracyShort>0.65</AccuracyShort>
-      <AccuracyMedium>0.70</AccuracyMedium>
-      <AccuracyLong>0.75</AccuracyLong>
+      <AccuracyShort>0.7</AccuracyShort>
+      <AccuracyMedium>0.80</AccuracyMedium>
+      <AccuracyLong>0.90</AccuracyLong>
     </statBases>
     <verbs>
       <li>
@@ -167,10 +166,10 @@
         <hasStandardCommand>true</hasStandardCommand>
         <warmupTime>2.0</warmupTime>
         <requireLineOfSight>true</requireLineOfSight>
-        <minRange>5</minRange>
-        <range>100</range>
+        <minRange>3</minRange>
+        <range>90</range>
         <burstShotCount>1</burstShotCount>
-        <soundCast>88mm_Cannon_Shoot</soundCast>
+        <soundCast>75mm_Cannon_Shoot</soundCast>
         <muzzleFlashScale>20</muzzleFlashScale>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>

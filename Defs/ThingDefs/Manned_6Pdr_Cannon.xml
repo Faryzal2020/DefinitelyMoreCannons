@@ -6,7 +6,7 @@
     <graphicData>
       <texPath>Things/Building/Manned6Pdr</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(10,10)</drawSize>
+      <drawSize>(11,11)</drawSize>
       <damageData>
         <rect>(0.38,0.2,0.56375,0.8)</rect>
         <cornerTL>Damage/Corner</cornerTL>
@@ -33,8 +33,9 @@
       <li>Metallic</li>
     </stuffCategories>
     <tickerType>Normal</tickerType>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
+    <specialDisplayRadius>1000</specialDisplayRadius>
 		<costStuffCount>50</costStuffCount>
     <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
     <costList>
@@ -116,7 +117,7 @@
   <ThingDef ParentName="Base6PdrCannonBuilding">
     <defName>Turret_6PdrCannon</defName>
     <label>6Pdr_cannon</label>
-    <description>A manned 6 Pounder cannon that shoots AP shells. Accurate and has a medium range.</description>
+    <description>A manned 6 Pounder cannon that shoots AP shells. Manual ammunition loading, 80m Max range.</description>
     <comps>
       <li Class="CompProperties_Explosive">
         <explosiveRadius>3</explosiveRadius>
@@ -128,7 +129,7 @@
     <building>
       <turretGunDef>6PdrCannon</turretGunDef>
       <turretTopGraphicPath>Things/Building/Manned6Pdr_Top</turretTopGraphicPath>
-      <turretTopDrawSize>10</turretTopDrawSize>
+      <turretTopDrawSize>11</turretTopDrawSize>
       <buildingTags>
         <li>Artillery_BaseDestroyer</li>
       </buildingTags>
@@ -152,6 +153,12 @@
     <weaponTags>
       <li>Artillery_BaseDestroyer</li>
     </weaponTags>
+    <statBases>
+      <AccuracyTouch>0.4</AccuracyTouch>
+      <AccuracyShort>0.7</AccuracyShort>
+      <AccuracyMedium>0.99</AccuracyMedium>
+      <AccuracyLong>0.99</AccuracyLong>
+    </statBases>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>

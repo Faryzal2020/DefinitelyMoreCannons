@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <ThingCategoryDef>
+      <defName>75mmCannonShells</defName>
+      <label>75mm cannon shells</label>
+      <parent>Manufactured</parent>
+      <iconPath>UI/Icons/ThingCategories/MortarShells</iconPath>
+    </ThingCategoryDef>
+    <ThingCategoryDef>
       <defName>6PdrCannonShells</defName>
       <label>6Pdr cannon shells</label>
       <parent>Manufactured</parent>
@@ -14,7 +20,7 @@
     </ThingCategoryDef>
     <ThingCategoryDef>
       <defName>600mmHowitzerShells</defName>
-      <label>howitzer shells</label>
+      <label>600mm howitzer shells</label>
       <parent>Manufactured</parent>
       <iconPath>UI/Icons/ThingCategories/MortarShells</iconPath>
     </ThingCategoryDef>

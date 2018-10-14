@@ -125,4 +125,79 @@
     </subSounds>
   </SoundDef>
 
+  <SoundDef>
+    <defName>20mm_Autocannon_Shoot</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>10</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>20mm_flak_38</clipFolderPath>
+          </li>
+        </grains>
+        <pitchRange>
+          <min>1</min>        
+          <max>1</max>
+        </pitchRange>       
+        <volumeRange>
+          <min>100</min>        
+          <max>100</max>
+        </volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>37mm_Autocannon_Shoot</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>10</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>37mm_flak_m42</clipFolderPath>
+          </li>
+        </grains>
+        <pitchRange>
+          <min>1</min>        
+          <max>1</max>
+        </pitchRange>       
+        <volumeRange>
+          <min>100</min>        
+          <max>100</max>
+        </volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>75mm_Cannon_Shoot</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>75mm_pak_40</clipFolderPath>
+          </li>
+        </grains>
+        <pitchRange>
+          <min>1</min>        
+          <max>1</max>
+        </pitchRange>       
+        <volumeRange>
+          <min>100</min>        
+          <max>100</max>
+        </volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
 </Defs>

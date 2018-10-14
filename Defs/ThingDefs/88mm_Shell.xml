@@ -141,7 +141,7 @@
     </graphicData>
     <comps>
       <li Class="CompProperties_Explosive">
-        <explosiveRadius>1</explosiveRadius>
+        <explosiveRadius>2</explosiveRadius>
         <explosiveDamageType>Bomb</explosiveDamageType>
         <explosiveExpandPerStackcount>0.2</explosiveExpandPerStackcount>
         <startWickHitPointsPercent>0.7</startWickHitPointsPercent>

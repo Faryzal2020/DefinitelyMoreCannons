@@ -6,7 +6,7 @@
   <ThingDef ParentName="BuildingBase" Name="40mmAutocannon">
     <defName>40mmAutocannon</defName>
     <label>40mm autocannon</label>
-    <description>A heavy 40mm automatic cannon turret. It is able to quickfire large caliber shells over long distances, and may explode when damaged.</description>
+    <description>A heavy 40mm automatic cannon turret. Uses 4x40mm Ammunition Clips with ammunition storage of 20 clips, 70m max range.</description>
     <thingClass>Building_TurretGun</thingClass>
     <graphicData>
       <texPath>Things/Building/MannedSingleBofors</texPath>
@@ -27,7 +27,7 @@
     <interactionCellOffset>(0,0,-2)</interactionCellOffset>
     <stealable>false</stealable>
     <rotatable>true</rotatable>
-    <size>(4,4)</size>
+    <size>(3,4)</size>
     <statBases>
       <MaxHitPoints>400</MaxHitPoints>
       <Flammability>0.7</Flammability>
@@ -75,7 +75,7 @@
     </costList>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
-    <specialDisplayRadius>33.9</specialDisplayRadius>
+    <specialDisplayRadius>70</specialDisplayRadius>
     <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
     <building>
       <turretGunDef>Gun_40mmAutocannonTurret</turretGunDef>
@@ -102,7 +102,7 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>45</damageAmountBase>
+      <damageAmountBase>35</damageAmountBase>
       <speed>200</speed>
     </projectile>
   </ThingDef>
@@ -145,7 +145,7 @@
         <burstShotCount>1</burstShotCount>
         <soundCast>40mm_Autocannon_Shoot</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>12</muzzleFlashScale>
+        <muzzleFlashScale>18</muzzleFlashScale>
         <consumeFuelPerShot>0.25</consumeFuelPerShot>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
