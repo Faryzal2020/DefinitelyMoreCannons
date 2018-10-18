@@ -18,8 +18,8 @@
     <isRanged>true</isRanged>
     <isExplosive>true</isExplosive>
     <defaultStoppingPower>1</defaultStoppingPower>
-    <explosionBuildingDamageFactor>1</explosionBuildingDamageFactor>
-    <explosionPlantDamageFactor>1</explosionPlantDamageFactor>
+    <buildingDamageFactor>1</buildingDamageFactor>
+    <plantDamageFactor>1</plantDamageFactor>
     <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
     <explosionHeatEnergyPerCell>1</explosionHeatEnergyPerCell>
     <explosionCellMote>Mote_BlastDry</explosionCellMote>
@@ -42,8 +42,8 @@
     <defaultDamage>250</defaultDamage>
     <defaultStoppingPower>0.5</defaultStoppingPower>
     <defaultArmorPenetration>0.05</defaultArmorPenetration>
-    <explosionBuildingDamageFactor>2</explosionBuildingDamageFactor>
-    <explosionPlantDamageFactor>2</explosionPlantDamageFactor>
+    <buildingDamageFactor>2</buildingDamageFactor>
+    <plantDamageFactor>2</plantDamageFactor>
     <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
     <explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
     <explosionCellMote>Mote_BlastDry</explosionCellMote>
@@ -69,8 +69,8 @@
     <defaultDamage>1000</defaultDamage>
     <defaultStoppingPower>0.5</defaultStoppingPower>
     <defaultArmorPenetration>1</defaultArmorPenetration>
-    <explosionBuildingDamageFactor>2</explosionBuildingDamageFactor>
-    <explosionPlantDamageFactor>2</explosionPlantDamageFactor>
+    <buildingDamageFactor>2</buildingDamageFactor>
+    <plantDamageFactor>2</plantDamageFactor>
     <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
     <explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
     <explosionCellMote>Mote_BlastDry</explosionCellMote>
