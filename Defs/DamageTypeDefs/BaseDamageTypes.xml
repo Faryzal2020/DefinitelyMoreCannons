@@ -29,43 +29,12 @@
     <combatLogRules>Damage_Bomb</combatLogRules>
   </DamageDef>
 
-  <DamageDef>
-    <defName>CannonHEBullet</defName>
-    <label>bullet</label>
+  <DamageDef Name="BaseHEShellDamage" Abstract="True">
     <workerClass>DamageWorker_AddInjury</workerClass>
     <externalViolence>true</externalViolence>
     <isExplosive>true</isExplosive>
-    <deathMessage>{0} has died from an explosion.</deathMessage>
     <hediff>Shredded</hediff>
     <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
-    <minDamageToFragment>15</minDamageToFragment>
-    <defaultDamage>250</defaultDamage>
-    <defaultStoppingPower>0.5</defaultStoppingPower>
-    <defaultArmorPenetration>0.05</defaultArmorPenetration>
-    <buildingDamageFactor>2</buildingDamageFactor>
-    <plantDamageFactor>2</plantDamageFactor>
-    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
-    <explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
-    <explosionCellMote>Mote_BlastDry</explosionCellMote>
-    <explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
-    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
-    <soundExplosion>Explosion_Bomb</soundExplosion>
-    <combatLogRules>Damage_Bomb</combatLogRules>
-    <impactSoundType>Bullet</impactSoundType>
-    <armorCategory>Sharp</armorCategory>
-    <isRanged>true</isRanged>
-  </DamageDef>
-
-
-
-  <DamageDef Name="BaseHowitzerShellDamage" Abstract="True">
-    <workerClass>DamageWorker_AddInjury</workerClass>
-    <externalViolence>true</externalViolence>
-    <isExplosive>true</isExplosive>
-    <deathMessage>{0} has died from an artillery explosion.</deathMessage>
-    <hediff>Shredded</hediff>
-    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
-    <minDamageToFragment>50</minDamageToFragment>
     <defaultStoppingPower>0.5</defaultStoppingPower>
     <defaultArmorPenetration>1</defaultArmorPenetration>
     <buildingDamageFactor>2</buildingDamageFactor>
@@ -82,22 +51,44 @@
     <isRanged>true</isRanged>
   </DamageDef>
 
-  <DamageDef ParentName="BaseHowitzerShellDamage">
+  <DamageDef ParentName="BaseHEShellDamage">
     <defName>HowitzerHEBullet</defName>
     <label>bullet</label>
     <defaultDamage>1000</defaultDamage>
+    <minDamageToFragment>500</minDamageToFragment>
+    <deathMessage>{0} has died from an artillery explosion.</deathMessage>
   </DamageDef>
 
-  <DamageDef ParentName="BaseHowitzerShellDamage">
+  <DamageDef ParentName="BaseHEShellDamage">
     <defName>288mmHEBullet</defName>
     <label>bullet</label>
     <defaultDamage>350</defaultDamage>
+    <minDamageToFragment>200</minDamageToFragment>
+    <deathMessage>{0} has died from an artillery explosion.</deathMessage>
   </DamageDef>
 
-  <DamageDef ParentName="BaseHowitzerShellDamage">
+  <DamageDef ParentName="BaseHEShellDamage">
     <defName>150mmHEBullet</defName>
     <label>bullet</label>
     <defaultDamage>200</defaultDamage>
+    <minDamageToFragment>100</minDamageToFragment>
+    <deathMessage>{0} has died from an artillery explosion.</deathMessage>
+  </DamageDef>
+
+  <DamageDef ParentName="BaseHEShellDamage">
+    <defName>CannonHEBullet</defName>
+    <label>bullet</label>
+    <defaultDamage>250</defaultDamage>
+    <minDamageToFragment>50</minDamageToFragment>
+    <deathMessage>{0} has died from an explosion.</deathMessage>
+  </DamageDef>
+
+  <DamageDef ParentName="BaseHEShellDamage">
+    <defName>127mmHEBullet</defName>
+    <label>bullet</label>
+    <defaultDamage>400</defaultDamage>
+    <minDamageToFragment>50</minDamageToFragment>
+    <deathMessage>{0} has died from an explosion.</deathMessage>
   </DamageDef>
 
     <!-- Large AP Shells -->

@@ -4,7 +4,7 @@
     <defName>88mm_Cannon_Shoot</defName>  
     <context>MapOnly</context>
     <eventNames />  
-    <maxSimultaneous>1</maxSimultaneous>  
+    <maxSimultaneous>10</maxSimultaneous>  
     <subSounds>
       <li>
         <grains>
@@ -29,7 +29,7 @@
     <defName>15cm_Howitzer_Shoot</defName>  
     <context>MapOnly</context>
     <eventNames />  
-    <maxSimultaneous>1</maxSimultaneous>  
+    <maxSimultaneous>10</maxSimultaneous>
     <subSounds>
       <li>
         <grains>
@@ -54,7 +54,7 @@
     <defName>288mm_Howitzer_Shoot</defName>  
     <context>MapOnly</context>
     <eventNames />  
-    <maxSimultaneous>1</maxSimultaneous>  
+    <maxSimultaneous>10</maxSimultaneous>  
     <subSounds>
       <li>
         <grains>
@@ -79,7 +79,7 @@
     <defName>600mm_Howitzer_Shoot</defName>  
     <context>MapOnly</context>
     <eventNames />  
-    <maxSimultaneous>1</maxSimultaneous>  
+    <maxSimultaneous>10</maxSimultaneous>  
     <subSounds>
       <li>
         <grains>
@@ -104,7 +104,7 @@
     <defName>40mm_Autocannon_Shoot</defName>  
     <context>MapOnly</context>
     <eventNames />  
-    <maxSimultaneous>1</maxSimultaneous>  
+    <maxSimultaneous>10</maxSimultaneous>  
     <subSounds>
       <li>
         <grains>
@@ -129,7 +129,7 @@
     <defName>6Pdr_Cannon_Shoot</defName>  
     <context>MapOnly</context>
     <eventNames />  
-    <maxSimultaneous>1</maxSimultaneous>  
+    <maxSimultaneous>10</maxSimultaneous>  
     <subSounds>
       <li>
         <grains>
@@ -154,12 +154,62 @@
     <defName>100mm_Cannon_Shoot</defName>  
     <context>MapOnly</context>
     <eventNames />  
-    <maxSimultaneous>1</maxSimultaneous>  
+    <maxSimultaneous>10</maxSimultaneous>  
     <subSounds>
       <li>
         <grains>
           <li Class="AudioGrain_Folder">
             <clipFolderPath>100mm_cannon</clipFolderPath>
+          </li>
+        </grains>
+        <pitchRange>
+          <min>0.9</min>        
+          <max>1.1</max>
+        </pitchRange>       
+        <volumeRange>
+          <min>100</min>        
+          <max>100</max>
+        </volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>120mm_Cannon_Shoot</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>10</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>120mm_cannon</clipFolderPath>
+          </li>
+        </grains>
+        <pitchRange>
+          <min>0.9</min>        
+          <max>1.1</max>
+        </pitchRange>       
+        <volumeRange>
+          <min>100</min>        
+          <max>100</max>
+        </volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>127mm_Cannon_Shoot</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>10</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>127mm_cannon</clipFolderPath>
           </li>
         </grains>
         <pitchRange>
@@ -229,7 +279,7 @@
     <defName>75mm_Cannon_Shoot</defName>  
     <context>MapOnly</context>
     <eventNames />  
-    <maxSimultaneous>1</maxSimultaneous>  
+    <maxSimultaneous>10</maxSimultaneous>  
     <subSounds>
       <li>
         <grains>

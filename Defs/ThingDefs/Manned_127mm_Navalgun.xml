@@ -1,28 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<ThingDef Name="Base88mmCannonBuilding" ParentName="BuildingBase" Abstract="True">
+<ThingDef Name="Base127mmCannonBuilding" ParentName="BuildingBase" Abstract="True">
     <thingClass>Building_TurretGun</thingClass>
     <graphicData>
-      <texPath>Things/Building/Turret88Cannon</texPath>
+      <texPath>Things/Building/MannedSKC34</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(6,6)</drawSize>
+      <drawSize>(9,9)</drawSize>
       <damageData>
-        <rect>(0.38,0.2,0.56375,0.8)</rect>
-        <cornerTL>Damage/Corner</cornerTL>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
       </damageData>
       <shadowData>
-	      <offset>(-0.13,-0.87,-0.1)</offset>
-        <volume>(0.5,0.4,1.05)</volume>
+        <volume>(3.5,2.2,3.5)</volume>
+        <offset>(0,0,0)</offset>
       </shadowData>
     </graphicData>
     <minifiedDef>MinifiedThing</minifiedDef>
     <altitudeLayer>Building</altitudeLayer>
     <hasInteractionCell>True</hasInteractionCell>
-    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <interactionCellOffset>(0,0,-3)</interactionCellOffset>
     <stealable>false</stealable>
     <rotatable>true</rotatable>
-    <size>(4,4)</size>
+    <size>(5,5)</size>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <fillPercent>0.4</fillPercent>
@@ -35,13 +34,14 @@
     <tickerType>Normal</tickerType>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
-    <specialDisplayRadius>100</specialDisplayRadius>
-		<costStuffCount>50</costStuffCount>
-    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <specialDisplayRadius>500</specialDisplayRadius>
+    <costStuffCount>50</costStuffCount>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
     <costList>
-			<Steel>1500</Steel>
-			<ComponentIndustrial>5</ComponentIndustrial>
-		</costList>
+      <Steel>1500</Steel>
+      <Plasteel>100</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
     <inspectorTabs>
       <li>ITab_Shells</li>
     </inspectorTabs>
@@ -52,15 +52,15 @@
       </li>
     </comps>
     <statBases>
-      <MaxHitPoints>800</MaxHitPoints>
+      <MaxHitPoints>1000</MaxHitPoints>
       <Flammability>0.7</Flammability>
-      <WorkToBuild>6000</WorkToBuild>
-      <Mass>500</Mass>
+      <WorkToBuild>12000</WorkToBuild>
+      <Mass>11000</Mass>
       <Beauty>-10</Beauty>
     </statBases>
     <building>
       <turretBurstWarmupTime>2.0</turretBurstWarmupTime>
-      <turretBurstCooldownTime>11.0</turretBurstCooldownTime>
+      <turretBurstCooldownTime>4.0</turretBurstCooldownTime>
       <buildingTags>
         <li>Artillery</li>
       </buildingTags>
@@ -70,12 +70,12 @@
       <li>PlaceWorker_TurretTop</li>
     </placeWorkers>
     <researchPrerequisites>
-      <li>FlakCannon</li>
+      <li>127mmNaval</li>
     </researchPrerequisites>
     <uiIconScale>1.1</uiIconScale>
   </ThingDef>
 
-  <ThingDef Name="Base88mmCannonWeapon" Abstract="True">
+  <ThingDef Name="Base127mmCannonWeapon" Abstract="True">
     <category>Item</category>
     <thingClass>ThingWithComps</thingClass>
     <label>artillery error</label>
@@ -99,14 +99,14 @@
       <fixedStorageSettings>
         <filter>
           <categories>
-            <li>88mmCannonShells</li>
+            <li>127mmCannonShells</li>
           </categories>
         </filter>
       </fixedStorageSettings>
       <defaultStorageSettings>
         <filter>
           <categories>
-            <li>88mmCannonShells</li>
+            <li>127mmCannonShells</li>
           </categories>
           <disallowedThingDefs>
           </disallowedThingDefs>
@@ -115,10 +115,10 @@
     </building>
   </ThingDef>
 
-  <ThingDef ParentName="Base88mmCannonBuilding">
-    <defName>Turret_88mmCannon</defName>
-    <label>88mm_cannon</label>
-    <description>A manned 88mm Flak cannon that shoots AP and HE shells. 11 seconds reload time, 100m max range.</description>
+  <ThingDef ParentName="Base127mmCannonBuilding">
+    <defName>Turret_127mmCannon</defName>
+    <label>127mm_cannon</label>
+    <description>A manned 127mm Naval gun based on the German SK C/34 That were used in Z3 Max Schultz. Shoots HE shells, 4 sec reload, 500m Max Range.</description>
     <comps>
       <li Class="CompProperties_Explosive">
         <explosiveRadius>4.5</explosiveRadius>
@@ -128,15 +128,15 @@
     <designationHotKey>Misc4</designationHotKey>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <building>
-      <turretGunDef>88mmCannon</turretGunDef>
-      <turretTopGraphicPath>Things/Building/Turret88Cannon_Top</turretTopGraphicPath>
-      <turretTopDrawSize>11</turretTopDrawSize>
+      <turretGunDef>127mmCannon</turretGunDef>
+      <turretTopGraphicPath>Things/Building/MannedSKC34_Top</turretTopGraphicPath>
+      <turretTopDrawSize>12</turretTopDrawSize>
       <buildingTags>
         <li>Artillery_BaseDestroyer</li>
       </buildingTags>
     </building>
-  	<uiIconPath>Things/Building/Security/TurretMortar_MenuIcon</uiIconPath>
-  	<uiIconScale>0.9</uiIconScale>
+    <uiIconPath>Things/Building/Security/TurretMortar_MenuIcon</uiIconPath>
+    <uiIconScale>0.9</uiIconScale>
     <!--
     <modExtensions>
         <li Class="TurretExtensions.TurretFrameworkExtension">
@@ -147,10 +147,10 @@
     -->
   </ThingDef>
   
-  <ThingDef ParentName="Base88mmCannonWeapon">
-    <defName>88mmCannon</defName>
-    <label>88mm_cannon</label>
-    <description>An 88mm cannon that based on an ancient tank gun, very accurate and has a long range.</description>
+  <ThingDef ParentName="Base127mmCannonWeapon">
+    <defName>127mmCannon</defName>
+    <label>127mm_cannon</label>
+    <description>A 127mm cannon that based on an ancient naval gun.</description>
     <weaponTags>
       <li>Artillery_BaseDestroyer</li>
     </weaponTags>
@@ -167,11 +167,11 @@
         <hasStandardCommand>true</hasStandardCommand>
         <warmupTime>2.0</warmupTime>
         <requireLineOfSight>true</requireLineOfSight>
-        <minRange>5</minRange>
-        <range>100</range>
+        <minRange>10</minRange>
+        <range>500</range>
         <burstShotCount>1</burstShotCount>
-        <soundCast>88mm_Cannon_Shoot</soundCast>
-        <muzzleFlashScale>20</muzzleFlashScale>
+        <soundCast>127mm_Cannon_Shoot</soundCast>
+        <muzzleFlashScale>35</muzzleFlashScale>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>

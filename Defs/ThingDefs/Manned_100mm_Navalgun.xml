@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!--=============== 40mm Autocannon turret ===============-->
-
   <ThingDef ParentName="BuildingBase" Name="100mmNavalgun">
     <defName>100mmNavalgun</defName>
     <label>100mm naval gun</label>
-    <description>A manned 100mm Model 53 Naval gun that were used in the French Navy in the Earth 20th century. Uses belt-feed ammunition with capacity of 100 rounds. Consumes 300W of power for its electric-powered aiming controls, 500m max range.</description>
+    <description>A manned 100mm Model 53 Naval gun that were used in the French Navy in the Earth 20th century. Uses belt-feed ammunition with capacity of 100 rounds. Consumes 2000W of power for its electric-powered aiming controls, 500m max range.</description>
     <thingClass>Building_TurretGun</thingClass>
     <graphicData>
       <texPath>Things/Building/Manned100mmNaval</texPath>
@@ -75,14 +73,14 @@
     </thingCategories>
     <hasTooltip>true</hasTooltip>
     <costList>
-      <Steel>1500</Steel>
+      <Steel>3000</Steel>
       <Plasteel>200</Plasteel>
       <ComponentSpacer>3</ComponentSpacer>
     </costList>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
     <specialDisplayRadius>33.9</specialDisplayRadius>
-    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
     <building>
       <turretGunDef>Gun_100mmNavalgunTurret</turretGunDef>
       <turretBurstCooldownTime>2</turretBurstCooldownTime>
