@@ -19,6 +19,18 @@
       <iconPath>UI/Icons/ThingCategories/MortarShells</iconPath>
     </ThingCategoryDef>
     <ThingCategoryDef>
+      <defName>15cmSIGShells</defName>
+      <label>15cm howitzer shells</label>
+      <parent>Manufactured</parent>
+      <iconPath>UI/Icons/ThingCategories/MortarShells</iconPath>
+    </ThingCategoryDef>
+    <ThingCategoryDef>
+      <defName>288mmShells</defName>
+      <label>9.2 Inch howitzer shells</label>
+      <parent>Manufactured</parent>
+      <iconPath>UI/Icons/ThingCategories/MortarShells</iconPath>
+    </ThingCategoryDef>
+    <ThingCategoryDef>
       <defName>600mmHowitzerShells</defName>
       <label>600mm howitzer shells</label>
       <parent>Manufactured</parent>

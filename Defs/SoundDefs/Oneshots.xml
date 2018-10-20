@@ -13,8 +13,58 @@
           </li>
         </grains>
         <pitchRange>
-          <min>1</min>        
-          <max>1</max>
+          <min>0.9</min>        
+          <max>1.1</max>
+        </pitchRange>       
+        <volumeRange>
+          <min>100</min>        
+          <max>100</max>
+        </volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>15cm_Howitzer_Shoot</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>150mm_howitzer</clipFolderPath>
+          </li>
+        </grains>
+        <pitchRange>
+          <min>0.9</min>        
+          <max>1.1</max>
+        </pitchRange>       
+        <volumeRange>
+          <min>100</min>        
+          <max>100</max>
+        </volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>288mm_Howitzer_Shoot</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>288mm_howitzer</clipFolderPath>
+          </li>
+        </grains>
+        <pitchRange>
+          <min>0.9</min>        
+          <max>1.1</max>
         </pitchRange>       
         <volumeRange>
           <min>100</min>        
@@ -38,8 +88,8 @@
           </li>
         </grains>
         <pitchRange>
-          <min>1</min>        
-          <max>1</max>
+          <min>0.9</min>        
+          <max>1.1</max>
         </pitchRange>       
         <volumeRange>
           <min>100</min>        
@@ -63,8 +113,8 @@
           </li>
         </grains>
         <pitchRange>
-          <min>1</min>        
-          <max>1</max>
+          <min>0.9</min>        
+          <max>1.1</max>
         </pitchRange>       
         <volumeRange>
           <min>100</min>        
@@ -88,8 +138,8 @@
           </li>
         </grains>
         <pitchRange>
-          <min>1</min>        
-          <max>1</max>
+          <min>0.9</min>        
+          <max>1.1</max>
         </pitchRange>       
         <volumeRange>
           <min>100</min>        
@@ -113,8 +163,8 @@
           </li>
         </grains>
         <pitchRange>
-          <min>1</min>        
-          <max>1</max>
+          <min>0.9</min>        
+          <max>1.1</max>
         </pitchRange>       
         <volumeRange>
           <min>100</min>        
@@ -138,8 +188,8 @@
           </li>
         </grains>
         <pitchRange>
-          <min>1</min>        
-          <max>1</max>
+          <min>0.9</min>        
+          <max>1.1</max>
         </pitchRange>       
         <volumeRange>
           <min>100</min>        
@@ -163,8 +213,8 @@
           </li>
         </grains>
         <pitchRange>
-          <min>1</min>        
-          <max>1</max>
+          <min>0.9</min>        
+          <max>1.1</max>
         </pitchRange>       
         <volumeRange>
           <min>100</min>        
@@ -188,8 +238,8 @@
           </li>
         </grains>
         <pitchRange>
-          <min>1</min>        
-          <max>1</max>
+          <min>0.9</min>        
+          <max>1.1</max>
         </pitchRange>       
         <volumeRange>
           <min>100</min>        

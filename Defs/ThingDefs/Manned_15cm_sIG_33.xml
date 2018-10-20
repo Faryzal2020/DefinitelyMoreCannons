@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-<ThingDef Name="Base6PdrCannonBuilding" ParentName="BuildingBase" Abstract="True">
+<ThingDef Name="Base15cmSIGBuilding" ParentName="BuildingBase" Abstract="True">
     <thingClass>Building_TurretGun</thingClass>
     <graphicData>
-      <texPath>Things/Building/Manned6Pdr</texPath>
+      <texPath>Things/Building/MannedSig33</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(11,11)</drawSize>
       <damageData>
@@ -35,13 +34,12 @@
     <tickerType>Normal</tickerType>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
-    <specialDisplayRadius>80</specialDisplayRadius>
-		<costStuffCount>50</costStuffCount>
+    <costStuffCount>50</costStuffCount>
     <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
     <costList>
-			<Steel>400</Steel>
-			<ComponentIndustrial>5</ComponentIndustrial>
-		</costList>
+      <Steel>1000</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
     <inspectorTabs>
       <li>ITab_Shells</li>
     </inspectorTabs>
@@ -54,13 +52,13 @@
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
       <Flammability>0.7</Flammability>
-      <WorkToBuild>2800</WorkToBuild>
-      <Mass>200</Mass>
+      <WorkToBuild>4500</WorkToBuild>
+      <Mass>1800</Mass>
       <Beauty>-10</Beauty>
     </statBases>
     <building>
-      <turretBurstWarmupTime>2.0</turretBurstWarmupTime>
-      <turretBurstCooldownTime>2.0</turretBurstCooldownTime>
+      <turretBurstWarmupTime>5.0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>30.0</turretBurstCooldownTime>
       <buildingTags>
         <li>Artillery</li>
       </buildingTags>
@@ -69,12 +67,12 @@
       <li>PlaceWorker_TurretTop</li>
     </placeWorkers>
     <researchPrerequisites>
-      <li>6PdrCannon</li>
+      <li>sIG33Howitzer</li>
     </researchPrerequisites>
-    <uiIconScale>0.95</uiIconScale>
+    <uiIconScale>1.1</uiIconScale>
   </ThingDef>
 
-  <ThingDef Name="Base6PdrCannonWeapon" Abstract="True">
+  <ThingDef Name="Base15cmSIGWeapon" Abstract="True">
     <category>Item</category>
     <thingClass>ThingWithComps</thingClass>
     <label>artillery error</label>
@@ -98,14 +96,14 @@
       <fixedStorageSettings>
         <filter>
           <categories>
-            <li>6PdrCannonShells</li>
+            <li>15cmSIGShells</li>
           </categories>
         </filter>
       </fixedStorageSettings>
       <defaultStorageSettings>
         <filter>
           <categories>
-            <li>6PdrCannonShells</li>
+            <li>15cmSIGShells</li>
           </categories>
           <disallowedThingDefs>
           </disallowedThingDefs>
@@ -114,68 +112,54 @@
     </building>
   </ThingDef>
 
-  <ThingDef ParentName="Base6PdrCannonBuilding">
-    <defName>Turret_6PdrCannon</defName>
-    <label>6Pdr_cannon</label>
-    <description>A manned 6 Pounder cannon that shoots AP shells. Manual ammunition loading, 80m Max range.</description>
+  <ThingDef ParentName="Base15cmSIGBuilding">
+    <defName>Turret_15cmSIG</defName>
+    <label>15cm_Howitzer</label>
+    <description>A manned 15cm Howitzer cannon based on schweres Infanterie Geschütz 33, able to shoot over walls, 40 seconds reload.</description>
     <comps>
       <li Class="CompProperties_Explosive">
-        <explosiveRadius>3</explosiveRadius>
+        <explosiveRadius>3.0</explosiveRadius>
         <explosiveDamageType>Bomb</explosiveDamageType>
       </li>
     </comps>
     <designationHotKey>Misc4</designationHotKey>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <building>
-      <turretGunDef>6PdrCannon</turretGunDef>
-      <turretTopGraphicPath>Things/Building/Manned6Pdr_Top</turretTopGraphicPath>
+      <turretGunDef>15cmSIG33_Turret</turretGunDef>
+      <turretTopGraphicPath>Things/Building/MannedSig33_Top</turretTopGraphicPath>
       <turretTopDrawSize>11</turretTopDrawSize>
       <buildingTags>
         <li>Artillery_BaseDestroyer</li>
       </buildingTags>
     </building>
-  	<uiIconPath>Things/Building/Security/TurretMortar_MenuIcon</uiIconPath>
-  	<uiIconScale>0.9</uiIconScale>
-    <!--
-    <modExtensions>
-        <li Class="TurretExtensions.TurretFrameworkExtension">
-            <useMannerShootingAccuracy>true</useMannerShootingAccuracy>
-            <useMannerAimingDelayFactor>true</useMannerAimingDelayFactor>
-        </li>
-    </modExtensions>
-    -->
+  <uiIconPath>Things/Building/Security/TurretMortar_MenuIcon</uiIconPath>
+  <uiIconScale>0.9</uiIconScale>
   </ThingDef>
   
-  <ThingDef ParentName="Base6PdrCannonWeapon">
-    <defName>6PdrCannon</defName>
-    <label>6Pdr_cannon</label>
-    <description>A 6Pdr cannon that based on an ancient field antitank gun, very accurate and has a medium range.</description>
+  <ThingDef ParentName="Base15cmSIGWeapon">
+    <defName>15cmSIG33_Turret</defName>
+    <label>15cm_Howitzer</label>
+    <description>A manned 15cm Howitzer cannon based on schweres Infanterie Geschütz 33, able to shoot over walls, 40 seconds reload.</description>
     <weaponTags>
       <li>Artillery_BaseDestroyer</li>
     </weaponTags>
-    <statBases>
-      <AccuracyTouch>0.4</AccuracyTouch>
-      <AccuracyShort>0.7</AccuracyShort>
-      <AccuracyMedium>0.99</AccuracyMedium>
-      <AccuracyLong>0.99</AccuracyLong>
-    </statBases>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
         <hasStandardCommand>true</hasStandardCommand>
         <warmupTime>2.0</warmupTime>
-        <requireLineOfSight>true</requireLineOfSight>
-        <minRange>3</minRange>
-        <range>80</range>
+        <forcedMissRadius>1</forcedMissRadius>
+        <requireLineOfSight>false</requireLineOfSight>
+        <minRange>15</minRange>
+        <range>100</range>
         <burstShotCount>1</burstShotCount>
-        <soundCast>6Pdr_Cannon_Shoot</soundCast>
-        <muzzleFlashScale>20</muzzleFlashScale>
+        <soundCast>15cm_Howitzer_Shoot</soundCast>
+        <muzzleFlashScale>25</muzzleFlashScale>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
       </li>
     </verbs>
   </ThingDef>
-
 </Defs>

@@ -15,15 +15,22 @@
         <cornerTL>Damage/Corner</cornerTL>
       </damageData>
       <shadowData>
-	      <offset>(-0.13,-0.87,-0.1)</offset>
-        <volume>(0.5,0.4,1.05)</volume>
+        <volume>(2,1.5,2)</volume>
+        <offset>(0,0,0)</offset>
       </shadowData>
     </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
     <uiIconPath>Things/Building/Security/TurretAutocannon_MenuIcon</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
     <stealable>false</stealable>
-    <rotatable>false</rotatable>
+    <rotatable>true</rotatable>
     <size>(3,3)</size>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
       <Flammability>0.7</Flammability>
@@ -87,11 +94,13 @@
       <turretTopGraphicPath>Things/Building/Unmanned6Pdr_Top</turretTopGraphicPath>
       <turretTopDrawSize>11</turretTopDrawSize>
       <turretTopOffset>(0, 0)</turretTopOffset>
+      <buildingTags>
+        <li>Cannon_Turret</li>
+      </buildingTags>
     </building>
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
     </placeWorkers>
-    <designationHotKey>Misc3</designationHotKey>
     <researchPrerequisites>
       <li>Unmanned6PdrCannon</li>
     </researchPrerequisites>
@@ -117,7 +126,7 @@
       <AccuracyShort>0.7</AccuracyShort>
       <AccuracyMedium>0.99</AccuracyMedium>
       <AccuracyLong>0.99</AccuracyLong>
-      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
       <DeteriorationRate>0</DeteriorationRate>
       <Mass>40</Mass>
       <Flammability>0</Flammability>
@@ -137,7 +146,7 @@
         <burstShotCount>1</burstShotCount>
         <soundCast>6Pdr_Cannon_Shoot</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>15</muzzleFlashScale>
+        <muzzleFlashScale>20</muzzleFlashScale>
         <consumeFuelPerShot>1</consumeFuelPerShot>
       </li>
     </verbs>

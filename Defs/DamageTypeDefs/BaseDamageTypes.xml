@@ -56,9 +56,9 @@
     <isRanged>true</isRanged>
   </DamageDef>
 
-  <DamageDef>
-    <defName>HowitzerHEBullet</defName>
-    <label>bullet</label>
+
+
+  <DamageDef Name="BaseHowitzerShellDamage" Abstract="True">
     <workerClass>DamageWorker_AddInjury</workerClass>
     <externalViolence>true</externalViolence>
     <isExplosive>true</isExplosive>
@@ -66,7 +66,6 @@
     <hediff>Shredded</hediff>
     <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
     <minDamageToFragment>50</minDamageToFragment>
-    <defaultDamage>1000</defaultDamage>
     <defaultStoppingPower>0.5</defaultStoppingPower>
     <defaultArmorPenetration>1</defaultArmorPenetration>
     <buildingDamageFactor>2</buildingDamageFactor>
@@ -81,6 +80,24 @@
     <impactSoundType>Bullet</impactSoundType>
     <armorCategory>Sharp</armorCategory>
     <isRanged>true</isRanged>
+  </DamageDef>
+
+  <DamageDef ParentName="BaseHowitzerShellDamage">
+    <defName>HowitzerHEBullet</defName>
+    <label>bullet</label>
+    <defaultDamage>1000</defaultDamage>
+  </DamageDef>
+
+  <DamageDef ParentName="BaseHowitzerShellDamage">
+    <defName>288mmHEBullet</defName>
+    <label>bullet</label>
+    <defaultDamage>350</defaultDamage>
+  </DamageDef>
+
+  <DamageDef ParentName="BaseHowitzerShellDamage">
+    <defName>150mmHEBullet</defName>
+    <label>bullet</label>
+    <defaultDamage>200</defaultDamage>
   </DamageDef>
 
     <!-- Large AP Shells -->

@@ -32,10 +32,10 @@
       <li>Metallic</li>
     </stuffCategories>
     <tickerType>Normal</tickerType>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
     <costStuffCount>50</costStuffCount>
-    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
     <costList>
       <Steel>3000</Steel>
       <ComponentIndustrial>20</ComponentIndustrial>
