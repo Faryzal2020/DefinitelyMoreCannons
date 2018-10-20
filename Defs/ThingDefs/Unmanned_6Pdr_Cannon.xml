@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<ThingDef Name="BaseU6PdrCannonBuilding" ParentName="BuildingBase" Abstract="True">
+<ThingDef ParentName="BuildingBase" Name="BaseU6PdrCannonBuilding">
+    <defName>Turret_U6PdrCannon</defName>
+    <label>U6Pdr_Cannon</label>
+    <description>An unmanned 6 Pounder cannon that shoots AP shells. Manual ammunition loading, 80m Max range.</description>
     <thingClass>Building_TurretGun</thingClass>
     <graphicData>
       <texPath>Things/Building/Unmanned6Pdr</texPath>
@@ -16,36 +19,20 @@
         <volume>(0.5,0.4,1.05)</volume>
       </shadowData>
     </graphicData>
-    <minifiedDef>MinifiedThing</minifiedDef>
+    <uiIconPath>Things/Building/Security/TurretAutocannon_MenuIcon</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
-    <hasInteractionCell>True</hasInteractionCell>
-    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <stealable>false</stealable>
-    <rotatable>true</rotatable>
+    <rotatable>false</rotatable>
     <size>(3,3)</size>
-    <passability>PassThroughOnly</passability>
-    <pathCost>50</pathCost>
-    <fillPercent>0.4</fillPercent>
-    <thingCategories>
-      <li>BuildingsSecurity</li>
-    </thingCategories>
-    <stuffCategories>
-      <li>Metallic</li>
-    </stuffCategories>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>0.7</Flammability>
+      <WorkToBuild>4000</WorkToBuild>
+      <Mass>250</Mass>
+      <Beauty>-10</Beauty>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </statBases>
     <tickerType>Normal</tickerType>
-    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <designationCategory>Security</designationCategory>
-    <specialDisplayRadius>70</specialDisplayRadius>
-		<costStuffCount>50</costStuffCount>
-    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
-    <costList>
-			<Steel>800</Steel>
-      <Plasteel>100</Plasteel>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-    <inspectorTabs>
-      <li>ITab_Shells</li>
-    </inspectorTabs>
     <comps>
       <li Class="CompProperties_Explosive">
         <explosiveRadius>3</explosiveRadius>
@@ -80,130 +67,78 @@
         <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
       </li>
     </comps>
-    <statBases>
-      <MaxHitPoints>500</MaxHitPoints>
-      <Flammability>0.7</Flammability>
-      <WorkToBuild>4000</WorkToBuild>
-      <Mass>250</Mass>
-      <Beauty>-10</Beauty>
-    </statBases>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <costList>
+		<Steel>800</Steel>
+    	<Plasteel>100</Plasteel>
+		<ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <specialDisplayRadius>70</specialDisplayRadius>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <building>
       <ai_combatDangerous>true</ai_combatDangerous>
-      <turretBurstWarmupTime>2.0</turretBurstWarmupTime>
+      <turretGunDef>U6PdrCannon</turretGunDef>
       <turretBurstCooldownTime>4.0</turretBurstCooldownTime>
-      <buildingTags>
-        <li>Artillery</li>
-      </buildingTags>
+      <turretTopGraphicPath>Things/Building/Unmanned6Pdr_Top</turretTopGraphicPath>
+      <turretTopDrawSize>11</turretTopDrawSize>
+      <turretTopOffset>(0, 0)</turretTopOffset>
     </building>
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
     </placeWorkers>
+    <designationHotKey>Misc3</designationHotKey>
     <researchPrerequisites>
       <li>Unmanned6PdrCannon</li>
     </researchPrerequisites>
-    <uiIconScale>1.1</uiIconScale>
+    <uiIconScale>0.95</uiIconScale>
   </ThingDef>
 
-  <ThingDef Name="BaseU6PdrCannonWeapon" Abstract="True">
-    <category>Item</category>
-    <thingClass>ThingWithComps</thingClass>
-    <label>artillery error</label>
-    <useHitPoints>false</useHitPoints>
-    <equipmentType>Primary</equipmentType>
-    <tickerType>Never</tickerType>
-    <techLevel>Industrial</techLevel>
-    <destroyOnDrop>True</destroyOnDrop>
-    <menuHidden>True</menuHidden>
-    <tradeability>None</tradeability>
-    <weaponTags>
-      <li>Artillery</li>
-    </weaponTags>
-    <comps>
-      <li>
-        <compClass>CompEquippable</compClass>
-      </li>
-      <li Class="CompProperties_ChangeableProjectile" />
-    </comps>
-    <building>
-      <fixedStorageSettings>
-        <filter>
-          <categories>
-            <li>6PdrCannonShells</li>
-          </categories>
-        </filter>
-      </fixedStorageSettings>
-      <defaultStorageSettings>
-        <filter>
-          <categories>
-            <li>6PdrCannonShells</li>
-          </categories>
-          <disallowedThingDefs>
-          </disallowedThingDefs>
-        </filter>
-      </defaultStorageSettings>
-    </building>
-  </ThingDef>
-
-  <ThingDef ParentName="BaseU6PdrCannonBuilding">
-    <defName>Turret_U6PdrCannon</defName>
-    <label>U6Pdr_cannon</label>
-    <description>An unmanned 6 Pounder cannon that shoots AP shells. Manual ammunition loading, 80m Max range.</description>
-    <comps>
-      <li Class="CompProperties_Explosive">
-        <explosiveRadius>3</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-      </li>
-    </comps>
-    <designationHotKey>Misc4</designationHotKey>
-    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <building>
-      <turretGunDef>U6PdrCannon</turretGunDef>
-      <turretTopGraphicPath>Things/Building/Unmanned6Pdr_Top</turretTopGraphicPath>
-      <turretTopDrawSize>11</turretTopDrawSize>
-      <buildingTags>
-        <li>Artillery_BaseDestroyer</li>
-      </buildingTags>
-    </building>
-  	<uiIconPath>Things/Building/Security/TurretMortar_MenuIcon</uiIconPath>
-  	<uiIconScale>0.9</uiIconScale>
-    <!--
-    <modExtensions>
-        <li Class="TurretExtensions.TurretFrameworkExtension">
-            <useMannerShootingAccuracy>true</useMannerShootingAccuracy>
-            <useMannerAimingDelayFactor>true</useMannerAimingDelayFactor>
-        </li>
-    </modExtensions>
-    -->
-  </ThingDef>
-  
-  <ThingDef ParentName="BaseU6PdrCannonWeapon">
+  <ThingDef ParentName="BaseHumanGun">
     <defName>U6PdrCannon</defName>
     <label>U6Pdr_cannon</label>
     <description>A 6Pdr cannon that based on an ancient field antitank gun, very accurate and has a medium range.</description>
-    <weaponTags>
-      <li>Artillery_BaseDestroyer</li>
-    </weaponTags>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/ChargeRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <menuHidden>true</menuHidden>
+    <destroyOnDrop>true</destroyOnDrop>
+    <tradeability>None</tradeability>
+    <useHitPoints>false</useHitPoints>
     <statBases>
       <AccuracyTouch>0.4</AccuracyTouch>
       <AccuracyShort>0.7</AccuracyShort>
       <AccuracyMedium>0.99</AccuracyMedium>
       <AccuracyLong>0.99</AccuracyLong>
+      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>40</Mass>
+      <Flammability>0</Flammability>
     </statBases>
+    <weaponTags Inherit="false">
+      <li>TurretGun</li>
+    </weaponTags>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
-        <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
         <hasStandardCommand>true</hasStandardCommand>
-        <warmupTime>2.0</warmupTime>
-        <requireLineOfSight>true</requireLineOfSight>
+        <defaultProjectile>Bullet_AutocannonTurret</defaultProjectile>
+        <warmupTime>2</warmupTime>
         <minRange>5</minRange>
         <range>70</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
         <burstShotCount>1</burstShotCount>
         <soundCast>6Pdr_Cannon_Shoot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>15</muzzleFlashScale>
-        <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-        </targetParams>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
       </li>
     </verbs>
   </ThingDef>
