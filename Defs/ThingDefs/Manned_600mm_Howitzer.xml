@@ -115,7 +115,7 @@
   <ThingDef ParentName="Base600HowitzerBuilding">
     <defName>Turret_600Howitzer</defName>
     <label>60cm_Howitzer</label>
-    <description>A manned 60cm Howitzer Cannon "Thor" that shoots a massive HE shell.</description>
+    <description>A manned 60cm Howitzer cannon based on "Karl Gerät" Railway Gun, shoots a massive HE shell over walls, 40 seconds reload.</description>
     <comps>
       <li Class="CompProperties_Explosive">
         <explosiveRadius>5.0</explosiveRadius>

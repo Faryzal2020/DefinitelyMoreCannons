@@ -16,7 +16,7 @@
         <rect>(0.2,0.2,0.6,0.6)</rect>
       </damageData>
       <shadowData>
-        <volume>(1.5,0.35,1.4)</volume>
+        <volume>(3.5,2.2,3.5)</volume>
         <offset>(0,0,0)</offset>
       </shadowData>
     </graphicData>
@@ -31,7 +31,7 @@
     <statBases>
       <MaxHitPoints>1200</MaxHitPoints>
       <Flammability>0.7</Flammability>
-      <WorkToBuild>12000</WorkToBuild>
+      <WorkToBuild>17000</WorkToBuild>
       <Mass>14000</Mass>
       <Beauty>-20</Beauty>
     </statBases>
@@ -108,7 +108,7 @@
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
     <projectile>
-      <damageDef>CannonAPBullet</damageDef>
+      <damageDef>100mmAP</damageDef>
       <explosionRadius>0.5</explosionRadius>
       <damageAmountBase>500</damageAmountBase>
       <speed>350</speed>

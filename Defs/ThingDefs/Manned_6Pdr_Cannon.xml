@@ -12,8 +12,8 @@
         <cornerTL>Damage/Corner</cornerTL>
       </damageData>
       <shadowData>
-	      <offset>(-0.13,-0.87,-0.1)</offset>
-        <volume>(0.5,0.4,1.05)</volume>
+        <volume>(2,1.5,2)</volume>
+        <offset>(0,0,0)</offset>
       </shadowData>
     </graphicData>
     <minifiedDef>MinifiedThing</minifiedDef>

@@ -71,7 +71,7 @@
   <ResearchProjectDef>
     <defName>KarlGerat</defName>
     <label>60cm Howitzer</label>
-    <description>A massive 60cm howitzer based on "Karl Gerat" Railway gun.</description>
+    <description>A massive 60cm howitzer based on "Karl Gerät" Railway gun.</description>
     <baseCost>3000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
