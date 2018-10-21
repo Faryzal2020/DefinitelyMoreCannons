@@ -169,6 +169,7 @@
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>HeavyAutocannons</li>
+      <li>Fabrication</li>
     </prerequisites>
     <researchViewX>7.2</researchViewX>
     <researchViewY>0</researchViewY>
