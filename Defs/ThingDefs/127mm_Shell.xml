@@ -73,7 +73,7 @@
     <defName>127CannonBullet_Shell_HighExplosive</defName>
     <label>HE Shell</label>
     <graphicData>
-      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <texPath>Things/Projectile/LargeShell</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
@@ -82,7 +82,7 @@
       <damageDef>127mmHEBullet</damageDef>
       <!-- damage amount is the damage def default -->
       <speed>300</speed>
-      <explosionRadius>3</explosionRadius>
+      <explosionRadius>2</explosionRadius>
       <flyOverhead>false</flyOverhead>
       <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
       <soundExplode>MortarBomb_Explode</soundExplode>

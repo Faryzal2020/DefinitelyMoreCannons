@@ -82,7 +82,7 @@
       <damageDef>288mmHEBullet</damageDef>
       <!-- damage amount is the damage def default -->
       <speed>80</speed>
-      <explosionRadius>6</explosionRadius>
+      <explosionRadius>7</explosionRadius>
       <flyOverhead>True</flyOverhead>
       <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
       <soundExplode>MortarBomb_Explode</soundExplode>

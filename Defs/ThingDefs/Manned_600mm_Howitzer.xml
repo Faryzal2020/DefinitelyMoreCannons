@@ -58,7 +58,7 @@
     </statBases>
     <building>
       <turretBurstWarmupTime>5.0</turretBurstWarmupTime>
-      <turretBurstCooldownTime>40.0</turretBurstCooldownTime>
+      <turretBurstCooldownTime>120.0</turretBurstCooldownTime>
       <buildingTags>
         <li>Artillery</li>
       </buildingTags>
@@ -149,13 +149,13 @@
         <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
         <hasStandardCommand>true</hasStandardCommand>
         <warmupTime>2.0</warmupTime>
-        <forcedMissRadius>1</forcedMissRadius>
+        <forcedMissRadius>2</forcedMissRadius>
         <requireLineOfSight>false</requireLineOfSight>
         <minRange>25</minRange>
         <range>1000</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>600mm_Howitzer_Shoot</soundCast>
-        <muzzleFlashScale>25</muzzleFlashScale>
+        <muzzleFlashScale>80</muzzleFlashScale>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>

@@ -120,7 +120,7 @@
       <damageDef>CannonHEBullet</damageDef>
       <!-- damage amount is the damage def default -->
       <speed>300</speed>
-      <explosionRadius>3</explosionRadius>
+      <explosionRadius>2</explosionRadius>
       <flyOverhead>false</flyOverhead>
       <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
       <soundExplode>MortarBomb_Explode</soundExplode>
