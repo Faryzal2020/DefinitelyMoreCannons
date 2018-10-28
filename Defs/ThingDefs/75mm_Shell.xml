@@ -77,7 +77,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
-      <damageDef>Bullet</damageDef>
+      <damageDef>75mmAPBullet</damageDef>
       <damageAmountBase>300</damageAmountBase>
       <speed>350</speed>
       <armorPenetrationBase>0.72</armorPenetrationBase>

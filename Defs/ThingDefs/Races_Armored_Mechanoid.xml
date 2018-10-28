@@ -1,16 +1,83 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <ThingDef ParentName="BasePawn" Name="BaseMechanoid_DMC" Abstract="True">
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <statBases>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <ToxicSensitivity>0</ToxicSensitivity>
+      <Flammability>0</Flammability>
+      <ComfyTemperatureMin>-150</ComfyTemperatureMin>
+      <ComfyTemperatureMax>300</ComfyTemperatureMax>
+    </statBases>
+    <race>
+      <fleshType>Mechanoid</fleshType>
+      <needsRest>false</needsRest>
+      <hasGenders>false</hasGenders>
+      <foodType>None</foodType>
+    </race>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bullet</damageDef>
+        <multiplier>0.3</multiplier>
+      </li>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>0.7</multiplier>
+      </li>
+      <li>
+        <damageDef>EMP</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>CannonAPBullet</damageDef>
+        <multiplier>0.7</multiplier>
+      </li>
+      <li>
+        <damageDef>75mmAPBullet</damageDef>
+        <multiplier>0.6</multiplier>
+      </li>
+      <li>
+        <damageDef>HowitzerHEBullet</damageDef>
+        <multiplier>0.5</multiplier>
+      </li>
+      <li>
+        <damageDef>150mmHEBullet</damageDef>
+        <multiplier>0.5</multiplier>
+      </li>
+      <li>
+        <damageDef>288mmHEBullet</damageDef>
+        <multiplier>0.5</multiplier>
+      </li>
+      <li>
+        <damageDef>CannonHEBullet</damageDef>
+        <multiplier>0.5</multiplier>
+      </li>
+      <li>
+        <damageDef>127mmHEBullet</damageDef>
+        <multiplier>0.5</multiplier>
+      </li>
+      <li>
+        <damageDef>120mmHEBullet</damageDef>
+        <multiplier>0.5</multiplier>
+      </li>
+      <li>
+        <damageDef>100mmAP</damageDef>
+        <multiplier>0.8</multiplier>
+      </li>
+    </damageMultipliers>
+  </ThingDef>
+
   <!-- Armored Centipede -->
   
-  <ThingDef ParentName="BaseMechanoid">
+  <ThingDef ParentName="BaseMechanoid_DMC">
     <defName>Mech_ArmoredCentipede</defName>
     <label>armored centipede</label>
     <description>Heavy armored combat mechanoids that glide on dozens of tiny legs. This type of centipede mechanoid uses an additional external armor suit to protect against small caliber guns to medium caliber machineguns.</description>
     <statBases>
       <MoveSpeed>1.3</MoveSpeed>
-      <ArmorRating_Blunt>2</ArmorRating_Blunt>
-      <ArmorRating_Sharp>2</ArmorRating_Sharp>
+      <ArmorRating_Blunt>1.8</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.8</ArmorRating_Sharp>
     </statBases>
     <tools>
       <li>
@@ -58,7 +125,7 @@
     <defName>Mech_ArmoredCentipede</defName>
     <label>armored centipede</label>
     <race>Mech_ArmoredCentipede</race>
-    <combatPower>350</combatPower>
+    <combatPower>600</combatPower>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -81,14 +148,14 @@
   </PawnKindDef>
 
   <!-- Advanced Armored Centipede -->
-  <ThingDef ParentName="BaseMechanoid">
+  <ThingDef ParentName="BaseMechanoid_DMC">
     <defName>Mech_AdvArmoredCentipede</defName>
     <label>advanced armored centipede</label>
     <description>Superheavy armored combat mechanoids that glide on dozens of tiny legs. This particular mechanoid was built with a different kind of material. Because of the weight, its very slow, but you would need a bigger gun to kill this thing.</description>
     <statBases>
       <MoveSpeed>1</MoveSpeed>
-      <ArmorRating_Blunt>2</ArmorRating_Blunt>
-      <ArmorRating_Sharp>3</ArmorRating_Sharp>
+      <ArmorRating_Blunt>1.9</ArmorRating_Blunt>
+      <ArmorRating_Sharp>2</ArmorRating_Sharp>
     </statBases>
     <tools>
       <li>
@@ -136,7 +203,7 @@
     <defName>Mech_AdvArmoredCentipede</defName>
     <label>advanced armored centipede</label>
     <race>Mech_AdvArmoredCentipede</race>
-    <combatPower>500</combatPower>
+    <combatPower>1000</combatPower>
     <lifeStages>
       <li>
         <bodyGraphicData>

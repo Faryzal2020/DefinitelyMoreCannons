@@ -3,32 +3,6 @@
 
   <!-- External violence -->
 
-  <DamageDef>
-    <defName>CannonAPBullet</defName>
-    <label>bullet</label>
-    <workerClass>DamageWorker_AddInjury</workerClass>
-    <externalViolence>true</externalViolence>
-    <deathMessage>{0} has been shot to death.</deathMessage>
-    <hediff>Gunshot</hediff>
-    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
-    <defaultDamage>450</defaultDamage>
-    <defaultArmorPenetration>1</defaultArmorPenetration>
-    <defaultStoppingPower>0.8</defaultStoppingPower>
-    <impactSoundType>Bullet</impactSoundType>
-    <armorCategory>Sharp</armorCategory>
-    <isRanged>true</isRanged>
-    <isExplosive>true</isExplosive>
-    <buildingDamageFactor>1</buildingDamageFactor>
-    <plantDamageFactor>1</plantDamageFactor>
-    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
-    <explosionHeatEnergyPerCell>1</explosionHeatEnergyPerCell>
-    <explosionCellMote>Mote_BlastDry</explosionCellMote>
-    <explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
-    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
-    <soundExplosion>Explosion_Bomb</soundExplosion>
-    <combatLogRules>Damage_Bomb</combatLogRules>
-  </DamageDef>
-
   <DamageDef Name="BaseHEShellDamage" Abstract="True">
     <workerClass>DamageWorker_AddInjury</workerClass>
     <externalViolence>true</externalViolence>
@@ -106,7 +80,49 @@
     <defaultArmorPenetration>0.5</defaultArmorPenetration>
   </DamageDef>
 
-    <!-- Large AP Shells -->
+    <!-- AP Shells -->
+  <DamageDef>
+    <defName>75mmAPBullet</defName>
+    <label>bullet</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been shot to death.</deathMessage>
+    <hediff>Gunshot</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <defaultStoppingPower>0.8</defaultStoppingPower>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <isRanged>true</isRanged>
+    <isExplosive>false</isExplosive>
+    <buildingDamageFactor>1</buildingDamageFactor>
+    <plantDamageFactor>1</plantDamageFactor>
+  </DamageDef>
+
+  <DamageDef>
+    <defName>CannonAPBullet</defName>
+    <label>bullet</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been shot to death.</deathMessage>
+    <hediff>Gunshot</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <defaultDamage>450</defaultDamage>
+    <defaultArmorPenetration>1</defaultArmorPenetration>
+    <defaultStoppingPower>0.8</defaultStoppingPower>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <isRanged>true</isRanged>
+    <isExplosive>true</isExplosive>
+    <buildingDamageFactor>1</buildingDamageFactor>
+    <plantDamageFactor>1</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>1</explosionHeatEnergyPerCell>
+    <explosionCellMote>Mote_BlastDry</explosionCellMote>
+    <explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+    <soundExplosion>Explosion_Bomb</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>
 
   <DamageDef>
     <defName>100mmAP</defName>

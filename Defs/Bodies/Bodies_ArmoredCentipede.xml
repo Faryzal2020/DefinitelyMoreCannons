@@ -17,7 +17,7 @@
   		  <depth>Outside</depth>
         </li>
         <li>
-          <def>MechanicalHead</def>
+          <def>AdvMechanicalHead</def>
           <coverage>0.001</coverage>
           <height>Top</height>
           <depth>Inside</depth>
