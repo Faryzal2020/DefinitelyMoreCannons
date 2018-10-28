@@ -4,7 +4,7 @@
 <ThingDef ParentName="BuildingBase" Name="BaseU6PdrCannonBuilding">
     <defName>Turret_U6PdrCannon</defName>
     <label>U6Pdr_Cannon</label>
-    <description>An unmanned 6 Pounder cannon that shoots AP shells. Manual ammunition loading, 80m Max range.</description>
+    <description>An unmanned 6 Pounder cannon that shoots AP shells. Manual ammunition loading, 70m Max range.</description>
     <thingClass>Building_TurretGun</thingClass>
     <graphicData>
       <texPath>Things/Building/Unmanned6Pdr</texPath>

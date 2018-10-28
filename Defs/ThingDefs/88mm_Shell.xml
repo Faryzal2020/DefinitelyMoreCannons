@@ -177,6 +177,7 @@
       <soundExplode>MortarBomb_Explode</soundExplode>
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
       <soundAmbient>MortarRound_Ambient</soundAmbient>
+      <armorPenetrationBase>0.85</armorPenetrationBase>
     </projectile>
   </ThingDef>
 </Defs>

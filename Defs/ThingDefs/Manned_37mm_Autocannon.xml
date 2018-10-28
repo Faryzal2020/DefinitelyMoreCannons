@@ -104,6 +104,7 @@
       <damageDef>Bullet</damageDef>
       <damageAmountBase>25</damageAmountBase>
       <speed>200</speed>
+      <armorPenetrationBase>0.45</armorPenetrationBase>
     </projectile>
   </ThingDef>
 

@@ -9,6 +9,7 @@
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
         <options>
+          <Mech_AdvArmoredCentipede>2</Mech_AdvArmoredCentipede>
           <Mech_ArmoredCentipede>10</Mech_ArmoredCentipede>
           <Mech_Centipede>10</Mech_Centipede>
           <Mech_Lancer>10</Mech_Lancer>
@@ -20,6 +21,7 @@
         <kindDef>Combat</kindDef>
         <commonality>80</commonality>
         <options>
+          <Mech_AdvArmoredCentipede>2</Mech_AdvArmoredCentipede>
           <Mech_ArmoredCentipede>10</Mech_ArmoredCentipede>
           <Mech_Centipede>10</Mech_Centipede>
           <Mech_Lancer>10</Mech_Lancer>
@@ -38,6 +40,7 @@
         <kindDef>Combat</kindDef>
         <commonality>50</commonality>
         <options>
+          <Mech_AdvArmoredCentipede>2</Mech_AdvArmoredCentipede>
           <Mech_ArmoredCentipede>5</Mech_ArmoredCentipede>
           <Mech_Centipede>10</Mech_Centipede>
         </options>
@@ -47,10 +50,33 @@
         <kindDef>Combat</kindDef>
         <commonality>30</commonality>
         <options>
+          <Mech_AdvArmoredCentipede>10</Mech_AdvArmoredCentipede>
           <Mech_ArmoredCentipede>20</Mech_ArmoredCentipede>
         </options>
       </li>
+      <li>
+        <!-- Advanced Armored Centipede only -->
+        <kindDef>Combat</kindDef>
+        <commonality>10</commonality>
+        <options>
+          <Mech_AdvArmoredCentipede>20</Mech_AdvArmoredCentipede>
+        </options>
+      </li>
     </pawnGroupMakers>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>*/FactionDef[defName="Mechanoid"]/raidCommonalityFromPointsCurve</xpath>
+    <value>
+      <raidCommonalityFromPointsCurve>
+        <points>
+          <li>(500, 0.1)</li>
+          <li>(5000, 0.5)</li>
+          <li>(50000, 3)</li>
+          <li>(80000, 10)</li>
+        </points>
+      </raidCommonalityFromPointsCurve>
     </value>
   </Operation>
 </Patch>

@@ -3,7 +3,121 @@
   <BodyPartDef>
     <defName>MechanicalArmor</defName>
     <label>armor</label>
+    <hitPoints>2000</hitPoints>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <alive>false</alive>
+  </BodyPartDef>
+
+  <BodyPartDef Abstract="True" Name="ArmoredMechanicalCentipedeRingBase">
+    <labelShort>body ring</labelShort>
     <hitPoints>1000</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>MovingLimbCore</li>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="ArmoredMechanicalCentipedeRingBase">
+    <defName>ArmoredMechanicalCentipedeBodyFirstRing</defName>
+    <label>first body ring</label>
+    <hitPoints>1000</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="ArmoredMechanicalCentipedeRingBase">
+    <defName>ArmoredMechanicalCentipedeBodySecondRing</defName>
+    <label>second body ring</label>
+    <hitPoints>1000</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="ArmoredMechanicalCentipedeRingBase">
+    <defName>ArmoredMechanicalCentipedeBodyThirdRing</defName>
+    <label>third body ring</label>
+    <hitPoints>1000</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="ArmoredMechanicalCentipedeRingBase">
+    <defName>ArmoredMechanicalCentipedeBodyFourthRing</defName>
+    <label>fourth body ring</label>
+    <hitPoints>1000</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="ArmoredMechanicalCentipedeRingBase">
+    <defName>ArmoredMechanicalCentipedeBodyFifthRing</defName>
+    <label>fifth body ring</label>
+    <hitPoints>1000</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="ArmoredMechanicalCentipedeRingBase">
+    <defName>ArmoredMechanicalCentipedeBodySixthRing</defName>
+    <label>sixth body ring</label>
+    <hitPoints>1000</hitPoints>
+  </BodyPartDef>
+
+
+
+
+  <BodyPartDef Abstract="True" Name="AdvMechanicalCentipedeRingBase">
+    <labelShort>body ring</labelShort>
+    <hitPoints>5000</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>MovingLimbCore</li>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="AdvMechanicalCentipedeRingBase">
+    <defName>AdvMechanicalCentipedeBodyFirstRing</defName>
+    <label>first body ring</label>
+    <hitPoints>5000</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="AdvMechanicalCentipedeRingBase">
+    <defName>AdvMechanicalCentipedeBodySecondRing</defName>
+    <label>second body ring</label>
+    <hitPoints>4500</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="AdvMechanicalCentipedeRingBase">
+    <defName>AdvMechanicalCentipedeBodyThirdRing</defName>
+    <label>third body ring</label>
+    <hitPoints>4000</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="AdvMechanicalCentipedeRingBase">
+    <defName>AdvMechanicalCentipedeBodyFourthRing</defName>
+    <label>fourth body ring</label>
+    <hitPoints>3500</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="AdvMechanicalCentipedeRingBase">
+    <defName>AdvMechanicalCentipedeBodyFifthRing</defName>
+    <label>fifth body ring</label>
+    <hitPoints>3000</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="AdvMechanicalCentipedeRingBase">
+    <defName>AdvMechanicalCentipedeBodySixthRing</defName>
+    <label>sixth body ring</label>
+    <hitPoints>2500</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>AdvMechanicalHead</defName>
+    <label>head</label>
+    <hitPoints>3000</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <solid>true</solid>
     <bleedRate>0</bleedRate>
