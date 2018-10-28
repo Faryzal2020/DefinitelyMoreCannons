@@ -5,7 +5,7 @@
     <graphicData>
       <texPath>Things/Building/MannedMark1Howitzer</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(11,11)</drawSize>
+      <drawSize>(10,10)</drawSize>
       <damageData>
         <rect>(0.38,0.2,0.56375,0.8)</rect>
         <cornerTL>Damage/Corner</cornerTL>
@@ -21,7 +21,7 @@
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <stealable>false</stealable>
     <rotatable>true</rotatable>
-    <size>(3,3)</size>
+    <size>(4,4)</size>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <fillPercent>0.4</fillPercent>
@@ -127,7 +127,7 @@
     <building>
       <turretGunDef>288mmHowitzer_Turret</turretGunDef>
       <turretTopGraphicPath>Things/Building/MannedMark1Howitzer_Top</turretTopGraphicPath>
-      <turretTopDrawSize>11</turretTopDrawSize>
+      <turretTopDrawSize>10</turretTopDrawSize>
       <buildingTags>
         <li>Artillery_BaseDestroyer</li>
       </buildingTags>

@@ -10,7 +10,7 @@
     <statBases>
       <MoveSpeed>1.3</MoveSpeed>
       <ArmorRating_Blunt>1</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+      <ArmorRating_Sharp>1</ArmorRating_Sharp>
     </statBases>
     <tools>
       <li>

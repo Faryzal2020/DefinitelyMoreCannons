@@ -3,7 +3,7 @@
   <BodyPartDef>
     <defName>MechanicalArmor</defName>
     <label>armor</label>
-    <hitPoints>500</hitPoints>
+    <hitPoints>1000</hitPoints>
     <skinCovered>false</skinCovered>
     <solid>true</solid>
     <bleedRate>0</bleedRate>
