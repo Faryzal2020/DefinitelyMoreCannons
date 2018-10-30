@@ -101,10 +101,14 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>25</damageAmountBase>
+      <damageDef>BulletHE</damageDef>
+      <damageAmountBase>24</damageAmountBase>
       <speed>200</speed>
-      <armorPenetrationBase>0.45</armorPenetrationBase>
+      <armorPenetrationBase>0.4</armorPenetrationBase>
+      <explosionRadius>1</explosionRadius>
+      <soundExplode>MortarBomb_Explode</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
     </projectile>
   </ThingDef>
 
