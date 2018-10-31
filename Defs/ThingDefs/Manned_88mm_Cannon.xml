@@ -135,7 +135,7 @@
         <li>Artillery_BaseDestroyer</li>
       </buildingTags>
     </building>
-  	<uiIconPath>Things/Building/Security/TurretMortar_MenuIcon</uiIconPath>
+  	<uiIconPath>Things/Icons/88mmCannon_MenuIcon</uiIconPath>
   	<uiIconScale>0.9</uiIconScale>
     <!--
     <modExtensions>

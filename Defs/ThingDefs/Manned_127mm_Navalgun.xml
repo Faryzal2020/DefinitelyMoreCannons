@@ -130,12 +130,12 @@
     <building>
       <turretGunDef>127mmCannon</turretGunDef>
       <turretTopGraphicPath>Things/Building/MannedSKC34_Top</turretTopGraphicPath>
-      <turretTopDrawSize>13</turretTopDrawSize>
+      <turretTopDrawSize>14</turretTopDrawSize>
       <buildingTags>
         <li>Artillery_BaseDestroyer</li>
       </buildingTags>
     </building>
-    <uiIconPath>Things/Building/Security/TurretMortar_MenuIcon</uiIconPath>
+    <uiIconPath>Things/Icons/127mmNaval_MenuIcon</uiIconPath>
     <uiIconScale>0.9</uiIconScale>
     <!--
     <modExtensions>
@@ -155,10 +155,10 @@
       <li>Artillery_BaseDestroyer</li>
     </weaponTags>
     <statBases>
-      <AccuracyTouch>0.4</AccuracyTouch>
-      <AccuracyShort>0.65</AccuracyShort>
-      <AccuracyMedium>0.70</AccuracyMedium>
-      <AccuracyLong>0.75</AccuracyLong>
+      <AccuracyTouch>0.9</AccuracyTouch>
+      <AccuracyShort>0.95</AccuracyShort>
+      <AccuracyMedium>0.99</AccuracyMedium>
+      <AccuracyLong>0.95</AccuracyLong>
     </statBases>
     <verbs>
       <li>

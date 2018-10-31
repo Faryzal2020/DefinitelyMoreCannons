@@ -35,7 +35,7 @@
     <tickerType>Normal</tickerType>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
-    <specialDisplayRadius>1000</specialDisplayRadius>
+    <specialDisplayRadius>90</specialDisplayRadius>
 		<costStuffCount>50</costStuffCount>
     <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
     <costList>
@@ -134,7 +134,7 @@
         <li>Artillery_BaseDestroyer</li>
       </buildingTags>
     </building>
-  	<uiIconPath>Things/Building/Security/TurretMortar_MenuIcon</uiIconPath>
+  	<uiIconPath>Things/Icons/75mmCannon_MenuIcon</uiIconPath>
   	<uiIconScale>0.9</uiIconScale>
     <!--
     <modExtensions>

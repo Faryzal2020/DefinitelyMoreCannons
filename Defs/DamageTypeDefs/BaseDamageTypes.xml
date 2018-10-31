@@ -89,11 +89,31 @@
   <DamageDef ParentName="BaseHEShellDamage">
     <defName>120mmHEBullet</defName>
     <label>bullet</label>
-    <defaultDamage>400</defaultDamage>
+    <defaultDamage>500</defaultDamage>
     <minDamageToFragment>50</minDamageToFragment>
     <deathMessage>{0} has died from an explosion.</deathMessage>
     <defaultStoppingPower>1</defaultStoppingPower>
     <defaultArmorPenetration>0.5</defaultArmorPenetration>
+  </DamageDef>
+
+  <DamageDef ParentName="BaseHEShellDamage">
+    <defName>J127mmHEBullet</defName>
+    <label>bullet</label>
+    <defaultDamage>420</defaultDamage>
+    <minDamageToFragment>50</minDamageToFragment>
+    <deathMessage>{0} has died from an explosion.</deathMessage>
+    <defaultStoppingPower>1</defaultStoppingPower>
+    <defaultArmorPenetration>0.52</defaultArmorPenetration>
+  </DamageDef>
+
+  <DamageDef ParentName="BaseHEShellDamage">
+    <defName>150mmHEBullet</defName>
+    <label>bullet</label>
+    <defaultDamage>550</defaultDamage>
+    <minDamageToFragment>60</minDamageToFragment>
+    <deathMessage>{0} has died from an explosion.</deathMessage>
+    <defaultStoppingPower>1</defaultStoppingPower>
+    <defaultArmorPenetration>0.9</defaultArmorPenetration>
   </DamageDef>
 
     <!-- AP Shells -->
@@ -105,6 +125,7 @@
     <deathMessage>{0} has been shot to death.</deathMessage>
     <hediff>Gunshot</hediff>
     <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <defaultArmorPenetration>0.72</defaultArmorPenetration>
     <defaultStoppingPower>0.8</defaultStoppingPower>
     <impactSoundType>Bullet</impactSoundType>
     <armorCategory>Sharp</armorCategory>

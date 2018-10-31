@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<ThingDef Name="Base15cmSIGBuilding" ParentName="BuildingBase" Abstract="True">
+
+<ThingDef Name="Base150mmCannonBuilding" ParentName="BuildingBase" Abstract="True">
     <thingClass>Building_TurretGun</thingClass>
     <graphicData>
-      <texPath>Things/Building/MannedSig33</texPath>
+      <texPath>Things/Building/Manned15cmKC36</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(11,11)</drawSize>
+      <drawSize>(16,16)</drawSize>
       <damageData>
-        <rect>(0.38,0.2,0.56375,0.8)</rect>
-        <cornerTL>Damage/Corner</cornerTL>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
       </damageData>
       <shadowData>
-        <volume>(2,1.5,2)</volume>
+        <volume>(3.5,2.2,3.5)</volume>
         <offset>(0,0,0)</offset>
       </shadowData>
     </graphicData>
     <minifiedDef>MinifiedThing</minifiedDef>
     <altitudeLayer>Building</altitudeLayer>
     <hasInteractionCell>True</hasInteractionCell>
-    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <interactionCellOffset>(0,0,-3)</interactionCellOffset>
     <stealable>false</stealable>
     <rotatable>true</rotatable>
-    <size>(3,3)</size>
+    <size>(6,6)</size>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <fillPercent>0.4</fillPercent>
@@ -34,31 +34,39 @@
     <tickerType>Normal</tickerType>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
+    <specialDisplayRadius>1000</specialDisplayRadius>
     <costStuffCount>50</costStuffCount>
-    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <costList>
-      <Steel>1000</Steel>
-      <ComponentIndustrial>5</ComponentIndustrial>
+      <Steel>3400</Steel>
+      <Plasteel>400</Plasteel>
+      <ComponentSpacer>10</ComponentSpacer>
     </costList>
     <inspectorTabs>
       <li>ITab_Shells</li>
     </inspectorTabs>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>2500</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
       <li Class="CompProperties_Mannable">
         <manWorkType>Violent</manWorkType>
       </li>
     </comps>
     <statBases>
-      <MaxHitPoints>500</MaxHitPoints>
+      <MaxHitPoints>5000</MaxHitPoints>
       <Flammability>0.7</Flammability>
-      <WorkToBuild>4500</WorkToBuild>
-      <Mass>1800</Mass>
+      <WorkToBuild>20000</WorkToBuild>
+      <Mass>21000</Mass>
       <Beauty>-10</Beauty>
     </statBases>
     <building>
-      <turretBurstWarmupTime>5.0</turretBurstWarmupTime>
-      <turretBurstCooldownTime>30.0</turretBurstCooldownTime>
+      <turretBurstWarmupTime>2.0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>16.0</turretBurstCooldownTime>
       <buildingTags>
         <li>Artillery</li>
       </buildingTags>
@@ -68,12 +76,12 @@
       <li>PlaceWorker_TurretTop</li>
     </placeWorkers>
     <researchPrerequisites>
-      <li>sIG33Howitzer</li>
+      <li>150mmNaval</li>
     </researchPrerequisites>
     <uiIconScale>1.1</uiIconScale>
   </ThingDef>
 
-  <ThingDef Name="Base15cmSIGWeapon" Abstract="True">
+  <ThingDef Name="Base150mmCannonWeapon" Abstract="True">
     <category>Item</category>
     <thingClass>ThingWithComps</thingClass>
     <label>artillery error</label>
@@ -97,14 +105,14 @@
       <fixedStorageSettings>
         <filter>
           <categories>
-            <li>15cmSIGShells</li>
+            <li>150mmCannonShells</li>
           </categories>
         </filter>
       </fixedStorageSettings>
       <defaultStorageSettings>
         <filter>
           <categories>
-            <li>15cmSIGShells</li>
+            <li>150mmCannonShells</li>
           </categories>
           <disallowedThingDefs>
           </disallowedThingDefs>
@@ -113,54 +121,69 @@
     </building>
   </ThingDef>
 
-  <ThingDef ParentName="Base15cmSIGBuilding">
-    <defName>Turret_15cmSIG</defName>
-    <label>15cm_Howitzer</label>
-    <description>A manned 15cm Howitzer cannon based on schweres Infanterie Geschütz 33, able to shoot over walls, 100m max range, 40 seconds reload.</description>
+  <ThingDef ParentName="Base150mmCannonBuilding">
+    <defName>Turret_150mmCannon</defName>
+    <label>150mm_cannon</label>
+    <description>A manned 150mm Naval gun based on the German KC/36 That were used in the German "Narvik" class destroyers. Shoots HE shells, 20 sec reload, 1000m Max Range. This cannon uses a manual loading system.</description>
     <comps>
       <li Class="CompProperties_Explosive">
-        <explosiveRadius>3.0</explosiveRadius>
+        <explosiveRadius>5</explosiveRadius>
         <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
       </li>
     </comps>
     <designationHotKey>Misc4</designationHotKey>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <building>
-      <turretGunDef>15cmSIG33_Turret</turretGunDef>
-      <turretTopGraphicPath>Things/Building/MannedSig33_Top</turretTopGraphicPath>
-      <turretTopDrawSize>11</turretTopDrawSize>
+      <turretGunDef>150mmCannon</turretGunDef>
+      <turretTopGraphicPath>Things/Building/Manned15cmKC36_Top</turretTopGraphicPath>
+      <turretTopDrawSize>18</turretTopDrawSize>
       <buildingTags>
         <li>Artillery_BaseDestroyer</li>
       </buildingTags>
     </building>
-  <uiIconPath>Things/Icons/150mmHowitzer_MenuIcon</uiIconPath>
-  <uiIconScale>0.9</uiIconScale>
+    <uiIconPath>Things/Icons/150mmNaval_MenuIcon</uiIconPath>
+    <uiIconScale>0.9</uiIconScale>
+    <!--
+    <modExtensions>
+        <li Class="TurretExtensions.TurretFrameworkExtension">
+            <useMannerShootingAccuracy>true</useMannerShootingAccuracy>
+            <useMannerAimingDelayFactor>true</useMannerAimingDelayFactor>
+        </li>
+    </modExtensions>
+    -->
   </ThingDef>
   
-  <ThingDef ParentName="Base15cmSIGWeapon">
-    <defName>15cmSIG33_Turret</defName>
-    <label>15cm_Howitzer</label>
-    <description>A manned 15cm Howitzer cannon based on schweres Infanterie Geschütz 33, able to shoot over walls, 40 seconds reload.</description>
+  <ThingDef ParentName="Base150mmCannonWeapon">
+    <defName>150mmCannon</defName>
+    <label>150mm_cannon</label>
+    <description>A 150mm cannon that based on an ancient naval gun.</description>
     <weaponTags>
       <li>Artillery_BaseDestroyer</li>
     </weaponTags>
+    <statBases>
+      <AccuracyTouch>0.9</AccuracyTouch>
+      <AccuracyShort>0.95</AccuracyShort>
+      <AccuracyMedium>0.89</AccuracyMedium>
+      <AccuracyLong>0.75</AccuracyLong>
+    </statBases>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
         <hasStandardCommand>true</hasStandardCommand>
         <warmupTime>2.0</warmupTime>
-        <forcedMissRadius>2</forcedMissRadius>
         <requireLineOfSight>false</requireLineOfSight>
-        <minRange>15</minRange>
-        <range>100</range>
+        <minRange>20</minRange>
+        <range>1000</range>
         <burstShotCount>1</burstShotCount>
-        <soundCast>15cm_Howitzer_Shoot</soundCast>
-        <muzzleFlashScale>25</muzzleFlashScale>
+        <soundCast>150mm_Cannon_Shoot</soundCast>
+        <muzzleFlashScale>60</muzzleFlashScale>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
       </li>
     </verbs>
   </ThingDef>
+
 </Defs>

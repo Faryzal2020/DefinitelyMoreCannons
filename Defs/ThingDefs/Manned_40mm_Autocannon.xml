@@ -21,7 +21,7 @@
       </shadowData>
     </graphicData>
     <minifiedDef>MinifiedThing</minifiedDef>
-    <uiIconPath>Things/Building/Security/TurretAutocannon_MenuIcon</uiIconPath>
+    <uiIconPath>Things/Icons/40mmAutocannon_MenuIcon</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-2)</interactionCellOffset>
@@ -59,7 +59,7 @@
         <factorByDifficulty>false</factorByDifficulty>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <outOfFuelMessage>Cannot shoot: Out of ammo</outOfFuelMessage>
-        <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+        <fuelIconPath>UI/Overlays/Ammo</fuelIconPath>
       </li>
     </comps>
     <passability>PassThroughOnly</passability>

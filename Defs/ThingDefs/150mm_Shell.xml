@@ -2,59 +2,59 @@
 <Defs>
 	<!--=============== Base Shells ===============-->
 
-  <ThingDef Name="288mmShellBase" ParentName="ResourceBase" Abstract="True">
+	<ThingDef Name="150mmHECannonShellBase" ParentName="ResourceBase" Abstract="True">
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <tickerType>Normal</tickerType>
-    <stackLimit>8</stackLimit>
+    <stackLimit>10</stackLimit>
     <techLevel>Industrial</techLevel>
     <statBases>
-      <MaxHitPoints>110</MaxHitPoints>
-      <MarketValue>170</MarketValue>
+      <MaxHitPoints>120</MaxHitPoints>
+      <MarketValue>150</MarketValue>
       <Mass>30</Mass>
       <Flammability>1.5</Flammability>
       <DeteriorationRate>0.2</DeteriorationRate>
     </statBases>
     <thingCategories>
-      <li>288mmShells</li>
+      <li>150mmCannonShells</li>
     </thingCategories>
     <tradeTags>
-      <li>288mmShell</li>
+      <li>150mmCannonShell</li>
     </tradeTags>
   </ThingDef>
 
-  <ThingDef Name="Makeable288mmShellBase" ParentName="288mmShellBase" Abstract="True">
+  <ThingDef Name="Makeable150mmHECannonShellBase" ParentName="150mmHECannonShellBase" Abstract="True">
     <recipeMaker>
       <workSpeedStat>SmithingSpeed</workSpeedStat>
       <effectWorking>Cook</effectWorking>
       <soundWorking>Recipe_Machining</soundWorking>
-      <workAmount>2400</workAmount>
+      <workAmount>5200</workAmount>
       <targetCountAdjustment>5</targetCountAdjustment>
       <workSkill>Crafting</workSkill>
       <recipeUsers>
         <li>TableMachining</li>
       </recipeUsers>
       <skillRequirements>
-        <Crafting>5</Crafting>
+        <Crafting>6</Crafting>
       </skillRequirements>
     </recipeMaker>
   </ThingDef>
 
-  <!--=============== 288mm HE Shell ===============-->
+  <!--=============== 150 HE Shell ===============-->
 
-  <ThingDef ParentName="Makeable288mmShellBase">
-    <defName>288mm_HighExplosive</defName>
-    <label>9.2 Inch HE Howitzer shell</label>
-    <description>A 9.2 Inch high explosive howitzer shell.</description>
+  <ThingDef ParentName="Makeable150mmHECannonShellBase">
+    <defName>150CannonShell_HighExplosive</defName>
+    <label>150mm HE Cannon shell</label>
+    <description>A 150mm high explosive cannon shell.</description>
     <graphicData>
-      <texPath>Things/Projectile/288HE</texPath>
+      <texPath>Things/Projectile/150HE</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <comps>
       <li Class="CompProperties_Explosive">
-        <explosiveRadius>5</explosiveRadius>
+        <explosiveRadius>3</explosiveRadius>
         <explosiveDamageType>Bomb</explosiveDamageType>
-        <explosiveExpandPerStackcount>0.6</explosiveExpandPerStackcount>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
         <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
         <wickTicks>
           <min>30</min>
@@ -62,28 +62,28 @@
         </wickTicks>
       </li>
     </comps>
-    <projectileWhenLoaded>288mmBullet_Shell_HighExplosive</projectileWhenLoaded>
+    <projectileWhenLoaded>150CannonBullet_Shell_HighExplosive</projectileWhenLoaded>
     <costList>
-      <Steel>80</Steel>
-      <Chemfuel>40</Chemfuel>
+      <Steel>70</Steel>
+      <Chemfuel>30</Chemfuel>
     </costList>
   </ThingDef>
   
   <ThingDef ParentName="BaseBullet">
-    <defName>288mmBullet_Shell_HighExplosive</defName>
-    <label>9.2 Inch shell</label>
+    <defName>150CannonBullet_Shell_HighExplosive</defName>
+    <label>HE Shell</label>
     <graphicData>
-      <texPath>Things/Projectile/ShellHighExplosive</texPath>
+      <texPath>Things/Projectile/LargeShell</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
     <thingClass>Projectile_Explosive</thingClass>
     <projectile>
-      <damageDef>288mmHEBullet</damageDef>
+      <damageDef>150mmHEBullet</damageDef>
       <!-- damage amount is the damage def default -->
-      <speed>80</speed>
-      <explosionRadius>7</explosionRadius>
-      <flyOverhead>True</flyOverhead>
+      <speed>290</speed>
+      <explosionRadius>3</explosionRadius>
+      <flyOverhead>true</flyOverhead>
       <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
       <soundExplode>MortarBomb_Explode</soundExplode>
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>

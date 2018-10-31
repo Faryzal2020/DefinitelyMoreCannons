@@ -165,7 +165,7 @@
     <defName>NavalGuns</defName>
     <label>naval guns</label>
     <description>Build large naval guns that are equipped with autoloading system and has armored casing.</description>
-    <baseCost>5000</baseCost>
+    <baseCost>3000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>HeavyAutocannons</li>
@@ -179,7 +179,7 @@
     <defName>127mmNaval</defName>
     <label>127mm naval gun</label>
     <description>A manned single 127mm naval gun turret that shoots HE shells over long distances.</description>
-    <baseCost>5000</baseCost>
+    <baseCost>2000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>NavalGuns</li>
@@ -192,7 +192,7 @@
     <defName>100mmNaval</defName>
     <label>100mm naval gun</label>
     <description>A fast-firing manned single 100mm naval gun turret that uses a belt-feed ammo consists of 100 shells.</description>
-    <baseCost>5000</baseCost>
+    <baseCost>3500</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>127mmNaval</li>
@@ -205,13 +205,54 @@
     <defName>120mmNaval</defName>
     <label>120mm naval gun</label>
     <description>A fast-firing manned single 120mm naval gun turret that uses a belt-feed ammo consists of 52 shells.</description>
-    <baseCost>5000</baseCost>
+    <baseCost>4000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>100mmNaval</li>
     </prerequisites>
     <researchViewX>8.2</researchViewX>
     <researchViewY>3</researchViewY>
+    <tab>DefinitelyMoreCannons</tab>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>HeavyNavalGuns</defName>
+    <label>naval guns</label>
+    <description>Build large caliber armored heavy naval guns that can shoot over walls with relatively high fire rate.</description>
+    <baseCost>4000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>NavalGuns</li>
+      <li>Howitzers</li>
+    </prerequisites>
+    <researchViewX>9.15</researchViewX>
+    <researchViewY>0</researchViewY>
+    <tab>DefinitelyMoreCannons</tab>
+  </ResearchProjectDef>  
+  <ResearchProjectDef>
+    <defName>150mmNaval</defName>
+    <label>150mm naval gun</label>
+    <description>A manned single mounted 15cm naval gun turret that can shoot over walls, has a relatively high fire rate and very durable.</description>
+    <baseCost>3500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>HeavyNavalGuns</li>
+    </prerequisites>
+    <researchViewX>10.15</researchViewX>
+    <researchViewY>1</researchViewY>
+    <tab>DefinitelyMoreCannons</tab>
+  </ResearchProjectDef>  
+  <ResearchProjectDef>
+    <defName>Twin127mmNaval</defName>
+    <label>Twin 127mm naval gun</label>
+    <description>A manned dual mounted 127mm naval gun turret that can shoot over walls, has a relatively high fire rate and very durable.</description>
+    <baseCost>4200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>150mmNaval</li>
+    </prerequisites>
+    <researchViewX>10.15</researchViewX>
+    <researchViewY>2</researchViewY>
     <tab>DefinitelyMoreCannons</tab>
   </ResearchProjectDef>
 

@@ -42,4 +42,10 @@
       <parent>Manufactured</parent>
       <iconPath>UI/Icons/ThingCategories/MortarShells</iconPath>
     </ThingCategoryDef>
+    <ThingCategoryDef>
+      <defName>150mmCannonShells</defName>
+      <label>150mm cannon shells</label>
+      <parent>Manufactured</parent>
+      <iconPath>UI/Icons/ThingCategories/MortarShells</iconPath>
+    </ThingCategoryDef>
 </Defs>

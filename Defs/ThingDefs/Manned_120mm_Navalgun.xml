@@ -9,7 +9,7 @@
     <graphicData>
       <texPath>Things/Building/MannedTAK120</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(14, 14)</drawSize>
+      <drawSize>(13, 13)</drawSize>
       <damageData>
         <rect>(0.2,0.2,0.6,0.6)</rect>
       </damageData>
@@ -19,7 +19,7 @@
       </shadowData>
     </graphicData>
     <minifiedDef>MinifiedThing</minifiedDef>
-    <uiIconPath>Things/Building/Security/TurretAutocannon_MenuIcon</uiIconPath>
+    <uiIconPath>Things/Icons/120mmNaval_MenuIcon</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-3)</interactionCellOffset>
@@ -62,7 +62,7 @@
         <factorByDifficulty>false</factorByDifficulty>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <outOfFuelMessage>Cannot shoot: Out of ammo</outOfFuelMessage>
-        <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+        <fuelIconPath>UI/Overlays/Ammo</fuelIconPath>
       </li>
     </comps>
     <passability>PassThroughOnly</passability>
@@ -85,7 +85,7 @@
       <turretGunDef>Gun_120mmNavalgunTurret</turretGunDef>
       <turretBurstCooldownTime>2</turretBurstCooldownTime>
       <turretTopGraphicPath>Things/Building/MannedTAK120_Top</turretTopGraphicPath>
-      <turretTopDrawSize>17</turretTopDrawSize>
+      <turretTopDrawSize>16</turretTopDrawSize>
     </building>
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
@@ -134,10 +134,10 @@
     <tradeability>None</tradeability>
     <useHitPoints>false</useHitPoints>
     <statBases>
-      <AccuracyTouch>0.9</AccuracyTouch>
-      <AccuracyShort>0.95</AccuracyShort>
-      <AccuracyMedium>0.99</AccuracyMedium>
-      <AccuracyLong>0.95</AccuracyLong>
+      <AccuracyTouch>0.8</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.9</AccuracyMedium>
+      <AccuracyLong>0.85</AccuracyLong>
       <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
       <DeteriorationRate>0</DeteriorationRate>
       <Mass>40</Mass>
@@ -171,8 +171,8 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>TAKShell</defName>
-    <label>120mm AP Shell</label>
-    <description>A naval 120mm High Explosive shell.</description>
+    <label>120mm APHE Shell</label>
+    <description>A naval 120mm Armour Piercing High Explosive shell.</description>
     <graphicData>
       <texPath>Things/Projectile/120HE</texPath>
       <graphicClass>Graphic_Single</graphicClass>

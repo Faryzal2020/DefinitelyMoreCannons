@@ -20,7 +20,7 @@
       </shadowData>
     </graphicData>
     <minifiedDef>MinifiedThing</minifiedDef>
-    <uiIconPath>Things/Building/Security/TurretAutocannon_MenuIcon</uiIconPath>
+    <uiIconPath>Things/Icons/6PdrCannon_MenuIcon</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
     <stealable>false</stealable>
     <rotatable>true</rotatable>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="BuildingBase" Name="100mmNavalgun">
-    <defName>100mmNavalgun</defName>
-    <label>100mm naval gun</label>
-    <description>A manned 100mm Model 53 Naval gun that were used in the French Navy in the Earth 20th century. Uses belt-feed ammunition with capacity of 100 rounds. Consumes 2000W of power for its electric-powered aiming controls, 500m max range.</description>
+  <ThingDef ParentName="BuildingBase" Name="Twin127mmNavalgun">
+    <defName>Twin127mmNavalgun</defName>
+    <label>Twin127mm naval gun</label>
+    <description>A manned Double mounted 127mm Naval gun based on Japanese 12.7mm (5") Type 5 Naval gun. It has an automatic ammunition feeder system that takes the ammunitions from an ammunition storage below it (in Rimworld its underground), the storage can hold 80 shells. Consumes 3800W of power for its electric-powered aiming controls and loading systems, 800m max range.</description>
     <thingClass>Building_TurretGun</thingClass>
     <graphicData>
-      <texPath>Things/Building/Manned100mmNaval</texPath>
+      <texPath>Things/Building/MannedTwin127mmNaval</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(8, 8)</drawSize>
+      <drawSize>(11, 11)</drawSize>
       <damageData>
         <rect>(0.2,0.2,0.6,0.6)</rect>
       </damageData>
@@ -19,18 +19,18 @@
       </shadowData>
     </graphicData>
     <minifiedDef>MinifiedThing</minifiedDef>
-    <uiIconPath>Things/Icons/100mmNaval_MenuIcon</uiIconPath>
+    <uiIconPath>Things/Icons/T127mmNaval_MenuIcon</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-3)</interactionCellOffset>
     <stealable>false</stealable>
     <rotatable>true</rotatable>
-    <size>(5,5)</size>
+    <size>(6,6)</size>
     <statBases>
-      <MaxHitPoints>2600</MaxHitPoints>
+      <MaxHitPoints>7200</MaxHitPoints>
       <Flammability>0.7</Flammability>
-      <WorkToBuild>17000</WorkToBuild>
-      <Mass>14000</Mass>
+      <WorkToBuild>26000</WorkToBuild>
+      <Mass>30000</Mass>
       <Beauty>-20</Beauty>
     </statBases>
     <tickerType>Normal</tickerType>
@@ -38,21 +38,21 @@
       <li Class="CompProperties_Forbiddable"/>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>2000</basePowerConsumption>
+        <basePowerConsumption>3800</basePowerConsumption>
       </li>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Mannable">
         <manWorkType>Violent</manWorkType>
       </li>
       <li Class="CompProperties_Refuelable">
-        <fuelLabel>Ammo Belt</fuelLabel>
+        <fuelLabel>Ammo Rack</fuelLabel>
         <fuelGizmoLabel>Ammo</fuelGizmoLabel>
         <fuelFilter>
           <thingDefs>
-            <li>OneHundredmmShell</li>
+            <li>127CannonShell_HighExplosive</li>
           </thingDefs>
         </fuelFilter>
-        <fuelCapacity>100</fuelCapacity>
+        <fuelCapacity>80</fuelCapacity>
         <initialFuelPercent>0</initialFuelPercent>
         <autoRefuelPercent>0.5</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
@@ -73,33 +73,34 @@
     </thingCategories>
     <hasTooltip>true</hasTooltip>
     <costList>
-      <Steel>3000</Steel>
-      <Plasteel>200</Plasteel>
-      <ComponentSpacer>3</ComponentSpacer>
+      <Steel>6000</Steel>
+      <Plasteel>700</Plasteel>
+      <ComponentSpacer>18</ComponentSpacer>
     </costList>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
-    <specialDisplayRadius>33.9</specialDisplayRadius>
-    <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+    <specialDisplayRadius>800</specialDisplayRadius>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <building>
-      <turretGunDef>Gun_100mmNavalgunTurret</turretGunDef>
-      <turretBurstCooldownTime>2</turretBurstCooldownTime>
-      <turretTopGraphicPath>Things/Building/Manned100mmNaval_Top</turretTopGraphicPath>
-      <turretTopDrawSize>10</turretTopDrawSize>
+      <turretGunDef>Gun_Twin127mmNavalgunTurret</turretGunDef>
+      <turretBurstCooldownTime>14</turretBurstCooldownTime>
+      <turretTopGraphicPath>Things/Building/MannedTwin127mmNaval_Top</turretTopGraphicPath>
+      <turretTopDrawSize>13</turretTopDrawSize>
     </building>
     <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
       <li>PlaceWorker_TurretTop</li>
     </placeWorkers>
     <designationHotKey>Misc3</designationHotKey>
     <researchPrerequisites>
-      <li>100mmNaval</li>
+      <li>Twin127mmNaval</li>
     </researchPrerequisites>
     <uiIconScale>0.95</uiIconScale>
   </ThingDef>
 
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_100mmNavalgunTurret</defName>
-    <label>100mm naval gun shell</label>
+    <defName>Bullet_Twin127mmNavalgunTurret</defName>
+    <label>Twin127mm naval gun shell</label>
     <graphicData>
       <texPath>Things/Projectile/LargeShell</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -107,18 +108,20 @@
     </graphicData>
     <thingClass>Projectile_Explosive</thingClass>
     <projectile>
-      <damageDef>100mmAP</damageDef>
-      <explosionRadius>0.5</explosionRadius>
+      <damageDef>J127mmHEBullet</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>200</speed>
+      <explosionRadius>2</explosionRadius>
+      <flyOverhead>true</flyOverhead>
       <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
       <soundExplode>MortarBomb_Explode</soundExplode>
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
       <soundAmbient>MortarRound_Ambient</soundAmbient>
-      <speed>350</speed>
     </projectile>
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanGun">
-    <defName>Gun_100mmNavalgunTurret</defName>
+    <defName>Gun_Twin127mmNavalgunTurret</defName>
     <label>autocannon</label>
     <description>A self-loading large-bore cannon designed to attach to a turret.</description>
     <graphicData>
@@ -136,7 +139,7 @@
       <AccuracyShort>0.85</AccuracyShort>
       <AccuracyMedium>0.9</AccuracyMedium>
       <AccuracyLong>0.85</AccuracyLong>
-      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>14</RangedWeapon_Cooldown>
       <DeteriorationRate>0</DeteriorationRate>
       <Mass>40</Mass>
       <Flammability>0</Flammability>
@@ -148,15 +151,17 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_100mmNavalgunTurret</defaultProjectile>
+        <requireLineOfSight>false</requireLineOfSight>
+        <defaultProjectile>Bullet_Twin127mmNavalgunTurret</defaultProjectile>
         <warmupTime>1</warmupTime>
-        <minRange>14</minRange>
-        <range>500</range>
         <forcedMissRadius>1</forcedMissRadius>
-        <burstShotCount>1</burstShotCount>
-        <soundCast>100mm_Cannon_Shoot</soundCast>
+        <minRange>15</minRange>
+        <range>800</range>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <burstShotCount>2</burstShotCount>
+        <soundCast>127mm_Cannon_Shoot</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>35</muzzleFlashScale>
+        <muzzleFlashScale>50</muzzleFlashScale>
         <consumeFuelPerShot>1</consumeFuelPerShot>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
@@ -168,21 +173,21 @@
   <!--=============== Ammunition Item ===============-->
 
   <ThingDef ParentName="ResourceBase">
-    <defName>OneHundredmmShell</defName>
-    <label>100mm APHE Shell</label>
-    <description>A 100mm Armour Piercing High Explosive (APHE) shell.</description>
+    <defName>OnetwentysevenShell</defName>
+    <label>Japanese 127mm APHE Shell</label>
+    <description>A naval 127mm Armour Piercing High Explosive shell.</description>
     <graphicData>
-      <texPath>Things/Projectile/100APCBC</texPath>
+      <texPath>Things/Projectile/127HE</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.90</drawSize>
     </graphicData>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
-    <stackLimit>15</stackLimit>
+    <stackLimit>10</stackLimit>
     <statBases>
-      <MaxHitPoints>110</MaxHitPoints>
-      <MarketValue>70</MarketValue>
-      <Mass>10</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>100</MarketValue>
+      <Mass>22</Mass>
       <Flammability>1</Flammability>
       <DeteriorationRate>0.2</DeteriorationRate>
     </statBases>

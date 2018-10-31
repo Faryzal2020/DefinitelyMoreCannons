@@ -78,6 +78,7 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
+      <flyOverhead>false</flyOverhead>
       <damageAmountBase>200</damageAmountBase>
       <speed>300</speed>
       <armorPenetrationBase>0.6</armorPenetrationBase>

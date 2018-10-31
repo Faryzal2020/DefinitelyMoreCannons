@@ -21,7 +21,7 @@
       </shadowData>
     </graphicData>
     <minifiedDef>MinifiedThing</minifiedDef>
-    <uiIconPath>Things/Building/Security/TurretAutocannon_MenuIcon</uiIconPath>
+    <uiIconPath>Things/Icons/37mmAutocannon_MenuIcon</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-2)</interactionCellOffset>
@@ -59,7 +59,7 @@
         <factorByDifficulty>false</factorByDifficulty>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <outOfFuelMessage>Cannot shoot: Out of ammo</outOfFuelMessage>
-        <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+        <fuelIconPath>UI/Overlays/Ammo</fuelIconPath>
       </li>
     </comps>
     <passability>PassThroughOnly</passability>
@@ -100,6 +100,7 @@
       <texPath>Things/Projectile/Bullet_Big</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
     <projectile>
       <damageDef>BulletHE</damageDef>
       <damageAmountBase>24</damageAmountBase>
@@ -148,6 +149,7 @@
         <minRange>3</minRange>
         <range>50</range>
         <burstShotCount>1</burstShotCount>
+        <forcedMissRadius>0.1</forcedMissRadius>
         <soundCast>37mm_Autocannon_Shoot</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>15</muzzleFlashScale>

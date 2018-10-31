@@ -64,6 +64,7 @@
       </buildingTags>
     </building>
     <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
       <li>PlaceWorker_TurretTop</li>
     </placeWorkers>
     <researchPrerequisites>
@@ -132,7 +133,7 @@
         <li>Artillery_BaseDestroyer</li>
       </buildingTags>
     </building>
-  <uiIconPath>Things/Building/Security/TurretMortar_MenuIcon</uiIconPath>
+  <uiIconPath>Things/Icons/288mmHowitzer_MenuIcon</uiIconPath>
   <uiIconScale>0.9</uiIconScale>
   </ThingDef>
   
