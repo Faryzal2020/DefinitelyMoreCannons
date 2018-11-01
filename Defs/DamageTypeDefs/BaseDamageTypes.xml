@@ -89,7 +89,7 @@
   <DamageDef ParentName="BaseHEShellDamage">
     <defName>120mmHEBullet</defName>
     <label>bullet</label>
-    <defaultDamage>500</defaultDamage>
+    <defaultDamage>400</defaultDamage>
     <minDamageToFragment>50</minDamageToFragment>
     <deathMessage>{0} has died from an explosion.</deathMessage>
     <defaultStoppingPower>1</defaultStoppingPower>
@@ -99,7 +99,7 @@
   <DamageDef ParentName="BaseHEShellDamage">
     <defName>J127mmHEBullet</defName>
     <label>bullet</label>
-    <defaultDamage>420</defaultDamage>
+    <defaultDamage>500</defaultDamage>
     <minDamageToFragment>50</minDamageToFragment>
     <deathMessage>{0} has died from an explosion.</deathMessage>
     <defaultStoppingPower>1</defaultStoppingPower>

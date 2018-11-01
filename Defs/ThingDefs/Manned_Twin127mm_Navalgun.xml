@@ -35,6 +35,12 @@
     </statBases>
     <tickerType>Normal</tickerType>
     <comps>
+      <li Class="DefinitelyMoreCannons.CompProperties_ChangeFiremode">
+        <valueType>percentage</valueType>
+        <speedReduce>50</speedReduce>
+        <minrangeReduce>300</minrangeReduce>
+        <maxrangeReduce>40</maxrangeReduce>
+      </li>
       <li Class="CompProperties_Forbiddable"/>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>

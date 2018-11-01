@@ -37,7 +37,7 @@
       <WorkToBuild>4000</WorkToBuild>
       <Mass>250</Mass>
       <Beauty>-10</Beauty>
-      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+      <ShootingAccuracyTurret>0.8</ShootingAccuracyTurret>
     </statBases>
     <tickerType>Normal</tickerType>
     <comps>
@@ -138,7 +138,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_AutocannonTurret</defaultProjectile>
+        <defaultProjectile>6PdrCannonBullet_Shell_ArmourPiercing</defaultProjectile>
         <warmupTime>2</warmupTime>
         <minRange>5</minRange>
         <range>70</range>

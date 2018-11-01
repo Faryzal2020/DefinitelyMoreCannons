@@ -32,6 +32,7 @@
       <WorkToBuild>17000</WorkToBuild>
       <Mass>14000</Mass>
       <Beauty>-20</Beauty>
+      <ShootingAccuracyTurret>0.9</ShootingAccuracyTurret>
     </statBases>
     <tickerType>Normal</tickerType>
     <comps>
