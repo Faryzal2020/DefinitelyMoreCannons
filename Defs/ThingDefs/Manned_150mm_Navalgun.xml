@@ -58,7 +58,7 @@
       </li>
     </comps>
     <statBases>
-      <MaxHitPoints>5000</MaxHitPoints>
+      <MaxHitPoints>10000</MaxHitPoints>
       <Flammability>0.7</Flammability>
       <WorkToBuild>20000</WorkToBuild>
       <Mass>21000</Mass>
@@ -124,10 +124,10 @@
   <ThingDef ParentName="Base150mmCannonBuilding">
     <defName>Turret_150mmCannon</defName>
     <label>150mm_cannon</label>
-    <description>A manned 150mm Naval gun based on the German KC/36 That were used in the German "Narvik" class destroyers. Shoots HE shells, 20 sec reload, 1000m Max Range. This cannon uses a manual loading system.</description>
+    <description>A manned 150mm Naval gun based on the German KC/36 That were used in the German "Narvik" class destroyers. Shoots HE shells, 20 sec reload, 1000m Max Range. This cannon uses a manual loading system. Explodes with radius of 3 blocks when destroyed. Because of the size, this turret cant be placed under a roof.</description>
     <comps>
       <li Class="CompProperties_Explosive">
-        <explosiveRadius>5</explosiveRadius>
+        <explosiveRadius>3</explosiveRadius>
         <explosiveDamageType>Bomb</explosiveDamageType>
         <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
       </li>

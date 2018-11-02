@@ -52,7 +52,7 @@
       </li>
     </comps>
     <statBases>
-      <MaxHitPoints>500</MaxHitPoints>
+      <MaxHitPoints>1000</MaxHitPoints>
       <Flammability>0.7</Flammability>
       <WorkToBuild>2800</WorkToBuild>
       <Mass>200</Mass>
@@ -117,12 +117,8 @@
   <ThingDef ParentName="Base6PdrCannonBuilding">
     <defName>Turret_6PdrCannon</defName>
     <label>6Pdr_cannon</label>
-    <description>A manned 6 Pounder cannon that shoots AP shells. Manual ammunition loading, 80m Max range.</description>
+    <description>A manned 6 Pounder cannon that shoots AP shells. Manual ammunition loading, 80m Max range. Doesn't explode when destroyed.</description>
     <comps>
-      <li Class="CompProperties_Explosive">
-        <explosiveRadius>3</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-      </li>
     </comps>
     <designationHotKey>Misc4</designationHotKey>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
@@ -154,9 +150,9 @@
       <li>Artillery_BaseDestroyer</li>
     </weaponTags>
     <statBases>
-      <AccuracyTouch>0.4</AccuracyTouch>
-      <AccuracyShort>0.7</AccuracyShort>
-      <AccuracyMedium>0.99</AccuracyMedium>
+      <AccuracyTouch>0.66</AccuracyTouch>
+      <AccuracyShort>0.78</AccuracyShort>
+      <AccuracyMedium>0.9</AccuracyMedium>
       <AccuracyLong>0.99</AccuracyLong>
     </statBases>
     <verbs>

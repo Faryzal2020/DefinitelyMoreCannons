@@ -4,7 +4,7 @@
   <ThingDef ParentName="BuildingBase" Name="120mmNavalgun">
     <defName>120mmNavalgun</defName>
     <label>120mm naval gun</label>
-    <description>A manned 120mm Naval gun based on Swedish 120mm/46 (4.7") TAK120 Naval gun. Uses a magazine-feed ammunition with total capacity of 52 rounds. Consumes 2500W of power for its electric-powered aiming controls, 600m max range.</description>
+    <description>A manned 120mm Naval gun based on Swedish 120mm/46 (4.7") TAK120 Naval gun. Uses a magazine-feed ammunition with total capacity of 52 rounds. Consumes 2500W of power for its electric-powered aiming controls, 600m max range. Explodes with radius of 3 blocks when destroyed.  Because of the size, this turret cant be placed under a roof.</description>
     <thingClass>Building_TurretGun</thingClass>
     <graphicData>
       <texPath>Things/Building/MannedTAK120</texPath>
@@ -27,7 +27,7 @@
     <rotatable>true</rotatable>
     <size>(6,6)</size>
     <statBases>
-      <MaxHitPoints>3200</MaxHitPoints>
+      <MaxHitPoints>8000</MaxHitPoints>
       <Flammability>0.7</Flammability>
       <WorkToBuild>24000</WorkToBuild>
       <Mass>15000</Mass>
@@ -35,6 +35,10 @@
     </statBases>
     <tickerType>Normal</tickerType>
     <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>3.0</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+      </li>
       <li Class="CompProperties_Forbiddable"/>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
@@ -88,6 +92,7 @@
       <turretTopDrawSize>16</turretTopDrawSize>
     </building>
     <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
       <li>PlaceWorker_TurretTop</li>
     </placeWorkers>
     <designationHotKey>Misc3</designationHotKey>
@@ -152,7 +157,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_120mmNavalgunTurret</defaultProjectile>
         <warmupTime>1</warmupTime>
-        <forcedMissRadius>1</forcedMissRadius>
+        <forcedMissRadius>0.1</forcedMissRadius>
         <minRange>18</minRange>
         <range>600</range>
         <burstShotCount>1</burstShotCount>

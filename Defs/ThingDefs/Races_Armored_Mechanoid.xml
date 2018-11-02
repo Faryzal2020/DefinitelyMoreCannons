@@ -19,7 +19,7 @@
     <damageMultipliers>
       <li>
         <damageDef>Bullet</damageDef>
-        <multiplier>0.3</multiplier>
+        <multiplier>0.5</multiplier>
       </li>
       <li>
         <damageDef>Bomb</damageDef>
@@ -30,40 +30,8 @@
         <multiplier>0</multiplier>
       </li>
       <li>
-        <damageDef>CannonAPBullet</damageDef>
-        <multiplier>0.7</multiplier>
-      </li>
-      <li>
-        <damageDef>75mmAPBullet</damageDef>
-        <multiplier>0.6</multiplier>
-      </li>
-      <li>
-        <damageDef>HowitzerHEBullet</damageDef>
-        <multiplier>0.5</multiplier>
-      </li>
-      <li>
-        <damageDef>150mmHEBullet</damageDef>
-        <multiplier>0.5</multiplier>
-      </li>
-      <li>
-        <damageDef>288mmHEBullet</damageDef>
-        <multiplier>0.5</multiplier>
-      </li>
-      <li>
-        <damageDef>CannonHEBullet</damageDef>
-        <multiplier>0.5</multiplier>
-      </li>
-      <li>
-        <damageDef>127mmHEBullet</damageDef>
-        <multiplier>0.5</multiplier>
-      </li>
-      <li>
-        <damageDef>120mmHEBullet</damageDef>
-        <multiplier>0.5</multiplier>
-      </li>
-      <li>
         <damageDef>100mmAP</damageDef>
-        <multiplier>0.8</multiplier>
+        <multiplier>0.7</multiplier>
       </li>
     </damageMultipliers>
   </ThingDef>
@@ -76,8 +44,8 @@
     <description>Heavy armored combat mechanoids that glide on dozens of tiny legs. This type of centipede mechanoid uses an additional external armor suit to protect against small caliber guns to medium caliber machineguns.</description>
     <statBases>
       <MoveSpeed>1.3</MoveSpeed>
-      <ArmorRating_Blunt>1.8</ArmorRating_Blunt>
-      <ArmorRating_Sharp>1.8</ArmorRating_Sharp>
+      <ArmorRating_Blunt>1.7</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.7</ArmorRating_Sharp>
     </statBases>
     <tools>
       <li>
@@ -96,7 +64,7 @@
       <thinkTreeMain>Mechanoid</thinkTreeMain>
       <body>MechanicalArmoredCentipede</body>
       <baseBodySize>4.0</baseBodySize>
-      <baseHealthScale>8</baseHealthScale>
+      <baseHealthScale>7</baseHealthScale>
       <lifeStageAges>
         <li>
           <def>MechanoidFullyFormed</def>
@@ -154,7 +122,7 @@
     <description>Superheavy armored combat mechanoids that glide on dozens of tiny legs. This particular mechanoid was built with a different kind of material. Because of the weight, its very slow, but you would need a bigger gun to kill this thing.</description>
     <statBases>
       <MoveSpeed>1</MoveSpeed>
-      <ArmorRating_Blunt>1.9</ArmorRating_Blunt>
+      <ArmorRating_Blunt>2</ArmorRating_Blunt>
       <ArmorRating_Sharp>2</ArmorRating_Sharp>
     </statBases>
     <tools>
@@ -174,7 +142,7 @@
       <thinkTreeMain>Mechanoid</thinkTreeMain>
       <body>AdvMechanicalArmoredCentipede</body>
       <baseBodySize>5.0</baseBodySize>
-      <baseHealthScale>30</baseHealthScale>
+      <baseHealthScale>10</baseHealthScale>
       <lifeStageAges>
         <li>
           <def>MechanoidFullyFormed</def>

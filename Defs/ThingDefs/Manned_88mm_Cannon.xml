@@ -66,7 +66,6 @@
       </buildingTags>
     </building>
     <placeWorkers>
-      <li>PlaceWorker_NotUnderRoof</li>
       <li>PlaceWorker_TurretTop</li>
     </placeWorkers>
     <researchPrerequisites>
@@ -118,12 +117,8 @@
   <ThingDef ParentName="Base88mmCannonBuilding">
     <defName>Turret_88mmCannon</defName>
     <label>88mm_cannon</label>
-    <description>A manned 88mm Flak cannon that shoots AP and HE shells. 11 seconds reload time, 100m max range.</description>
+    <description>A manned 88mm Flak cannon that shoots AP and HE shells. 11 seconds reload time, 100m max range. Doesn't explode when destroyed.</description>
     <comps>
-      <li Class="CompProperties_Explosive">
-        <explosiveRadius>4.5</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-      </li>
     </comps>
     <designationHotKey>Misc4</designationHotKey>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
@@ -155,10 +150,10 @@
       <li>Artillery_BaseDestroyer</li>
     </weaponTags>
     <statBases>
-      <AccuracyTouch>0.4</AccuracyTouch>
-      <AccuracyShort>0.65</AccuracyShort>
-      <AccuracyMedium>0.70</AccuracyMedium>
-      <AccuracyLong>0.75</AccuracyLong>
+      <AccuracyTouch>1</AccuracyTouch>
+      <AccuracyShort>0.96</AccuracyShort>
+      <AccuracyMedium>0.94</AccuracyMedium>
+      <AccuracyLong>0.9</AccuracyLong>
     </statBases>
     <verbs>
       <li>

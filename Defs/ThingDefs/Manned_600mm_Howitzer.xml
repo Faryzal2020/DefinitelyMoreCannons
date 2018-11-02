@@ -116,10 +116,10 @@
   <ThingDef ParentName="Base600HowitzerBuilding">
     <defName>Turret_600Howitzer</defName>
     <label>60cm_Howitzer</label>
-    <description>A manned 60cm Howitzer cannon based on "Karl Gerät" Railway Gun, shoots a massive HE shell over walls, 1km max range, 40 seconds reload.</description>
+    <description>A manned 60cm Howitzer cannon based on "Karl Gerät" Railway Gun, shoots a massive HE shell over walls, 1km max range, 40 seconds reload. Explodes with radius of 4 blocks when destroyed.</description>
     <comps>
       <li Class="CompProperties_Explosive">
-        <explosiveRadius>5.0</explosiveRadius>
+        <explosiveRadius>4.0</explosiveRadius>
         <explosiveDamageType>Bomb</explosiveDamageType>
       </li>
     </comps>

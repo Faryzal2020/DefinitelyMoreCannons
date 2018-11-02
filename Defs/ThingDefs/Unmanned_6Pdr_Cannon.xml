@@ -4,7 +4,7 @@
 <ThingDef ParentName="BuildingBase" Name="BaseU6PdrCannonBuilding">
     <defName>Turret_U6PdrCannon</defName>
     <label>U6Pdr_Cannon</label>
-    <description>An unmanned 6 Pounder cannon that shoots AP shells. Manual ammunition loading, 70m Max range.</description>
+    <description>An unmanned 6 Pounder cannon that shoots AP shells. Manual ammunition loading, 70m Max range. Explodes with radius of 2 blocks when destroyed.</description>
     <thingClass>Building_TurretGun</thingClass>
     <graphicData>
       <texPath>Things/Building/Unmanned6Pdr</texPath>
@@ -32,7 +32,7 @@
       <li>Metallic</li>
     </stuffCategories>
     <statBases>
-      <MaxHitPoints>500</MaxHitPoints>
+      <MaxHitPoints>1000</MaxHitPoints>
       <Flammability>0.7</Flammability>
       <WorkToBuild>4000</WorkToBuild>
       <Mass>250</Mass>
@@ -42,7 +42,7 @@
     <tickerType>Normal</tickerType>
     <comps>
       <li Class="CompProperties_Explosive">
-        <explosiveRadius>3</explosiveRadius>
+        <explosiveRadius>2</explosiveRadius>
         <explosiveDamageType>Bomb</explosiveDamageType>
         <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
       </li>
@@ -122,10 +122,10 @@
     <tradeability>None</tradeability>
     <useHitPoints>false</useHitPoints>
     <statBases>
-      <AccuracyTouch>0.4</AccuracyTouch>
-      <AccuracyShort>0.7</AccuracyShort>
-      <AccuracyMedium>0.99</AccuracyMedium>
-      <AccuracyLong>0.99</AccuracyLong>
+      <AccuracyTouch>0.6</AccuracyTouch>
+      <AccuracyShort>0.71</AccuracyShort>
+      <AccuracyMedium>0.8</AccuracyMedium>
+      <AccuracyLong>0.9</AccuracyLong>
       <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
       <DeteriorationRate>0</DeteriorationRate>
       <Mass>40</Mass>

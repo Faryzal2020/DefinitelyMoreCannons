@@ -79,7 +79,7 @@
     </graphicData>
     <thingClass>Projectile_Explosive</thingClass>
     <projectile>
-      <damageDef>150mmHEBullet</damageDef>
+      <damageDef>15cmHEBullet</damageDef>
       <!-- damage amount is the damage def default -->
       <speed>80</speed>
       <explosionRadius>4</explosionRadius>

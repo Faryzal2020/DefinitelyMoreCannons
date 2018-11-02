@@ -4,7 +4,7 @@
   <ThingDef ParentName="BuildingBase" Name="Twin127mmNavalgun">
     <defName>Twin127mmNavalgun</defName>
     <label>Twin127mm naval gun</label>
-    <description>A manned Double mounted 127mm Naval gun based on Japanese 12.7mm (5") Type 5 Naval gun. It has an automatic ammunition feeder system that takes the ammunitions from an ammunition storage below it (in Rimworld its underground), the storage can hold 80 shells. Consumes 3800W of power for its electric-powered aiming controls and loading systems, 800m max range.</description>
+    <description>A manned Double mounted 127mm Naval gun based on Japanese 12.7mm (5") Type 5 Naval gun. It has an automatic ammunition feeder system that takes the ammunitions from an ammunition storage below it (in Rimworld its underground), the storage can hold 80 shells. Consumes 3800W of power for its electric-powered aiming controls and loading systems, 800m max range. Explodes with radius of 4 blocks when destroyed.  Because of the size and its ability to do high angle aiming, this turret cant be placed under a roof.</description>
     <thingClass>Building_TurretGun</thingClass>
     <graphicData>
       <texPath>Things/Building/MannedTwin127mmNaval</texPath>
@@ -27,7 +27,7 @@
     <rotatable>true</rotatable>
     <size>(6,6)</size>
     <statBases>
-      <MaxHitPoints>7200</MaxHitPoints>
+      <MaxHitPoints>17000</MaxHitPoints>
       <Flammability>0.7</Flammability>
       <WorkToBuild>26000</WorkToBuild>
       <Mass>30000</Mass>
@@ -35,6 +35,10 @@
     </statBases>
     <tickerType>Normal</tickerType>
     <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>4.0</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+      </li>
       <li Class="DefinitelyMoreCannons.CompProperties_ChangeFiremode">
         <valueType>percentage</valueType>
         <speedReduce>50</speedReduce>

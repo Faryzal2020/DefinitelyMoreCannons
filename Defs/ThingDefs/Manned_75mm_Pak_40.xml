@@ -117,12 +117,8 @@
   <ThingDef ParentName="Base75mmCannonBuilding">
     <defName>Turret_75mmCannon</defName>
     <label>75mm_cannon</label>
-    <description>A manned 75mm Cannon. Manual ammo loading, 90m Max Range. Uses AP shell only.</description>
+    <description>A manned 75mm Cannon. Manual ammo loading, 90m Max Range. Uses AP shell only. Doesn't explode when destroyed.</description>
     <comps>
-      <li Class="CompProperties_Explosive">
-        <explosiveRadius>3</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-      </li>
     </comps>
     <designationHotKey>Misc4</designationHotKey>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
@@ -154,9 +150,9 @@
       <li>Artillery_BaseDestroyer</li>
     </weaponTags>
     <statBases>
-      <AccuracyTouch>0.4</AccuracyTouch>
-      <AccuracyShort>0.7</AccuracyShort>
-      <AccuracyMedium>0.80</AccuracyMedium>
+      <AccuracyTouch>0.78</AccuracyTouch>
+      <AccuracyShort>0.8</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
       <AccuracyLong>0.90</AccuracyLong>
     </statBases>
     <verbs>
@@ -166,7 +162,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <warmupTime>2.0</warmupTime>
         <requireLineOfSight>true</requireLineOfSight>
-        <minRange>3</minRange>
+        <minRange>4</minRange>
         <range>90</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>75mm_Cannon_Shoot</soundCast>
