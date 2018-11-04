@@ -5,7 +5,7 @@
 
   <ThingDef ParentName="BuildingBase" Name="20mmAutocannon">
     <defName>20mmAutocannon</defName>
-    <label>20mm autocannon</label>
+    <label>20mm Flak 38</label>
     <description>A 20mm anti-aircraft cannon turret. Uses a magazine feed ammunition, 40m Max Range. Explodes with radius of 1 block when destroyed.</description>
     <thingClass>Building_TurretGun</thingClass>
     <graphicData>
@@ -20,6 +20,7 @@
         <offset>(0,0,-0.05)</offset>
       </shadowData>
     </graphicData>
+    <designationCategory>DMC</designationCategory>
     <minifiedDef>MinifiedThing</minifiedDef>
     <uiIconPath>Things/Icons/20mmAutocannon_MenuIcon</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
@@ -28,6 +29,9 @@
     <stealable>false</stealable>
     <rotatable>true</rotatable>
     <size>(3,3)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
       <Flammability>0.7</Flammability>
@@ -74,11 +78,10 @@
     </thingCategories>
     <hasTooltip>true</hasTooltip>
     <costList>
-      <Steel>800</Steel>
+      <Steel>500</Steel>
       <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
-    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <designationCategory>Security</designationCategory>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> 
     <specialDisplayRadius>40</specialDisplayRadius>
     <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
     <building>
@@ -127,10 +130,10 @@
     <tradeability>None</tradeability>
     <useHitPoints>false</useHitPoints>
     <statBases>
-      <AccuracyTouch>0.25</AccuracyTouch>
+      <AccuracyTouch>0.70</AccuracyTouch>
       <AccuracyShort>0.65</AccuracyShort>
       <AccuracyMedium>0.60</AccuracyMedium>
-      <AccuracyLong>0.45</AccuracyLong>
+      <AccuracyLong>0.50</AccuracyLong>
       <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
       <DeteriorationRate>0</DeteriorationRate>
       <Mass>40</Mass>

@@ -5,7 +5,7 @@
 
   <ThingDef ParentName="BuildingBase" Name="37mmAutocannon">
     <defName>37mmAutocannon</defName>
-    <label>37mm autocannon</label>
+    <label>37mm Flak M42</label>
     <description>A heavy 37mm automatic cannon turret. Uses a belt-feed ammunition system with capacity of 300 rounds, 50m max range. Explodes with radius of 2 blocks when destroyed.</description>
     <thingClass>Building_TurretGun</thingClass>
     <graphicData>
@@ -20,6 +20,7 @@
         <offset>(0,0,-0.05)</offset>
       </shadowData>
     </graphicData>
+    <designationCategory>DMC</designationCategory>
     <minifiedDef>MinifiedThing</minifiedDef>
     <uiIconPath>Things/Icons/37mmAutocannon_MenuIcon</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
@@ -28,6 +29,9 @@
     <stealable>false</stealable>
     <rotatable>true</rotatable>
     <size>(3,3)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
     <statBases>
       <MaxHitPoints>600</MaxHitPoints>
       <Flammability>0.7</Flammability>
@@ -77,8 +81,7 @@
       <Steel>1000</Steel>
       <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
-    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <designationCategory>Security</designationCategory>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> 
     <specialDisplayRadius>1000</specialDisplayRadius>
     <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
     <building>

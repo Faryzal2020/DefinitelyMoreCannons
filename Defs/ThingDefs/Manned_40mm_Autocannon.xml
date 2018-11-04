@@ -5,7 +5,7 @@
 
   <ThingDef ParentName="BuildingBase" Name="40mmAutocannon">
     <defName>40mmAutocannon</defName>
-    <label>40mm autocannon</label>
+    <label>40mm Flak 28 Bofors</label>
     <description>A heavy 40mm automatic cannon turret. Uses 4x40mm Ammunition Clips with ammunition storage of 20 clips, 70m max range. Explodes with radius of 2 blocks when destroyed.</description>
     <thingClass>Building_TurretGun</thingClass>
     <graphicData>
@@ -20,6 +20,7 @@
         <offset>(0,0,-0.05)</offset>
       </shadowData>
     </graphicData>
+    <designationCategory>DMC</designationCategory>
     <minifiedDef>MinifiedThing</minifiedDef>
     <uiIconPath>Things/Icons/40mmAutocannon_MenuIcon</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
@@ -28,6 +29,9 @@
     <stealable>false</stealable>
     <rotatable>true</rotatable>
     <size>(3,4)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
     <statBases>
       <MaxHitPoints>600</MaxHitPoints>
       <Flammability>0.7</Flammability>
@@ -77,8 +81,7 @@
       <Steel>1400</Steel>
       <ComponentIndustrial>6</ComponentIndustrial>
     </costList>
-    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <designationCategory>Security</designationCategory>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> 
     <specialDisplayRadius>70</specialDisplayRadius>
     <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
     <building>

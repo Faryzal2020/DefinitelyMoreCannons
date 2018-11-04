@@ -16,6 +16,7 @@
         <offset>(0,0,0)</offset>
       </shadowData>
     </graphicData>
+    <designationCategory>DMC</designationCategory>
     <minifiedDef>MinifiedThing</minifiedDef>
     <altitudeLayer>Building</altitudeLayer>
     <hasInteractionCell>True</hasInteractionCell>
@@ -33,13 +34,12 @@
       <li>Metallic</li>
     </stuffCategories>
     <tickerType>Normal</tickerType>
-    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <designationCategory>Security</designationCategory>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> 
     <specialDisplayRadius>80</specialDisplayRadius>
 		<costStuffCount>50</costStuffCount>
     <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
     <costList>
-			<Steel>400</Steel>
+			<Steel>800</Steel>
 			<ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
     <inspectorTabs>
@@ -116,7 +116,7 @@
 
   <ThingDef ParentName="Base6PdrCannonBuilding">
     <defName>Turret_6PdrCannon</defName>
-    <label>6Pdr_cannon</label>
+    <label>6 Pounder Cannon</label>
     <description>A manned 6 Pounder cannon that shoots AP shells. Manual ammunition loading, 80m Max range. Doesn't explode when destroyed.</description>
     <comps>
     </comps>

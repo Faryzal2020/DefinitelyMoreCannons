@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<ThingDef ParentName="BuildingBase" Name="BaseU6PdrCannonBuilding">
-    <defName>Turret_U6PdrCannon</defName>
-    <label>Unmanned 6Pdr Cannon</label>
-    <description>An unmanned 6 Pounder cannon that shoots AP shells. Manual ammunition loading, 70m Max range. Explodes with radius of 2 blocks when destroyed.</description>
+<ThingDef ParentName="BuildingBase" Name="BaseU20mmCannonBuilding">
+    <defName>U20mmAutocannon</defName>
+    <label>Unmanned 20mm Flak 38</label>
+    <description>A 20mm anti-aircraft cannon turret installed with an AI Module. Uses a magazine feed ammunition, 35m Max Range. Explodes with radius of 1 block when destroyed. Consumes 1500W of power.</description>
     <thingClass>Building_TurretGun</thingClass>
     <graphicData>
-      <texPath>Things/Building/Unmanned6Pdr</texPath>
+      <texPath>Things/Building/UnmannedFlak38</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(11,11)</drawSize>
+      <drawSize>(9,9)</drawSize>
       <damageData>
         <rect>(0.38,0.2,0.56375,0.8)</rect>
         <cornerTL>Damage/Corner</cornerTL>
@@ -21,7 +21,7 @@
     </graphicData>
     <designationCategory>DMC</designationCategory>
     <minifiedDef>MinifiedThing</minifiedDef>
-    <uiIconPath>Things/Icons/6PdrCannon_MenuIcon</uiIconPath>
+    <uiIconPath>Things/Icons/20mmAutocannon_MenuIcon</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
     <stealable>false</stealable>
     <rotatable>true</rotatable>
@@ -33,17 +33,17 @@
       <li>Metallic</li>
     </stuffCategories>
     <statBases>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>300</MaxHitPoints>
       <Flammability>0.7</Flammability>
       <WorkToBuild>4000</WorkToBuild>
-      <Mass>250</Mass>
+      <Mass>150</Mass>
       <Beauty>-10</Beauty>
-      <ShootingAccuracyTurret>0.8</ShootingAccuracyTurret>
+      <ShootingAccuracyTurret>0.7</ShootingAccuracyTurret>
     </statBases>
     <tickerType>Normal</tickerType>
     <comps>
       <li Class="CompProperties_Explosive">
-        <explosiveRadius>2</explosiveRadius>
+        <explosiveRadius>1</explosiveRadius>
         <explosiveDamageType>Bomb</explosiveDamageType>
         <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
       </li>
@@ -55,14 +55,14 @@
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
       <li Class="CompProperties_Refuelable">
-        <fuelLabel>Ammo</fuelLabel>
+        <fuelLabel>Ammo Magazine</fuelLabel>
         <fuelGizmoLabel>Ammo</fuelGizmoLabel>
         <fuelFilter>
           <thingDefs>
-            <li>6PdrCannonShell_ArmourPiercing</li>
+            <li>FlakTwentyMag</li>
           </thingDefs>
         </fuelFilter>
-        <fuelCapacity>30</fuelCapacity>
+        <fuelCapacity>8</fuelCapacity>
         <initialFuelPercent>0</initialFuelPercent>
         <autoRefuelPercent>0.25</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
@@ -72,7 +72,7 @@
         <factorByDifficulty>false</factorByDifficulty>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <outOfFuelMessage>Cannot shoot: Out of ammo</outOfFuelMessage>
-        <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+        <fuelIconPath>UI/Overlays/Ammo</fuelIconPath>
       </li>
     </comps>
     <passability>PassThroughOnly</passability>
@@ -80,19 +80,19 @@
     <fillPercent>0.5</fillPercent>
     <hasTooltip>true</hasTooltip>
     <costList>
-		<Steel>800</Steel>
-    	<Plasteel>100</Plasteel>
-		<ComponentSpacer>1</ComponentSpacer>
+		  <Steel>800</Steel>
+    	<Plasteel>50</Plasteel>
+		  <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> 
-    <specialDisplayRadius>70</specialDisplayRadius>
+    <specialDisplayRadius>35</specialDisplayRadius>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <building>
       <ai_combatDangerous>true</ai_combatDangerous>
-      <turretGunDef>U6PdrCannon</turretGunDef>
-      <turretBurstCooldownTime>4.0</turretBurstCooldownTime>
-      <turretTopGraphicPath>Things/Building/Unmanned6Pdr_Top</turretTopGraphicPath>
-      <turretTopDrawSize>11</turretTopDrawSize>
+      <turretGunDef>U20mmAutocannonGun</turretGunDef>
+      <turretBurstCooldownTime>0.4</turretBurstCooldownTime>
+      <turretTopGraphicPath>Things/Building/UnmannedFlak38_Top</turretTopGraphicPath>
+      <turretTopDrawSize>9</turretTopDrawSize>
       <turretTopOffset>(0, 0)</turretTopOffset>
       <buildingTags>
         <li>Cannon_Turret</li>
@@ -102,15 +102,15 @@
       <li>PlaceWorker_TurretTop</li>
     </placeWorkers>
     <researchPrerequisites>
-      <li>Unmanned6PdrCannon</li>
+      <li>Unmanned20mmAutocannon</li>
     </researchPrerequisites>
     <uiIconScale>0.95</uiIconScale>
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanGun">
-    <defName>U6PdrCannon</defName>
-    <label>U6Pdr_cannon</label>
-    <description>A 6Pdr cannon that based on an ancient field antitank gun, very accurate and has a medium range.</description>
+    <defName>U20mmAutocannonGun</defName>
+    <label>U20mmAutocannon</label>
+    <description>A self-loading large-bore cannon designed to attach to a turret.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/ChargeRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -122,11 +122,11 @@
     <tradeability>None</tradeability>
     <useHitPoints>false</useHitPoints>
     <statBases>
-      <AccuracyTouch>0.6</AccuracyTouch>
-      <AccuracyShort>0.71</AccuracyShort>
-      <AccuracyMedium>0.8</AccuracyMedium>
-      <AccuracyLong>0.9</AccuracyLong>
-      <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.68</AccuracyTouch>
+      <AccuracyShort>0.62</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
       <DeteriorationRate>0</DeteriorationRate>
       <Mass>40</Mass>
       <Flammability>0</Flammability>
@@ -138,16 +138,15 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>6PdrCannonBullet_Shell_ArmourPiercing</defaultProjectile>
-        <warmupTime>2</warmupTime>
-        <minRange>5</minRange>
-        <range>70</range>
-        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <defaultProjectile>Bullet_20mmAutocannonTurret</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <minRange>2</minRange>
+        <range>35</range>
         <burstShotCount>1</burstShotCount>
-        <soundCast>6Pdr_Cannon_Shoot</soundCast>
+        <soundCast>20mm_Autocannon_Shoot</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>20</muzzleFlashScale>
-        <consumeFuelPerShot>1</consumeFuelPerShot>
+        <muzzleFlashScale>12</muzzleFlashScale>
+        <consumeFuelPerShot>0.05</consumeFuelPerShot>
       </li>
     </verbs>
   </ThingDef>

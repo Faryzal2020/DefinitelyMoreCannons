@@ -15,6 +15,7 @@
         <offset>(0,0,0)</offset>
       </shadowData>
     </graphicData>
+    <designationCategory>DMC</designationCategory>
     <minifiedDef>MinifiedThing</minifiedDef>
     <altitudeLayer>Building</altitudeLayer>
     <hasInteractionCell>True</hasInteractionCell>
@@ -32,8 +33,7 @@
       <li>Metallic</li>
     </stuffCategories>
     <tickerType>Normal</tickerType>
-    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <designationCategory>Security</designationCategory>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> 
     <specialDisplayRadius>500</specialDisplayRadius>
     <costStuffCount>50</costStuffCount>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
@@ -117,7 +117,7 @@
 
   <ThingDef ParentName="Base127mmCannonBuilding">
     <defName>Turret_127mmCannon</defName>
-    <label>127mm_cannon</label>
+    <label>12.7cm SK C/34</label>
     <description>A manned 127mm Naval gun based on the German SK C/34 That were used in Kriegsmarine Z3 Max Schultz. Shoots HE shells, 4 sec reload, 500m Max Range. Explodes with radius of 2 blocks when destroyed. Because of the size, this turret cant be placed under a roof.</description>
     <comps>
       <li Class="CompProperties_Explosive">

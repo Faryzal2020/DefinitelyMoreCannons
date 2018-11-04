@@ -3,7 +3,7 @@
 
   <ThingDef ParentName="BuildingBase" Name="Twin127mmNavalgun">
     <defName>Twin127mmNavalgun</defName>
-    <label>Twin127mm naval gun</label>
+    <label>12.7cm Type 5</label>
     <description>A manned Double mounted 127mm Naval gun based on Japanese 12.7mm (5") Type 5 Naval gun. It has an automatic ammunition feeder system that takes the ammunitions from an ammunition storage below it (in Rimworld its underground), the storage can hold 80 shells. Consumes 3800W of power for its electric-powered aiming controls and loading systems, 800m max range. Explodes with radius of 4 blocks when destroyed.  Because of the size and its ability to do high angle aiming, this turret cant be placed under a roof.</description>
     <thingClass>Building_TurretGun</thingClass>
     <graphicData>
@@ -18,6 +18,7 @@
         <offset>(0,0,0)</offset>
       </shadowData>
     </graphicData>
+    <designationCategory>DMC</designationCategory>
     <minifiedDef>MinifiedThing</minifiedDef>
     <uiIconPath>Things/Icons/T127mmNaval_MenuIcon</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
@@ -26,6 +27,9 @@
     <stealable>false</stealable>
     <rotatable>true</rotatable>
     <size>(6,6)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
     <statBases>
       <MaxHitPoints>17000</MaxHitPoints>
       <Flammability>0.7</Flammability>
@@ -38,12 +42,6 @@
       <li Class="CompProperties_Explosive">
         <explosiveRadius>4.0</explosiveRadius>
         <explosiveDamageType>Bomb</explosiveDamageType>
-      </li>
-      <li Class="DefinitelyMoreCannons.CompProperties_ChangeFiremode">
-        <valueType>percentage</valueType>
-        <speedReduce>50</speedReduce>
-        <minrangeReduce>300</minrangeReduce>
-        <maxrangeReduce>40</maxrangeReduce>
       </li>
       <li Class="CompProperties_Forbiddable"/>
       <li Class="CompProperties_Power">
@@ -87,8 +85,7 @@
       <Plasteel>700</Plasteel>
       <ComponentSpacer>18</ComponentSpacer>
     </costList>
-    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <designationCategory>Security</designationCategory>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> 
     <specialDisplayRadius>800</specialDisplayRadius>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <building>

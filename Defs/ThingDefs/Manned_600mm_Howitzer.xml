@@ -15,6 +15,7 @@
         <volume>(0.5,0.4,1.05)</volume>
       </shadowData>
     </graphicData>
+    <designationCategory>DMC</designationCategory>
     <minifiedDef>MinifiedThing</minifiedDef>
     <altitudeLayer>Building</altitudeLayer>
     <hasInteractionCell>True</hasInteractionCell>
@@ -32,8 +33,7 @@
       <li>Metallic</li>
     </stuffCategories>
     <tickerType>Normal</tickerType>
-    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <designationCategory>Security</designationCategory>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> 
     <costStuffCount>50</costStuffCount>
     <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
     <costList>
@@ -115,7 +115,7 @@
 
   <ThingDef ParentName="Base600HowitzerBuilding">
     <defName>Turret_600Howitzer</defName>
-    <label>60cm_Howitzer</label>
+    <label>60cm Howitzer</label>
     <description>A manned 60cm Howitzer cannon based on "Karl Gerät" Railway Gun, shoots a massive HE shell over walls, 1km max range, 40 seconds reload. Explodes with radius of 4 blocks when destroyed.</description>
     <comps>
       <li Class="CompProperties_Explosive">

@@ -16,6 +16,7 @@
         <volume>(0.5,0.4,1.05)</volume>
       </shadowData>
     </graphicData>
+    <designationCategory>DMC</designationCategory>
     <minifiedDef>MinifiedThing</minifiedDef>
     <altitudeLayer>Building</altitudeLayer>
     <hasInteractionCell>True</hasInteractionCell>
@@ -33,8 +34,7 @@
       <li>Metallic</li>
     </stuffCategories>
     <tickerType>Normal</tickerType>
-    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <designationCategory>Security</designationCategory>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> 
     <specialDisplayRadius>100</specialDisplayRadius>
 		<costStuffCount>50</costStuffCount>
     <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
@@ -116,7 +116,7 @@
 
   <ThingDef ParentName="Base88mmCannonBuilding">
     <defName>Turret_88mmCannon</defName>
-    <label>88mm_cannon</label>
+    <label>88mm Flak 41</label>
     <description>A manned 88mm Flak cannon that shoots AP and HE shells. 11 seconds reload time, 100m max range. Doesn't explode when destroyed.</description>
     <comps>
     </comps>

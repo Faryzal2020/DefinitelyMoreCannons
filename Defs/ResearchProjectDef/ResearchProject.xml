@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+  <!-- =============================== CANNONS ============================== -->
   <ResearchProjectDef>
     <defName>HeavyCannons</defName>
-    <label>large cannons</label>
+    <label>Large Cannons</label>
     <description>Build manned large cannons that has a long range and a very high accuracy.</description>
     <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
@@ -29,7 +31,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>75mmPak40</defName>
-    <label>75mm Cannon</label>
+    <label>75mm Pak 40</label>
     <description>A manned 75mm Cannon based on 75mm Pak 40 Field Gun . Capable of using AP shells.</description>
     <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
@@ -42,8 +44,8 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>FlakCannon</defName>
-    <label>88mm Cannon</label>
-    <description>A manned 88mm Cannon based on Flak 88 AA/Artillery Gun. Capable of using HE and AP shells.</description>
+    <label>88mm Flak 41</label>
+    <description>A manned 88mm Cannon based on Flak 41 AA/Artillery Gun. Capable of using HE and AP shells.</description>
     <baseCost>2000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
@@ -53,6 +55,9 @@
     <researchViewY>3</researchViewY>
     <tab>DefinitelyMoreCannons</tab>
   </ResearchProjectDef>
+
+
+  <!-- =============================== HOWITZERS ============================== -->
 
   <ResearchProjectDef>
     <defName>Howitzers</defName>
@@ -70,7 +75,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>sIG33Howitzer</defName>
-    <label>15cm Howitzer</label>
+    <label>15cm sIG 33</label>
     <description>A 15cm howitzer based on sIG 33 Heavy Infantry Gun .</description>
     <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
@@ -96,7 +101,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>KarlGerat</defName>
-    <label>60cm Howitzer</label>
+    <label>60cm Karl Gerät</label>
     <description>A massive 60cm howitzer based on "Karl Gerät" Railway gun.</description>
     <baseCost>3000</baseCost>
     <techLevel>Industrial</techLevel>
@@ -107,6 +112,9 @@
     <researchViewY>3</researchViewY>
     <tab>DefinitelyMoreCannons</tab>
   </ResearchProjectDef>
+  
+
+  <!-- =============================== AUTOCANNONS ============================== -->
 
   <ResearchProjectDef>
     <defName>HeavyAutocannons</defName>
@@ -123,7 +131,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Flak38</defName>
-    <label>Single 20mm Autocannon</label>
+    <label>20mm Flak 38</label>
     <description>A manned single 20mm autocannon based on 20mm Flak 38 AA gun. Uses a 20 round magazine.</description>
     <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
@@ -136,7 +144,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>FlakM42</defName>
-    <label>Single 37mm Autocannon</label>
+    <label>37mm Flak M42</label>
     <description>A manned single 37mm autocannon based on 37mm Flak M42 AA gun. Uses a belt-feed system with maximum 300 rounds of ammunition.</description>
     <baseCost>2000</baseCost>
     <techLevel>Industrial</techLevel>
@@ -149,7 +157,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>SingleBofors</defName>
-    <label>Single 40mm Autocannon</label>
+    <label>40mm Bofors M1</label>
     <description>A manned single 40mm autocannon based on M1 Bofors AA gun. Needs a 4x40mm Ammo Clip and has a storage of about 20 clips.</description>
     <baseCost>3000</baseCost>
     <techLevel>Industrial</techLevel>
@@ -160,6 +168,9 @@
     <researchViewY>3</researchViewY>
     <tab>DefinitelyMoreCannons</tab>
   </ResearchProjectDef>
+  
+
+  <!-- =============================== NAVAL GUNS ============================== -->
 
   <ResearchProjectDef>
     <defName>NavalGuns</defName>
@@ -171,7 +182,7 @@
       <li>HeavyAutocannons</li>
       <li>Fabrication</li>
     </prerequisites>
-    <researchViewX>7.2</researchViewX>
+    <researchViewX>8.2</researchViewX>
     <researchViewY>0</researchViewY>
     <tab>DefinitelyMoreCannons</tab>
   </ResearchProjectDef>
@@ -184,7 +195,7 @@
     <prerequisites>
       <li>NavalGuns</li>
     </prerequisites>
-    <researchViewX>8.2</researchViewX>
+    <researchViewX>9.2</researchViewX>
     <researchViewY>1</researchViewY>
     <tab>DefinitelyMoreCannons</tab>
   </ResearchProjectDef>
@@ -197,7 +208,7 @@
     <prerequisites>
       <li>127mmNaval</li>
     </prerequisites>
-    <researchViewX>8.2</researchViewX>
+    <researchViewX>9.2</researchViewX>
     <researchViewY>2</researchViewY>
     <tab>DefinitelyMoreCannons</tab>
   </ResearchProjectDef>
@@ -210,10 +221,13 @@
     <prerequisites>
       <li>100mmNaval</li>
     </prerequisites>
-    <researchViewX>8.2</researchViewX>
+    <researchViewX>9.2</researchViewX>
     <researchViewY>3</researchViewY>
     <tab>DefinitelyMoreCannons</tab>
   </ResearchProjectDef>
+  
+
+  <!-- =============================== HEAVY NAVAL GUNS ============================== -->
 
   <ResearchProjectDef>
     <defName>HeavyNavalGuns</defName>
@@ -225,7 +239,7 @@
       <li>NavalGuns</li>
       <li>Howitzers</li>
     </prerequisites>
-    <researchViewX>9.15</researchViewX>
+    <researchViewX>10.15</researchViewX>
     <researchViewY>0</researchViewY>
     <tab>DefinitelyMoreCannons</tab>
   </ResearchProjectDef>  
@@ -238,7 +252,7 @@
     <prerequisites>
       <li>HeavyNavalGuns</li>
     </prerequisites>
-    <researchViewX>10.15</researchViewX>
+    <researchViewX>11.15</researchViewX>
     <researchViewY>1</researchViewY>
     <tab>DefinitelyMoreCannons</tab>
   </ResearchProjectDef>  
@@ -251,16 +265,19 @@
     <prerequisites>
       <li>150mmNaval</li>
     </prerequisites>
-    <researchViewX>10.15</researchViewX>
+    <researchViewX>11.15</researchViewX>
     <researchViewY>2</researchViewY>
     <tab>DefinitelyMoreCannons</tab>
   </ResearchProjectDef>
+  
+
+  <!-- =============================== UNMANNED CANNONS ============================== -->
 
   <ResearchProjectDef>
     <defName>UnmannedLargeCannons</defName>
     <label>unmanned large cannons</label>
     <description>Allows you to research and build the unmanned variant of large cannons.</description>
-    <baseCost>4000</baseCost>
+    <baseCost>3000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>HeavyCannons</li>
@@ -273,15 +290,44 @@
   <ResearchProjectDef>
     <defName>Unmanned6PdrCannon</defName>
     <label>unmanned 6Pdr Cannon</label>
-    <description>An unmanned version of 6 Pounder Cannon Turret based on A.E.C Deacon Turret. Capable of using AP shells.</description>
-    <baseCost>4000</baseCost>
+    <description>An unmanned version of 6 Pounder Cannon Turret which has a reduced max range and reduced accuracy.</description>
+    <baseCost>3000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>UnmannedLargeCannons</li>
       <li>6PdrCannon</li>
     </prerequisites>
     <researchViewX>2</researchViewX>
-    <researchViewY>1</researchViewY>
+    <researchViewY>0.75</researchViewY>
+    <tab>DefinitelyMoreCannons</tab>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>UnmannedLargeAutocannons</defName>
+    <label>unmanned large autocannons</label>
+    <description>Allows you to research and build the unmanned variant of large autocannons.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>HeavyAutocannons</li>
+      <li>AdvancedFabrication</li>
+    </prerequisites>
+    <researchViewX>6.25</researchViewX>
+    <researchViewY>5</researchViewY>
+    <tab>DefinitelyMoreCannons</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Unmanned20mmAutocannon</defName>
+    <label>unmanned 20mm Flak 38</label>
+    <description>An unmanned version of 20mm Flak 38 Turret which has a reduced max range and reduced accuracy.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>UnmannedLargeAutocannons</li>
+      <li>Flak38</li>
+    </prerequisites>
+    <researchViewX>7.25</researchViewX>
+    <researchViewY>0.75</researchViewY>
     <tab>DefinitelyMoreCannons</tab>
   </ResearchProjectDef>
 </Defs>

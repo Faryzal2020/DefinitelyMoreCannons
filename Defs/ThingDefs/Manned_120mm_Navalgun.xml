@@ -3,7 +3,7 @@
 
   <ThingDef ParentName="BuildingBase" Name="120mmNavalgun">
     <defName>120mmNavalgun</defName>
-    <label>120mm naval gun</label>
+    <label>120mm TAK120</label>
     <description>A manned 120mm Naval gun based on Swedish 120mm/46 (4.7") TAK120 Naval gun. Uses a magazine-feed ammunition with total capacity of 52 rounds. Consumes 2500W of power for its electric-powered aiming controls, 600m max range. Explodes with radius of 3 blocks when destroyed.  Because of the size, this turret cant be placed under a roof.</description>
     <thingClass>Building_TurretGun</thingClass>
     <graphicData>
@@ -26,6 +26,9 @@
     <stealable>false</stealable>
     <rotatable>true</rotatable>
     <size>(6,6)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
     <statBases>
       <MaxHitPoints>8000</MaxHitPoints>
       <Flammability>0.7</Flammability>
@@ -82,7 +85,7 @@
       <ComponentSpacer>5</ComponentSpacer>
     </costList>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <designationCategory>Security</designationCategory>
+    <designationCategory>DMC</designationCategory>
     <specialDisplayRadius>600</specialDisplayRadius>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <building>
@@ -139,10 +142,10 @@
     <tradeability>None</tradeability>
     <useHitPoints>false</useHitPoints>
     <statBases>
-      <AccuracyTouch>0.8</AccuracyTouch>
-      <AccuracyShort>0.85</AccuracyShort>
-      <AccuracyMedium>0.9</AccuracyMedium>
-      <AccuracyLong>0.85</AccuracyLong>
+      <AccuracyTouch>1</AccuracyTouch>
+      <AccuracyShort>1</AccuracyShort>
+      <AccuracyMedium>1</AccuracyMedium>
+      <AccuracyLong>1</AccuracyLong>
       <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
       <DeteriorationRate>0</DeteriorationRate>
       <Mass>40</Mass>
@@ -157,7 +160,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_120mmNavalgunTurret</defaultProjectile>
         <warmupTime>1</warmupTime>
-        <forcedMissRadius>0.1</forcedMissRadius>
+        <forcedMissRadius>0.001</forcedMissRadius>
         <minRange>18</minRange>
         <range>600</range>
         <burstShotCount>1</burstShotCount>
