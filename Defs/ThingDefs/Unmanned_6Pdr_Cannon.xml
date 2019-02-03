@@ -20,15 +20,11 @@
       </shadowData>
     </graphicData>
     <designationCategory>DMC</designationCategory>
-    <minifiedDef>MinifiedThing</minifiedDef>
     <uiIconPath>Things/Icons/6PdrCannon_MenuIcon</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
     <stealable>false</stealable>
     <rotatable>true</rotatable>
     <size>(3,3)</size>
-    <thingCategories>
-      <li>BuildingsSecurity</li>
-    </thingCategories>
     <stuffCategories>
       <li>Metallic</li>
     </stuffCategories>
@@ -38,7 +34,7 @@
       <WorkToBuild>4000</WorkToBuild>
       <Mass>250</Mass>
       <Beauty>-10</Beauty>
-      <ShootingAccuracyTurret>0.8</ShootingAccuracyTurret>
+      <ShootingAccuracyTurret>0.98</ShootingAccuracyTurret>
     </statBases>
     <tickerType>Normal</tickerType>
     <comps>
@@ -79,10 +75,11 @@
     <pathCost>50</pathCost>
     <fillPercent>0.5</fillPercent>
     <hasTooltip>true</hasTooltip>
+    <costStuffCount>130</costStuffCount>
     <costList>
-		<Steel>800</Steel>
+		  <SixPounderMaterials>1</SixPounderMaterials>
     	<Plasteel>100</Plasteel>
-		<ComponentSpacer>1</ComponentSpacer>
+		  <FCSComputer>1</FCSComputer>
     </costList>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> 
     <specialDisplayRadius>70</specialDisplayRadius>

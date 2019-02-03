@@ -4,61 +4,69 @@
       <defName>DMCShells</defName>
       <label>Cannon Shells</label>
       <parent>Manufactured</parent>
-      <iconPath>UI/Icons/ThingCategories/MortarShells</iconPath>
+      <iconPath>Things/Icons/Shells_CategoryIcon</iconPath>
     </ThingCategoryDef>
 
     <ThingCategoryDef>
       <defName>75mmCannonShells</defName>
       <label>75mm cannon shells</label>
       <parent>DMCShells</parent>
-      <iconPath>UI/Icons/ThingCategories/MortarShells</iconPath>
+      <iconPath>Things/Projectile/75AP</iconPath>
     </ThingCategoryDef>
     <ThingCategoryDef>
       <defName>6PdrCannonShells</defName>
       <label>6Pdr cannon shells</label>
       <parent>DMCShells</parent>
-      <iconPath>UI/Icons/ThingCategories/MortarShells</iconPath>
+      <iconPath>Things/Projectile/6PdrAPC</iconPath>
     </ThingCategoryDef>
     <ThingCategoryDef>
       <defName>88mmCannonShells</defName>
       <label>88mm cannon shells</label>
       <parent>DMCShells</parent>
-      <iconPath>UI/Icons/ThingCategories/MortarShells</iconPath>
+      <iconPath>Things/Projectile/88APCBC</iconPath>
     </ThingCategoryDef>
     <ThingCategoryDef>
       <defName>15cmSIGShells</defName>
       <label>15cm howitzer shells</label>
       <parent>DMCShells</parent>
-      <iconPath>UI/Icons/ThingCategories/MortarShells</iconPath>
+      <iconPath>Things/Projectile/150HE</iconPath>
     </ThingCategoryDef>
     <ThingCategoryDef>
       <defName>288mmShells</defName>
       <label>9.2 Inch howitzer shells</label>
       <parent>DMCShells</parent>
-      <iconPath>UI/Icons/ThingCategories/MortarShells</iconPath>
+      <iconPath>Things/Projectile/288HE</iconPath>
     </ThingCategoryDef>
     <ThingCategoryDef>
       <defName>600mmHowitzerShells</defName>
       <label>600mm howitzer shells</label>
       <parent>DMCShells</parent>
-      <iconPath>UI/Icons/ThingCategories/MortarShells</iconPath>
+      <iconPath>Things/Projectile/600HE</iconPath>
     </ThingCategoryDef>
     <ThingCategoryDef>
       <defName>127mmCannonShells</defName>
       <label>127mm cannon shells</label>
       <parent>DMCShells</parent>
-      <iconPath>UI/Icons/ThingCategories/MortarShells</iconPath>
+      <iconPath>Things/Projectile/127HE</iconPath>
     </ThingCategoryDef>
     <ThingCategoryDef>
       <defName>150mmCannonShells</defName>
       <label>150mm cannon shells</label>
       <parent>DMCShells</parent>
-      <iconPath>UI/Icons/ThingCategories/MortarShells</iconPath>
+      <iconPath>Things/Projectile/150HE</iconPath>
     </ThingCategoryDef>
     <ThingCategoryDef>
       <defName>120mmCannonShells</defName>
       <label>120mm cannon shells</label>
       <parent>DMCShells</parent>
-      <iconPath>UI/Icons/ThingCategories/MortarShells</iconPath>
+      <iconPath>Things/Projectile/120HE</iconPath>
+    </ThingCategoryDef>
+
+
+    <ThingCategoryDef>
+      <defName>CannonMaterials</defName>
+      <label>Cannon Turret Building Materials</label>
+      <parent>Manufactured</parent>
+      <iconPath>Things/Icons/6PdrCannon_MenuIcon</iconPath>
     </ThingCategoryDef>
 </Defs>

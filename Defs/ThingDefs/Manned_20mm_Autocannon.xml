@@ -21,7 +21,6 @@
       </shadowData>
     </graphicData>
     <designationCategory>DMC</designationCategory>
-    <minifiedDef>MinifiedThing</minifiedDef>
     <uiIconPath>Things/Icons/20mmAutocannon_MenuIcon</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
     <hasInteractionCell>True</hasInteractionCell>
@@ -73,13 +72,10 @@
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <fillPercent>0.5</fillPercent>
-    <thingCategories>
-      <li>BuildingsSecurity</li>
-    </thingCategories>
     <hasTooltip>true</hasTooltip>
+    <costStuffCount>50</costStuffCount>
     <costList>
-      <Steel>500</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
+      <TwentyMilsMaterials>1</TwentyMilsMaterials>
     </costList>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> 
     <specialDisplayRadius>40</specialDisplayRadius>
@@ -130,10 +126,10 @@
     <tradeability>None</tradeability>
     <useHitPoints>false</useHitPoints>
     <statBases>
-      <AccuracyTouch>0.70</AccuracyTouch>
-      <AccuracyShort>0.65</AccuracyShort>
-      <AccuracyMedium>0.60</AccuracyMedium>
-      <AccuracyLong>0.50</AccuracyLong>
+      <AccuracyTouch>1</AccuracyTouch>
+      <AccuracyShort>0.95</AccuracyShort>
+      <AccuracyMedium>0.8</AccuracyMedium>
+      <AccuracyLong>0.5</AccuracyLong>
       <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
       <DeteriorationRate>0</DeteriorationRate>
       <Mass>40</Mass>
@@ -187,5 +183,8 @@
     <thingCategories>
       <li>Manufactured</li>
     </thingCategories>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
   </ThingDef>
 </Defs>

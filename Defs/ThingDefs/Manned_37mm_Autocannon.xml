@@ -21,7 +21,6 @@
       </shadowData>
     </graphicData>
     <designationCategory>DMC</designationCategory>
-    <minifiedDef>MinifiedThing</minifiedDef>
     <uiIconPath>Things/Icons/37mmAutocannon_MenuIcon</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
     <hasInteractionCell>True</hasInteractionCell>
@@ -73,13 +72,10 @@
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <fillPercent>0.5</fillPercent>
-    <thingCategories>
-      <li>BuildingsSecurity</li>
-    </thingCategories>
     <hasTooltip>true</hasTooltip>
+    <costStuffCount>100</costStuffCount>
     <costList>
-      <Steel>1000</Steel>
-      <ComponentIndustrial>4</ComponentIndustrial>
+      <ThirtySevenMaterials>1</ThirtySevenMaterials>
     </costList>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> 
     <specialDisplayRadius>1000</specialDisplayRadius>
@@ -193,5 +189,8 @@
     <thingCategories>
       <li>Manufactured</li>
     </thingCategories>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
   </ThingDef>
 </Defs>

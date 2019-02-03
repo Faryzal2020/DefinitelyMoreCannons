@@ -17,7 +17,6 @@
       </shadowData>
     </graphicData>
     <designationCategory>DMC</designationCategory>
-    <minifiedDef>MinifiedThing</minifiedDef>
     <altitudeLayer>Building</altitudeLayer>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
@@ -27,20 +26,16 @@
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <fillPercent>0.4</fillPercent>
-    <thingCategories>
-      <li>BuildingsSecurity</li>
-    </thingCategories>
     <stuffCategories>
       <li>Metallic</li>
     </stuffCategories>
     <tickerType>Normal</tickerType>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> 
     <specialDisplayRadius>90</specialDisplayRadius>
-		<costStuffCount>50</costStuffCount>
+		<costStuffCount>100</costStuffCount>
     <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
     <costList>
-			<Steel>1000</Steel>
-			<ComponentIndustrial>5</ComponentIndustrial>
+			<PakFortyMaterials>1</PakFortyMaterials>
 		</costList>
     <inspectorTabs>
       <li>ITab_Shells</li>

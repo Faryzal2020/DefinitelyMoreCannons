@@ -27,10 +27,9 @@
       <li>
         <!-- Ranged only -->
         <kindDef>Combat</kindDef>
-        <commonality>70</commonality>
+        <commonality>50</commonality>
         <options>
-          <Mech_AdvArmoredCentipede>1</Mech_AdvArmoredCentipede>
-          <Mech_ArmoredCentipede>5</Mech_ArmoredCentipede>
+          <Mech_ArmoredCentipede>1</Mech_ArmoredCentipede>
           <Mech_Centipede>10</Mech_Centipede>
           <Mech_Lancer>10</Mech_Lancer>
         </options>
@@ -38,7 +37,7 @@
       <li>
         <!-- Centipede only -->
         <kindDef>Combat</kindDef>
-        <commonality>50</commonality>
+        <commonality>20</commonality>
         <options>
           <Mech_AdvArmoredCentipede>1</Mech_AdvArmoredCentipede>
           <Mech_ArmoredCentipede>5</Mech_ArmoredCentipede>
@@ -48,7 +47,7 @@
       <li>
         <!-- Armored Centipede only -->
         <kindDef>Combat</kindDef>
-        <commonality>30</commonality>
+        <commonality>20</commonality>
         <options>
           <Mech_AdvArmoredCentipede>5</Mech_AdvArmoredCentipede>
           <Mech_ArmoredCentipede>10</Mech_ArmoredCentipede>
@@ -84,8 +83,8 @@
         <points>
           <li>(100, 0.1)</li>
           <li>(10000, 0.5)</li>
-          <li>(100000, 3)</li>
-          <li>(280000, 10)</li>
+          <li>(500000, 2)</li>
+          <li>(10000000, 10)</li>
         </points>
       </raidCommonalityFromPointsCurve>
     </value>

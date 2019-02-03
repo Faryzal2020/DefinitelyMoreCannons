@@ -19,7 +19,7 @@
       <li>288mmShells</li>
     </thingCategories>
     <tradeTags>
-      <li>288mmShell</li>
+      <li>Exotic</li>
     </tradeTags>
   </ThingDef>
 
@@ -28,11 +28,11 @@
       <workSpeedStat>SmithingSpeed</workSpeedStat>
       <effectWorking>Cook</effectWorking>
       <soundWorking>Recipe_Machining</soundWorking>
-      <workAmount>2400</workAmount>
+      <workAmount>1800</workAmount>
       <targetCountAdjustment>5</targetCountAdjustment>
       <workSkill>Crafting</workSkill>
       <recipeUsers>
-        <li>TableMachining</li>
+        <li>CNCmachine</li>
       </recipeUsers>
       <skillRequirements>
         <Crafting>5</Crafting>

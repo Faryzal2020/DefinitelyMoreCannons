@@ -19,7 +19,7 @@
       <li>75mmCannonShells</li>
     </thingCategories>
     <tradeTags>
-      <li>75mmCannonShell</li>
+      <li>Exotic</li>
     </tradeTags>
   </ThingDef>
 
@@ -28,11 +28,11 @@
       <workSpeedStat>SmithingSpeed</workSpeedStat>
       <effectWorking>Cook</effectWorking>
       <soundWorking>Recipe_Machining</soundWorking>
-      <workAmount>1100</workAmount>
+      <workAmount>825</workAmount>
       <targetCountAdjustment>5</targetCountAdjustment>
       <workSkill>Crafting</workSkill>
       <recipeUsers>
-        <li>TableMachining</li>
+        <li>CNCmachine</li>
       </recipeUsers>
       <skillRequirements>
         <Crafting>4</Crafting>

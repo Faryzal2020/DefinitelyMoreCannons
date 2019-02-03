@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BenchBase">
+		<defName>CNCmachine</defName>
+		<label>CNC Machine</label>
+		<description>A CNC machine dedicated for fabricating and manufacturing small and high caliber cannon turrets. Consumes 1200W of power. Can be connected up to four CNC Modules to increases its work speed.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/cncmachine</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4.5,2.25)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.45</staticSunShadowHeight>
+		<costList>
+			<Steel>500</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>3000</WorkToBuild>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<Cleanliness>-2</Cleanliness>
+		</statBases>
+		<size>(4,2)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>1200</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Glower">
+				<glowRadius>5</glowRadius>
+				<glowColor>(73,123,138,0)</glowColor>
+			</li>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>CNCmodule</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>Machining</li>
+		</researchPrerequisites>
+		<designationHotKey>Misc7</designationHotKey>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+    <defName>CNCmodule</defName>
+    <label>CNC module</label>
+    <description>Increases work speed by 50% when placed near a CNC Machine. One CNC Machine can connect to up to four CNC Modules. Consumes 1300W of power.</description>
+    <graphicData>
+		<texPath>Things/Building/cncmodule</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(4.5,2.25)</drawSize>
+		<damageData>
+			<cornerTL>Damage/Corner</cornerTL>
+			<cornerTR>Damage/Corner</cornerTR>
+			<cornerBL>Damage/Corner</cornerBL>
+			<cornerBR>Damage/Corner</cornerBR>
+		</damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.45</staticSunShadowHeight>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <pathCost>60</pathCost>
+    <statBases>
+		<MaxHitPoints>500</MaxHitPoints>
+		<WorkToBuild>3000</WorkToBuild>
+		<Mass>40</Mass>
+		<Flammability>0.5</Flammability>
+    </statBases>
+    <size>(3,2)</size>
+	<costList>
+		<Steel>400</Steel>
+		<ComponentIndustrial>5</ComponentIndustrial>
+		<ComponentSpacer>1</ComponentSpacer>
+	</costList>
+    <researchPrerequisites>
+		<li>Machining</li>
+		<li>Fabrication</li>
+    </researchPrerequisites>
+    <designationCategory>Misc</designationCategory>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <thingCategories>
+    	<li>BuildingsMisc</li>
+    </thingCategories>
+    <comps>
+		<li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<shortCircuitInRain>true</shortCircuitInRain>
+			<basePowerConsumption>1300</basePowerConsumption>
+		</li>
+		<li Class="CompProperties_Flickable"/>
+		<li Class="CompProperties_Glower">
+			<glowRadius>5</glowRadius>
+			<glowColor>(73,123,138,0)</glowColor>
+		</li>
+      	<li Class="CompProperties_Facility">
+	        <statOffsets>
+	            <WorkTableWorkSpeedFactor>0.5</WorkTableWorkSpeedFactor>
+	        </statOffsets>
+        	<maxSimultaneous>4</maxSimultaneous>
+        </li>
+		<li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <designationHotKey>Misc6</designationHotKey>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+  </ThingDef>
+
+</Defs>

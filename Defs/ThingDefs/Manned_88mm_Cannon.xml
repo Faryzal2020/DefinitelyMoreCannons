@@ -17,7 +17,6 @@
       </shadowData>
     </graphicData>
     <designationCategory>DMC</designationCategory>
-    <minifiedDef>MinifiedThing</minifiedDef>
     <altitudeLayer>Building</altitudeLayer>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
@@ -27,20 +26,16 @@
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <fillPercent>0.4</fillPercent>
-    <thingCategories>
-      <li>BuildingsSecurity</li>
-    </thingCategories>
     <stuffCategories>
       <li>Metallic</li>
     </stuffCategories>
     <tickerType>Normal</tickerType>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> 
     <specialDisplayRadius>100</specialDisplayRadius>
-		<costStuffCount>50</costStuffCount>
-    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<costStuffCount>150</costStuffCount>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
     <costList>
-			<Steel>1500</Steel>
-			<ComponentIndustrial>5</ComponentIndustrial>
+			<FlakCannonMaterials>1</FlakCannonMaterials>
 		</costList>
     <inspectorTabs>
       <li>ITab_Shells</li>
@@ -150,10 +145,10 @@
       <li>Artillery_BaseDestroyer</li>
     </weaponTags>
     <statBases>
-      <AccuracyTouch>1</AccuracyTouch>
-      <AccuracyShort>0.96</AccuracyShort>
-      <AccuracyMedium>0.94</AccuracyMedium>
-      <AccuracyLong>0.9</AccuracyLong>
+      <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyShort>0.98</AccuracyShort>
+      <AccuracyMedium>0.99</AccuracyMedium>
+      <AccuracyLong>1</AccuracyLong>
     </statBases>
     <verbs>
       <li>

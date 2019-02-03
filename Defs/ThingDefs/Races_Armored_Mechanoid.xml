@@ -27,7 +27,7 @@
       </li>
       <li>
         <damageDef>EMP</damageDef>
-        <multiplier>0</multiplier>
+        <multiplier>0.9</multiplier>
       </li>
       <li>
         <damageDef>100mmAP</damageDef>

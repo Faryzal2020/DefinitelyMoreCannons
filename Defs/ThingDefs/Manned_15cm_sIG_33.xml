@@ -16,7 +16,6 @@
       </shadowData>
     </graphicData>
     <designationCategory>DMC</designationCategory>
-    <minifiedDef>MinifiedThing</minifiedDef>
     <altitudeLayer>Building</altitudeLayer>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
@@ -26,19 +25,15 @@
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <fillPercent>0.4</fillPercent>
-    <thingCategories>
-      <li>BuildingsSecurity</li>
-    </thingCategories>
     <stuffCategories>
       <li>Metallic</li>
     </stuffCategories>
     <tickerType>Normal</tickerType>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> 
-    <costStuffCount>50</costStuffCount>
+    <costStuffCount>100</costStuffCount>
     <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
     <costList>
-      <Steel>1000</Steel>
-      <ComponentIndustrial>5</ComponentIndustrial>
+      <SigHowitzerMaterials>1</SigHowitzerMaterials>
     </costList>
     <inspectorTabs>
       <li>ITab_Shells</li>
@@ -116,7 +111,7 @@
   <ThingDef ParentName="Base15cmSIGBuilding">
     <defName>Turret_15cmSIG</defName>
     <label>15cm sIG 33</label>
-    <description>A manned 15cm Howitzer cannon based on schweres Infanterie Geschütz 33, able to shoot over walls, 100m max range, 40 seconds reload. Explodes with radius of 2 blocks when destroyed.</description>
+    <description>A manned 15cm Howitzer cannon based on schweres Infanterie Geschütz 33, able to shoot over walls, 250m max range, 40 seconds reload. Explodes with radius of 2 blocks when destroyed.</description>
     <comps>
       <li Class="CompProperties_Explosive">
         <explosiveRadius>2.0</explosiveRadius>
@@ -153,7 +148,7 @@
         <forcedMissRadius>2</forcedMissRadius>
         <requireLineOfSight>false</requireLineOfSight>
         <minRange>15</minRange>
-        <range>100</range>
+        <range>250</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>15cm_Howitzer_Shoot</soundCast>
         <muzzleFlashScale>25</muzzleFlashScale>

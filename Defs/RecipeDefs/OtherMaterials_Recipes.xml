@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef>
+    <defName>Make_FCSComputer</defName>
+    <label>make an FCS Computer</label>
+    <description>Make an FCS Computer out of advanced components</description>
+    <jobString>Making an FCS Computer.</jobString>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>1000</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <researchPrerequisite>Automated_FCS</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>ComponentIndustrial</li>
+        <li>ComponentSpacer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <FCSComputer>1</FCSComputer>
+    </products>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <recipeUsers>
+      <li>CNCmachine</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Recycle_CannonMaterials</defName>
+    <label>Destroy cannon materials</label>
+    <description>Destroy unused cannon materials.</description>
+    <jobString>Destroying materials.</jobString>
+    <workAmount>100</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <specialProducts>
+      <li>Smelted</li>
+    </specialProducts>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>CannonMaterials</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>CannonMaterials</li>
+      </categories>
+    </fixedIngredientFilter>
+    <forceHiddenSpecialFilters>
+      <li>AllowSmeltable</li>
+    </forceHiddenSpecialFilters>
+  </RecipeDef>
+</Defs>

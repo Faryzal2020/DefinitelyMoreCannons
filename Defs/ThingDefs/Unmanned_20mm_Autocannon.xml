@@ -20,15 +20,11 @@
       </shadowData>
     </graphicData>
     <designationCategory>DMC</designationCategory>
-    <minifiedDef>MinifiedThing</minifiedDef>
     <uiIconPath>Things/Icons/20mmAutocannon_MenuIcon</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
     <stealable>false</stealable>
     <rotatable>true</rotatable>
     <size>(3,3)</size>
-    <thingCategories>
-      <li>BuildingsSecurity</li>
-    </thingCategories>
     <stuffCategories>
       <li>Metallic</li>
     </stuffCategories>
@@ -38,7 +34,7 @@
       <WorkToBuild>4000</WorkToBuild>
       <Mass>150</Mass>
       <Beauty>-10</Beauty>
-      <ShootingAccuracyTurret>0.7</ShootingAccuracyTurret>
+      <ShootingAccuracyTurret>1</ShootingAccuracyTurret>
     </statBases>
     <tickerType>Normal</tickerType>
     <comps>
@@ -79,10 +75,11 @@
     <pathCost>50</pathCost>
     <fillPercent>0.5</fillPercent>
     <hasTooltip>true</hasTooltip>
+    <costStuffCount>105</costStuffCount>
     <costList>
-		  <Steel>800</Steel>
+		  <TwentyMilsMaterials>1</TwentyMilsMaterials>
     	<Plasteel>50</Plasteel>
-		  <ComponentSpacer>1</ComponentSpacer>
+		  <FCSComputer>1</FCSComputer>
     </costList>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> 
     <specialDisplayRadius>35</specialDisplayRadius>
@@ -122,9 +119,9 @@
     <tradeability>None</tradeability>
     <useHitPoints>false</useHitPoints>
     <statBases>
-      <AccuracyTouch>0.68</AccuracyTouch>
-      <AccuracyShort>0.62</AccuracyShort>
-      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyShort>0.8</AccuracyShort>
+      <AccuracyMedium>0.71</AccuracyMedium>
       <AccuracyLong>0.45</AccuracyLong>
       <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
       <DeteriorationRate>0</DeteriorationRate>

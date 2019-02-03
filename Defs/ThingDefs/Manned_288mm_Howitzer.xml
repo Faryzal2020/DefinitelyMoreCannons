@@ -16,7 +16,6 @@
       </shadowData>
     </graphicData>
     <designationCategory>DMC</designationCategory>
-    <minifiedDef>MinifiedThing</minifiedDef>
     <altitudeLayer>Building</altitudeLayer>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
@@ -26,19 +25,15 @@
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <fillPercent>0.4</fillPercent>
-    <thingCategories>
-      <li>BuildingsSecurity</li>
-    </thingCategories>
     <stuffCategories>
       <li>Metallic</li>
     </stuffCategories>
     <tickerType>Normal</tickerType>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> 
-    <costStuffCount>50</costStuffCount>
+    <costStuffCount>230</costStuffCount>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
     <costList>
-      <Steel>2300</Steel>
-      <ComponentIndustrial>12</ComponentIndustrial>
+      <TwoEightEightHowitzerMaterials>1</TwoEightEightHowitzerMaterials>
     </costList>
     <inspectorTabs>
       <li>ITab_Shells</li>
@@ -116,7 +111,7 @@
   <ThingDef ParentName="Base288mmHowitzerBuilding">
     <defName>Turret_288mmHowitzer</defName>
     <label>BL 9.2 Inch Mk.I Howitzer</label>
-    <description>A manned 9.2 Inch Howitzer cannon based on BL 9.2 Inch Mark I Howitzer, able to shoot over walls, 300m max range, 40 seconds reload. Explodes with radius of 3 blocks when destroyed.</description>
+    <description>A manned 9.2 Inch Howitzer cannon based on BL 9.2 Inch Mark I Howitzer, able to shoot over walls, 400m max range, 40 seconds reload. Explodes with radius of 3 blocks when destroyed.</description>
     <comps>
       <li Class="CompProperties_Explosive">
         <explosiveRadius>3.0</explosiveRadius>
@@ -153,7 +148,7 @@
         <forcedMissRadius>2</forcedMissRadius>
         <requireLineOfSight>false</requireLineOfSight>
         <minRange>20</minRange>
-        <range>300</range>
+        <range>400</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>288mm_Howitzer_Shoot</soundCast>
         <muzzleFlashScale>45</muzzleFlashScale>

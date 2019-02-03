@@ -16,7 +16,6 @@
       </shadowData>
     </graphicData>
     <designationCategory>DMC</designationCategory>
-    <minifiedDef>MinifiedThing</minifiedDef>
     <altitudeLayer>Building</altitudeLayer>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(3,0,-3)</interactionCellOffset>
@@ -26,19 +25,15 @@
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <fillPercent>0.4</fillPercent>
-    <thingCategories>
-      <li>BuildingsSecurity</li>
-    </thingCategories>
     <stuffCategories>
       <li>Metallic</li>
     </stuffCategories>
     <tickerType>Normal</tickerType>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> 
-    <costStuffCount>50</costStuffCount>
+    <costStuffCount>300</costStuffCount>
     <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
     <costList>
-      <Steel>3000</Steel>
-      <ComponentIndustrial>20</ComponentIndustrial>
+      <KarlGeratHowitzerMaterials>1</KarlGeratHowitzerMaterials>
     </costList>
     <inspectorTabs>
       <li>ITab_Shells</li>

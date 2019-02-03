@@ -19,7 +19,7 @@
       <li>15cmSIGShells</li>
     </thingCategories>
     <tradeTags>
-      <li>15cmSIGShell</li>
+      <li>Exotic</li>
     </tradeTags>
   </ThingDef>
 
@@ -28,11 +28,11 @@
       <workSpeedStat>SmithingSpeed</workSpeedStat>
       <effectWorking>Cook</effectWorking>
       <soundWorking>Recipe_Machining</soundWorking>
-      <workAmount>1500</workAmount>
+      <workAmount>1125</workAmount>
       <targetCountAdjustment>5</targetCountAdjustment>
       <workSkill>Crafting</workSkill>
       <recipeUsers>
-        <li>TableMachining</li>
+        <li>CNCmachine</li>
       </recipeUsers>
       <skillRequirements>
         <Crafting>4</Crafting>

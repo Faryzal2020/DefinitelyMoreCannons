@@ -19,7 +19,6 @@
       </shadowData>
     </graphicData>
     <designationCategory>DMC</designationCategory>
-    <minifiedDef>MinifiedThing</minifiedDef>
     <uiIconPath>Things/Icons/100mmNaval_MenuIcon</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
     <hasInteractionCell>True</hasInteractionCell>
@@ -76,14 +75,10 @@
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <fillPercent>0.5</fillPercent>
-    <thingCategories>
-      <li>BuildingsSecurity</li>
-    </thingCategories>
     <hasTooltip>true</hasTooltip>
+    <costStuffCount>400</costStuffCount>
     <costList>
-      <Steel>3000</Steel>
-      <Plasteel>200</Plasteel>
-      <ComponentSpacer>3</ComponentSpacer>
+      <OneHundredModeleMaterials>1</OneHundredModeleMaterials>
     </costList>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> 
     <specialDisplayRadius>33.9</specialDisplayRadius>
@@ -192,5 +187,8 @@
     <thingCategories>
       <li>Manufactured</li>
     </thingCategories>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
   </ThingDef>
 </Defs>

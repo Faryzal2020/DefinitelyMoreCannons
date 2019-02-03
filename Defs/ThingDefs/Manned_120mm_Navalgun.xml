@@ -18,7 +18,6 @@
         <offset>(0,0,0)</offset>
       </shadowData>
     </graphicData>
-    <minifiedDef>MinifiedThing</minifiedDef>
     <uiIconPath>Things/Icons/120mmNaval_MenuIcon</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
     <hasInteractionCell>True</hasInteractionCell>
@@ -75,14 +74,10 @@
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <fillPercent>0.5</fillPercent>
-    <thingCategories>
-      <li>BuildingsSecurity</li>
-    </thingCategories>
     <hasTooltip>true</hasTooltip>
+    <costStuffCount>575</costStuffCount>
     <costList>
-      <Steel>4500</Steel>
-      <Plasteel>250</Plasteel>
-      <ComponentSpacer>5</ComponentSpacer>
+      <TakOneTwentyMaterials>1</TakOneTwentyMaterials>
     </costList>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>DMC</designationCategory>
@@ -200,5 +195,8 @@
     <thingCategories>
       <li>Manufactured</li>
     </thingCategories>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
   </ThingDef>
 </Defs>

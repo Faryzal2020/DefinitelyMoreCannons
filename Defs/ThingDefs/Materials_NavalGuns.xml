@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="CannonMaterialBase">
+    <defName>SingleSKCThirtyFourMaterials</defName>
+    <label>127mm Naval Gun Building Materials</label>
+    <description>Materials needed to build a 127mm Naval Gun Turret.</description>
+    <graphicData>
+      <texPath>Things/Icons/127mmNaval_MenuIcon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+    <stackLimit>5</stackLimit>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <MarketValue>4500</MarketValue>
+      <Mass>100</Mass>
+      <Flammability>1</Flammability>
+      <DeteriorationRate>0.2</DeteriorationRate>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="CannonMaterialBase">
+    <defName>OneHundredModeleMaterials</defName>
+    <label>100mm Naval Gun Building Materials</label>
+    <description>Materials needed to build a 100mm Naval Gun Turret.</description>
+    <graphicData>
+      <texPath>Things/Icons/100mmNaval_MenuIcon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+    <stackLimit>5</stackLimit>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <MarketValue>8900</MarketValue>
+      <Mass>100</Mass>
+      <Flammability>1</Flammability>
+      <DeteriorationRate>0.2</DeteriorationRate>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="CannonMaterialBase">
+    <defName>TakOneTwentyMaterials</defName>
+    <label>120mm Naval Gun Building Materials</label>
+    <description>Materials needed to build a 120mm Naval Gun Turret.</description>
+    <graphicData>
+      <texPath>Things/Icons/120mmNaval_MenuIcon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+    <stackLimit>5</stackLimit>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <MarketValue>13000</MarketValue>
+      <Mass>100</Mass>
+      <Flammability>1</Flammability>
+      <DeteriorationRate>0.2</DeteriorationRate>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="CannonMaterialBase">
+    <defName>NavalOneFiftyMaterials</defName>
+    <label>150mm Naval Gun Building Materials</label>
+    <description>Materials needed to build a 150mm Naval Gun Turret.</description>
+    <graphicData>
+      <texPath>Things/Icons/150mmNaval_MenuIcon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+    <stackLimit>5</stackLimit>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <MarketValue>13000</MarketValue>
+      <Mass>100</Mass>
+      <Flammability>1</Flammability>
+      <DeteriorationRate>0.2</DeteriorationRate>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="CannonMaterialBase">
+    <defName>TypeFiveMaterials</defName>
+    <label>Twin 127mm Naval Gun Building Materials</label>
+    <description>Materials needed to build a Twin 127mm Naval Gun Turret.</description>
+    <graphicData>
+      <texPath>Things/Icons/T127mmNaval_MenuIcon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+    <stackLimit>5</stackLimit>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <MarketValue>23000</MarketValue>
+      <Mass>100</Mass>
+      <Flammability>1</Flammability>
+      <DeteriorationRate>0.2</DeteriorationRate>
+    </statBases>
+  </ThingDef>
+</Defs>

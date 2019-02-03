@@ -19,7 +19,7 @@
       <li>600mmHowitzerShells</li>
     </thingCategories>
     <tradeTags>
-      <li>600mmHowitzerShell</li>
+      <li>Exotic</li>
     </tradeTags>
   </ThingDef>
 
@@ -28,11 +28,11 @@
       <workSpeedStat>SmithingSpeed</workSpeedStat>
       <effectWorking>Cook</effectWorking>
       <soundWorking>Recipe_Machining</soundWorking>
-      <workAmount>4000</workAmount>
+      <workAmount>3000</workAmount>
       <targetCountAdjustment>5</targetCountAdjustment>
       <workSkill>Crafting</workSkill>
       <recipeUsers>
-        <li>TableMachining</li>
+        <li>CNCmachine</li>
       </recipeUsers>
       <skillRequirements>
         <Crafting>4</Crafting>
