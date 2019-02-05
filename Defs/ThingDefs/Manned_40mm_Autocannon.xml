@@ -75,7 +75,7 @@
     <hasTooltip>true</hasTooltip>
     <costStuffCount>140</costStuffCount>
     <costList>
-      <BoforsGunMaterials>6</BoforsGunMaterials>
+      <BoforsGunMaterials>1</BoforsGunMaterials>
     </costList>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> 
     <specialDisplayRadius>70</specialDisplayRadius>
