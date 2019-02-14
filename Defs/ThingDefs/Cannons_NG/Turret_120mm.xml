@@ -2,13 +2,13 @@
 <Defs>
 
   <ThingDef ParentName="DMC_BaseMannedTurret">
-    <defName>100mmNavalgun</defName>
-    <label>100mm Modele 53</label>
-    <description>A manned 100mm Model 53 Naval gun that were used in the French Navy in the Earth 20th century. Uses belt-feed ammunition with capacity of 100 rounds. Consumes 2000W of power for its electric-powered aiming controls, 500m max range. Explodes with radius of 3 blocks when destroyed. Because of the size, this turret cant be placed under a roof.</description>
+    <defName>120mmNavalgun</defName>
+    <label>120mm TAK120</label>
+    <description>A manned 120mm Naval gun based on Swedish 120mm/46 (4.7") TAK120 Naval gun. Uses a magazine-feed ammunition with total capacity of 52 rounds. Consumes 2500W of power for its electric-powered aiming controls, 600m max range. Explodes with radius of 3 blocks when destroyed.  Because of the size, this turret cant be placed under a roof.</description>
     <graphicData>
-      <texPath>Things/Building/Manned100mmNaval</texPath>
+      <texPath>Things/Building/MannedTAK120</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(8, 8)</drawSize>
+      <drawSize>(13, 13)</drawSize>
       <damageData>
         <rect>(0.2,0.2,0.6,0.6)</rect>
       </damageData>
@@ -17,15 +17,15 @@
         <offset>(0,0,0)</offset>
       </shadowData>
     </graphicData>
-    <uiIconPath>Things/Icons/100mmNaval_MenuIcon</uiIconPath>
+    <uiIconPath>Things/Icons/120mmNaval_MenuIcon</uiIconPath>
     <building>
-      <turretGunDef>Gun_100mmNavalgunTurret</turretGunDef>
-      <turretTopGraphicPath>Things/Building/Manned100mmNaval_Top</turretTopGraphicPath>
+      <turretGunDef>Gun_120mmNavalgunTurret</turretGunDef>
+      <turretTopGraphicPath>Things/Building/MannedTAK120_Top</turretTopGraphicPath>
       <turretTopDrawSize>10</turretTopDrawSize>
       <turretBurstCooldownTime>2</turretBurstCooldownTime> <!-- Reload Time -->
     </building>
     <interactionCellOffset>(0,0,-3)</interactionCellOffset>
-    <size>(5,5)</size> 
+    <size>(6,6)</size> 
     <specialDisplayRadius>500</specialDisplayRadius>
     <costStuffCount>180</costStuffCount>
     <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
@@ -41,7 +41,7 @@
       <Mass>14000</Mass>
     </statBases>
     <researchPrerequisites>
-      <li>100mmNaval</li>
+      <li>120mmNaval</li>
     </researchPrerequisites>
     <comps>
       <li Class="CompProperties_Explosive">
@@ -52,16 +52,15 @@
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>2000</basePowerConsumption>
       </li>
-      <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Refuelable">
-        <fuelLabel>Ammo Belt</fuelLabel>
+        <fuelLabel>Ammo Rack</fuelLabel>
         <fuelGizmoLabel>Ammo</fuelGizmoLabel>
         <fuelFilter>
           <thingDefs>
-            <li>OneHundredmmShell</li>
+            <li>TAKShell</li>
           </thingDefs>
         </fuelFilter>
-        <fuelCapacity>100</fuelCapacity>
+        <fuelCapacity>52</fuelCapacity>
         <initialFuelPercent>0</initialFuelPercent>
         <autoRefuelPercent>0.5</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
@@ -80,32 +79,33 @@
   </ThingDef>
 
   <ThingDef ParentName="DMC_BaseTurretWeapon">
-    <defName>Gun_100mmNavalgunTurret</defName>
+    <defName>Gun_120mmNavalgunTurret</defName>
     <label>autocannon</label>
     <description>A self-loading large-bore cannon designed to attach to a turret.</description>
     <statBases>
-      <AccuracyTouch>0.8</AccuracyTouch>
-      <AccuracyShort>0.85</AccuracyShort>
-      <AccuracyMedium>0.9</AccuracyMedium>
-      <AccuracyLong>0.85</AccuracyLong>
+      <AccuracyTouch>1</AccuracyTouch>
+      <AccuracyShort>1</AccuracyShort>
+      <AccuracyMedium>1</AccuracyMedium>
+      <AccuracyLong>1</AccuracyLong>
       <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_100mmNavalgunTurret</defaultProjectile>
+        <defaultProjectile>Bullet_120mmNavalgunTurret</defaultProjectile>
         <warmupTime>1</warmupTime>
         <minRange>14</minRange>
         <range>500</range>
         <burstShotCount>1</burstShotCount>
-        <soundCast>100mm_Cannon_Shoot</soundCast>
+        <soundCast>120mm_Cannon_Shoot</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>35</muzzleFlashScale>
         <consumeFuelPerShot>1</consumeFuelPerShot>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
+        <forcedMissRadius>0.001</forcedMissRadius>
       </li>
     </verbs>
   </ThingDef>

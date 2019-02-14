@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingCategoryDef>
-      <defName>150mmCannonShells</defName>
-      <label>150mm cannon shells</label>
-      <parent>NGShells</parent>
-      <iconPath>Things/Projectile/150HE</iconPath>
-    </ThingCategoryDef>
 
   <ThingDef ParentName="DMC_BaseMannedTurret">
     <defName>Turret_150mmCannon</defName>
