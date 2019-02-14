@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingCategoryDef>
+      <defName>20mmAmmunitions</defName>
+      <label>20mm Ammunitions</label>
+      <parent>ACShells</parent>
+      <iconPath>Things/Item/20x20mmMag</iconPath>
+    </ThingCategoryDef>
+
+	<ThingDef ParentName="Base_DMCAmmunitions">
+	    <defName>FlakTwentyMag</defName>
+	    <label>20 Rounds 20mm Magazine</label>
+	    <description>An ammunition magazine containing 20 rounds of 20mm HEI-T Shells.</description>
+	    <graphicData>
+	      	<texPath>Things/Item/20x20mmMag</texPath>
+	      	<graphicClass>Graphic_Single</graphicClass>
+	      	<drawSize>0.90</drawSize>
+	    </graphicData>
+	    <stackLimit>75</stackLimit>
+	    <statBases>
+	        <MaxHitPoints>100</MaxHitPoints>
+	        <MarketValue>234</MarketValue>
+	        <Mass>2</Mass>
+	    </statBases>
+	    <thingCategories>
+	        <li>20mmAmmunitions</li>
+	    </thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+	    <defName>Bullet_20mmAutocannonTurret</defName>
+	    <label>20mm autocannon shell</label>
+	    <graphicData>
+	        <texPath>Things/Projectile/Bullet_Small</texPath>
+	        <graphicClass>Graphic_Single</graphicClass>
+	    </graphicData>
+	    <projectile>
+	        <damageDef>Bullet</damageDef>
+	        <damageAmountBase>12</damageAmountBase>
+	        <speed>200</speed>
+      		<armorPenetrationBase>0.3</armorPenetrationBase>
+	    </projectile>
+	</ThingDef>
+
+	<RecipeDef>
+	    <defName>Make_20x20mmMag_x1</defName>
+	    <label>make 20mm Ammo Mag 1x</label>
+	    <description>Make a 20x 40mm Ammo Mag.</description>
+	    <jobString>Making 20mm magazine.</jobString>
+	    <workSpeedStat>SmithingSpeed</workSpeedStat>
+	    <effectWorking>Cook</effectWorking>
+	    <soundWorking>Recipe_Machining</soundWorking>
+	    <workAmount>750</workAmount>
+	    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+	    <ingredients>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Steel</li>
+	            	</thingDefs>
+	        	</filter>
+	        	<count>60</count>
+	        </li>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Chemfuel</li>
+	            </thingDefs>
+	        	</filter>
+	        	<count>30</count>
+	        </li>
+	    </ingredients>
+	    <fixedIngredientFilter>
+	        <thingDefs>
+	        	<li>Steel</li>
+	        	<li>Chemfuel</li>
+	      	</thingDefs>
+	    </fixedIngredientFilter>
+	    <products>
+	      	<FlakTwentyMag>10</FlakTwentyMag>
+	    </products>
+	    <skillRequirements>
+	      	<Crafting>3</Crafting>
+	    </skillRequirements>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      	<li>CNCmachine</li>
+	    </recipeUsers>
+    </RecipeDef>
+
+	<RecipeDef>
+	    <defName>Make_20x20mmMag_x10</defName>
+	    <label>make 20mm Ammo Mag 10x</label>
+	    <description>Make a 20x 40mm Ammo Mag 10 times.</description>
+	    <jobString>Making 20mm magazine.</jobString>
+	    <workSpeedStat>SmithingSpeed</workSpeedStat>
+	    <effectWorking>Cook</effectWorking>
+	    <soundWorking>Recipe_Machining</soundWorking>
+	    <workAmount>5625</workAmount>
+	    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+	    <ingredients>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Steel</li>
+	            	</thingDefs>
+	        	</filter>
+	        	<count>600</count>
+	        </li>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Chemfuel</li>
+	            </thingDefs>
+	        	</filter>
+	        	<count>300</count>
+	        </li>
+	    </ingredients>
+	    <fixedIngredientFilter>
+	        <thingDefs>
+	        	<li>Steel</li>
+	        	<li>Chemfuel</li>
+	      	</thingDefs>
+	    </fixedIngredientFilter>
+	    <products>
+	      	<FlakTwentyMag>10</FlakTwentyMag>
+	    </products>
+	    <skillRequirements>
+	      	<Crafting>3</Crafting>
+	    </skillRequirements>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      	<li>CNCmachine</li>
+	    </recipeUsers>
+    </RecipeDef>
+</Defs>

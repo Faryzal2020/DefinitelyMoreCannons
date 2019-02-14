@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="DMC_BaseMannedTurret">
+    <defName>127mmNavalgun</defName>
+    <label>12.7cm SK C/34</label>
+    <description>A manned 127mm Naval gun based on the German SK C/34 That were used in Kriegsmarine Z3 Max Schultz. Shoots HE shells, 4 sec reload, 500m Max Range. Explodes with radius of 2 blocks when destroyed. Because of the size, this turret cant be placed under a roof.</description>
+    <graphicData>
+      <texPath>Things/Building/MannedSKC34</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(10, 10)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(3.5,2.2,3.5)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Things/Icons/127mmNaval_MenuIcon</uiIconPath>
+    <building>
+      <turretGunDef>127mmCannon</turretGunDef>
+      <turretTopGraphicPath>Things/Building/MannedSKC34_Top</turretTopGraphicPath>
+      <turretTopDrawSize>14</turretTopDrawSize>
+      <turretBurstCooldownTime>4</turretBurstCooldownTime> <!-- Reload Time -->
+    </building>
+    <interactionCellOffset>(0,0,-3)</interactionCellOffset>
+    <size>(5,5)</size> 
+    <specialDisplayRadius>500</specialDisplayRadius>
+    <costStuffCount>100</costStuffCount>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <costList>
+      <Steel>1000</Steel>
+      <Plasteel>100</Plasteel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <statBases>
+      <MaxHitPoints>5500</MaxHitPoints>
+      <WorkToBuild>12000</WorkToBuild>
+      <Mass>11000</Mass>
+    </statBases>
+    <researchPrerequisites>
+      <li>127mmNaval</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.0</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+  </ThingDef>
+
+  <ThingDef ParentName="DMC_BaseTurretWeapon">
+    <defName>127mmCannon</defName>
+    <label>127mm_cannon</label>
+    <description>A self-loading large-bore cannon designed to attach to a turret.</description>
+    <statBases>
+      <AccuracyTouch>0.9</AccuracyTouch>
+      <AccuracyShort>0.95</AccuracyShort>
+      <AccuracyMedium>0.99</AccuracyMedium>
+      <AccuracyLong>0.95</AccuracyLong>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <warmupTime>1</warmupTime>
+        <minRange>10</minRange>
+        <range>500</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>127mm_Cannon_Shoot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>35</muzzleFlashScale>
+        <requireLineOfSight>true</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+            <categories>
+              <li>127mmCannonShells</li>
+            </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <filter>
+            <categories>
+              <li>127mmCannonShells</li>
+            </categories>
+            <disallowedThingDefs>
+            </disallowedThingDefs>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+  </ThingDef>
+</Defs>

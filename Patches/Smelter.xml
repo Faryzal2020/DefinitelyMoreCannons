@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<Patch>
-  <Operation Class="PatchOperationAdd">
-    <xpath>*/ThingDef[defName="ElectricSmelter"]/recipes</xpath>
-    <value>
-      <li>Recycle_CannonMaterials</li>
-    </value>
-  </Operation>
-</Patch>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingCategoryDef>
+      <defName>120mmCannonShells</defName>
+      <label>120mm cannon shells</label>
+      <parent>NGShells</parent>
+      <iconPath>Things/Projectile/120HE</iconPath>
+    </ThingCategoryDef>
+
+	<ThingDef ParentName="Base_DMCAmmunitions">
+	    <defName>TAKShell</defName>
+	    <label>120mm APHE Shell</label>
+	    <description>A naval 120mm Armour Piercing High Explosive shell.</description>
+	    <graphicData>
+	        <texPath>Things/Projectile/120HE</texPath>
+	        <graphicClass>Graphic_Single</graphicClass>
+	    </graphicData>
+	    <stackLimit>15</stackLimit>
+	    <statBases>
+	        <MaxHitPoints>100</MaxHitPoints>
+	        <MarketValue>202</MarketValue>
+	        <Mass>15</Mass>
+	    </statBases>
+	    <thingCategories>
+	        <li>120mmCannonShells</li>
+	    </thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet_Explosive">
+	    <defName>Bullet_120mmNavalgunTurret</defName>
+	    <label>120mm naval gun shell</label>
+	    <graphicData>
+	        <texPath>Things/Projectile/LargeShell</texPath>
+	        <graphicClass>Graphic_Single</graphicClass>
+	        <shaderType>TransparentPostLight</shaderType>
+	    </graphicData>
+	    <projectile>
+	        <damageDef>120mmHEBullet</damageDef>
+	        <speed>300</speed>
+	      	<explosionRadius>2</explosionRadius>
+	      	<flyOverhead>false</flyOverhead>
+	    </projectile>
+	</ThingDef>
+
+	<RecipeDef>
+	    <defName>Make_120mmAPHE_x1</defName>
+	    <label>make 120mm APHE Shell 1x</label>
+	    <description>Make a 120mm APHE Shell.</description>
+	    <jobString>Making 120mm shell.</jobString>
+	    <workSpeedStat>SmithingSpeed</workSpeedStat>
+	    <effectWorking>Cook</effectWorking>
+	    <soundWorking>Recipe_Machining</soundWorking>
+	    <workAmount>1100</workAmount>
+	    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+	    <ingredients>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Steel</li>
+	            	</thingDefs>
+	        	</filter>
+	        	<count>60</count>
+	        </li>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Chemfuel</li>
+	            </thingDefs>
+	        	</filter>
+	        	<count>22</count>
+	        </li>
+	    </ingredients>
+	    <fixedIngredientFilter>
+	        <thingDefs>
+	        	<li>Steel</li>
+	        	<li>Chemfuel</li>
+	      	</thingDefs>
+	    </fixedIngredientFilter>
+	    <products>
+	      	<TAKShell>1</TAKShell>
+	    </products>
+	    <skillRequirements>
+	      	<Crafting>5</Crafting>
+	    </skillRequirements>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      	<li>CNCmachine</li>
+	    </recipeUsers>
+    </RecipeDef>
+
+	<RecipeDef>
+	    <defName>Make_120mmAPHE_x10</defName>
+	    <label>make 120mm APHE Shell 10x</label>
+	    <description>Make a 120mm APHE Shell 10 times.</description>
+	    <jobString>Making 120mm shell.</jobString>
+	    <workSpeedStat>SmithingSpeed</workSpeedStat>
+	    <effectWorking>Cook</effectWorking>
+	    <soundWorking>Recipe_Machining</soundWorking>
+	    <workAmount>8250</workAmount>
+	    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+	    <ingredients>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Steel</li>
+	            	</thingDefs>
+	        	</filter>
+	        	<count>600</count>
+	        </li>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Chemfuel</li>
+	            </thingDefs>
+	        	</filter>
+	        	<count>220</count>
+	        </li>
+	    </ingredients>
+	    <fixedIngredientFilter>
+	        <thingDefs>
+	        	<li>Steel</li>
+	        	<li>Chemfuel</li>
+	      	</thingDefs>
+	    </fixedIngredientFilter>
+	    <products>
+	      	<TAKShell>10</TAKShell>
+	    </products>
+	    <skillRequirements>
+	      	<Crafting>5</Crafting>
+	    </skillRequirements>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      	<li>CNCmachine</li>
+	    </recipeUsers>
+    </RecipeDef>
+</Defs>

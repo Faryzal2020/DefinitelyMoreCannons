@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
 	<ResearchTabDef>
-		<defName>DefinitelyMoreCannons</defName>
+		<defName>DMC_General</defName>
 		<label>Definitely More Cannons</label>
+	</ResearchTabDef>
+	<ResearchTabDef>
+		<defName>DMC_Cannons</defName>
+		<label>DMC: Anti-tank Cannons</label>
+	</ResearchTabDef>
+	<ResearchTabDef>
+		<defName>DMC_Autocannons</defName>
+		<label>DMC: Autocannons</label>
+	</ResearchTabDef>
+	<ResearchTabDef>
+		<defName>DMC_Howitzers</defName>
+		<label>DMC: Howitzer Cannons</label>
+	</ResearchTabDef>
+	<ResearchTabDef>
+		<defName>DMC_NavalGuns</defName>
+		<label>DMC: Naval Guns</label>
 	</ResearchTabDef>
 
 </Defs>

@@ -6,62 +6,30 @@
       <parent>Manufactured</parent>
       <iconPath>Things/Icons/Shells_CategoryIcon</iconPath>
     </ThingCategoryDef>
-
     <ThingCategoryDef>
-      <defName>75mmCannonShells</defName>
-      <label>75mm cannon shells</label>
+      <defName>ATCShells</defName>
+      <label>AT Cannon Shells</label>
       <parent>DMCShells</parent>
-      <iconPath>Things/Projectile/75AP</iconPath>
+      <iconPath>Things/Icons/Shells_CategoryIcon</iconPath>
     </ThingCategoryDef>
     <ThingCategoryDef>
-      <defName>6PdrCannonShells</defName>
-      <label>6Pdr cannon shells</label>
+      <defName>ACShells</defName>
+      <label>Autocannon Shells</label>
       <parent>DMCShells</parent>
-      <iconPath>Things/Projectile/6PdrAPC</iconPath>
+      <iconPath>Things/Icons/Shells_CategoryIcon</iconPath>
     </ThingCategoryDef>
     <ThingCategoryDef>
-      <defName>88mmCannonShells</defName>
-      <label>88mm cannon shells</label>
+      <defName>HShells</defName>
+      <label>Howitzer Shells</label>
       <parent>DMCShells</parent>
-      <iconPath>Things/Projectile/88APCBC</iconPath>
+      <iconPath>Things/Icons/Shells_CategoryIcon</iconPath>
     </ThingCategoryDef>
     <ThingCategoryDef>
-      <defName>15cmSIGShells</defName>
-      <label>15cm howitzer shells</label>
+      <defName>NGShells</defName>
+      <label>Naval Gun Shells</label>
       <parent>DMCShells</parent>
-      <iconPath>Things/Projectile/150HE</iconPath>
+      <iconPath>Things/Icons/Shells_CategoryIcon</iconPath>
     </ThingCategoryDef>
-    <ThingCategoryDef>
-      <defName>288mmShells</defName>
-      <label>9.2 Inch howitzer shells</label>
-      <parent>DMCShells</parent>
-      <iconPath>Things/Projectile/288HE</iconPath>
-    </ThingCategoryDef>
-    <ThingCategoryDef>
-      <defName>600mmHowitzerShells</defName>
-      <label>600mm howitzer shells</label>
-      <parent>DMCShells</parent>
-      <iconPath>Things/Projectile/600HE</iconPath>
-    </ThingCategoryDef>
-    <ThingCategoryDef>
-      <defName>127mmCannonShells</defName>
-      <label>127mm cannon shells</label>
-      <parent>DMCShells</parent>
-      <iconPath>Things/Projectile/127HE</iconPath>
-    </ThingCategoryDef>
-    <ThingCategoryDef>
-      <defName>150mmCannonShells</defName>
-      <label>150mm cannon shells</label>
-      <parent>DMCShells</parent>
-      <iconPath>Things/Projectile/150HE</iconPath>
-    </ThingCategoryDef>
-    <ThingCategoryDef>
-      <defName>120mmCannonShells</defName>
-      <label>120mm cannon shells</label>
-      <parent>DMCShells</parent>
-      <iconPath>Things/Projectile/120HE</iconPath>
-    </ThingCategoryDef>
-
 
     <ThingCategoryDef>
       <defName>CannonMaterials</defName>

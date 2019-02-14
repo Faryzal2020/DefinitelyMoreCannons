@@ -3,7 +3,7 @@
 	<RecipeDef>
     <defName>Make_FCSComputer</defName>
     <label>make an FCS Computer</label>
-    <description>Make an FCS Computer out of advanced components</description>
+    <description>FCS (Fire Control System) Computer module is used to build unmanned cannon turrets</description>
     <jobString>Making an FCS Computer.</jobString>
     <workSpeedStat>SmithingSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
@@ -18,7 +18,15 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>100</count>
+        <count>30</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
       </li>
       <li>
         <filter>
@@ -54,37 +62,5 @@
     <recipeUsers>
       <li>CNCmachine</li>
     </recipeUsers>
-  </RecipeDef>
-
-  <RecipeDef>
-    <defName>Recycle_CannonMaterials</defName>
-    <label>Destroy cannon materials</label>
-    <description>Destroy unused cannon materials.</description>
-    <jobString>Destroying materials.</jobString>
-    <workAmount>100</workAmount>
-    <workSpeedStat>SmeltingSpeed</workSpeedStat>
-    <effectWorking>Smelt</effectWorking>
-    <soundWorking>Recipe_Smelt</soundWorking>
-    <specialProducts>
-      <li>Smelted</li>
-    </specialProducts>
-    <ingredients>
-      <li>
-        <filter>
-          <categories>
-            <li>CannonMaterials</li>
-          </categories>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <categories>
-        <li>CannonMaterials</li>
-      </categories>
-    </fixedIngredientFilter>
-    <forceHiddenSpecialFilters>
-      <li>AllowSmeltable</li>
-    </forceHiddenSpecialFilters>
   </RecipeDef>
 </Defs>

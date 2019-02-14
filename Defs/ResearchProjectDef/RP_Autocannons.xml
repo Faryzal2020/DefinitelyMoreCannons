@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>Flak38</defName>
+    <label>20mm Flak 38</label>
+    <description>A manned single 20mm autocannon based on 20mm Flak 38 AA gun. Uses a 20 round magazine.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>HeavyAutocannons</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>1</researchViewY>
+    <tab>DMC_Autocannons</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>FlakM42</defName>
+    <label>37mm Flak M42</label>
+    <description>A manned single 37mm autocannon based on 37mm Flak M42 AA gun. Uses a belt-feed system with maximum 300 rounds of ammunition.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Flak38</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>1</researchViewY>
+    <tab>DMC_Autocannons</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>SingleBofors</defName>
+    <label>40mm Bofors M1</label>
+    <description>A manned single 40mm autocannon based on M1 Bofors AA gun. Needs a 4x40mm Ammo Clip and has a storage of about 20 clips.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>FlakM42</li>
+    </prerequisites>
+    <researchViewX>3</researchViewX>
+    <researchViewY>1</researchViewY>
+    <tab>DMC_Autocannons</tab>
+  </ResearchProjectDef>
+
+
+  <ResearchProjectDef>
+    <defName>UnmannedLargeAutocannons</defName>
+    <label>unmanned large autocannons</label>
+    <description>Allows you to research and build the unmanned variant of large autocannons.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Automated_FCS</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>4</researchViewY>
+    <tab>DMC_Autocannons</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Unmanned20mmAutocannon</defName>
+    <label>unmanned 20mm Flak 38</label>
+    <description>An unmanned version of 20mm Flak 38 Turret which has a reduced max range and reduced accuracy.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>UnmannedLargeAutocannons</li>
+      <li>Flak38</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2</researchViewY>
+    <tab>DMC_Autocannons</tab>
+  </ResearchProjectDef>
+</Defs>

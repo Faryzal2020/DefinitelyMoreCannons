@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="DMC_BaseTurret" ParentName="BuildingBase" Abstract="True">
+    	<thingClass>Building_TurretGun</thingClass>
+    	<designationCategory>DMC</designationCategory>
+	    <altitudeLayer>Building</altitudeLayer>
+	    <hasInteractionCell>True</hasInteractionCell>
+	    <stealable>false</stealable>
+	    <rotatable>true</rotatable>
+	    <passability>PassThroughOnly</passability>
+	    <pathCost>50</pathCost>
+	    <fillPercent>0.4</fillPercent>
+	    <stuffCategories>
+	      <li>Metallic</li>
+	    </stuffCategories>
+	    <tickerType>Normal</tickerType>
+	    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	    <uiIconScale>1.1</uiIconScale>
+	    <building>
+	      <buildingTags>
+	        <li>Artillery</li>
+	      </buildingTags>
+	    </building>
+	    <placeWorkers>
+	      <li>PlaceWorker_TurretTop</li>
+	    </placeWorkers>
+	    <statBases>
+	      <Flammability>0.7</Flammability>
+	      <Beauty>-10</Beauty>
+	    </statBases>
+    	<designationHotKey>Misc4</designationHotKey>
+    	<hasTooltip>true</hasTooltip>
+	</ThingDef>
+
+	<ThingDef Name="DMC_BaseMannedTurret" ParentName="DMC_BaseTurret" Abstract="True">
+	    <comps>
+	      <li Class="CompProperties_Forbiddable"/>
+	      <li Class="CompProperties_Mannable">
+	        <manWorkType>Violent</manWorkType>
+	      </li>
+	    </comps>
+	</ThingDef>
+
+	<ThingDef Name="DMC_BaseUnmannedTurret" ParentName="DMC_BaseTurret" Abstract="True">
+	    <building>
+	      <ai_combatDangerous>true</ai_combatDangerous>
+	    </building>
+	    <comps>
+	      	<li Class="CompProperties_Forbiddable"/>
+	      	<li Class="CompProperties_Flickable"/>
+	      	<li Class="CompProperties_Breakdownable"/>
+	    </comps>
+	</ThingDef>
+</Defs>

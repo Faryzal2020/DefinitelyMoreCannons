@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="DMC_BaseMannedTurret">
+    <defName>37mmAutocannon</defName>
+    <label>37mm Flak M42</label>
+    <description>A heavy 37mm automatic cannon turret. Uses a belt-feed ammunition system with capacity of 300 rounds, 50m max range. Explodes with radius of 1 block when destroyed.</description>
+    <graphicData>
+      <texPath>Things/Building/MannedFlakM42</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(8, 8)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(1.5,0.35,1.4)</volume>
+        <offset>(0,0,-0.05)</offset>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Things/Icons/37mmAutocannon_MenuIcon</uiIconPath>
+    <building>
+      <turretGunDef>Gun_37mmAutocannonTurret</turretGunDef>
+      <turretTopGraphicPath>Things/Building/MannedFlak38_Top</turretTopGraphicPath>
+      <turretTopDrawSize>8</turretTopDrawSize>
+      <turretBurstCooldownTime>0.5</turretBurstCooldownTime> <!-- Reload Time -->
+    </building>
+    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+    <size>(3,3)</size> 
+    <specialDisplayRadius>50</specialDisplayRadius>
+    <costStuffCount>31</costStuffCount>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <costList>
+      <Steel>310</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>600</MaxHitPoints>
+      <WorkToBuild>4000</WorkToBuild>
+      <Mass>100</Mass>
+    </statBases>
+    <researchPrerequisites>
+      <li>FlakM42</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>1.0</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Ammo Belt</fuelLabel>
+        <fuelGizmoLabel>Ammo</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>FlakThirtySeven</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>300</fuelCapacity>
+        <initialFuelPercent>0</initialFuelPercent>
+        <autoRefuelPercent>0.25</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>0</minimumFueledThreshold>
+        <atomicFueling>false</atomicFueling>
+        <fuelMultiplier>1</fuelMultiplier>
+        <factorByDifficulty>false</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Out of ammo</outOfFuelMessage>
+        <fuelIconPath>UI/Overlays/Ammo</fuelIconPath>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+  </ThingDef>
+
+  <ThingDef ParentName="DMC_BaseTurretWeapon">
+    <defName>Gun_37mmAutocannonTurret</defName>
+    <label>autocannon</label>
+    <description>A self-loading large-bore cannon designed to attach to a turret.</description>
+    <statBases>
+      <AccuracyTouch>0.8</AccuracyTouch>
+      <AccuracyShort>0.9</AccuracyShort>
+      <AccuracyMedium>0.92</AccuracyMedium>
+      <AccuracyLong>0.95</AccuracyLong>
+      <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_37mmAutocannonTurret</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <minRange>3</minRange>
+        <range>50</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>37mm_Autocannon_Shoot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>15</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+</Defs>
