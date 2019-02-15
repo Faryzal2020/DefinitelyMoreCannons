@@ -45,9 +45,9 @@
 
   	<RecipeDef>
 	    <defName>Make_288mmHE_x1</defName>
-	    <label>make 288mm HE Shell 1x</label>
-	    <description>Make a 288mm HE Shell.</description>
-	    <jobString>Making 288mm shell.</jobString>
+	    <label>make 9.2 Inch HE Shell 1x</label>
+	    <description>Make a 9.2 Inch HE Shell.</description>
+	    <jobString>Making 9.2 Inch shell.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>
 	    <effectWorking>Cook</effectWorking>
 	    <soundWorking>Recipe_Machining</soundWorking>
@@ -91,9 +91,9 @@
 
 	<RecipeDef>
 	    <defName>Make_288mmHE_x10</defName>
-	    <label>make 288mm HE Shell 10x</label>
-	    <description>Make a 288mm HE Shell 10 times.</description>
-	    <jobString>Making 288mm shell.</jobString>
+	    <label>make 9.2 Inch HE Shell 10x</label>
+	    <description>Make a 9.2 Inch HE Shell 10 times.</description>
+	    <jobString>Making 9.2 Inch shell.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>
 	    <effectWorking>Cook</effectWorking>
 	    <soundWorking>Recipe_Machining</soundWorking>

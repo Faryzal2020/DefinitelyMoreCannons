@@ -74,7 +74,7 @@
         <soundCast>600mm_Howitzer_Shoot</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>80</muzzleFlashScale>
-        <requireLineOfSight>true</requireLineOfSight>
+        <requireLineOfSight>false</requireLineOfSight>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
