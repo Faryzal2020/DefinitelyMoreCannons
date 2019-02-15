@@ -33,7 +33,7 @@
 	    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	    <costList>
 			<Steel>300</Steel>
-			<ComponentIndustrial>500</ComponentIndustrial>
+			<ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
 	    <statBases>
 		    <MaxHitPoints>600</MaxHitPoints>
