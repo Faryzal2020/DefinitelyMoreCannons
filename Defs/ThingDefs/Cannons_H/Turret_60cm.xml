@@ -40,7 +40,7 @@
       <Mass>50000</Mass>
     </statBases>
     <researchPrerequisites>
-      <li>mark1howitzer</li>
+      <li>KarlGerat</li>
     </researchPrerequisites>
     <comps>
       <li Class="CompProperties_Explosive">
