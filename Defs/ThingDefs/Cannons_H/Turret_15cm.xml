@@ -51,11 +51,14 @@
     <placeWorkers>
       <li>PlaceWorker_NotUnderRoof</li>
     </placeWorkers>
+    <inspectorTabs>
+        <li>ITab_Shells</li>
+    </inspectorTabs>
   </ThingDef>
 
   <ThingDef ParentName="DMC_MultishellWeapon">
     <defName>15cmSIG33_Turret</defName>
-    <label>15cm_Howitzer</label>
+    <label>15cm sIG 33 Howitzer</label>
     <description>A manned 15cm Howitzer cannon based on schweres Infanterie Geschütz 33, able to shoot over walls, 30 seconds reload.</description>
     <statBases>
       <AccuracyTouch>0.8</AccuracyTouch>
@@ -63,6 +66,9 @@
       <AccuracyMedium>0.8</AccuracyMedium>
       <AccuracyLong>0.8</AccuracyLong>
     </statBases>
+    <weaponTags>
+      <li>Artillery_BaseDestroyer</li>
+    </weaponTags>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>

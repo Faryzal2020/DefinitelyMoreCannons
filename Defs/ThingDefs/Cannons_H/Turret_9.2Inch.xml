@@ -51,6 +51,9 @@
     <placeWorkers>
       <li>PlaceWorker_NotUnderRoof</li>
     </placeWorkers>
+    <inspectorTabs>
+        <li>ITab_Shells</li>
+    </inspectorTabs>
   </ThingDef>
 
   <ThingDef ParentName="DMC_MultishellWeapon">
