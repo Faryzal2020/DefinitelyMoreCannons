@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="DMC_BaseMannedTurret">
+	    <defName>Turret_6PdrCannon</defName>
+	    <label>6 Pounder Cannon</label>
+	    <description>A manned 6 Pounder cannon that shoots AP shells. Manual ammunition loading, 80m Max range. Doesn't explode when destroyed.</description>
+	    <graphicData>
+	        <texPath>Things/Building/Manned6Pdr</texPath>
+	        <graphicClass>Graphic_Single</graphicClass>
+	        <drawSize>(11,11)</drawSize>
+	        <damageData>
+	        	<rect>(0.38,0.2,0.56375,0.8)</rect>
+	        	<cornerTL>Damage/Corner</cornerTL>
+	        </damageData>
+	        <shadowData>
+	        	<offset>(0,0,0)</offset>
+	        	<volume>(2,1.5,2)</volume>
+	        </shadowData>
+	    </graphicData>
+	    <uiIconPath>Things/Icons/6PdrCannon_MenuIcon</uiIconPath>
+	    <building>
+	        <turretGunDef>6PdrCannon</turretGunDef>
+	        <turretTopGraphicPath>Things/Building/Manned6Pdr_Top</turretTopGraphicPath>
+	        <turretTopDrawSize>11</turretTopDrawSize>
+	        <turretBurstWarmupTime>2.0</turretBurstWarmupTime>
+	        <turretBurstCooldownTime>3.0</turretBurstCooldownTime> <!-- Reload Time -->
+	    </building>
+	    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+	    <size>(3,3)</size> 
+	    <specialDisplayRadius>70</specialDisplayRadius>
+		<costStuffCount>40</costStuffCount>
+	    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+	    <costList>
+			<Steel>400</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+	    <statBases>
+		    <MaxHitPoints>1000</MaxHitPoints>
+		    <WorkToBuild>3500</WorkToBuild>
+		    <Mass>200</Mass>
+	    </statBases>
+	    <researchPrerequisites>
+	        <li>6PdrCannon</li>
+	    </researchPrerequisites>
+	    <inspectorTabs>
+	        <li>ITab_Shells</li>
+	    </inspectorTabs>
+	</ThingDef>
+  
+	<ThingDef ParentName="DMC_MultishellWeapon">
+		<defName>6PdrCannon</defName>
+		<label>6Pdr_cannon</label>
+		<description>A 6Pdr cannon that based on an ancient field antitank gun, very accurate and has a medium range.</description>
+		<statBases>
+		    <AccuracyTouch>0.66</AccuracyTouch>
+		    <AccuracyShort>0.78</AccuracyShort>
+		    <AccuracyMedium>0.9</AccuracyMedium>
+		    <AccuracyLong>0.98</AccuracyLong>
+		</statBases>
+		<verbs>
+		    <li>
+			    <verbClass>Verb_Shoot</verbClass>
+			    <hasStandardCommand>true</hasStandardCommand>
+			    <warmupTime>2.0</warmupTime>
+			    <minRange>4</minRange>
+			    <range>70</range>
+			    <burstShotCount>1</burstShotCount>
+			    <soundCast>6Pdr_Cannon_Shoot</soundCast>
+			    <muzzleFlashScale>20</muzzleFlashScale>
+			    <requireLineOfSight>true</requireLineOfSight>
+			    <targetParams>
+			        <canTargetLocations>true</canTargetLocations>
+			    </targetParams>
+		    </li>
+		</verbs>
+		<building>
+		    <fixedStorageSettings>
+			    <filter>
+			        <categories>
+			        	<li>6PdrCannonShells</li>
+			        </categories>
+			    </filter>
+		    </fixedStorageSettings>
+		    <defaultStorageSettings>
+			    <filter>
+			        <categories>
+			        	<li>6PdrCannonShells</li>
+			        </categories>
+			        <disallowedThingDefs>
+			        </disallowedThingDefs>
+			    </filter>
+		    </defaultStorageSettings>
+		</building>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingCategoryDef>
+      <defName>288mmShells</defName>
+      <label>9.2 Inch howitzer shells</label>
+      <parent>HShells</parent>
+      <iconPath>Things/Projectile/288HE</iconPath>
+    </ThingCategoryDef>
+
+	<ThingDef ParentName="Base_DMCAmmunitions">
+	    <defName>NinePointTwoInchShellHE</defName>
+	    <label>9.2 Inch HE Howitzer shell</label>
+	    <description>A 9.2 Inch high explosive howitzer shell.</description>
+	    <graphicData>
+	      	<texPath>Things/Projectile/288HE</texPath>
+	      	<graphicClass>Graphic_Single</graphicClass>
+	    </graphicData>
+	    <stackLimit>8</stackLimit>
+	    <statBases>
+	      	<MaxHitPoints>110</MaxHitPoints>
+	      	<MarketValue>312</MarketValue>
+	      	<Mass>30</Mass>
+	    </statBases>
+	    <thingCategories>
+	      	<li>288mmShells</li>
+	    </thingCategories>
+    	<projectileWhenLoaded>288mmBullet_Shell_HighExplosive</projectileWhenLoaded>
+  	</ThingDef>
+
+  	<ThingDef ParentName="BaseBullet_Explosive">
+	    <defName>288mmBullet_Shell_HighExplosive</defName>
+	    <label>9.2 Inch HE Shell</label>
+	    <graphicData>
+	      	<texPath>Things/Projectile/ShellHighExplosive</texPath>
+	      	<graphicClass>Graphic_Single</graphicClass>
+        	<shaderType>TransparentPostLight</shaderType>
+	    </graphicData>
+	    <projectile>
+	      	<damageDef>288mmHEBullet</damageDef>
+	      	<flyOverhead>true</flyOverhead>
+	      	<explosionRadius>7.0</explosionRadius>
+	      	<speed>80</speed>
+	    </projectile>
+  	</ThingDef>
+
+  	<RecipeDef>
+	    <defName>Make_288mmHE_x1</defName>
+	    <label>make 9.2 Inch HE Shell 1x</label>
+	    <description>Make a 9.2 Inch HE Shell.</description>
+	    <jobString>Making 9.2 Inch shell.</jobString>
+	    <workSpeedStat>SmithingSpeed</workSpeedStat>
+	    <effectWorking>Cook</effectWorking>
+	    <soundWorking>Recipe_Machining</soundWorking>
+	    <workAmount>2400</workAmount>
+	    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+	    <ingredients>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Steel</li>
+	            	</thingDefs>
+	        	</filter>
+	        	<count>80</count>
+	        </li>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Chemfuel</li>
+	            </thingDefs>
+	        	</filter>
+	        	<count>40</count>
+	        </li>
+	    </ingredients>
+	    <fixedIngredientFilter>
+	        <thingDefs>
+	        	<li>Steel</li>
+	        	<li>Chemfuel</li>
+	      	</thingDefs>
+	    </fixedIngredientFilter>
+	    <products>
+	      	<NinePointTwoInchShellHE>1</NinePointTwoInchShellHE>
+	    </products>
+	    <skillRequirements>
+	      	<Crafting>5</Crafting>
+	    </skillRequirements>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      	<li>CNCmachine</li>
+	    </recipeUsers>
+    </RecipeDef>
+
+	<RecipeDef>
+	    <defName>Make_288mmHE_x10</defName>
+	    <label>make 9.2 Inch HE Shell 10x</label>
+	    <description>Make a 9.2 Inch HE Shell 10 times.</description>
+	    <jobString>Making 9.2 Inch shell.</jobString>
+	    <workSpeedStat>SmithingSpeed</workSpeedStat>
+	    <effectWorking>Cook</effectWorking>
+	    <soundWorking>Recipe_Machining</soundWorking>
+	    <workAmount>18000</workAmount>
+	    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+	    <ingredients>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Steel</li>
+	            	</thingDefs>
+	        	</filter>
+	        	<count>800</count>
+	        </li>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Chemfuel</li>
+	            </thingDefs>
+	        	</filter>
+	        	<count>400</count>
+	        </li>
+	    </ingredients>
+	    <fixedIngredientFilter>
+	        <thingDefs>
+	        	<li>Steel</li>
+	        	<li>Chemfuel</li>
+	      	</thingDefs>
+	    </fixedIngredientFilter>
+	    <products>
+	      	<NinePointTwoInchShellHE>10</NinePointTwoInchShellHE>
+	    </products>
+	    <skillRequirements>
+	      	<Crafting>5</Crafting>
+	    </skillRequirements>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      	<li>CNCmachine</li>
+	    </recipeUsers>
+    </RecipeDef>
+</Defs>

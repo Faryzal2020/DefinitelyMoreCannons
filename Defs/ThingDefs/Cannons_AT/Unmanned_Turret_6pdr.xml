@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="DMC_BaseUnmannedTurret">
+    <defName>Turret_U6PdrCannon</defName>
+    <label>Unmanned 6Pdr Cannon</label>
+    <description>An unmanned 6 Pounder cannon that shoots AP shells. Manual ammunition loading, 70m Max range. Explodes with radius of 2 blocks when destroyed.</description>
+    <graphicData>
+      <texPath>Things/Building/Unmanned6Pdr</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(11, 11)</drawSize>
+      <damageData>
+        <rect>(0.38,0.2,0.56375,0.8)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+      </damageData>
+      <shadowData>
+        <volume>(2,1.5,2)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Things/Icons/6PdrCannon_MenuIcon</uiIconPath>
+    <building>
+      <turretGunDef>U6PdrCannon</turretGunDef>
+      <turretTopGraphicPath>Things/Building/Unmanned6Pdr_Top</turretTopGraphicPath>
+      <turretTopDrawSize>11</turretTopDrawSize>
+      <turretBurstCooldownTime>4</turretBurstCooldownTime> <!-- Reload Time -->
+    </building>
+    <size>(3,3)</size> 
+    <specialDisplayRadius>70</specialDisplayRadius>
+    <costStuffCount>40</costStuffCount>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <costList>
+      <Steel>400</Steel>
+      <Plasteel>100</Plasteel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <FCSComputer>1</FCSComputer>
+    </costList>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <WorkToBuild>4000</WorkToBuild>
+      <Mass>250</Mass>
+      <ShootingAccuracyTurret>1</ShootingAccuracyTurret>
+    </statBases>
+    <researchPrerequisites>
+      <li>Unmanned6PdrCannon</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>3.0</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1500</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Ammo</fuelLabel>
+        <fuelGizmoLabel>Ammo</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>SixPounderShellAP</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>30</fuelCapacity>
+        <initialFuelPercent>0</initialFuelPercent>
+        <autoRefuelPercent>0.25</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>0</minimumFueledThreshold>
+        <atomicFueling>false</atomicFueling>
+        <fuelMultiplier>1</fuelMultiplier>
+        <factorByDifficulty>false</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Out of ammo</outOfFuelMessage>
+        <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="DMC_BaseTurretWeapon">
+    <defName>U6PdrCannon</defName>
+    <label>autocannon</label>
+    <description>A self-loading large-bore cannon designed to attach to a turret.</description>
+    <statBases>
+      <AccuracyTouch>0.81</AccuracyTouch>
+      <AccuracyShort>0.9</AccuracyShort>
+      <AccuracyMedium>0.95</AccuracyMedium>
+      <AccuracyLong>0.98</AccuracyLong>
+      <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>6PdrCannonBullet_Shell_ArmourPiercing</defaultProjectile>
+        <warmupTime>2</warmupTime>
+        <minRange>5</minRange>
+        <range>70</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>6Pdr_Cannon_Shoot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>20</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+</Defs>

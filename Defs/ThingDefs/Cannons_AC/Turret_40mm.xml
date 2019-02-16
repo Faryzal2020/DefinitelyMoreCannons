@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="DMC_BaseMannedTurret">
+    <defName>40mmAutocannon</defName>
+    <label>40mm Flak 28 Bofors</label>
+    <description>A heavy 40mm automatic cannon turret. Uses 4x40mm Ammunition Clips with ammunition storage of 20 clips, 70m max range. Explodes with radius of 1 block when destroyed.</description>
+    <graphicData>
+      <texPath>Things/Building/MannedSingleBofors</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(6, 6)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(1.5,0.35,1.4)</volume>
+        <offset>(0,0,-0.05)</offset>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Things/Icons/40mmAutocannon_MenuIcon</uiIconPath>
+    <building>
+      <turretGunDef>Gun_40mmAutocannonTurret</turretGunDef>
+      <turretTopGraphicPath>Things/Building/MannedSingleBofors_Top</turretTopGraphicPath>
+      <turretTopDrawSize>6</turretTopDrawSize>
+      <turretBurstCooldownTime>0.8</turretBurstCooldownTime> <!-- Reload Time -->
+    </building>
+    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+    <size>(3,4)</size> 
+    <specialDisplayRadius>70</specialDisplayRadius>
+    <costStuffCount>42</costStuffCount>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <costList>
+      <Steel>420</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>600</MaxHitPoints>
+      <WorkToBuild>5000</WorkToBuild>
+      <Mass>100</Mass>
+    </statBases>
+    <researchPrerequisites>
+      <li>SingleBofors</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>1.0</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Ammo Magazine</fuelLabel>
+        <fuelGizmoLabel>Ammo</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>FlakTwentyMag</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>8</fuelCapacity>
+        <initialFuelPercent>0</initialFuelPercent>
+        <autoRefuelPercent>0.25</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>0</minimumFueledThreshold>
+        <atomicFueling>false</atomicFueling>
+        <fuelMultiplier>1</fuelMultiplier>
+        <factorByDifficulty>false</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Out of ammo</outOfFuelMessage>
+        <fuelIconPath>UI/Overlays/Ammo</fuelIconPath>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+  </ThingDef>
+
+  <ThingDef ParentName="DMC_BaseTurretWeapon">
+    <defName>Gun_40mmAutocannonTurret</defName>
+    <label>autocannon</label>
+    <description>A self-loading large-bore cannon designed to attach to a turret.</description>
+    <statBases>
+      <AccuracyTouch>0.78</AccuracyTouch>
+      <AccuracyShort>0.86</AccuracyShort>
+      <AccuracyMedium>0.92</AccuracyMedium>
+      <AccuracyLong>0.92</AccuracyLong>
+      <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_40mmAutocannonTurret</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <minRange>5</minRange>
+        <range>70</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>40mm_Autocannon_Shoot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>18</muzzleFlashScale>
+        <consumeFuelPerShot>0.25</consumeFuelPerShot>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+</Defs>

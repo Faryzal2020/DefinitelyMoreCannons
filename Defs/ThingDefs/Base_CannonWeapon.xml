@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="DMC_BaseTurretWeapon" ParentName="BaseHumanGun" Abstract="True">
+	    <graphicData>
+	      <texPath>Things/Item/Equipment/WeaponRanged/ChargeRifle</texPath>
+	      <graphicClass>Graphic_Single</graphicClass>
+	      <drawSize>(2,2)</drawSize>
+	    </graphicData>
+	    <soundInteract>Interact_Rifle</soundInteract>
+	    <menuHidden>true</menuHidden>
+	    <destroyOnDrop>true</destroyOnDrop>
+	    <tradeability>None</tradeability>
+	    <useHitPoints>false</useHitPoints>
+	    <weaponTags Inherit="false">
+	      <li>TurretGun</li>
+	    </weaponTags>
+	    <statBases>
+	      <DeteriorationRate>0</DeteriorationRate>
+	      <Mass>40</Mass>
+	      <Flammability>0</Flammability>
+	    </statBases>
+	</ThingDef>
+
+	<ThingDef Name="DMC_MultishellWeapon" Abstract="True">
+		<category>Item</category>
+	    <thingClass>ThingWithComps</thingClass>
+	    <label>artillery error</label>
+	    <useHitPoints>false</useHitPoints>
+	    <equipmentType>Primary</equipmentType>
+	    <tickerType>Never</tickerType>
+	    <techLevel>Industrial</techLevel>
+	    <destroyOnDrop>True</destroyOnDrop>
+	    <menuHidden>True</menuHidden>
+	    <tradeability>None</tradeability>
+	    <weaponTags>
+	      <li>TurretGun</li>
+	    </weaponTags>
+	    <comps>
+	      <li>
+	        <compClass>CompEquippable</compClass>
+	      </li>
+	      <li Class="CompProperties_ChangeableProjectile" />
+	    </comps>
+	</ThingDef>
+</Defs>

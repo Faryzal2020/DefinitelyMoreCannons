@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BasePawn" Name="BaseMechanoid_DMC" Abstract="True">
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <statBases>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <ToxicSensitivity>0</ToxicSensitivity>
+      <Flammability>0</Flammability>
+      <ComfyTemperatureMin>-150</ComfyTemperatureMin>
+      <ComfyTemperatureMax>300</ComfyTemperatureMax>
+    </statBases>
+    <race>
+      <fleshType>Mechanoid</fleshType>
+      <needsRest>false</needsRest>
+      <hasGenders>false</hasGenders>
+      <foodType>None</foodType>
+    </race>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bullet</damageDef>
+        <multiplier>0.5</multiplier>
+      </li>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>0.7</multiplier>
+      </li>
+      <li>
+        <damageDef>EMP</damageDef>
+        <multiplier>0.9</multiplier>
+      </li>
+      <li>
+        <damageDef>100mmAP</damageDef>
+        <multiplier>0.7</multiplier>
+      </li>
+    </damageMultipliers>
+  </ThingDef>
+
+  <!-- Armored Centipede -->
+  
+  <ThingDef ParentName="BaseMechanoid_DMC">
+    <defName>Mech_ArmoredCentipede</defName>
+    <label>armored centipede</label>
+    <description>Heavy armored combat mechanoids that glide on dozens of tiny legs. This type of centipede mechanoid uses an additional external armor suit to protect against small caliber guns to medium caliber machineguns.</description>
+    <statBases>
+      <MoveSpeed>1.3</MoveSpeed>
+      <ArmorRating_Blunt>1.7</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.7</ArmorRating_Sharp>
+    </statBases>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <body>MechanicalArmoredCentipede</body>
+      <baseBodySize>4.0</baseBodySize>
+      <baseHealthScale>7</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+          <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>
+        <min>1000</min>
+        <max>2000</max>
+      </soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+      <Steel>1000</Steel>
+      <Plasteel>200</Plasteel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>Mech_ArmoredCentipede</defName>
+    <label>armored centipede</label>
+    <race>Mech_ArmoredCentipede</race>
+    <combatPower>600</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/ArmoredCentipede</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>4</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>
+      <min>9999</min>
+      <max>9999</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>MechanoidGunHeavy</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <!-- Advanced Armored Centipede -->
+  <ThingDef ParentName="BaseMechanoid_DMC">
+    <defName>Mech_AdvArmoredCentipede</defName>
+    <label>advanced armored centipede</label>
+    <description>Superheavy armored combat mechanoids that glide on dozens of tiny legs. This particular mechanoid was built with a different kind of material. Because of the weight, its very slow, but you would need a bigger gun to kill this thing.</description>
+    <statBases>
+      <MoveSpeed>1</MoveSpeed>
+      <ArmorRating_Blunt>2</ArmorRating_Blunt>
+      <ArmorRating_Sharp>2</ArmorRating_Sharp>
+    </statBases>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>50</power>
+        <cooldownTime>10</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <body>AdvMechanicalArmoredCentipede</body>
+      <baseBodySize>5.0</baseBodySize>
+      <baseHealthScale>10</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+          <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>
+        <min>1000</min>
+        <max>2000</max>
+      </soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+      <Steel>5000</Steel>
+      <Plasteel>500</Plasteel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>Mech_AdvArmoredCentipede</defName>
+    <label>advanced armored centipede</label>
+    <race>Mech_AdvArmoredCentipede</race>
+    <combatPower>1000</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/AdvArmoredCentipede</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>4</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.9, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>
+      <min>9999</min>
+      <max>9999</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>MechanoidGunHeavy</li>
+    </weaponTags>
+  </PawnKindDef>
+</Defs>

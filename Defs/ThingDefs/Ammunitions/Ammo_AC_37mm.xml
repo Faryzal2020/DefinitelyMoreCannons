@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingCategoryDef>
+      <defName>37mmAmmunitions</defName>
+      <label>37mm Ammunitions</label>
+      <parent>ACShells</parent>
+      <iconPath>Things/Projectile/37AP</iconPath>
+    </ThingCategoryDef>
+
+	<ThingDef ParentName="Base_DMCAmmunitions">
+	    <defName>FlakThirtySeven</defName>
+	    <label>37mm AP Shell</label>
+	    <description>A 37mm Armour Piercing Shell.</description>
+	    <graphicData>
+	      	<texPath>Things/Projectile/37AP</texPath>
+	      	<graphicClass>Graphic_Single</graphicClass>
+	      	<drawSize>0.90</drawSize>
+	    </graphicData>
+	    <stackLimit>75</stackLimit>
+	    <statBases>
+	        <MaxHitPoints>50</MaxHitPoints>
+	        <MarketValue>39.2</MarketValue>
+	        <Mass>1</Mass>
+	    </statBases>
+	    <thingCategories>
+	        <li>37mmAmmunitions</li>
+	    </thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+	    <defName>Bullet_37mmAutocannonTurret</defName>
+	    <label>37mm autocannon shell</label>
+	    <graphicData>
+	        <texPath>Things/Projectile/Bullet_Big</texPath>
+	        <graphicClass>Graphic_Single</graphicClass>
+	    </graphicData>
+	    <projectile>
+	        <damageDef>Bullet</damageDef>
+	        <damageAmountBase>38</damageAmountBase>
+	        <speed>200</speed>
+      		<armorPenetrationBase>0.4</armorPenetrationBase>
+	    </projectile>
+	</ThingDef>
+
+	<RecipeDef>
+	    <defName>Make_37mmShell_x10</defName>
+	    <label>make 37mm Shell 10x</label>
+	    <description>Make a 37mm AP Shell 10 times.</description>
+	    <jobString>Making 37mm Shell.</jobString>
+	    <workSpeedStat>SmithingSpeed</workSpeedStat>
+	    <effectWorking>Cook</effectWorking>
+	    <soundWorking>Recipe_Machining</soundWorking>
+	    <workAmount>760</workAmount>
+	    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+	    <ingredients>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Steel</li>
+	            	</thingDefs>
+	        	</filter>
+	        	<count>80</count>
+	        </li>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Chemfuel</li>
+	            </thingDefs>
+	        	</filter>
+	        	<count>60</count>
+	        </li>
+	    </ingredients>
+	    <fixedIngredientFilter>
+	        <thingDefs>
+	        	<li>Steel</li>
+	        	<li>Chemfuel</li>
+	      	</thingDefs>
+	    </fixedIngredientFilter>
+	    <products>
+	      	<FlakThirtySeven>10</FlakThirtySeven>
+	    </products>
+	    <skillRequirements>
+	      	<Crafting>3</Crafting>
+	    </skillRequirements>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      	<li>CNCmachine</li>
+	    </recipeUsers>
+    </RecipeDef>
+
+	<RecipeDef>
+	    <defName>Make_37mmShell_x100</defName>
+	    <label>make 37mm Shell 100x</label>
+	    <description>Make a 37mm AP Shell 100 times.</description>
+	    <jobString>Making 37mm Shell.</jobString>
+	    <workSpeedStat>SmithingSpeed</workSpeedStat>
+	    <effectWorking>Cook</effectWorking>
+	    <soundWorking>Recipe_Machining</soundWorking>
+	    <workAmount>5700</workAmount>
+	    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+	    <ingredients>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Steel</li>
+	            	</thingDefs>
+	        	</filter>
+	        	<count>800</count>
+	        </li>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Chemfuel</li>
+	            </thingDefs>
+	        	</filter>
+	        	<count>600</count>
+	        </li>
+	    </ingredients>
+	    <fixedIngredientFilter>
+	        <thingDefs>
+	        	<li>Steel</li>
+	        	<li>Chemfuel</li>
+	      	</thingDefs>
+	    </fixedIngredientFilter>
+	    <products>
+	      	<FlakThirtySeven>100</FlakThirtySeven>
+	    </products>
+	    <skillRequirements>
+	      	<Crafting>3</Crafting>
+	    </skillRequirements>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      	<li>CNCmachine</li>
+	    </recipeUsers>
+    </RecipeDef>
+</Defs>

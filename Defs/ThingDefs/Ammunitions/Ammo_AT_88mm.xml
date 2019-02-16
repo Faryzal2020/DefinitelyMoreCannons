@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingCategoryDef>
+      <defName>88mmCannonShells</defName>
+      <label>88mm cannon shells</label>
+      <parent>DMCShells</parent>
+      <iconPath>Things/Projectile/88APCBC</iconPath>
+    </ThingCategoryDef>
+
+    <!--     AP Shell      -->
+
+	<ThingDef ParentName="Base_DMCAmmunitions">
+	    <defName>EightyEightShellAP</defName>
+	    <label>88mm AP Cannon shell</label>
+	    <description>An 88mm APCBC (Armour Piercing Capped Ballistic-Capped) cannon shell with some explosive filler.</description>
+	    <graphicData>
+	      	<texPath>Things/Projectile/88APCBC</texPath>
+	      	<graphicClass>Graphic_Single</graphicClass>
+	    </graphicData>
+	    <stackLimit>30</stackLimit>
+	    <statBases>
+	      	<MaxHitPoints>100</MaxHitPoints>
+	      	<MarketValue>46</MarketValue>
+	      	<Mass>5</Mass>
+	    </statBases>
+	    <thingCategories>
+	      	<li>88mmCannonShells</li>
+	    </thingCategories>
+    	<projectileWhenLoaded>88mmCannonBullet_Shell_ArmourPiercing</projectileWhenLoaded>
+  	</ThingDef>
+
+  	<ThingDef ParentName="BaseBullet_Explosive">
+	    <defName>88mmCannonBullet_Shell_ArmourPiercing</defName>
+	    <label>88mm AP Shell</label>
+	    <graphicData>
+	      	<texPath>Things/Projectile/Bullet_Big</texPath>
+	      	<graphicClass>Graphic_Single</graphicClass>
+	    </graphicData>
+	    <projectile>
+	      	<damageDef>CannonAPBullet</damageDef>
+	      	<flyOverhead>false</flyOverhead>
+	      	<explosionRadius>1.0</explosionRadius>
+	      	<armorPenetrationBase>0.85</armorPenetrationBase>
+	      	<damageAmountBase>200</damageAmountBase>
+	      	<speed>400</speed>
+	    </projectile>
+  	</ThingDef>
+
+  	<RecipeDef>
+	    <defName>Make_88mmAP_x1</defName>
+	    <label>make 88mm AP Shell 1x</label>
+	    <description>Make a 88mm AP Shell.</description>
+	    <jobString>Making 88mm shell.</jobString>
+	    <workSpeedStat>SmithingSpeed</workSpeedStat>
+	    <effectWorking>Cook</effectWorking>
+	    <soundWorking>Recipe_Machining</soundWorking>
+	    <workAmount>800</workAmount>
+	    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+	    <ingredients>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Steel</li>
+	            	</thingDefs>
+	        	</filter>
+	        	<count>20</count>
+	        </li>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Chemfuel</li>
+	            </thingDefs>
+	        	</filter>
+	        	<count>2</count>
+	        </li>
+	    </ingredients>
+	    <fixedIngredientFilter>
+	        <thingDefs>
+	        	<li>Steel</li>
+	        	<li>Chemfuel</li>
+	      	</thingDefs>
+	    </fixedIngredientFilter>
+	    <products>
+	      	<EightyEightShellAP>1</EightyEightShellAP>
+	    </products>
+	    <skillRequirements>
+	      	<Crafting>4</Crafting>
+	    </skillRequirements>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      	<li>CNCmachine</li>
+	    </recipeUsers>
+    </RecipeDef>
+
+	<RecipeDef>
+	    <defName>Make_88mmAP_x10</defName>
+	    <label>make 88mm AP Shell 10x</label>
+	    <description>Make a 88mm AP Shell 10 times.</description>
+	    <jobString>Making 88mm shell.</jobString>
+	    <workSpeedStat>SmithingSpeed</workSpeedStat>
+	    <effectWorking>Cook</effectWorking>
+	    <soundWorking>Recipe_Machining</soundWorking>
+	    <workAmount>6000</workAmount>
+	    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+	    <ingredients>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Steel</li>
+	            	</thingDefs>
+	        	</filter>
+	        	<count>200</count>
+	        </li>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Chemfuel</li>
+	            </thingDefs>
+	        	</filter>
+	        	<count>20</count>
+	        </li>
+	    </ingredients>
+	    <fixedIngredientFilter>
+	        <thingDefs>
+	        	<li>Steel</li>
+	        	<li>Chemfuel</li>
+	      	</thingDefs>
+	    </fixedIngredientFilter>
+	    <products>
+	      	<EightyEightShellAP>10</EightyEightShellAP>
+	    </products>
+	    <skillRequirements>
+	      	<Crafting>4</Crafting>
+	    </skillRequirements>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      	<li>CNCmachine</li>
+	    </recipeUsers>
+    </RecipeDef>
+
+
+    <!--     HE Shell      -->
+
+	<ThingDef ParentName="Base_DMCAmmunitions">
+	    <defName>EightyEightShellHE</defName>
+	    <label>88mm HE Cannon shell</label>
+	    <description>An 88mm high explosive cannon shell.</description>
+	    <graphicData>
+	      	<texPath>Things/Projectile/88HE</texPath>
+	      	<graphicClass>Graphic_Single</graphicClass>
+	    </graphicData>
+	    <stackLimit>30</stackLimit>
+	    <statBases>
+	      	<MaxHitPoints>80</MaxHitPoints>
+	      	<MarketValue>62.2</MarketValue>
+	      	<Mass>4</Mass>
+	    </statBases>
+	    <thingCategories>
+	      	<li>88mmCannonShells</li>
+	    </thingCategories>
+    	<projectileWhenLoaded>88mmCannonBullet_Shell_HighExplosive</projectileWhenLoaded>
+  	</ThingDef>
+
+  	<ThingDef ParentName="BaseBullet_Explosive">
+	    <defName>88mmCannonBullet_Shell_HighExplosive</defName>
+	    <label>88mm HE Shell</label>
+	    <graphicData>
+	      	<texPath>Things/Projectile/Bullet_Big</texPath>
+	      	<graphicClass>Graphic_Single</graphicClass>
+	    </graphicData>
+	    <projectile>
+	      	<damageDef>CannonHEBullet</damageDef>
+	      	<flyOverhead>false</flyOverhead>
+	      	<explosionRadius>2.0</explosionRadius>
+	      	<speed>300</speed>
+	    </projectile>
+  	</ThingDef>
+
+  	<RecipeDef>
+	    <defName>Make_88mmHE_x1</defName>
+	    <label>make 88mm HE Shell 1x</label>
+	    <description>Make a 88mm HE Shell.</description>
+	    <jobString>Making 88mm shell.</jobString>
+	    <workSpeedStat>SmithingSpeed</workSpeedStat>
+	    <effectWorking>Cook</effectWorking>
+	    <soundWorking>Recipe_Machining</soundWorking>
+	    <workAmount>800</workAmount>
+	    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+	    <ingredients>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Steel</li>
+	            	</thingDefs>
+	        	</filter>
+	        	<count>18</count>
+	        </li>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Chemfuel</li>
+	            </thingDefs>
+	        	</filter>
+	        	<count>7</count>
+	        </li>
+	    </ingredients>
+	    <fixedIngredientFilter>
+	        <thingDefs>
+	        	<li>Steel</li>
+	        	<li>Chemfuel</li>
+	      	</thingDefs>
+	    </fixedIngredientFilter>
+	    <products>
+	      	<EightyEightShellHE>1</EightyEightShellHE>
+	    </products>
+	    <skillRequirements>
+	      	<Crafting>4</Crafting>
+	    </skillRequirements>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      	<li>CNCmachine</li>
+	    </recipeUsers>
+    </RecipeDef>
+
+	<RecipeDef>
+	    <defName>Make_88mmHE_x10</defName>
+	    <label>make 88mm HE Shell 10x</label>
+	    <description>Make a 88mm HE Shell 10 times.</description>
+	    <jobString>Making 88mm shell.</jobString>
+	    <workSpeedStat>SmithingSpeed</workSpeedStat>
+	    <effectWorking>Cook</effectWorking>
+	    <soundWorking>Recipe_Machining</soundWorking>
+	    <workAmount>6000</workAmount>
+	    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+	    <ingredients>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Steel</li>
+	            	</thingDefs>
+	        	</filter>
+	        	<count>180</count>
+	        </li>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Chemfuel</li>
+	            </thingDefs>
+	        	</filter>
+	        	<count>70</count>
+	        </li>
+	    </ingredients>
+	    <fixedIngredientFilter>
+	        <thingDefs>
+	        	<li>Steel</li>
+	        	<li>Chemfuel</li>
+	      	</thingDefs>
+	    </fixedIngredientFilter>
+	    <products>
+	      	<EightyEightShellHE>10</EightyEightShellHE>
+	    </products>
+	    <skillRequirements>
+	      	<Crafting>4</Crafting>
+	    </skillRequirements>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      	<li>CNCmachine</li>
+	    </recipeUsers>
+    </RecipeDef>
+</Defs>

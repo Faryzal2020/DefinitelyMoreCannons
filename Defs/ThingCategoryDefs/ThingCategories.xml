@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingCategoryDef>
+      <defName>DMCShells</defName>
+      <label>Cannon Shells</label>
+      <parent>Manufactured</parent>
+      <iconPath>Things/Icons/Shells_CategoryIcon</iconPath>
+    </ThingCategoryDef>
+    <ThingCategoryDef>
+      <defName>ATCShells</defName>
+      <label>AT Cannon Shells</label>
+      <parent>DMCShells</parent>
+      <iconPath>Things/Icons/Shells_CategoryIcon</iconPath>
+    </ThingCategoryDef>
+    <ThingCategoryDef>
+      <defName>ACShells</defName>
+      <label>Autocannon Shells</label>
+      <parent>DMCShells</parent>
+      <iconPath>Things/Icons/Shells_CategoryIcon</iconPath>
+    </ThingCategoryDef>
+    <ThingCategoryDef>
+      <defName>HShells</defName>
+      <label>Howitzer Shells</label>
+      <parent>DMCShells</parent>
+      <iconPath>Things/Icons/Shells_CategoryIcon</iconPath>
+    </ThingCategoryDef>
+    <ThingCategoryDef>
+      <defName>NGShells</defName>
+      <label>Naval Gun Shells</label>
+      <parent>DMCShells</parent>
+      <iconPath>Things/Icons/Shells_CategoryIcon</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>CannonMaterials</defName>
+      <label>Cannon Turret Building Materials</label>
+      <parent>Manufactured</parent>
+      <iconPath>Things/Icons/6PdrCannon_MenuIcon</iconPath>
+    </ThingCategoryDef>
+</Defs>

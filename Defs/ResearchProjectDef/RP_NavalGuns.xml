@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>127mmNaval</defName>
+    <label>127mm naval gun</label>
+    <description>A manned single 127mm naval gun turret that shoots HE shells over long distances.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>NavalGuns</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>1</researchViewY>
+    <tab>DMC_NavalGuns</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>100mmNaval</defName>
+    <label>100mm naval gun</label>
+    <description>A fast-firing manned single 100mm naval gun turret that uses a belt-feed ammo consists of 100 shells.</description>
+    <baseCost>3500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>127mmNaval</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>1</researchViewY>
+    <tab>DMC_NavalGuns</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>120mmNaval</defName>
+    <label>120mm naval gun</label>
+    <description>A fast-firing manned single 120mm naval gun turret that uses a belt-feed ammo consists of 52 shells.</description>
+    <baseCost>4000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>100mmNaval</li>
+    </prerequisites>
+    <researchViewX>3</researchViewX>
+    <researchViewY>1</researchViewY>
+    <tab>DMC_NavalGuns</tab>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>150mmNaval</defName>
+    <label>Heavy: 150mm naval gun</label>
+    <description>A manned single mounted 15cm naval gun turret that can shoot over walls, has a relatively high fire rate and very durable.</description>
+    <baseCost>3500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>HeavyNavalGuns</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>4</researchViewY>
+    <tab>DMC_NavalGuns</tab>
+  </ResearchProjectDef>  
+  <ResearchProjectDef>
+    <defName>Twin127mmNaval</defName>
+    <label>Heavy: 127mm naval gun</label>
+    <description>A manned dual mounted 127mm naval gun turret that can shoot over walls, has a relatively high fire rate and very durable.</description>
+    <baseCost>4200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>150mmNaval</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>4</researchViewY>
+    <tab>DMC_NavalGuns</tab>
+  </ResearchProjectDef>
+</Defs>
