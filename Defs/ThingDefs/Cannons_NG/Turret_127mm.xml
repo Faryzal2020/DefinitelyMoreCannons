@@ -57,7 +57,7 @@
     </inspectorTabs>
   </ThingDef>
 
-  <ThingDef ParentName="DMC_BaseTurretWeapon">
+  <ThingDef ParentName="DMC_MultishellWeapon">
     <defName>127mmCannon</defName>
     <label>127mm_cannon</label>
     <description>A self-loading large-bore cannon designed to attach to a turret.</description>
@@ -76,7 +76,6 @@
         <range>500</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>127mm_Cannon_Shoot</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>35</muzzleFlashScale>
         <requireLineOfSight>true</requireLineOfSight>
         <targetParams>
