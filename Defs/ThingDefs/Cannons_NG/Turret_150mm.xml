@@ -57,7 +57,7 @@
     </inspectorTabs>
   </ThingDef>
 
-  <ThingDef ParentName="DMC_BaseTurretWeapon">
+  <ThingDef ParentName="DMC_MultishellWeapon">
     <defName>150mmCannon</defName>
     <label>150mm_cannon</label>
     <description>A self-loading large-bore cannon designed to attach to a turret.</description>

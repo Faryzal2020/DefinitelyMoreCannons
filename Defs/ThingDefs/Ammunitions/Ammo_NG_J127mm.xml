@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <ThingCategoryDef>
-      <defName>127mmCannonShells</defName>
+      <defName>J127mmCannonShells</defName>
       <label>127mm cannon shells</label>
       <parent>NGShells</parent>
       <iconPath>Things/Projectile/127HE</iconPath>
@@ -23,7 +23,7 @@
 	        <Mass>10</Mass>
 	    </statBases>
 	    <thingCategories>
-	        <li>127mmCannonShells</li>
+	        <li>J127mmCannonShells</li>
 	    </thingCategories>
 	</ThingDef>
 

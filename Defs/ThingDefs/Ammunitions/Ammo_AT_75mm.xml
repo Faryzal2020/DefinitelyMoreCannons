@@ -3,7 +3,7 @@
     <ThingCategoryDef>
       <defName>75mmCannonShells</defName>
       <label>75mm cannon shells</label>
-      <parent>DMCShells</parent>
+      <parent>ATCShells</parent>
       <iconPath>Things/Projectile/75AP</iconPath>
     </ThingCategoryDef>
 

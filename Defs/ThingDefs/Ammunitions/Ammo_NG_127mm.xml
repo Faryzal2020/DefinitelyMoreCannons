@@ -3,7 +3,7 @@
     <ThingCategoryDef>
       <defName>127mmCannonShells</defName>
       <label>127mm cannon shells</label>
-      <parent>DMCShells</parent>
+      <parent>NGShells</parent>
       <iconPath>Things/Projectile/127HE</iconPath>
     </ThingCategoryDef>
 
