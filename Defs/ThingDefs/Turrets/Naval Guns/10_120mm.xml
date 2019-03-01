@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="DMC_BaseMannedTurret">
+    <defName>120mmNavalgun</defName>
+    <label>120mm TAK120</label>
+    <description>A manned 120mm Naval gun based on Swedish 120mm/46 (4.7") TAK120 Naval gun. Uses a complex ready-rack ammunition feed with total capacity of 52 rounds. This turret fires 6 round burst at 80 Rounds per minute fire rate, cools down for 2 seconds after each bursts. Consumes 2500W of power for its electric-powered aiming controls. 15m min range, 250m max range. Explodes with radius of 3 blocks when destroyed.  Because of the size, this turret cant be placed under a roof.</description>
+    <graphicData>
+      <texPath>Things/Building/MannedTAK120</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(13, 13)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(3.5,2.2,3.5)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Things/Icons/MannedTAK120_MenuIcon</uiIconPath>
+    <building>
+      <turretGunDef>Gun_120mmNavalgunTurret</turretGunDef>
+      <turretTopGraphicPath>Things/Building/MannedTAK120_Top</turretTopGraphicPath>
+      <turretTopDrawSize>10</turretTopDrawSize>
+      <turretBurstCooldownTime>2</turretBurstCooldownTime> <!-- Reload Time -->
+    </building>
+    <interactionCellOffset>(0,0,-3)</interactionCellOffset>
+    <size>(6,6)</size> 
+    <specialDisplayRadius>250</specialDisplayRadius>
+    <costStuffCount>200</costStuffCount>
+    <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+    <costList>
+      <Steel>2000</Steel>
+      <Plasteel>250</Plasteel>
+      <Gold>30</Gold>
+      <ComponentIndustrial>15</ComponentIndustrial>
+      <ComponentSpacer>6</ComponentSpacer>
+    </costList>
+    <statBases>
+      <MaxHitPoints>13500</MaxHitPoints>
+      <WorkToBuild>24000</WorkToBuild>
+      <Mass>200</Mass>
+    </statBases>
+    <researchPrerequisites>
+      <li>120mmNaval</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>3.0</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>2500</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Ammo Rack Feed</fuelLabel>
+        <fuelGizmoLabel>Ammo</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>TAKShell</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>52</fuelCapacity>
+        <initialFuelPercent>0</initialFuelPercent>
+        <autoRefuelPercent>0.5</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>0</minimumFueledThreshold>
+        <atomicFueling>false</atomicFueling>
+        <fuelMultiplier>1</fuelMultiplier>
+        <factorByDifficulty>false</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Out of ammo</outOfFuelMessage>
+        <fuelIconPath>UI/Overlays/Ammo</fuelIconPath>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+  </ThingDef>
+
+  <ThingDef ParentName="DMC_BaseTurretWeapon">
+    <defName>Gun_120mmNavalgunTurret</defName>
+    <label>autocannon</label>
+    <description>A self-loading large-bore cannon designed to attach to a turret.</description>
+    <statBases>
+      <AccuracyTouch>1</AccuracyTouch>
+      <AccuracyShort>1</AccuracyShort>
+      <AccuracyMedium>1</AccuracyMedium>
+      <AccuracyLong>1</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_120mmNavalgunTurret</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <minRange>15</minRange>
+        <range>250</range>
+        <ticksBetweenBurstShots>45</ticksBetweenBurstShots>
+        <burstShotCount>6</burstShotCount>
+        <soundCast>Sound_120mm</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>45</muzzleFlashScale>
+        <consumeFuelPerShot>6</consumeFuelPerShot>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+</Defs>

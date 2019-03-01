@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="DMC_BaseMannedTurret">
+	    <defName>Turret_15cmSIG</defName>
+	    <label>15cm sIG 33</label>
+	    <description>A manned 15cm Howitzer cannon based on schweres Infanterie Geschütz 33, able to shoot over walls, 250m max range, 30 seconds reload. Explodes with radius of 2 blocks when destroyed.</description>
+	    <graphicData>
+	        <texPath>Things/Building/MannedSig33</texPath>
+	        <graphicClass>Graphic_Single</graphicClass>
+	        <drawSize>(11,11)</drawSize>
+	        <damageData>
+	        	<rect>(0.38,0.2,0.56375,0.8)</rect>
+	        	<cornerTL>Damage/Corner</cornerTL>
+	        </damageData>
+	        <shadowData>
+	        	<offset>(0,0,0)</offset>
+	        	<volume>(2,1.5,2)</volume>
+	        </shadowData>
+	    </graphicData>
+	    <uiIconPath>Things/Icons/MannedSig33_MenuIcon</uiIconPath>
+	    <building>
+	        <turretGunDef>15cmSIG33_Turret</turretGunDef>
+	        <turretTopGraphicPath>Things/Building/MannedSig33_Top</turretTopGraphicPath>
+	        <turretTopDrawSize>11</turretTopDrawSize>
+	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
+	        <turretBurstCooldownTime>30</turretBurstCooldownTime> <!-- Reload Time -->
+	    </building>
+	    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+	    <size>(3,3)</size> 
+	    <specialDisplayRadius>200</specialDisplayRadius>
+		<costStuffCount>35</costStuffCount>
+	    <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+	    <costList>
+			<Steel>350</Steel>
+			<!--Plasteel <Plasteel></Plasteel> Plasteel-->
+			  <ComponentIndustrial>3</ComponentIndustrial>  
+			<!--AdvCompo <ComponentSpacer></ComponentSpacer> AdvCompo-->
+		</costList>
+	    <statBases>
+		    <MaxHitPoints>500</MaxHitPoints>
+		    <WorkToBuild>4500</WorkToBuild>
+		    <Mass>200</Mass>
+	    </statBases>
+	    <researchPrerequisites>
+	        <li>sIG33Howitzer</li>
+	    </researchPrerequisites>
+	    <comps>
+	    	 
+	      <li Class="CompProperties_Explosive">
+	        <explosiveRadius>2</explosiveRadius>
+	        <explosiveDamageType>Bomb</explosiveDamageType>
+	      </li>
+	      	 
+
+	      	<!--usesPower
+	      <li Class="CompProperties_Power">
+	        <compClass>CompPowerTrader</compClass>
+	        <basePowerConsumption>1</basePowerConsumption>
+	      </li>
+	      	usesPower-->
+
+	      <!--hasAmmoRack
+	      <li Class="CompProperties_Refuelable">
+	        <fuelLabel>Ammunitions</fuelLabel>
+	        <fuelGizmoLabel>Ammo</fuelGizmoLabel>
+	        <fuelFilter>
+	          <thingDefs>
+	            <li></li>
+	          </thingDefs>
+	        </fuelFilter>
+	        <fuelCapacity></fuelCapacity>
+	        <initialFuelPercent>0</initialFuelPercent>
+	        <autoRefuelPercent>0.25</autoRefuelPercent>
+	        <showFuelGizmo>true</showFuelGizmo>
+	        <minimumFueledThreshold>0</minimumFueledThreshold>
+	        <atomicFueling>false</atomicFueling>
+	        <fuelMultiplier>1</fuelMultiplier>
+	        <factorByDifficulty>false</factorByDifficulty>
+	        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+	        <outOfFuelMessage>Cannot shoot: Out of ammo</outOfFuelMessage>
+	        <fuelIconPath>UI/Overlays/Ammo</fuelIconPath>
+	      </li>
+	  	hasAmmoRack-->
+	    </comps>
+	     
+	    <inspectorTabs>
+	        <li>ITab_Shells</li>
+	    </inspectorTabs>
+	     
+	     
+	    <placeWorkers>
+	      <li>PlaceWorker_NotUnderRoof</li>
+	    </placeWorkers>
+	     
+	</ThingDef>
+  	
+
+	 <ThingDef ParentName="DMC_MultishellWeapon"> 
+	<!--hasAmmoRack<ThingDef ParentName="DMC_BaseTurretWeapon">hasAmmoRack-->
+		<defName>15cmSIG33_Turret</defName>
+		<label>turret gun</label>
+		<description>you're supposed to not see this</description>
+		<statBases>
+		    <AccuracyTouch>0.8</AccuracyTouch>
+		    <AccuracyShort>0.8</AccuracyShort>
+		    <AccuracyMedium>0.8</AccuracyMedium>
+		    <AccuracyLong>0.8</AccuracyLong>
+      		<!--hasAmmoRack<RangedWeapon_Cooldown>30</RangedWeapon_Cooldown>hasAmmoRack-->
+		</statBases>
+		<verbs>
+		    <li>
+			    <verbClass>Verb_Shoot</verbClass>
+			    <hasStandardCommand>true</hasStandardCommand>
+			    <!--hasAmmoRack<defaultProjectile></defaultProjectile>hasAmmoRack-->
+			    <warmupTime>0</warmupTime>
+			    <minRange>15</minRange>
+			    <range>200</range>
+        		<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+			    <burstShotCount>1</burstShotCount>
+			    <soundCast>Sound_sIG33</soundCast>
+			    <muzzleFlashScale>40</muzzleFlashScale>
+			    <!--hasAmmoRack<consumeFuelPerShot>1</consumeFuelPerShot>hasAmmoRack-->
+			    <requireLineOfSight>false</requireLineOfSight>
+			    <targetParams>
+			        <canTargetLocations>true</canTargetLocations>
+			    </targetParams>
+			      <forcedMissRadius>2</forcedMissRadius>  
+		    </li>
+		</verbs>
+		 
+		<building>
+		    <fixedStorageSettings>
+			    <filter>
+			        <categories>
+			        	<li>15cmSIGShells</li>
+			        </categories>
+			    </filter>
+		    </fixedStorageSettings>
+		    <defaultStorageSettings>
+			    <filter>
+			        <categories>
+			        	<li>15cmSIGShells</li>
+			        </categories>
+			        <disallowedThingDefs>
+			        </disallowedThingDefs>
+			    </filter>
+		    </defaultStorageSettings>
+		</building>
+		 
+	</ThingDef>
+</Defs>

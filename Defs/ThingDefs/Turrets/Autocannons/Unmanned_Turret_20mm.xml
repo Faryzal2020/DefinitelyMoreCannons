@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="DMC_BaseUnmannedTurret">
+    <defName>U20mmAutocannon</defName>
+    <label>Unmanned 20mm Flak 38</label>
+    <description>A 20mm anti-aircraft cannon turret installed with an AI Module. Uses a magazine feed ammunition, 50m Max Range. Explodes with radius of 1 block when destroyed. Consumes 200W of power.</description>
+    <graphicData>
+      <texPath>Things/Building/UnmannedFlak38</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(9, 9)</drawSize>
+      <damageData>
+        <rect>(0.38,0.2,0.56375,0.8)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+      </damageData>
+      <shadowData>
+        <volume>(2,1.5,2)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Things/Icons/UnmannedFlak38_MenuIcon</uiIconPath>
+    <building>
+      <turretGunDef>U20mmAutocannonGun</turretGunDef>
+      <turretTopGraphicPath>Things/Building/UnmannedFlak38_Top</turretTopGraphicPath>
+      <turretTopDrawSize>9</turretTopDrawSize>
+      <turretBurstCooldownTime>0.4</turretBurstCooldownTime> <!-- Reload Time -->
+    </building>
+    <size>(3,3)</size> 
+    <specialDisplayRadius>50</specialDisplayRadius>
+    <costStuffCount>25</costStuffCount>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <costList>
+      <Steel>250</Steel>
+      <Plasteel>5</Plasteel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <FCSComputer>1</FCSComputer>
+    </costList>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>4000</WorkToBuild>
+      <Mass>150</Mass>
+      <ShootingAccuracyTurret>1</ShootingAccuracyTurret>
+    </statBases>
+    <researchPrerequisites>
+      <li>Unmanned20mmAutocannon</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>1.0</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Ammo Magazine</fuelLabel>
+        <fuelGizmoLabel>Ammo</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>FlakTwentyMag</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>8</fuelCapacity>
+        <initialFuelPercent>0</initialFuelPercent>
+        <autoRefuelPercent>0.25</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>0</minimumFueledThreshold>
+        <atomicFueling>false</atomicFueling>
+        <fuelMultiplier>1</fuelMultiplier>
+        <factorByDifficulty>false</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Out of ammo</outOfFuelMessage>
+        <fuelIconPath>UI/Overlays/Ammo</fuelIconPath>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="DMC_BaseTurretWeapon">
+    <defName>U20mmAutocannonGun</defName>
+    <label>autocannon</label>
+    <description>A self-loading large-bore cannon designed to attach to a turret.</description>
+    <statBases>
+      <AccuracyTouch>1</AccuracyTouch>
+      <AccuracyShort>0.98</AccuracyShort>
+      <AccuracyMedium>0.96</AccuracyMedium>
+      <AccuracyLong>0.8</AccuracyLong>
+      <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_20mmAutocannonTurret</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <minRange>2</minRange>
+        <range>50</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Sound_Flak38</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+        <consumeFuelPerShot>0.05</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+</Defs>

@@ -3,41 +3,121 @@
   <ResearchProjectDef>
     <defName>Flak38</defName>
     <label>20mm Flak 38</label>
-    <description>A manned single 20mm autocannon based on 20mm Flak 38 AA gun. Uses a 20 round magazine.</description>
+    <description>A manned single 20mm autocannon based on 20mm Flak 38 AA gun. Uses 20x20mm magazine.</description>
     <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>HeavyAutocannons</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
+    <researchViewX>6</researchViewX>
     <researchViewY>1</researchViewY>
-    <tab>DMC_Autocannons</tab>
+    <tab>DMC_General</tab>
   </ResearchProjectDef>
+
   <ResearchProjectDef>
-    <defName>FlakM42</defName>
-    <label>37mm Flak M42</label>
-    <description>A manned single 37mm autocannon based on 37mm Flak M42 AA gun. Uses a belt-feed system with maximum 300 rounds of ammunition.</description>
-    <baseCost>2000</baseCost>
+    <defName>SingleBofors</defName>
+    <label>40mm Bofors M1</label>
+    <description>A manned single 40mm autocannon based on M1 Bofors AA gun. Uses 4x40mm Ammo Clip and has an internal storage of 20 clips.</description>
+    <baseCost>800</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>Flak38</li>
     </prerequisites>
-    <researchViewX>2</researchViewX>
+    <researchViewX>7</researchViewX>
     <researchViewY>1</researchViewY>
-    <tab>DMC_Autocannons</tab>
+    <tab>DMC_General</tab>
   </ResearchProjectDef>
   <ResearchProjectDef>
-    <defName>SingleBofors</defName>
-    <label>40mm Bofors M1</label>
-    <description>A manned single 40mm autocannon based on M1 Bofors AA gun. Needs a 4x40mm Ammo Clip and has a storage of about 20 clips.</description>
+    <defName>RARDEN</defName>
+    <label>30mm L21A1 RARDEN</label>
+    <description>A manned single 30mm L21A1 Autocannon mounted inside a turret. Uses a 3x30mm Ammo clip and has an internal storage of 100 clips. Fires a burst of 6 shots at about 90 RPM fire rate. 1.5 Second cooldown between each bursts.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>SingleBofors</li>
+    </prerequisites>
+    <researchViewX>8</researchViewX>
+    <researchViewY>1</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Kugelblitz</defName>
+    <label>30mm Zwilingsflak MK103</label>
+    <description>A manned double mounted 30mm MK103 Autocannon mounted inside a turret. Uses a German 30mm shell and has an internal storage of 200 shells. Firing at about 300 RPM.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>RARDEN</li>
+    </prerequisites>
+    <researchViewX>9</researchViewX>
+    <researchViewY>1</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>M247</defName>
+    <label>40mm M247</label>
+    <description>A manned double mounted Bofors 40mm L/70 mounted inside an M247 turret. Uses the M811 shell and has an internal storage of 580 shells. Firing at about 600 RPM.</description>
     <baseCost>3000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Kugelblitz</li>
+    </prerequisites>
+    <researchViewX>10</researchViewX>
+    <researchViewY>1</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>FlakM42</defName>
+    <label>37mm Flak M42</label>
+    <description>A manned single 37mm autocannon based on 37mm Flak M42 AA gun. Uses belt-feed system with maximum ammo storage of 300 rounds.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Flak38</li>
+    </prerequisites>
+    <researchViewX>7</researchViewX>
+    <researchViewY>2</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>RH202</defName>
+    <label>20mm RH-202</label>
+    <description>A manned single 20mm Rheinmetall Mk.20 RH-202 Autocannon. Uses belt-feed system with maximum ammo storage of 1250 rounds. Fires a burst of 10 rounds at 900 RPM, and cools down for 1.5 second between each bursts.</description>
+    <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>FlakM42</li>
     </prerequisites>
-    <researchViewX>3</researchViewX>
-    <researchViewY>1</researchViewY>
-    <tab>DMC_Autocannons</tab>
+    <researchViewX>8</researchViewX>
+    <researchViewY>2</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Shipunov</defName>
+    <label>30mm 2A42 Shipunov</label>
+    <description>A manned single 30mm 2A42 Shipunov Autocannon mounted in a BMP-2 Turret. Uses belt-feed system with maximum ammo storage of 500 rounds. Fires a burst of 8 rounds at about 514 RPM, and cools down for 0.5 second between each bursts.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>RH202</li>
+    </prerequisites>
+    <researchViewX>9</researchViewX>
+    <researchViewY>2</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>SIDAM</defName>
+    <label>25mm SIDAM 25</label>
+    <description>A manned quad 25mm Oerlikon KBA Autocannon mounted in a SIDAM 25 Turret. Uses belt-feed system with maximum ammo storage of 600 rounds. Fires a burst of 80 rounds at about 1200 RPM, and cools down for 1 second between each bursts.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Shipunov</li>
+    </prerequisites>
+    <researchViewX>10</researchViewX>
+    <researchViewY>2</researchViewY>
+    <tab>DMC_General</tab>
   </ResearchProjectDef>
 
 
@@ -50,9 +130,9 @@
     <prerequisites>
       <li>Automated_FCS</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>4</researchViewY>
-    <tab>DMC_Autocannons</tab>
+    <researchViewX>6</researchViewX>
+    <researchViewY>0</researchViewY>
+    <tab>DMC_General</tab>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Unmanned20mmAutocannon</defName>
@@ -64,8 +144,8 @@
       <li>UnmannedLargeAutocannons</li>
       <li>Flak38</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>2</researchViewY>
-    <tab>DMC_Autocannons</tab>
+    <researchViewX>7</researchViewX>
+    <researchViewY>0</researchViewY>
+    <tab>DMC_General</tab>
   </ResearchProjectDef>
 </Defs>

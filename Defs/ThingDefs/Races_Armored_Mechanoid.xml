@@ -7,7 +7,7 @@
       <PsychicSensitivity>0</PsychicSensitivity>
       <ToxicSensitivity>0</ToxicSensitivity>
       <Flammability>0</Flammability>
-      <ComfyTemperatureMin>-150</ComfyTemperatureMin>
+      <ComfyTemperatureMin>-300</ComfyTemperatureMin>
       <ComfyTemperatureMax>300</ComfyTemperatureMax>
     </statBases>
     <race>
@@ -23,15 +23,15 @@
       </li>
       <li>
         <damageDef>Bomb</damageDef>
-        <multiplier>0.7</multiplier>
+        <multiplier>0.8</multiplier>
       </li>
       <li>
         <damageDef>EMP</damageDef>
-        <multiplier>0.9</multiplier>
+        <multiplier>1.2</multiplier>
       </li>
       <li>
-        <damageDef>100mmAP</damageDef>
-        <multiplier>0.7</multiplier>
+        <damageDef>Sabot</damageDef>
+        <multiplier>1.5</multiplier>
       </li>
     </damageMultipliers>
   </ThingDef>

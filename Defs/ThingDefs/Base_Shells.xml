@@ -8,7 +8,10 @@
 	    <tradeTags>
 	      <li>Exotic</li>
 	    </tradeTags>
+	    <stackLimit>75</stackLimit>
 	    <statBases>
+	      	<MaxHitPoints>100</MaxHitPoints>
+	      	<Mass>20</Mass>
 	        <Flammability>1</Flammability>
 	        <DeteriorationRate>0.2</DeteriorationRate>
 	    </statBases>

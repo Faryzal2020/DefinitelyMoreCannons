@@ -2,68 +2,148 @@
 <Defs>
   <ResearchProjectDef>
     <defName>127mmNaval</defName>
-    <label>127mm naval gun</label>
-    <description>A manned single 127mm naval gun turret that shoots HE shells over long distances.</description>
-    <baseCost>2000</baseCost>
+    <label>127mm SK C/34</label>
+    <description>127mm SK C/34. No internal ammo storage. Cannot shoot over walls. 150m Max range. 14 Seconds Reload</description>
+    <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>NavalGuns</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>1</researchViewY>
-    <tab>DMC_NavalGuns</tab>
-  </ResearchProjectDef>
-  <ResearchProjectDef>
-    <defName>100mmNaval</defName>
-    <label>100mm naval gun</label>
-    <description>A fast-firing manned single 100mm naval gun turret that uses a belt-feed ammo consists of 100 shells.</description>
-    <baseCost>3500</baseCost>
-    <techLevel>Industrial</techLevel>
-    <prerequisites>
-      <li>127mmNaval</li>
-    </prerequisites>
-    <researchViewX>2</researchViewX>
-    <researchViewY>1</researchViewY>
-    <tab>DMC_NavalGuns</tab>
-  </ResearchProjectDef>
-  <ResearchProjectDef>
-    <defName>120mmNaval</defName>
-    <label>120mm naval gun</label>
-    <description>A fast-firing manned single 120mm naval gun turret that uses a belt-feed ammo consists of 52 shells.</description>
-    <baseCost>4000</baseCost>
-    <techLevel>Industrial</techLevel>
-    <prerequisites>
-      <li>100mmNaval</li>
-    </prerequisites>
-    <researchViewX>3</researchViewX>
-    <researchViewY>1</researchViewY>
-    <tab>DMC_NavalGuns</tab>
+    <researchViewX>7</researchViewX>
+    <researchViewY>4</researchViewY>
+    <tab>DMC_General</tab>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
     <defName>150mmNaval</defName>
-    <label>Heavy: 150mm naval gun</label>
-    <description>A manned single mounted 15cm naval gun turret that can shoot over walls, has a relatively high fire rate and very durable.</description>
-    <baseCost>3500</baseCost>
+    <label>150mm KC/36</label>
+    <description>150mm KC/36. No internal ammo storage. Can shoot over walls. 180m Max range. 15 Seconds Reload</description>
+    <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>HeavyNavalGuns</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>4</researchViewY>
-    <tab>DMC_NavalGuns</tab>
+    <researchViewX>9</researchViewX>
+    <researchViewY>4.1</researchViewY>
+    <tab>DMC_General</tab>
   </ResearchProjectDef>  
   <ResearchProjectDef>
     <defName>Twin127mmNaval</defName>
-    <label>Heavy: 127mm naval gun</label>
-    <description>A manned dual mounted 127mm naval gun turret that can shoot over walls, has a relatively high fire rate and very durable.</description>
-    <baseCost>4200</baseCost>
+    <label>Double 127mm Type 5</label>
+    <description>2x 127mm Type 5. Ammo Capacity: 80 Rounds. Can shoot over walls. 250m Max range. 14 Seconds Reload</description>
+    <baseCost>2000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
-      <li>150mmNaval</li>
+      <li>HeavyNavalGuns</li>
     </prerequisites>
-    <researchViewX>2</researchViewX>
-    <researchViewY>4</researchViewY>
-    <tab>DMC_NavalGuns</tab>
+    <researchViewX>9</researchViewX>
+    <researchViewY>4.7</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Twin150mmNaval</defName>
+    <label>Double 150mm K C/36T</label>
+    <description>2x 150mm K C/36T. Ammo Capacity: 75 Rounds. Can shoot over walls. 300m Max range. 18 Seconds Reload</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>HeavyNavalGuns</li>
+    </prerequisites>
+    <researchViewX>9</researchViewX>
+    <researchViewY>5.3</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Twin203mmNaval</defName>
+    <label>Double 203mm SK C/34</label>
+    <description>2x 203mm SK C/34. Ammo Capacity: 55 Rounds. Can shoot over walls. 350m Max range. 19 Seconds Reload</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>HeavyNavalGuns</li>
+    </prerequisites>
+    <researchViewX>9</researchViewX>
+    <researchViewY>5.9</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+
+  <!-- //////// Rapid Firing //////// -->
+  <ResearchProjectDef>
+    <defName>127mmMk16</defName>
+    <label>127mm Mark 16</label>
+    <description>5"/54 (12.7 cm) Mark 16. Ammo Capacity: 50 Rounds. Reload rate: 4 seconds. Max range: 150m</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>RFNavalGuns</li>
+    </prerequisites>
+    <researchViewX>9</researchViewX>
+    <researchViewY>3</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>127mmMk45</defName>
+    <label>127mm Mark 45</label>
+    <description>5"/54 (12.7 cm) Mark 45. Ammo Capacity: 50 Rounds. Reload rate: 3 seconds. Max range: 200m</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>127mmMk16</li>
+    </prerequisites>
+    <researchViewX>10</researchViewX>
+    <researchViewY>3</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>127mmOtobreda</defName>
+    <label>127mm Otobreda Compact</label>
+    <description>Otobreda 127/54 Compact. Ammo Capacity: 85 Rounds. Reload rate: 1.5 seconds. Max range: 200m</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>127mmMk45</li>
+    </prerequisites>
+    <researchViewX>11</researchViewX>
+    <researchViewY>3</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>100mmNaval</defName>
+    <label>100mm Modele 53</label>
+    <description>100mm Modele 53. Ammo Capacity: 100 Rounds. Reload rate: 1 second. Max range: 150m</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>127mmOtobreda</li>
+    </prerequisites>
+    <researchViewX>12</researchViewX>
+    <researchViewY>3</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>120mmNaval</defName>
+    <label>120mm TAK 120</label>
+    <description>120mm TAK 120. Ammo Capacity: 52 Rounds. 6 Rounds burst fire at 80 RPM, 2 seconds cooldown between each bursts. Max range: 250m</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>100mmNaval</li>
+    </prerequisites>
+    <researchViewX>13</researchViewX>
+    <researchViewY>2.5</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>76mmNaval</defName>
+    <label>76mm OTO Melara</label>
+    <description>OTO Melara 76mm. Ammo Capacity: 200 Rounds. 10 Rounds burst fire at 100 RPM, 2 seconds cooldown between each bursts. Max range: 200m</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>100mmNaval</li>
+    </prerequisites>
+    <researchViewX>13</researchViewX>
+    <researchViewY>3.5</researchViewY>
+    <tab>DMC_General</tab>
   </ResearchProjectDef>
 </Defs>

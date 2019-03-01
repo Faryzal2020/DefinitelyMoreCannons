@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="DMC_BaseMannedTurret">
+	    <defName>Turret_Kugelblitz_Autocannon</defName>
+	    <label>Zwilingsflak MK103</label>
+	    <description>Uses 30mm SprGr shell. 3m Min range, 70m Max range. Fires at a constant rate of 300 Rounds per Minute. Has internal ammo capacity of 200 rounds. Explodes with radius of 1 block when destroyed.</description>
+	    <graphicData>
+	        <texPath>Things/Building/MannedKugelblitz</texPath>
+	        <graphicClass>Graphic_Single</graphicClass>
+	        <drawSize>(11,11)</drawSize>
+	        <damageData>
+	        	<rect>(0.38,0.2,0.56375,0.8)</rect>
+	        	<cornerTL>Damage/Corner</cornerTL>
+	        </damageData>
+	        <shadowData>
+	        	<offset>(0,0,0)</offset>
+	        	<volume>(2,1.5,2)</volume>
+	        </shadowData>
+	    </graphicData>
+	    <uiIconPath>Things/Icons/MannedKugelblitz_MenuIcon</uiIconPath>
+	    <building>
+	        <turretGunDef>TurretGun_Kugelblitz_Autocannon</turretGunDef>
+	        <turretTopGraphicPath>Things/Building/MannedKugelblitz_Top</turretTopGraphicPath>
+	        <turretTopDrawSize>11</turretTopDrawSize>
+	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
+	        <turretBurstCooldownTime>0.2</turretBurstCooldownTime> <!-- Reload Time -->
+	    </building>
+	    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+	    <size>(3,3)</size> 
+	    <specialDisplayRadius>70</specialDisplayRadius>
+		<costStuffCount>30</costStuffCount>
+	    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+	    <costList>
+			<Steel>300</Steel>
+			  <Plasteel>4</Plasteel>  
+			  <ComponentIndustrial>4</ComponentIndustrial>  
+			<!--AdvCompo <ComponentSpacer></ComponentSpacer> AdvCompo-->
+		</costList>
+	    <statBases>
+		    <MaxHitPoints>2500</MaxHitPoints>
+		    <WorkToBuild>4000</WorkToBuild>
+		    <Mass>200</Mass>
+	    </statBases>
+	    <researchPrerequisites>
+	        <li>Kugelblitz</li>
+	    </researchPrerequisites>
+	    <comps>
+	    	 
+	      <li Class="CompProperties_Explosive">
+	        <explosiveRadius>1</explosiveRadius>
+	        <explosiveDamageType>Bomb</explosiveDamageType>
+	      </li>
+	      	 
+
+	      	<!--usesPower
+	      <li Class="CompProperties_Power">
+	        <compClass>CompPowerTrader</compClass>
+	        <basePowerConsumption>1</basePowerConsumption>
+	      </li>
+	      	usesPower-->
+
+	       
+	      <li Class="CompProperties_Refuelable">
+	        <fuelLabel>Ammunitions</fuelLabel>
+	        <fuelGizmoLabel>Ammo</fuelGizmoLabel>
+	        <fuelFilter>
+	          <thingDefs>
+	            <li>Bullet_Kugel30mm_AP</li>
+	          </thingDefs>
+	        </fuelFilter>
+	        <fuelCapacity>200</fuelCapacity>
+	        <initialFuelPercent>0</initialFuelPercent>
+	        <autoRefuelPercent>0.25</autoRefuelPercent>
+	        <showFuelGizmo>true</showFuelGizmo>
+	        <minimumFueledThreshold>0</minimumFueledThreshold>
+	        <atomicFueling>false</atomicFueling>
+	        <fuelMultiplier>1</fuelMultiplier>
+	        <factorByDifficulty>false</factorByDifficulty>
+	        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+	        <outOfFuelMessage>Cannot shoot: Out of ammo</outOfFuelMessage>
+	        <fuelIconPath>UI/Overlays/Ammo</fuelIconPath>
+	      </li>
+	  	 
+	    </comps>
+	    <!--noAmmoRack
+	    <inspectorTabs>
+	        <li>ITab_Shells</li>
+	    </inspectorTabs>
+	    noAmmoRack-->
+	    <!--notUnderRoof
+	    <placeWorkers>
+	      <li>PlaceWorker_NotUnderRoof</li>
+	    </placeWorkers>
+	    notUnderRoof-->
+	</ThingDef>
+  	
+
+	<!--noAmmoRack<ThingDef ParentName="DMC_MultishellWeapon">noAmmoRack-->
+	 <ThingDef ParentName="DMC_BaseTurretWeapon"> 
+		<defName>TurretGun_Kugelblitz_Autocannon</defName>
+		<label>turret gun</label>
+		<description>you're supposed to not see this</description>
+		<statBases>
+		    <AccuracyTouch>0.85</AccuracyTouch>
+		    <AccuracyShort>0.9</AccuracyShort>
+		    <AccuracyMedium>0.95</AccuracyMedium>
+		    <AccuracyLong>0.97</AccuracyLong>
+      		 <RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown> 
+		</statBases>
+		<verbs>
+		    <li>
+			    <verbClass>Verb_Shoot</verbClass>
+			    <hasStandardCommand>true</hasStandardCommand>
+			     <defaultProjectile>Bullet_Kugel30mm_AP</defaultProjectile> 
+			    <warmupTime>0</warmupTime>
+			    <minRange>3</minRange>
+			    <range>70</range>
+        		<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+			    <burstShotCount>2</burstShotCount>
+			    <soundCast>Sound_Kugelblitz</soundCast>
+			    <muzzleFlashScale>25</muzzleFlashScale>
+			     <consumeFuelPerShot>2</consumeFuelPerShot> 
+			    <requireLineOfSight>true</requireLineOfSight>
+			    <targetParams>
+			        <canTargetLocations>true</canTargetLocations>
+			    </targetParams>
+			    <!--isExplosive <forcedMissRadius>0.1</forcedMissRadius> isExplosive-->
+		    </li>
+		</verbs>
+		<!--noAmmoRack
+		<building>
+		    <fixedStorageSettings>
+			    <filter>
+			        <categories>
+			        	<li>106mmShells</li>
+			        </categories>
+			    </filter>
+		    </fixedStorageSettings>
+		    <defaultStorageSettings>
+			    <filter>
+			        <categories>
+			        	<li>106mmShells</li>
+			        </categories>
+			        <disallowedThingDefs>
+			        </disallowedThingDefs>
+			    </filter>
+		    </defaultStorageSettings>
+		</building>
+		noAmmoRack-->
+	</ThingDef>
+</Defs>
