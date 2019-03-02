@@ -9,14 +9,14 @@
 
 	<ThingDef ParentName="Base_DMCAmmunitions">
 	    <defName>OneOSixShellHEAT</defName>
-	    <label>(106mm) M344 HEAT</label>
+	    <label>(106mm) 2x M344 HEAT</label>
 	    <description>Turrets that uses this ammunition: M40 Recoilless Rifle</description>
 	    <graphicData>
 	      	<texPath>Things/Projectile/M344</texPath>
 	      	<graphicClass>Graphic_Single</graphicClass>
 	    </graphicData>
 	    <statBases>
-	      	<MarketValue>87.5</MarketValue>
+	      	<MarketValue>175</MarketValue>
 	    </statBases>
 	    <thingCategories>
 	      	<li>106mmShells</li>
@@ -59,14 +59,14 @@
   	-->
 
   	<RecipeDef>
-	    <defName>Make_106mmHEAT_x1</defName>
-	    <label>make 106mm M344 HEAT Shell 1x</label>
+	    <defName>Make_2x106mmHEAT_x1</defName>
+	    <label>make 2x 106mm M344 HEAT Shell 1x</label>
 	    <description>Turrets that uses this ammunition: M40 Recoilless Rifle</description>
-	    <jobString>Making 106mm shell.</jobString>
+	    <jobString>Making 2x 106mm shell.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>
 	    <effectWorking>Cook</effectWorking>
 	    <soundWorking>Recipe_Machining</soundWorking>
-	    <workAmount>900</workAmount>
+	    <workAmount>1800</workAmount>
 	    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 	    <ingredients>
 	        <li>
@@ -75,7 +75,7 @@
 	            		<li>Steel</li>
 	            	</thingDefs>
 	        	</filter>
-	        	<count>25</count>
+	        	<count>50</count>
 	        </li>
 	        <li>
 	        	<filter>
@@ -83,7 +83,7 @@
 	            		<li>Chemfuel</li>
 	            </thingDefs>
 	        	</filter>
-	        	<count>10</count>
+	        	<count>20</count>
 	        </li>
 	    </ingredients>
 	    <fixedIngredientFilter>
@@ -105,14 +105,14 @@
     </RecipeDef>
 
 	<RecipeDef>
-	    <defName>Make_106mmHEAT_x10</defName>
-	    <label>make 106mm M344 HEAT Shell 10x</label>
+	    <defName>Make_2x106mmHEAT_x10</defName>
+	    <label>make 2x 106mm M344 HEAT Shell 10x</label>
 	    <description>Turrets that uses this ammunition: M40 Recoilless Rifle</description>
 	    <jobString>Making 106mm shells.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>
 	    <effectWorking>Cook</effectWorking>
 	    <soundWorking>Recipe_Machining</soundWorking>
-	    <workAmount>6750</workAmount>
+	    <workAmount>13500</workAmount>
 	    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 	    <ingredients>
 	        <li>
@@ -121,7 +121,7 @@
 	            		<li>Steel</li>
 	            	</thingDefs>
 	        	</filter>
-	        	<count>250</count>
+	        	<count>500</count>
 	        </li>
 	        <li>
 	        	<filter>
@@ -129,7 +129,7 @@
 	            		<li>Chemfuel</li>
 	            </thingDefs>
 	        	</filter>
-	        	<count>100</count>
+	        	<count>200</count>
 	        </li>
 	    </ingredients>
 	    <fixedIngredientFilter>

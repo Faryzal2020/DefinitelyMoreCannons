@@ -93,6 +93,7 @@
     <defName>Mech_ArmoredCentipede</defName>
     <label>armored centipede</label>
     <race>Mech_ArmoredCentipede</race>
+    <defaultFactionType>Mechanoid</defaultFactionType>
     <combatPower>600</combatPower>
     <lifeStages>
       <li>
@@ -171,6 +172,7 @@
     <defName>Mech_AdvArmoredCentipede</defName>
     <label>advanced armored centipede</label>
     <race>Mech_AdvArmoredCentipede</race>
+    <defaultFactionType>Mechanoid</defaultFactionType>
     <combatPower>1000</combatPower>
     <lifeStages>
       <li>

@@ -116,8 +116,8 @@
 			    <warmupTime>0</warmupTime>
 			    <minRange>4</minRange>
 			    <range>100</range>
-        		<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
-			    <burstShotCount>1</burstShotCount>
+        		<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+			    <burstShotCount>2</burstShotCount>
 			    <soundCast>Sound_M40</soundCast>
 			    <muzzleFlashScale>30</muzzleFlashScale>
 			    <!--hasAmmoRack<consumeFuelPerShot>1</consumeFuelPerShot>hasAmmoRack-->
@@ -125,7 +125,7 @@
 			    <targetParams>
 			        <canTargetLocations>true</canTargetLocations>
 			    </targetParams>
-			      <forcedMissRadius>0.1</forcedMissRadius>  
+			      <forcedMissRadius>0.5</forcedMissRadius>  
 		    </li>
 		</verbs>
 		 
