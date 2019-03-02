@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="DMC_BaseMannedTurret">
-	    <defName>30mmAutocannon</defName>
+	    <defName>37mmAutocannon</defName>
 	    <label>37mm Flak M42</label>
 	    <description>A heavy 37mm automatic cannon turret. Uses a belt-feed ammunition system with capacity of 300 rounds, 50m max range. Explodes with radius of 1 block when destroyed.</description>
 	    <graphicData>

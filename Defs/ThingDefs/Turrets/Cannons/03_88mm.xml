@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="DMC_BaseMannedTurret">
-	    <defName>Turret_Turret_88mmCannonCannon</defName>
+	    <defName>Turret_88mmCannon</defName>
 	    <label>88mm Flak 41</label>
 	    <description>Manned 88mm Flak Cannon. 3m Min Range, 100m Max Range. Doesn't explodes when destroyed.</description>
 	    <graphicData>
