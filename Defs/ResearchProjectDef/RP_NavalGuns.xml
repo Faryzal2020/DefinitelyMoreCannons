@@ -84,7 +84,7 @@
   <ResearchProjectDef>
     <defName>127mmMk45</defName>
     <label>127mm Mark 45</label>
-    <description>5"/54 (12.7 cm) Mark 45. Ammo Capacity: 50 Rounds. Reload rate: 3 seconds. Max range: 200m</description>
+    <description>5"/54 (12.7 cm) Mark 45. More accurate than the Mark 16 Ammo Capacity: 50 Rounds. Reload rate: 3 seconds. Max range: 200m</description>
     <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>

@@ -22,7 +22,7 @@
 	    <building>
 	        <turretGunDef>TurretGun_Shipunov_Autocannon</turretGunDef>
 	        <turretTopGraphicPath>Things/Building/MannedShipunov_Top</turretTopGraphicPath>
-	        <turretTopDrawSize>11</turretTopDrawSize>
+	        <turretTopDrawSize>13</turretTopDrawSize>
 	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
 	        <turretBurstCooldownTime>1</turretBurstCooldownTime> <!-- Reload Time -->
 	    </building>

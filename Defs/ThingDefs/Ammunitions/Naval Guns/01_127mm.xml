@@ -54,7 +54,7 @@
 	      	<damageDef>127SprGrDamage</damageDef>
 	      	<flyOverhead>false</flyOverhead>
 	      	<explosionRadius>2</explosionRadius>
-	      	<speed>300</speed>
+	      	<speed>200</speed>
 	    </projectile>
   	</ThingDef>
   	 

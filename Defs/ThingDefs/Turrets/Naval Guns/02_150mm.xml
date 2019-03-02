@@ -4,16 +4,16 @@
   <ThingDef ParentName="DMC_BaseMannedTurret">
     <defName>Turret_150mmCannon</defName>
     <label>15cm KC/36</label>
-    <description>A manned 150mm Naval gun based on the German KC/36 That were used in the German "Narvik" class destroyers. Shoots HE shells, 15 sec reload. 20m Min Range, 180m Max Range. Can fire over walls. This cannon uses a manual loading system. Consumes 1500W of power for its electric-powered aiming controls. Explodes with radius of 3 blocks when destroyed. Because of the size, this turret can't be placed under a roof.</description>
+    <description>A manned 15cm KC/36 Naval gun with manual loading mechanisms. Uses the German 15cm SprGr Shell. 15 seconds reload time. 20m Min Range, 180m Max Range. Can fire over walls. Consumes 300W of power for its electric-powered aiming controls. Explodes with radius of 3 blocks when destroyed. Because of the size, this turret can't be placed under a roof.</description>
     <graphicData>
       <texPath>Things/Building/MannedKC36</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(16, 16)</drawSize>
+      <drawSize>(15, 15)</drawSize>
       <damageData>
         <rect>(0.2,0.2,0.6,0.6)</rect>
       </damageData>
       <shadowData>
-        <volume>(3.5,2.2,3.5)</volume>
+        <volume>(2,1.5,2)</volume>
         <offset>(0,0,0)</offset>
       </shadowData>
     </graphicData>
@@ -21,18 +21,18 @@
     <building>
       <turretGunDef>150mmCannon</turretGunDef>
       <turretTopGraphicPath>Things/Building/MannedKC36_Top</turretTopGraphicPath>
-      <turretTopDrawSize>18</turretTopDrawSize>
+      <turretTopDrawSize>15</turretTopDrawSize>
       <turretBurstCooldownTime>15</turretBurstCooldownTime> <!-- Reload Time -->
     </building>
-    <interactionCellOffset>(0,0,-5)</interactionCellOffset>
-    <size>(6,6)</size> 
+    <interactionCellOffset>(0,0,-4)</interactionCellOffset>
+    <size>(4,4)</size> 
     <specialDisplayRadius>180</specialDisplayRadius>
     <costStuffCount>190</costStuffCount>
-    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
     <costList>
-      <Steel>1900</Steel>
+      <Steel>1500</Steel>
       <Plasteel>400</Plasteel>
-      <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentIndustrial>20</ComponentIndustrial>
       <ComponentSpacer>10</ComponentSpacer>
     </costList>
     <statBases>
@@ -50,7 +50,7 @@
       </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>1500</basePowerConsumption>
+        <basePowerConsumption>300</basePowerConsumption>
       </li>
       <li Class="CompProperties_Flickable"/>
     </comps>
@@ -76,7 +76,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <warmupTime>0</warmupTime>
+        <warmupTime>3</warmupTime>
         <minRange>20</minRange>
         <range>180</range>
         <burstShotCount>1</burstShotCount>

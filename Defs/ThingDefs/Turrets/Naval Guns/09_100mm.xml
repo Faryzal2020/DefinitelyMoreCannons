@@ -4,7 +4,7 @@
   <ThingDef ParentName="DMC_BaseMannedTurret">
     <defName>100mmNavalgun</defName>
     <label>100mm Modele 53</label>
-    <description>A manned 100mm Model 53 Naval gun that were used in the French Navy in the Earth 20th century. Uses belt-feed ammunition with capacity of 100 rounds. Capable of firing 60 Rounds per minute. Consumes 2000W of power for its electric-powered aiming controls and autoloading systems. 14m min range, 150m max range. Explodes with radius of 3 blocks when destroyed. Because of the size, this turret cant be placed under a roof.</description>
+    <description>A manned 100mm Model 53 Naval gun. Uses the 100mm OEA F1 Shell. Has an internal ammunition feeder rack with capacity of 100 rounds. Capable of firing 60 Rounds per minute. Consumes 2000W of power for its electric-powered aiming controls and autoloading systems. 14m min range, 150m max range. Explodes with radius of 3 blocks when destroyed. Because of the size, this turret cant be placed under a roof.</description>
     <graphicData>
       <texPath>Things/Building/MannedModele53</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -21,18 +21,18 @@
     <building>
       <turretGunDef>Gun_100mmNavalgunTurret</turretGunDef>
       <turretTopGraphicPath>Things/Building/MannedModele53_Top</turretTopGraphicPath>
-      <turretTopDrawSize>10</turretTopDrawSize>
+      <turretTopDrawSize>12</turretTopDrawSize>
       <turretBurstCooldownTime>1</turretBurstCooldownTime> <!-- Reload Time -->
     </building>
     <interactionCellOffset>(0,0,-3)</interactionCellOffset>
-    <size>(5,5)</size> 
+    <size>(6,6)</size> 
     <specialDisplayRadius>150</specialDisplayRadius>
     <costStuffCount>150</costStuffCount>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     <costList>
       <Steel>1500</Steel>
       <Plasteel>200</Plasteel>
-      <ComponentIndustrial>15</ComponentIndustrial>
+      <ComponentIndustrial>30</ComponentIndustrial>
       <ComponentSpacer>6</ComponentSpacer>
     </costList>
     <statBases>
@@ -84,10 +84,10 @@
     <label>autocannon</label>
     <description>A self-loading large-bore cannon designed to attach to a turret.</description>
     <statBases>
-      <AccuracyTouch>1</AccuracyTouch>
-      <AccuracyShort>0.95</AccuracyShort>
-      <AccuracyMedium>0.9</AccuracyMedium>
-      <AccuracyLong>0.85</AccuracyLong>
+      <AccuracyTouch>0.98</AccuracyTouch>
+      <AccuracyShort>0.98</AccuracyShort>
+      <AccuracyMedium>0.98</AccuracyMedium>
+      <AccuracyLong>1</AccuracyLong>
       <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
@@ -95,7 +95,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_100mmNavalgunTurret</defaultProjectile>
-        <warmupTime>1</warmupTime>
+        <warmupTime>0</warmupTime>
         <minRange>14</minRange>
         <range>150</range>
         <burstShotCount>1</burstShotCount>

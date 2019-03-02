@@ -2,11 +2,11 @@
 <Defs>
 
 	<ThingDef ParentName="DMC_BaseMannedTurret">
-	    <defName>Turret_600Howitzer</defName>
-	    <label>60cm Karl Gerät Howitzer</label>
-	    <description>A manned 60cm Howitzer cannon based on "Karl Gerät" Railway Gun, shoots a massive HE shell over walls, 1km max range, 120 seconds reload. Explodes with radius of 4 blocks when destroyed</description>
+	    <defName>Turret_Gvozdika_Howitzer</defName>
+	    <label>2S3 Gvozdika Turret</label>
+	    <description>Uses the 122mm OF-462 Shell with 2m explosion radius. 20m Min range, 150m Max range. 15 Seconds reload. Has an internal ammo storage capacity of 40 rounds. Explodes with radius of 2 blocks when destroyed.</description>
 	    <graphicData>
-	        <texPath>Things/Building/MannedKarlGerat</texPath>
+	        <texPath>Things/Building/MannedGvozdika</texPath>
 	        <graphicClass>Graphic_Single</graphicClass>
 	        <drawSize>(13,13)</drawSize>
 	        <damageData>
@@ -18,58 +18,58 @@
 	        	<volume>(2,1.5,2)</volume>
 	        </shadowData>
 	    </graphicData>
-	    <uiIconPath>Things/Icons/MannedKarlGerat_MenuIcon</uiIconPath>
+	    <uiIconPath>Things/Icons/MannedGvozdika_MenuIcon</uiIconPath>
 	    <building>
-	        <turretGunDef>600Howitzer_Turret</turretGunDef>
-	        <turretTopGraphicPath>Things/Building/MannedKarlGerat_Top</turretTopGraphicPath>
-	        <turretTopDrawSize>7</turretTopDrawSize>
+	        <turretGunDef>TurretGun_Gvozdika_Howitzer</turretGunDef>
+	        <turretTopGraphicPath>Things/Building/MannedGvozdika_Top</turretTopGraphicPath>
+	        <turretTopDrawSize>13</turretTopDrawSize>
 	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
-	        <turretBurstCooldownTime>120</turretBurstCooldownTime> <!-- Reload Time -->
+	        <turretBurstCooldownTime>15</turretBurstCooldownTime> <!-- Reload Time -->
 	    </building>
-	    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
-	    <size>(4,4)</size> 
-	    <specialDisplayRadius>1000</specialDisplayRadius>
-		<costStuffCount>160</costStuffCount>
-	    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+	    <size>(3,3)</size> 
+	    <specialDisplayRadius>150</specialDisplayRadius>
+		<costStuffCount>45</costStuffCount>
+	    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	    <costList>
-			<Steel>1600</Steel>
+			<Steel>450</Steel>
 			<!--Plasteel <Plasteel></Plasteel> Plasteel-->
-			  <ComponentIndustrial>10</ComponentIndustrial>  
+			  <ComponentIndustrial>3</ComponentIndustrial>  
 			<!--AdvCompo <ComponentSpacer></ComponentSpacer> AdvCompo-->
 		</costList>
 	    <statBases>
-		    <MaxHitPoints>3000</MaxHitPoints>
-		    <WorkToBuild>17000</WorkToBuild>
+		    <MaxHitPoints>2000</MaxHitPoints>
+		    <WorkToBuild>5000</WorkToBuild>
 		    <Mass>200</Mass>
 	    </statBases>
 	    <researchPrerequisites>
-	        <li>KarlGerat</li>
+	        <li>Gvozdika</li>
 	    </researchPrerequisites>
 	    <comps>
 	    	 
 	      <li Class="CompProperties_Explosive">
-	        <explosiveRadius>4</explosiveRadius>
+	        <explosiveRadius>2</explosiveRadius>
 	        <explosiveDamageType>Bomb</explosiveDamageType>
 	      </li>
 	      	 
 
-	      	 
+	      	<!--usesPower
 	      <li Class="CompProperties_Power">
 	        <compClass>CompPowerTrader</compClass>
-	        <basePowerConsumption>500</basePowerConsumption>
+	        <basePowerConsumption>1</basePowerConsumption>
 	      </li>
-	      	 
+	      	usesPower-->
 
-	      <!--hasAmmoRack
+	       
 	      <li Class="CompProperties_Refuelable">
 	        <fuelLabel>Ammunitions</fuelLabel>
 	        <fuelGizmoLabel>Ammo</fuelGizmoLabel>
 	        <fuelFilter>
 	          <thingDefs>
-	            <li></li>
+	            <li>Bullet_OF-462122mm_HE</li>
 	          </thingDefs>
 	        </fuelFilter>
-	        <fuelCapacity></fuelCapacity>
+	        <fuelCapacity>40</fuelCapacity>
 	        <initialFuelPercent>0</initialFuelPercent>
 	        <autoRefuelPercent>0.25</autoRefuelPercent>
 	        <showFuelGizmo>true</showFuelGizmo>
@@ -81,13 +81,13 @@
 	        <outOfFuelMessage>Cannot shoot: Out of ammo</outOfFuelMessage>
 	        <fuelIconPath>UI/Overlays/Ammo</fuelIconPath>
 	      </li>
-	  	hasAmmoRack-->
+	  	 
 	    </comps>
-	     
+	    <!--noAmmoRack
 	    <inspectorTabs>
 	        <li>ITab_Shells</li>
 	    </inspectorTabs>
-	     
+	    noAmmoRack-->
 	     
 	    <placeWorkers>
 	      <li>PlaceWorker_NotUnderRoof</li>
@@ -96,57 +96,57 @@
 	</ThingDef>
   	
 
-	 <ThingDef ParentName="DMC_MultishellWeapon"> 
-	<!--hasAmmoRack<ThingDef ParentName="DMC_BaseTurretWeapon">hasAmmoRack-->
-		<defName>600Howitzer_Turret</defName>
+	<!--noAmmoRack<ThingDef ParentName="DMC_MultishellWeapon">noAmmoRack-->
+	 <ThingDef ParentName="DMC_BaseTurretWeapon"> 
+		<defName>TurretGun_Gvozdika_Howitzer</defName>
 		<label>turret gun</label>
 		<description>you're supposed to not see this</description>
 		<statBases>
-		    <AccuracyTouch>0.8</AccuracyTouch>
-		    <AccuracyShort>0.8</AccuracyShort>
-		    <AccuracyMedium>0.8</AccuracyMedium>
-		    <AccuracyLong>0.8</AccuracyLong>
-      		<!--hasAmmoRack<RangedWeapon_Cooldown>120</RangedWeapon_Cooldown>hasAmmoRack-->
+		    <AccuracyTouch>1</AccuracyTouch>
+		    <AccuracyShort>1</AccuracyShort>
+		    <AccuracyMedium>1</AccuracyMedium>
+		    <AccuracyLong>1</AccuracyLong>
+      		 <RangedWeapon_Cooldown>15</RangedWeapon_Cooldown> 
 		</statBases>
 		<verbs>
 		    <li>
 			    <verbClass>Verb_Shoot</verbClass>
 			    <hasStandardCommand>true</hasStandardCommand>
-			    <!--hasAmmoRack<defaultProjectile></defaultProjectile>hasAmmoRack-->
+			     <defaultProjectile>Bullet_OF-462122mm_HE</defaultProjectile> 
 			    <warmupTime>0</warmupTime>
-			    <minRange>25</minRange>
-			    <range>1000</range>
+			    <minRange>20</minRange>
+			    <range>150</range>
         		<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
 			    <burstShotCount>1</burstShotCount>
-			    <soundCast>Sound_600mm</soundCast>
-			    <muzzleFlashScale>60</muzzleFlashScale>
-			    <!--hasAmmoRack<consumeFuelPerShot>1</consumeFuelPerShot>hasAmmoRack-->
+			    <soundCast>Sound_122mm</soundCast>
+			    <muzzleFlashScale>30</muzzleFlashScale>
+			     <consumeFuelPerShot>1</consumeFuelPerShot> 
 			    <requireLineOfSight>false</requireLineOfSight>
 			    <targetParams>
 			        <canTargetLocations>true</canTargetLocations>
 			    </targetParams>
-			      <forcedMissRadius>3</forcedMissRadius>  
+			      <forcedMissRadius>2</forcedMissRadius>  
 		    </li>
 		</verbs>
-		 
+		<!--noAmmoRack
 		<building>
 		    <fixedStorageSettings>
 			    <filter>
 			        <categories>
-			        	<li>600mmHowitzerShells</li>
+			        	<li></li>
 			        </categories>
 			    </filter>
 		    </fixedStorageSettings>
 		    <defaultStorageSettings>
 			    <filter>
 			        <categories>
-			        	<li>600mmHowitzerShells</li>
+			        	<li></li>
 			        </categories>
 			        <disallowedThingDefs>
 			        </disallowedThingDefs>
 			    </filter>
 		    </defaultStorageSettings>
 		</building>
-		 
+		noAmmoRack-->
 	</ThingDef>
 </Defs>

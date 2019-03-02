@@ -48,7 +48,7 @@
         <range>100</range>
         <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
         <burstShotCount>1</burstShotCount>
-        <soundCast>Sound_Leo1A5</soundCast>
+        <soundCast>Sound_Railgun</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>20</muzzleFlashScale>
       </li>

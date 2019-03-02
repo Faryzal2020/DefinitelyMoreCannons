@@ -2,13 +2,13 @@
 <Defs>
 
 	<ThingDef ParentName="DMC_BaseMannedTurret">
-	    <defName>Turret_288mmHowitzer</defName>
-	    <label>BL 9.2 Inch Mk.I Howitzer</label>
-	    <description>A manned 9.2 Inch (288mm) Howitzer cannon, able to shoot over walls, 300m max range, 50 seconds reload. Explodes with radius of 2 blocks when destroyed.</description>
+	    <defName>Turret_KC36T_Navalgun</defName>
+	    <label>15cm KC/36T</label>
+	    <description>A manned Double mounted 150mm KC/36T Naval gun. Uses the German 15cm SprGr Shell. Has an internal ammunition feeder rack with capacity of 75 rounds. Fires a salvo of 2 shells. Reload rate is 18 seconds. Consumes 2000W of power for its electric-powered aiming controls and loading systems, 20m min range, 300m max range. Able to fire over walls. Explodes with radius of 4 blocks when destroyed.  Because of the size and its ability to do high angle aiming, this turret cannot be placed under a roof.</description>
 	    <graphicData>
-	        <texPath>Things/Building/MannedMk1</texPath>
+	        <texPath>Things/Building/MannedKC36T</texPath>
 	        <graphicClass>Graphic_Single</graphicClass>
-	        <drawSize>(10,10)</drawSize>
+	        <drawSize>(17,17)</drawSize>
 	        <damageData>
 	        	<rect>(0.38,0.2,0.56375,0.8)</rect>
 	        	<cornerTL>Damage/Corner</cornerTL>
@@ -18,58 +18,58 @@
 	        	<volume>(2,1.5,2)</volume>
 	        </shadowData>
 	    </graphicData>
-	    <uiIconPath>Things/Icons/MannedMk1_MenuIcon</uiIconPath>
+	    <uiIconPath>Things/Icons/MannedKC36T_MenuIcon</uiIconPath>
 	    <building>
-	        <turretGunDef>288mmHowitzer_Turret</turretGunDef>
-	        <turretTopGraphicPath>Things/Building/MannedMk1_Top</turretTopGraphicPath>
-	        <turretTopDrawSize>10</turretTopDrawSize>
-	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
-	        <turretBurstCooldownTime>50</turretBurstCooldownTime> <!-- Reload Time -->
+	        <turretGunDef>TurretGun_KC36T_Navalgun</turretGunDef>
+	        <turretTopGraphicPath>Things/Building/MannedKC36T_Top</turretTopGraphicPath>
+	        <turretTopDrawSize>17</turretTopDrawSize>
+	        <turretBurstWarmupTime>3</turretBurstWarmupTime>
+	        <turretBurstCooldownTime>18</turretBurstCooldownTime> <!-- Reload Time -->
 	    </building>
-	    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
-	    <size>(4,4)</size> 
+	    <interactionCellOffset>(0,0,-4)</interactionCellOffset>
+	    <size>(7,7)</size> 
 	    <specialDisplayRadius>300</specialDisplayRadius>
-		<costStuffCount>80</costStuffCount>
-	    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+		<costStuffCount>220</costStuffCount>
+	    <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
 	    <costList>
-			<Steel>800</Steel>
-			<!--Plasteel <Plasteel></Plasteel> Plasteel-->
-			  <ComponentIndustrial>8</ComponentIndustrial>  
-			<!--AdvCompo <ComponentSpacer></ComponentSpacer> AdvCompo-->
+			<Steel>1800</Steel>
+			  <Plasteel>510</Plasteel>  
+			  <ComponentIndustrial>25</ComponentIndustrial>  
+			  <ComponentSpacer>22</ComponentSpacer>  
 		</costList>
 	    <statBases>
-		    <MaxHitPoints>1000</MaxHitPoints>
-		    <WorkToBuild>8000</WorkToBuild>
+		    <MaxHitPoints>16000</MaxHitPoints>
+		    <WorkToBuild>28000</WorkToBuild>
 		    <Mass>200</Mass>
 	    </statBases>
 	    <researchPrerequisites>
-	        <li>mark1howitzer</li>
+	        <li>Twin150mmNaval</li>
 	    </researchPrerequisites>
 	    <comps>
 	    	 
 	      <li Class="CompProperties_Explosive">
-	        <explosiveRadius>2</explosiveRadius>
+	        <explosiveRadius>4</explosiveRadius>
 	        <explosiveDamageType>Bomb</explosiveDamageType>
 	      </li>
 	      	 
 
-	      	<!--usesPower
+	      	 
 	      <li Class="CompProperties_Power">
 	        <compClass>CompPowerTrader</compClass>
-	        <basePowerConsumption>1</basePowerConsumption>
+	        <basePowerConsumption>2000</basePowerConsumption>
 	      </li>
-	      	usesPower-->
+	      	 
 
-	      <!--hasAmmoRack
+	       
 	      <li Class="CompProperties_Refuelable">
 	        <fuelLabel>Ammunitions</fuelLabel>
 	        <fuelGizmoLabel>Ammo</fuelGizmoLabel>
 	        <fuelFilter>
 	          <thingDefs>
-	            <li></li>
+	            <li>150CannonBullet_Shell_HighExplosive</li>
 	          </thingDefs>
 	        </fuelFilter>
-	        <fuelCapacity></fuelCapacity>
+	        <fuelCapacity>75</fuelCapacity>
 	        <initialFuelPercent>0</initialFuelPercent>
 	        <autoRefuelPercent>0.25</autoRefuelPercent>
 	        <showFuelGizmo>true</showFuelGizmo>
@@ -81,13 +81,13 @@
 	        <outOfFuelMessage>Cannot shoot: Out of ammo</outOfFuelMessage>
 	        <fuelIconPath>UI/Overlays/Ammo</fuelIconPath>
 	      </li>
-	  	hasAmmoRack-->
+	  	 
 	    </comps>
-	     
+	    <!--noAmmoRack
 	    <inspectorTabs>
 	        <li>ITab_Shells</li>
 	    </inspectorTabs>
-	     
+	    noAmmoRack-->
 	     
 	    <placeWorkers>
 	      <li>PlaceWorker_NotUnderRoof</li>
@@ -96,57 +96,57 @@
 	</ThingDef>
   	
 
-	 <ThingDef ParentName="DMC_MultishellWeapon"> 
-	<!--hasAmmoRack<ThingDef ParentName="DMC_BaseTurretWeapon">hasAmmoRack-->
-		<defName>288mmHowitzer_Turret</defName>
+	<!--noAmmoRack<ThingDef ParentName="DMC_MultishellWeapon">noAmmoRack-->
+	 <ThingDef ParentName="DMC_BaseTurretWeapon"> 
+		<defName>TurretGun_KC36T_Navalgun</defName>
 		<label>turret gun</label>
 		<description>you're supposed to not see this</description>
 		<statBases>
-		    <AccuracyTouch>0.8</AccuracyTouch>
-		    <AccuracyShort>0.8</AccuracyShort>
-		    <AccuracyMedium>0.8</AccuracyMedium>
-		    <AccuracyLong>0.8</AccuracyLong>
-      		<!--hasAmmoRack<RangedWeapon_Cooldown>50</RangedWeapon_Cooldown>hasAmmoRack-->
+		    <AccuracyTouch>1</AccuracyTouch>
+		    <AccuracyShort>1</AccuracyShort>
+		    <AccuracyMedium>1</AccuracyMedium>
+		    <AccuracyLong>1</AccuracyLong>
+      		 <RangedWeapon_Cooldown>18</RangedWeapon_Cooldown> 
 		</statBases>
 		<verbs>
 		    <li>
 			    <verbClass>Verb_Shoot</verbClass>
 			    <hasStandardCommand>true</hasStandardCommand>
-			    <!--hasAmmoRack<defaultProjectile></defaultProjectile>hasAmmoRack-->
-			    <warmupTime>0</warmupTime>
+			     <defaultProjectile>150CannonBullet_Shell_HighExplosive</defaultProjectile> 
+			    <warmupTime>3</warmupTime>
 			    <minRange>20</minRange>
 			    <range>300</range>
-        		<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
-			    <burstShotCount>1</burstShotCount>
-			    <soundCast>Sound_288mm</soundCast>
-			    <muzzleFlashScale>50</muzzleFlashScale>
-			    <!--hasAmmoRack<consumeFuelPerShot>1</consumeFuelPerShot>hasAmmoRack-->
+        		<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+			    <burstShotCount>2</burstShotCount>
+			    <soundCast>Sound_Naval150mm</soundCast>
+			    <muzzleFlashScale>45</muzzleFlashScale>
+			     <consumeFuelPerShot>1</consumeFuelPerShot> 
 			    <requireLineOfSight>false</requireLineOfSight>
 			    <targetParams>
 			        <canTargetLocations>true</canTargetLocations>
 			    </targetParams>
-			      <forcedMissRadius>3</forcedMissRadius>  
+			      <forcedMissRadius>1</forcedMissRadius>  
 		    </li>
 		</verbs>
-		 
+		<!--noAmmoRack
 		<building>
 		    <fixedStorageSettings>
 			    <filter>
 			        <categories>
-			        	<li>288mmShells</li>
+			        	<li></li>
 			        </categories>
 			    </filter>
 		    </fixedStorageSettings>
 		    <defaultStorageSettings>
 			    <filter>
 			        <categories>
-			        	<li>288mmShells</li>
+			        	<li></li>
 			        </categories>
 			        <disallowedThingDefs>
 			        </disallowedThingDefs>
 			    </filter>
 		    </defaultStorageSettings>
 		</building>
-		 
+		noAmmoRack-->
 	</ThingDef>
 </Defs>

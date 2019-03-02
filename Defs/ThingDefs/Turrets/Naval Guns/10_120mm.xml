@@ -8,7 +8,7 @@
     <graphicData>
       <texPath>Things/Building/MannedTAK120</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(13, 13)</drawSize>
+      <drawSize>(14, 14)</drawSize>
       <damageData>
         <rect>(0.2,0.2,0.6,0.6)</rect>
       </damageData>
@@ -21,7 +21,7 @@
     <building>
       <turretGunDef>Gun_120mmNavalgunTurret</turretGunDef>
       <turretTopGraphicPath>Things/Building/MannedTAK120_Top</turretTopGraphicPath>
-      <turretTopDrawSize>10</turretTopDrawSize>
+      <turretTopDrawSize>14</turretTopDrawSize>
       <turretBurstCooldownTime>2</turretBurstCooldownTime> <!-- Reload Time -->
     </building>
     <interactionCellOffset>(0,0,-3)</interactionCellOffset>
@@ -33,7 +33,7 @@
       <Steel>2000</Steel>
       <Plasteel>250</Plasteel>
       <Gold>30</Gold>
-      <ComponentIndustrial>15</ComponentIndustrial>
+      <ComponentIndustrial>35</ComponentIndustrial>
       <ComponentSpacer>6</ComponentSpacer>
     </costList>
     <statBases>
@@ -103,7 +103,7 @@
         <soundCast>Sound_120mm</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>45</muzzleFlashScale>
-        <consumeFuelPerShot>6</consumeFuelPerShot>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
