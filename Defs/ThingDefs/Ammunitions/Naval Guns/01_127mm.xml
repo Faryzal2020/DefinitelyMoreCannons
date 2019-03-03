@@ -44,7 +44,7 @@
   	 
   	<ThingDef ParentName="BaseBullet_Explosive">
 	    <defName>127CannonBullet_Shell_HighExplosive</defName>
-	    <label>127mm HE Shell</label>
+	    <label>(127mm) 12.7cm SprGr HE</label>
 	    <graphicData>
 	      	<texPath>Things/Projectile/Bullet_Big</texPath>
 	      	<graphicClass>Graphic_Single</graphicClass>
@@ -61,7 +61,7 @@
 
   	<RecipeDef>
 	    <defName>Make_127mmHE_x1</defName>
-	    <label>make 127mm 12.7cm SprGr HE Shell 1x</label>
+	    <label>make 127mm SprGr HE Shell 1x</label>
 	    <description>Turrets that uses this ammunition: 12.7cm SK C/34</description>
 	    <jobString>Making 127mm shell.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>
@@ -107,7 +107,7 @@
 
 	<RecipeDef>
 	    <defName>Make_127mmHE_x10</defName>
-	    <label>make 127mm 12.7cm SprGr HE Shell 10x</label>
+	    <label>make 127mm SprGr HE Shell 10x</label>
 	    <description>Turrets that uses this ammunition: 12.7cm SK C/34</description>
 	    <jobString>Making 127mm shells.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>

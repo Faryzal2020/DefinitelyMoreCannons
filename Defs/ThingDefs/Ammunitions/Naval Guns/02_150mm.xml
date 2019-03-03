@@ -44,7 +44,7 @@
   	 
   	<ThingDef ParentName="BaseBullet_Explosive">
 	    <defName>150CannonBullet_Shell_HighExplosive</defName>
-	    <label>150mm HE Shell</label>
+	    <label>(150mm) 15cm SprGr HE</label>
 	    <graphicData>
 	      	<texPath>Things/Projectile/LargeShell</texPath>
 	      	<graphicClass>Graphic_Single</graphicClass>
@@ -61,7 +61,7 @@
 
   	<RecipeDef>
 	    <defName>Make_150mmHE_x1</defName>
-	    <label>make 150mm 15cm SprGr HE Shell 1x</label>
+	    <label>make 150mm SprGr HE Shell 1x</label>
 	    <description>Turrets that uses this ammunition: 15cm KC/36</description>
 	    <jobString>Making 150mm shell.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>
@@ -107,7 +107,7 @@
 
 	<RecipeDef>
 	    <defName>Make_150mmHE_x10</defName>
-	    <label>make 150mm 15cm SprGr HE Shell 10x</label>
+	    <label>make 150mm SprGr HE Shell 10x</label>
 	    <description>Turrets that uses this ammunition: 15cm KC/36</description>
 	    <jobString>Making 150mm shells.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>

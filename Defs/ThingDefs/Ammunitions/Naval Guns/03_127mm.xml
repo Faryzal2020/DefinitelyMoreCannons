@@ -44,7 +44,7 @@
   	 
   	<ThingDef ParentName="BaseBullet_Explosive">
 	    <defName>Bullet_Twin127mmNavalgunTurret</defName>
-	    <label>127mm HE Shell</label>
+	    <label>(127mm) Type 1 HE</label>
 	    <graphicData>
 	      	<texPath>Things/Projectile/LargeShell</texPath>
 	      	<graphicClass>Graphic_Single</graphicClass>

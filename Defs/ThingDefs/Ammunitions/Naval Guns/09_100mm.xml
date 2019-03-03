@@ -27,7 +27,7 @@
   	 
   	<ThingDef ParentName="BaseBullet">
 	    <defName>Bullet_100mmNavalgunTurret</defName>
-	    <label>100mm AP Shell</label>
+	    <label>(100mm) OEA F1 AP</label>
 	    <graphicData>
 	      	<texPath>Things/Projectile/LargeShell</texPath>
 	      	<graphicClass>Graphic_Single</graphicClass>

@@ -9,7 +9,7 @@
 
 	<ThingDef ParentName="Base_DMCAmmunitions">
 	    <defName>NavalSeventySix</defName>
-	    <label>(76mm) OTO 76mm AP AP</label>
+	    <label>(76mm) OTO 76mm AP</label>
 	    <description>Turrets that uses this ammunition: OTO Melara 76mm</description>
 	    <graphicData>
 	      	<texPath>Things/Projectile/76AP</texPath>
@@ -27,7 +27,7 @@
   	 
   	<ThingDef ParentName="BaseBullet">
 	    <defName>Bullet_76AP76mm_AP</defName>
-	    <label>76mm AP Shell</label>
+	    <label>(76mm) OTO 76mm AP</label>
 	    <graphicData>
 	      	<texPath>Things/Projectile/Bullet_Big</texPath>
 	      	<graphicClass>Graphic_Single</graphicClass>
@@ -61,7 +61,7 @@
 
   	<RecipeDef>
 	    <defName>Make_76mmAP_x1</defName>
-	    <label>make 76mm OTO 76mm AP AP Shell 1x</label>
+	    <label>make 76mm OTO AP Shell 1x</label>
 	    <description>Turrets that uses this ammunition: OTO Melara 76mm</description>
 	    <jobString>Making 76mm shell.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>
@@ -107,7 +107,7 @@
 
 	<RecipeDef>
 	    <defName>Make_76mmAP_x10</defName>
-	    <label>make 76mm OTO 76mm AP AP Shell 10x</label>
+	    <label>make 76mm OTO AP Shell 10x</label>
 	    <description>Turrets that uses this ammunition: OTO Melara 76mm</description>
 	    <jobString>Making 76mm shells.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>

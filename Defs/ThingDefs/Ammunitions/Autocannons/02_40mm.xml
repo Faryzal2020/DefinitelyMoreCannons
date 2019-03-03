@@ -9,7 +9,7 @@
 
 	<ThingDef ParentName="Base_DMCAmmunitions">
 	    <defName>BoforsClip</defName>
-	    <label>(40mm) 4x40mm AP</label>
+	    <label>(40mm) 4x40mm AP Clip</label>
 	    <description>Turrets that uses this ammunition: Flak 28 Bofors Autocannon</description>
 	    <graphicData>
 	      	<texPath>Things/Projectile/4x40mmClip</texPath>
@@ -27,7 +27,7 @@
   	 
   	<ThingDef ParentName="BaseBullet">
 	    <defName>Bullet_40mmAutocannonTurret</defName>
-	    <label>40mm AP Shell</label>
+	    <label>(40mm) 4x40mm AP Clip</label>
 	    <graphicData>
 	      	<texPath>Things/Projectile/Bullet_Small</texPath>
 	      	<graphicClass>Graphic_Single</graphicClass>
@@ -61,7 +61,7 @@
 
   	<RecipeDef>
 	    <defName>Make_4x40mmClip_x1</defName>
-	    <label>make 40mm 4x40mm AP Shell 1x</label>
+	    <label>make 40mm 4x40mm AP Clip 1x</label>
 	    <description>Turrets that uses this ammunition: Flak 28 Bofors Autocannon</description>
 	    <jobString>Making 40mm shell.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>
@@ -107,7 +107,7 @@
 
 	<RecipeDef>
 	    <defName>Make_4x40mmClip_x10</defName>
-	    <label>make 40mm 4x40mm AP Shell 10x</label>
+	    <label>make 40mm 4x40mm AP Clip 10x</label>
 	    <description>Turrets that uses this ammunition: Flak 28 Bofors Autocannon</description>
 	    <jobString>Making 40mm shells.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>

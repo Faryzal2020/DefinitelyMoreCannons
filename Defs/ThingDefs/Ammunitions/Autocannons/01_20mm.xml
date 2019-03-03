@@ -27,7 +27,7 @@
   	 
   	<ThingDef ParentName="BaseBullet">
 	    <defName>Bullet_20mmAutocannonTurret</defName>
-	    <label>20mm API Shell</label>
+	    <label>(20mm) 20x20mm API Magazine</label>
 	    <graphicData>
 	      	<texPath>Things/Projectile/Bullet_Small</texPath>
 	      	<graphicClass>Graphic_Single</graphicClass>
@@ -61,7 +61,7 @@
 
   	<RecipeDef>
 	    <defName>Make_20x20mmMag_x1</defName>
-	    <label>make 20mm 20x20mm API Shell 1x</label>
+	    <label>make 20mm 20x20mm API Magazine 1x</label>
 	    <description>Turrets that uses this ammunition: 20mm Flak 38 Autocannon</description>
 	    <jobString>Making 20mm shell.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>
@@ -107,7 +107,7 @@
 
 	<RecipeDef>
 	    <defName>Make_20x20mmMag_x10</defName>
-	    <label>make 20mm 20x20mm API Shell 10x</label>
+	    <label>make 20mm 20x20mm API Magazine 10x</label>
 	    <description>Turrets that uses this ammunition: 20mm Flak 38 Autocannon</description>
 	    <jobString>Making 20mm shells.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>

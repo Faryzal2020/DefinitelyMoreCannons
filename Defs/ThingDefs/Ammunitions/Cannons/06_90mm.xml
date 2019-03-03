@@ -26,7 +26,7 @@
 
   	<ThingDef ParentName="BaseBullet">
 	    <defName>Bullet_90mm_AP</defName>
-	    <label>90mm AP Shell</label>
+	    <label>(90mm) M82 APCBC</label>
 	    <graphicData>
 	      	<texPath>Things/Projectile/Bullet_Big</texPath>
 	      	<graphicClass>Graphic_Single</graphicClass>

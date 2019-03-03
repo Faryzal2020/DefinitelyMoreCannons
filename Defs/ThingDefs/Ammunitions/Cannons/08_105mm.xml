@@ -27,7 +27,7 @@
   	 
   	<ThingDef ParentName="BaseBullet">
 	    <defName>Bullet_105mm_APFSDS</defName>
-	    <label>105mm APFSDS Shell</label>
+	    <label>(105mm) DM23 APFSDS</label>
 	    <graphicData>
 	      	<texPath>Things/Projectile/RodShell</texPath>
 	      	<graphicClass>Graphic_Single</graphicClass>

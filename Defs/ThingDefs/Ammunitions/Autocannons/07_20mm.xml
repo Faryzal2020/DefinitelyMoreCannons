@@ -27,7 +27,7 @@
   	 
   	<ThingDef ParentName="BaseBullet">
 	    <defName>Bullet_20mm_AP</defName>
-	    <label>20mm AP Shell</label>
+	    <label>(20mm) HS827 AP</label>
 	    <graphicData>
 	      	<texPath>Things/Projectile/Bullet_Small</texPath>
 	      	<graphicClass>Graphic_Single</graphicClass>

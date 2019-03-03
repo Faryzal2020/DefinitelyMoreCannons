@@ -9,7 +9,7 @@
 
 	<ThingDef ParentName="Base_DMCAmmunitions">
 	    <defName>KugelblitzShell</defName>
-	    <label>(30mm) 30mm SprGr AP</label>
+	    <label>(30mm) SprGr AP</label>
 	    <description>Turrets that uses this ammunition: Zwilingsflak MK 103 Autocannon</description>
 	    <graphicData>
 	      	<texPath>Things/Projectile/30SprGr</texPath>
@@ -27,7 +27,7 @@
   	 
   	<ThingDef ParentName="BaseBullet">
 	    <defName>Bullet_Kugel30mm_AP</defName>
-	    <label>30mm AP Shell</label>
+	    <label>(30mm) SprGr AP</label>
 	    <graphicData>
 	      	<texPath>Things/Projectile/Bullet_Small</texPath>
 	      	<graphicClass>Graphic_Single</graphicClass>
@@ -61,7 +61,7 @@
 
   	<RecipeDef>
 	    <defName>Make_30mmAP_x1</defName>
-	    <label>make 30mm 30mm SprGr AP Shell 1x</label>
+	    <label>make 30mm SprGr AP Shell 1x</label>
 	    <description>Turrets that uses this ammunition: Zwilingsflak MK 103 Autocannon</description>
 	    <jobString>Making 30mm shell.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>
@@ -107,7 +107,7 @@
 
 	<RecipeDef>
 	    <defName>Make_30mmAP_x10</defName>
-	    <label>make 30mm 30mm SprGr AP Shell 10x</label>
+	    <label>make 30mm SprGr AP Shell 10x</label>
 	    <description>Turrets that uses this ammunition: Zwilingsflak MK 103 Autocannon</description>
 	    <jobString>Making 30mm shells.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>

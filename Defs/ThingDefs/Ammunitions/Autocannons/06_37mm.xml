@@ -27,7 +27,7 @@
   	 
   	<ThingDef ParentName="BaseBullet">
 	    <defName>Bullet_37mmAutocannonTurret</defName>
-	    <label>37mm AP Shell</label>
+	    <label>(37mm) 37mm PzGr AP</label>
 	    <graphicData>
 	      	<texPath>Things/Projectile/Bullet_Small</texPath>
 	      	<graphicClass>Graphic_Single</graphicClass>
@@ -61,7 +61,7 @@
 
   	<RecipeDef>
 	    <defName>Make_37mmShell_x1</defName>
-	    <label>make 37mm 37mm PzGr AP Shell 1x</label>
+	    <label>make 37mm PzGr AP Shell 1x</label>
 	    <description>Turrets that uses this ammunition: Flak M42</description>
 	    <jobString>Making 37mm shell.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>
@@ -107,7 +107,7 @@
 
 	<RecipeDef>
 	    <defName>Make_37mmShell_x10</defName>
-	    <label>make 37mm 37mm PzGr AP Shell 10x</label>
+	    <label>make 37mm PzGr AP Shell 10x</label>
 	    <description>Turrets that uses this ammunition: Flak M42</description>
 	    <jobString>Making 37mm shells.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>

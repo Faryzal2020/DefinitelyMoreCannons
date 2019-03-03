@@ -26,7 +26,7 @@
 
   	<ThingDef ParentName="BaseBullet">
 	    <defName>Bullet_100mm_AP</defName>
-	    <label>100mm AP Shell</label>
+	    <label>(100mm) BR-412D AP</label>
 	    <graphicData>
 	      	<texPath>Things/Projectile/Bullet_Big</texPath>
 	      	<graphicClass>Graphic_Single</graphicClass>
@@ -59,7 +59,7 @@
 
   	<RecipeDef>
 	    <defName>Make_100mmAP_x1</defName>
-	    <label>make 100mm AP Shell 1x</label>
+	    <label>make 100mm BR-412D AP Shell 1x</label>
 	    <description>Turrets that uses this ammunition: BS-3, T-54</description>
 	    <jobString>Making 100mm shell.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>
@@ -105,7 +105,7 @@
 
 	<RecipeDef>
 	    <defName>Make_100mmAP_x10</defName>
-	    <label>make 100mm AP Shell 10x</label>
+	    <label>make 100mm BR-412D AP Shell 10x</label>
 	    <description>Turrets that uses this ammunition: BS-3, T-54</description>
 	    <jobString>Making 100mm shells.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>

@@ -44,7 +44,7 @@
   	 
   	<ThingDef ParentName="BaseBullet_Explosive">
 	    <defName>Bullet_203SprGr203mm_HE</defName>
-	    <label>203mm HE Shell</label>
+	    <label>(203mm) 20.3cm SprGr HE</label>
 	    <graphicData>
 	      	<texPath>Things/Projectile/LargeShell</texPath>
 	      	<graphicClass>Graphic_Single</graphicClass>
@@ -61,7 +61,7 @@
 
   	<RecipeDef>
 	    <defName>Make_203mmHE_x1</defName>
-	    <label>make 203mm 20.3cm SprGr HE Shell 1x</label>
+	    <label>make 203mm SprGr HE Shell 1x</label>
 	    <description>Turrets that uses this ammunition: 20.3cm SK C/34</description>
 	    <jobString>Making 203mm shell.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>
@@ -107,7 +107,7 @@
 
 	<RecipeDef>
 	    <defName>Make_203mmHE_x10</defName>
-	    <label>make 203mm 20.3cm SprGr HE Shell 10x</label>
+	    <label>make 203mm SprGr HE Shell 10x</label>
 	    <description>Turrets that uses this ammunition: 20.3cm SK C/34</description>
 	    <jobString>Making 203mm shells.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>

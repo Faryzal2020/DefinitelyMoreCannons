@@ -9,7 +9,7 @@
 
 	<ThingDef ParentName="Base_DMCAmmunitions">
 	    <defName>TAKShell</defName>
-	    <label>(120mm) TAK 120mm AP AP</label>
+	    <label>(120mm) TAK 120mm AP</label>
 	    <description>Turrets that uses this ammunition: TAK 120</description>
 	    <graphicData>
 	      	<texPath>Things/Projectile/TAK120HE</texPath>
@@ -27,7 +27,7 @@
   	 
   	<ThingDef ParentName="BaseBullet">
 	    <defName>Bullet_120mmNavalgunTurret</defName>
-	    <label>120mm AP Shell</label>
+	    <label>(120mm) TAK 120mm AP</label>
 	    <graphicData>
 	      	<texPath>Things/Projectile/LargeShell</texPath>
 	      	<graphicClass>Graphic_Single</graphicClass>
@@ -61,7 +61,7 @@
 
   	<RecipeDef>
 	    <defName>Make_120mmAPHE_x1</defName>
-	    <label>make 120mm TAK 120mm AP AP Shell 1x</label>
+	    <label>make 120mm TAK AP Shell 1x</label>
 	    <description>Turrets that uses this ammunition: TAK 120</description>
 	    <jobString>Making 120mm shell.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>
@@ -107,7 +107,7 @@
 
 	<RecipeDef>
 	    <defName>Make_120mmAPHE_x10</defName>
-	    <label>make 120mm TAK 120mm AP AP Shell 10x</label>
+	    <label>make 120mm TAK AP Shell 10x</label>
 	    <description>Turrets that uses this ammunition: TAK 120</description>
 	    <jobString>Making 120mm shells.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>
