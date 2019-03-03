@@ -87,6 +87,7 @@
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>Msta</li>
+      <li>AdvancedFabrication</li>
     </prerequisites>
     <researchViewX>5</researchViewX>
     <researchViewY>5.5</researchViewY>

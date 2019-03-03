@@ -61,6 +61,7 @@
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>Kugelblitz</li>
+      <li>AdvancedFabrication</li>
     </prerequisites>
     <researchViewX>10</researchViewX>
     <researchViewY>1</researchViewY>
