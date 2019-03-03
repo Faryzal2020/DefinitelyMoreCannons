@@ -4,7 +4,7 @@
   <ThingDef ParentName="DMC_BaseMannedTurret">
     <defName>Turret_288mmHowitzer</defName>
     <label>BL 9.2 Inch Mk.I Howitzer</label>
-    <description>A manned 9.2 Inch Howitzer cannon based on BL 9.2 Inch Mark I Howitzer, able to shoot over walls, 300m max range, 50 seconds reload. Explodes with radius of 2 blocks when destroyed.</description>
+    <description>A manned 9.2 Inch (288mm) Howitzer cannon, able to shoot over walls, 300m max range, 50 seconds reload. Explodes with radius of 2 blocks when destroyed.</description>
     <graphicData>
       <texPath>Things/Building/MannedMark1Howitzer</texPath>
       <graphicClass>Graphic_Single</graphicClass>

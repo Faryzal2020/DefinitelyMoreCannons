@@ -3,8 +3,8 @@
 
   <ThingDef ParentName="DMC_BaseMannedTurret">
     <defName>Turret_600Howitzer</defName>
-    <label>60cm Howitzer</label>
-    <description>A manned 60cm Howitzer cannon based on "Karl Gerät" Railway Gun, shoots a massive HE shell over walls, 1km max range, 100 seconds reload. Explodes with radius of 4 blocks when destroyed.</description>
+    <label>60cm Karl Gerät Howitzer</label>
+    <description>A manned 60cm Howitzer cannon based on "Karl Gerät" Railway Gun, shoots a massive HE shell over walls, 1km max range, 120 seconds reload. Explodes with radius of 4 blocks when destroyed.</description>
     <graphicData>
       <texPath>Things/Building/TurretThor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
