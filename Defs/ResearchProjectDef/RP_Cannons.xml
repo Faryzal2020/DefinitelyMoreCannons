@@ -3,7 +3,7 @@
   <ResearchProjectDef>
     <defName>6PdrCannon</defName>
     <label>6Pdr Cannon</label>
-    <description>A manned 6 Pounder Cannon Turret based on A.E.C Deacon Turret . Capable of using AP shells.</description>
+      <description>Uses the 57mm Shot MK-8T AP shell. 3m Min Range, 70m Max Range. 4 Seconds Reload. Does not explodes when destroyed.</description>
     <baseCost>500</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
@@ -11,12 +11,12 @@
     </prerequisites>
     <researchViewX>1</researchViewX>
     <researchViewY>1</researchViewY>
-    <tab>DMC_Cannons</tab>
+    <tab>DMC_General</tab>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>75mmPak40</defName>
     <label>75mm Pak 40</label>
-    <description>A manned 75mm Cannon based on 75mm Pak 40 Field Gun . Capable of using AP shells.</description>
+    <description>Manned 75mm Pak 40 Field Gun. Uses the 75mm PzGr 39 Shell. 5 seconds reload. 3m Min Range, 90m Max Range. Doesn't explode when destroyed. Field guns are cheaper and easier to build, but has lower hit points.</description>
     <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
@@ -24,20 +24,99 @@
     </prerequisites>
     <researchViewX>2</researchViewX>
     <researchViewY>1</researchViewY>
-    <tab>DMC_Cannons</tab>
+    <tab>DMC_General</tab>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>FlakCannon</defName>
     <label>88mm Flak 41</label>
-    <description>A manned 88mm Cannon based on Flak 41 AA/Artillery Gun. Capable of using HE and AP shells.</description>
-    <baseCost>2000</baseCost>
+    <description>Manned 88mm Flak Cannon. Uses the 88mm PzGr 39 Shell. 10 seconds reload. 3m Min Range, 100m Max Range. Doesn't explodes when destroyed.</description>
+    <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>75mmPak40</li>
     </prerequisites>
     <researchViewX>3</researchViewX>
     <researchViewY>1</researchViewY>
-    <tab>DMC_Cannons</tab>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>BS3</defName>
+    <label>100mm M1944 BS-3</label>
+    <description>A manned 100mm M1944 BS-3 Anti-tank field gun. Uses the BR-412D shell. 3m Min range, 100m Max range. 10 seconds reload. Field guns are cheaper and easier to build, but has lower hit points.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>FlakCannon</li>
+    </prerequisites>
+    <researchViewX>4</researchViewX>
+    <researchViewY>1</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Pak44</defName>
+    <label>128mm Pak 44</label>
+    <description>A manned 128mm Pak 44 Anti-tank field gun. Uses 128mm PzGr shell. 3m Min range, 110m Max range. 11 seconds reload. Because of the height, it can't be placed under roof. Field guns are cheaper and easier to build, but has lower hit points.</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>BS3</li>
+    </prerequisites>
+    <researchViewX>5</researchViewX>
+    <researchViewY>1</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>M26</defName>
+    <label>90mm M26</label>
+    <description>A manned 90mm M3 Gun mounted in a turret from M26 Pershing. Uses 90mm M82 shell. 4m Min range, 90m Max range. 8 seconds reload. Has internal ammo capacity of 70 rounds. Explodes with radius of 1 block when destroyed. Tank turrets has much higher hit points but has higher building cost and work. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>6PdrCannon</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>2</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>T54</defName>
+    <label>100mm T54</label>
+    <description>A manned 100mm D-10T Gun mounted in a turret from T54. Uses 100mm BR-412D shell. 4m Min range, 95m Max range. 7.1 seconds reload. Has internal ammo capacity of 34 rounds. Explodes with radius of 1 block when destroyed. Tank turrets has much higher hit points but has higher building cost and work. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>M26</li>
+    </prerequisites>
+    <researchViewX>3</researchViewX>
+    <researchViewY>2</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>M40</defName>
+    <label>106mm M40</label>
+    <description>A manned 2x 106mm M40 Recoilless Rifle mounted in a circular mount from R3 IFV. Does not have ammo storage. Uses the 106mm M344 HEAT shell. Shoots a salvo of 2 rounds. 4m Min range, 100m Max range. 5 seconds reload. Tank turrets has much higher hit points but has higher building cost and work.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>T54</li>
+    </prerequisites>
+    <researchViewX>4</researchViewX>
+    <researchViewY>2</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Leo1A5</defName>
+    <label>105mm Leopard 1A5</label>
+    <description>A manned 105mm L7A3 L/52 rifled gun mounted on a Leopard 1A5 turret. Uses 105mm DM23 APFSDS shell. 4m Min range, 110m Max range. 6.5 seconds reload. Has internal ammo capacity of 55 rounds. Explodes with radius of 1 block when destroyed. Fires an APFSDS (Armor Piercing Fin-Stabilized Discarding Sabot) round that has a very high armor penetration value. Tank turrets has much higher hit points but has higher building cost and work. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>M40</li>
+    </prerequisites>
+    <researchViewX>5</researchViewX>
+    <researchViewY>2</researchViewY>
+    <tab>DMC_General</tab>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -50,21 +129,21 @@
       <li>Automated_FCS</li>
     </prerequisites>
     <researchViewX>1</researchViewX>
-    <researchViewY>4</researchViewY>
-    <tab>DMC_Cannons</tab>
+    <researchViewY>0</researchViewY>
+    <tab>DMC_General</tab>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Unmanned6PdrCannon</defName>
     <label>unmanned 6Pdr Cannon</label>
-    <description>An unmanned version of 6 Pounder Cannon Turret which has a reduced max range and reduced accuracy.</description>
+    <description>An unmanned version of 6 Pounder Cannon Turret.</description>
     <baseCost>3000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>UnmannedLargeCannons</li>
       <li>6PdrCannon</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>2</researchViewY>
-    <tab>DMC_Cannons</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>0</researchViewY>
+    <tab>DMC_General</tab>
   </ResearchProjectDef>
 </Defs>

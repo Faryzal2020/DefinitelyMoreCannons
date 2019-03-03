@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="DMC_BaseMannedTurret">
+	    <defName>Turret_RH202_Autocannon</defName>
+	    <label>Rheinmetall Mk 20 RH-202</label>
+	    <description>Uses 20mm HS827 shell. 3m Min range, 70m Max range. Fires a burst of 15 shots at about 720 RPM and cools down for 1.5 second between each bursts. Has internal ammo capacity of 1250 shells. Explodes with radius of 1 block when destroyed. Uses 500W of power. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+	    <graphicData>
+	        <texPath>Things/Building/MannedRH202</texPath>
+	        <graphicClass>Graphic_Single</graphicClass>
+	        <drawSize>(13,13)</drawSize>
+	        <damageData>
+	        	<rect>(0.38,0.2,0.56375,0.8)</rect>
+	        	<cornerTL>Damage/Corner</cornerTL>
+	        </damageData>
+	        <shadowData>
+	        	<offset>(0,0,0)</offset>
+	        	<volume>(2,1.5,2)</volume>
+	        </shadowData>
+	    </graphicData>
+	    <uiIconPath>Things/Icons/MannedRH202_MenuIcon</uiIconPath>
+	    <building>
+	        <turretGunDef>TurretGun_RH202_Autocannon</turretGunDef>
+	        <turretTopGraphicPath>Things/Building/MannedRH202_Top</turretTopGraphicPath>
+	        <turretTopDrawSize>13</turretTopDrawSize>
+	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
+	        <turretBurstCooldownTime>1.5</turretBurstCooldownTime> <!-- Reload Time -->
+	    </building>
+	    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+	    <size>(2,2)</size> 
+	    <specialDisplayRadius>70</specialDisplayRadius>
+		<costStuffCount>26</costStuffCount>
+	    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+	    <costList>
+			<Steel>260</Steel>
+			  <Plasteel>2</Plasteel>  
+			  <ComponentIndustrial>20</ComponentIndustrial>  
+			<!--AdvCompo <ComponentSpacer></ComponentSpacer> AdvCompo-->
+		</costList>
+	    <statBases>
+		    <MaxHitPoints>1000</MaxHitPoints>
+		    <WorkToBuild>3200</WorkToBuild>
+		    <Mass>200</Mass>
+	    </statBases>
+	    <researchPrerequisites>
+	        <li>RH202</li>
+	    </researchPrerequisites>
+	    <comps>
+	    	 
+	      <li Class="CompProperties_Explosive">
+	        <explosiveRadius>1</explosiveRadius>
+	        <explosiveDamageType>Bomb</explosiveDamageType>
+	      </li>
+	      	 
+
+	      	 
+	      <li Class="CompProperties_Power">
+	        <compClass>CompPowerTrader</compClass>
+	        <basePowerConsumption>500</basePowerConsumption>
+	      </li>
+	      	 
+
+	       
+	      <li Class="CompProperties_Refuelable">
+	        <fuelLabel>Ammo Belt</fuelLabel>
+	        <fuelGizmoLabel>Ammo</fuelGizmoLabel>
+	        <fuelFilter>
+	          <thingDefs>
+	            <li>RheinmetallTwentyMilShell</li>
+	          </thingDefs>
+	        </fuelFilter>
+	        <fuelCapacity>1250</fuelCapacity>
+	        <initialFuelPercent>0</initialFuelPercent>
+	        <autoRefuelPercent>0.25</autoRefuelPercent>
+	        <showFuelGizmo>true</showFuelGizmo>
+	        <minimumFueledThreshold>0</minimumFueledThreshold>
+	        <atomicFueling>false</atomicFueling>
+	        <fuelMultiplier>1</fuelMultiplier>
+	        <factorByDifficulty>false</factorByDifficulty>
+	        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+	        <outOfFuelMessage>Cannot shoot: Out of ammo</outOfFuelMessage>
+	        <fuelIconPath>UI/Overlays/Ammo</fuelIconPath>
+	      </li>
+	  	 
+	    </comps>
+	    <!--noAmmoRack
+	    <inspectorTabs>
+	        <li>ITab_Shells</li>
+	    </inspectorTabs>
+	    noAmmoRack-->
+	    <!--notUnderRoof
+	    <placeWorkers>
+	      <li>PlaceWorker_NotUnderRoof</li>
+	    </placeWorkers>
+	    notUnderRoof-->
+	</ThingDef>
+  	
+
+	<!--noAmmoRack<ThingDef ParentName="DMC_MultishellWeapon">noAmmoRack-->
+	 <ThingDef ParentName="DMC_BaseTurretWeapon"> 
+		<defName>TurretGun_RH202_Autocannon</defName>
+		<label>turret gun</label>
+		<description>you're supposed to not see this</description>
+		<statBases>
+		    <AccuracyTouch>0.7</AccuracyTouch>
+		    <AccuracyShort>0.85</AccuracyShort>
+		    <AccuracyMedium>0.87</AccuracyMedium>
+		    <AccuracyLong>0.9</AccuracyLong>
+      		 <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown> 
+		</statBases>
+		<verbs>
+		    <li>
+			    <verbClass>Verb_Shoot</verbClass>
+			    <hasStandardCommand>true</hasStandardCommand>
+			     <defaultProjectile>Bullet_20mm_AP</defaultProjectile> 
+			    <warmupTime>0</warmupTime>
+			    <minRange>3</minRange>
+			    <range>70</range>
+        		<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+			    <burstShotCount>15</burstShotCount>
+			    <soundCast>Sound_RH202</soundCast>
+			    <muzzleFlashScale>30</muzzleFlashScale>
+			     <consumeFuelPerShot>1</consumeFuelPerShot> 
+			    <requireLineOfSight>true</requireLineOfSight>
+			    <targetParams>
+			        <canTargetLocations>true</canTargetLocations>
+			    </targetParams>
+			    <!--isExplosive <forcedMissRadius>0.1</forcedMissRadius> isExplosive-->
+		    </li>
+		</verbs>
+		<!--noAmmoRack
+		<building>
+		    <fixedStorageSettings>
+			    <filter>
+			        <categories>
+			        	<li>106mmShells</li>
+			        </categories>
+			    </filter>
+		    </fixedStorageSettings>
+		    <defaultStorageSettings>
+			    <filter>
+			        <categories>
+			        	<li>106mmShells</li>
+			        </categories>
+			        <disallowedThingDefs>
+			        </disallowedThingDefs>
+			    </filter>
+		    </defaultStorageSettings>
+		</building>
+		noAmmoRack-->
+	</ThingDef>
+</Defs>

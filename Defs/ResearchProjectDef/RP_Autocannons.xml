@@ -3,41 +3,123 @@
   <ResearchProjectDef>
     <defName>Flak38</defName>
     <label>20mm Flak 38</label>
-    <description>A manned single 20mm autocannon based on 20mm Flak 38 AA gun. Uses a 20 round magazine.</description>
+    <description>Uses the 20x20mm API magazine with magazine storage of 8 mags. 2m min range, 40m Max Range. Fires with 150 RPM fire rate. Explodes with radius of 1 block when destroyed.</description>
     <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>HeavyAutocannons</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
+    <researchViewX>6</researchViewX>
     <researchViewY>1</researchViewY>
-    <tab>DMC_Autocannons</tab>
+    <tab>DMC_General</tab>
   </ResearchProjectDef>
+
   <ResearchProjectDef>
-    <defName>FlakM42</defName>
-    <label>37mm Flak M42</label>
-    <description>A manned single 37mm autocannon based on 37mm Flak M42 AA gun. Uses a belt-feed system with maximum 300 rounds of ammunition.</description>
-    <baseCost>2000</baseCost>
+    <defName>SingleBofors</defName>
+    <label>40mm Bofors M1</label>
+    <description>Uses the 4x40mm Ammunition Clips with ammunition storage of 20 clips. 2m min range, 60m max range. Explodes with radius of 1 block when destroyed.</description>
+    <baseCost>800</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>Flak38</li>
     </prerequisites>
-    <researchViewX>2</researchViewX>
+    <researchViewX>7</researchViewX>
     <researchViewY>1</researchViewY>
-    <tab>DMC_Autocannons</tab>
+    <tab>DMC_General</tab>
   </ResearchProjectDef>
   <ResearchProjectDef>
-    <defName>SingleBofors</defName>
-    <label>40mm Bofors M1</label>
-    <description>A manned single 40mm autocannon based on M1 Bofors AA gun. Needs a 4x40mm Ammo Clip and has a storage of about 20 clips.</description>
+    <defName>RARDEN</defName>
+    <label>30mm L21A1 RARDEN</label>
+    <description>Uses the 30mm HS831A shell. 3m Min range, 70m Max range. Fires a burst of 6 shots at about 92 RPM and cools down for 1.5 second between each bursts. Has internal ammo capacity of 100 3x ammo clips. Explodes with radius of 1 block when destroyed. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>SingleBofors</li>
+    </prerequisites>
+    <researchViewX>8</researchViewX>
+    <researchViewY>1</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Kugelblitz</defName>
+    <label>30mm Zwilingsflak MK103</label>
+    <description>Uses the 30mm SprGr shell. 3m Min range, 70m Max range. Fires at a constant rate of 300 Rounds per Minute. Has internal ammo capacity of 200 rounds. Explodes with radius of 1 block when destroyed. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>RARDEN</li>
+    </prerequisites>
+    <researchViewX>9</researchViewX>
+    <researchViewY>1</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>M247</defName>
+    <label>40mm M247</label>
+    <description>Uses the 40mm M811 shell. 4m Min range, 80m Max range. Fires at a constant rate of 600 Rounds per Minute. Has internal ammo capacity of 580 rounds. Consumes 200W of power. Because of the height, it can't be placed under roof. Explodes with radius of 1 block when destroyed. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
     <baseCost>3000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
-      <li>FlakM42</li>
+      <li>Kugelblitz</li>
     </prerequisites>
-    <researchViewX>3</researchViewX>
+    <researchViewX>10</researchViewX>
     <researchViewY>1</researchViewY>
-    <tab>DMC_Autocannons</tab>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>FlakM42</defName>
+    <label>37mm Flak M42</label>
+    <description>Uses the 37mm PzGr shell in a belt-feed ammunition system with capacity of 300 rounds. 2m min range, 50m max range. Explodes with radius of 1 block when destroyed.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Flak38</li>
+    </prerequisites>
+    <researchViewX>7</researchViewX>
+    <researchViewY>2</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>RH202</defName>
+    <label>20mm RH-202</label>
+    <description>Uses the 20mm HS827 shell. 3m Min range, 70m Max range. Fires a burst of 15 shots at about 720 RPM and cools down for 1.5 second between each bursts. Has internal ammo capacity of 1250 shells. Explodes with radius of 1 block when destroyed. Uses 500W of power. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>FlakM42</li>
+      <li>Fabrication</li>
+    </prerequisites>
+    <researchViewX>8</researchViewX>
+    <researchViewY>2</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Shipunov</defName>
+    <label>30mm 2A42 Shipunov</label>
+    <description>Uses the 30mm 3UOF8 shell. 3m Min range, 70m Max range. Fires a burst of 8 shots at about 514 RPM and cools down for 1 second between each bursts. Has internal ammo capacity of 500 shells. Explodes with radius of 1 block when destroyed. Uses 100W of power. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>RH202</li>
+    </prerequisites>
+    <researchViewX>9</researchViewX>
+    <researchViewY>2</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>SIDAM</defName>
+    <label>25mm SIDAM 25</label>
+    <description>Uses the 25mm PMB090 shell. 4m Min range, 80m Max range. Fires a burst of 20 shots at about 1200 RPM and cools down for 1 second between each bursts. Has internal ammo capacity of 600 shells. Explodes with radius of 1 block when destroyed. Uses 500W of power. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Shipunov</li>
+      <li>AdvancedFabrication</li>
+    </prerequisites>
+    <researchViewX>10</researchViewX>
+    <researchViewY>2</researchViewY>
+    <tab>DMC_General</tab>
   </ResearchProjectDef>
 
 
@@ -50,22 +132,22 @@
     <prerequisites>
       <li>Automated_FCS</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>4</researchViewY>
-    <tab>DMC_Autocannons</tab>
+    <researchViewX>6</researchViewX>
+    <researchViewY>0</researchViewY>
+    <tab>DMC_General</tab>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Unmanned20mmAutocannon</defName>
     <label>unmanned 20mm Flak 38</label>
-    <description>An unmanned version of 20mm Flak 38 Turret which has a reduced max range and reduced accuracy.</description>
+    <description>An unmanned version of 20mm Flak 38 Turret.</description>
     <baseCost>3000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>UnmannedLargeAutocannons</li>
       <li>Flak38</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>2</researchViewY>
-    <tab>DMC_Autocannons</tab>
+    <researchViewX>7</researchViewX>
+    <researchViewY>0</researchViewY>
+    <tab>DMC_General</tab>
   </ResearchProjectDef>
 </Defs>

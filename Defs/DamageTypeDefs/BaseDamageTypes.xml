@@ -22,6 +22,7 @@
   <DamageDef Name="BaseHEShellDamage" Abstract="True">
     <workerClass>DamageWorker_AddInjury</workerClass>
     <externalViolence>true</externalViolence>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
     <isExplosive>true</isExplosive>
     <hediff>Shredded</hediff>
     <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
@@ -41,168 +42,256 @@
   </DamageDef>
 
   <DamageDef ParentName="BaseHEShellDamage">
-    <defName>HowitzerHEBullet</defName>
-    <label>bullet</label>
-    <defaultDamage>1000</defaultDamage>
-    <minDamageToFragment>500</minDamageToFragment>
-    <deathMessage>{0} has died from an artillery explosion.</deathMessage>
-    <defaultStoppingPower>1</defaultStoppingPower>
-  </DamageDef>
-
-  <DamageDef ParentName="BaseHEShellDamage">
-    <defName>288mmHEBullet</defName>
+    <defName>M344Damage</defName>
     <label>bullet</label>
     <defaultDamage>350</defaultDamage>
-    <minDamageToFragment>200</minDamageToFragment>
-    <deathMessage>{0} has died from an artillery explosion.</deathMessage>
+    <minDamageToFragment>100</minDamageToFragment>
+    <deathMessage>{0} has its body damaged by a HEAT round.</deathMessage>
     <defaultStoppingPower>1</defaultStoppingPower>
+    <defaultArmorPenetration>1.8</defaultArmorPenetration>
   </DamageDef>
 
   <DamageDef ParentName="BaseHEShellDamage">
-    <defName>15cmHEBullet</defName>
+    <defName>IGr33Damage</defName>
     <label>bullet</label>
     <defaultDamage>200</defaultDamage>
     <minDamageToFragment>100</minDamageToFragment>
     <deathMessage>{0} has died from an artillery explosion.</deathMessage>
     <defaultStoppingPower>0.8</defaultStoppingPower>
+    <defaultArmorPenetration>1</defaultArmorPenetration>
   </DamageDef>
 
   <DamageDef ParentName="BaseHEShellDamage">
-    <defName>CannonHEBullet</defName>
+    <defName>MkIHEDamage</defName>
     <label>bullet</label>
-    <defaultDamage>250</defaultDamage>
-    <defaultArmorPenetration>0.6</defaultArmorPenetration>
-    <minDamageToFragment>50</minDamageToFragment>
-    <deathMessage>{0} has died from an explosion.</deathMessage>
-    <defaultStoppingPower>0.5</defaultStoppingPower>
-  </DamageDef>
-
-  <DamageDef ParentName="BaseHEShellDamage">
-    <defName>127mmHEBullet</defName>
-    <label>bullet</label>
-    <defaultDamage>420</defaultDamage>
-    <minDamageToFragment>50</minDamageToFragment>
-    <deathMessage>{0} has died from an explosion.</deathMessage>
+    <defaultDamage>500</defaultDamage>
+    <minDamageToFragment>200</minDamageToFragment>
+    <deathMessage>{0} has died from an artillery explosion.</deathMessage>
     <defaultStoppingPower>1</defaultStoppingPower>
+    <defaultArmorPenetration>1.5</defaultArmorPenetration>
+  </DamageDef>
+
+  <DamageDef ParentName="BaseHEShellDamage">
+    <defName>schwereBetongranateDamage</defName>
+    <label>bullet</label>
+    <defaultDamage>1000</defaultDamage>
+    <minDamageToFragment>1000</minDamageToFragment>
+    <deathMessage>{0} has died from an artillery explosion.</deathMessage>
+    <defaultStoppingPower>2</defaultStoppingPower>
+    <defaultArmorPenetration>2</defaultArmorPenetration>
+  </DamageDef>
+
+  <DamageDef ParentName="BaseHEShellDamage">
+    <defName>OF-462Damage</defName>
+    <label>bullet</label>
+    <defaultDamage>380</defaultDamage>
+    <minDamageToFragment>400</minDamageToFragment>
+    <deathMessage>{0} has died from an artillery explosion.</deathMessage>
+    <defaultStoppingPower>1.5</defaultStoppingPower>
     <defaultArmorPenetration>0.8</defaultArmorPenetration>
   </DamageDef>
 
   <DamageDef ParentName="BaseHEShellDamage">
-    <defName>120mmHEBullet</defName>
+    <defName>OF-540Damage</defName>
     <label>bullet</label>
-    <defaultDamage>400</defaultDamage>
-    <defaultArmorPenetration>0.9</defaultArmorPenetration>
-    <minDamageToFragment>50</minDamageToFragment>
-    <deathMessage>{0} has died from an explosion.</deathMessage>
-    <defaultStoppingPower>1</defaultStoppingPower>
+    <defaultDamage>480</defaultDamage>
+    <minDamageToFragment>500</minDamageToFragment>
+    <deathMessage>{0} has died from an artillery explosion.</deathMessage>
+    <defaultStoppingPower>1.8</defaultStoppingPower>
+    <defaultArmorPenetration>1</defaultArmorPenetration>
   </DamageDef>
 
   <DamageDef ParentName="BaseHEShellDamage">
-    <defName>J127mmHEBullet</defName>
+    <defName>M795Damage</defName>
     <label>bullet</label>
     <defaultDamage>500</defaultDamage>
-    <defaultArmorPenetration>1</defaultArmorPenetration>
-    <minDamageToFragment>50</minDamageToFragment>
-    <deathMessage>{0} has died from an explosion.</deathMessage>
-    <defaultStoppingPower>1</defaultStoppingPower>
+    <minDamageToFragment>550</minDamageToFragment>
+    <deathMessage>{0} has died from an artillery explosion.</deathMessage>
+    <defaultStoppingPower>2</defaultStoppingPower>
+    <defaultArmorPenetration>1.1</defaultArmorPenetration>
   </DamageDef>
 
   <DamageDef ParentName="BaseHEShellDamage">
-    <defName>150mmHEBullet</defName>
+    <defName>127SprGrDamage</defName>
+    <label>bullet</label>
+    <defaultDamage>420</defaultDamage>
+    <minDamageToFragment>400</minDamageToFragment>
+    <deathMessage>{0} has died from an artillery explosion.</deathMessage>
+    <defaultStoppingPower>1.5</defaultStoppingPower>
+    <defaultArmorPenetration>0.8</defaultArmorPenetration>
+  </DamageDef>
+
+  <DamageDef ParentName="BaseHEShellDamage">
+    <defName>150SprGrDamage</defName>
     <label>bullet</label>
     <defaultDamage>550</defaultDamage>
-    <defaultArmorPenetration>0.85</defaultArmorPenetration>
-    <minDamageToFragment>60</minDamageToFragment>
-    <deathMessage>{0} has died from an explosion.</deathMessage>
-    <defaultStoppingPower>1</defaultStoppingPower>
+    <minDamageToFragment>550</minDamageToFragment>
+    <deathMessage>{0} has died from an artillery explosion.</deathMessage>
+    <defaultStoppingPower>1.8</defaultStoppingPower>
+    <defaultArmorPenetration>1</defaultArmorPenetration>
+  </DamageDef>
+
+  <DamageDef ParentName="BaseHEShellDamage">
+    <defName>Type1Damage</defName>
+    <label>bullet</label>
+    <defaultDamage>500</defaultDamage>
+    <minDamageToFragment>400</minDamageToFragment>
+    <deathMessage>{0} has died from an artillery explosion.</deathMessage>
+    <defaultStoppingPower>1.5</defaultStoppingPower>
+    <defaultArmorPenetration>0.8</defaultArmorPenetration>
+  </DamageDef>
+
+  <DamageDef ParentName="BaseHEShellDamage">
+    <defName>203SprGrDamage</defName>
+    <label>bullet</label>
+    <defaultDamage>800</defaultDamage>
+    <minDamageToFragment>850</minDamageToFragment>
+    <deathMessage>{0} has died from an artillery explosion.</deathMessage>
+    <defaultStoppingPower>2.3</defaultStoppingPower>
+    <defaultArmorPenetration>1.4</defaultArmorPenetration>
   </DamageDef>
 
     <!-- AP Shells -->
-  <DamageDef>
-    <defName>6PdrAPBullet</defName>
+    <DamageDef Name="BaseAPShellDamage" Abstract="True">
+        <workerClass>DamageWorker_AddInjury</workerClass>
+        <externalViolence>true</externalViolence>
+        <makesAnimalsFlee>true</makesAnimalsFlee>
+        <deathMessage>{0} has been shot to death.</deathMessage>
+        <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+        <impactSoundType>Bullet</impactSoundType>
+        <armorCategory>Sharp</armorCategory>
+        <isRanged>true</isRanged>
+        <isExplosive>false</isExplosive>
+    </DamageDef>
+
+  <DamageDef ParentName="BaseAPShellDamage">
+    <defName>SmallAPBullet</defName>
     <label>bullet</label>
-    <workerClass>DamageWorker_AddInjury</workerClass>
-    <externalViolence>true</externalViolence>
-    <deathMessage>{0} has been shot to death.</deathMessage>
     <hediff>Gunshot</hediff>
-    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
     <defaultArmorPenetration>0.72</defaultArmorPenetration>
-    <defaultStoppingPower>0.8</defaultStoppingPower>
-    <impactSoundType>Bullet</impactSoundType>
-    <armorCategory>Sharp</armorCategory>
-    <isRanged>true</isRanged>
-    <isExplosive>false</isExplosive>
-    <buildingDamageFactor>1</buildingDamageFactor>
-    <plantDamageFactor>1</plantDamageFactor>
+    <defaultStoppingPower>0.6</defaultStoppingPower>
+    <buildingDamageFactor>0.5</buildingDamageFactor>
+    <plantDamageFactor>0.3</plantDamageFactor>
   </DamageDef>
 
-  <DamageDef>
-    <defName>75mmAPBullet</defName>
+  <DamageDef ParentName="BaseAPShellDamage">
+    <defName>MediumAPBullet</defName>
     <label>bullet</label>
-    <workerClass>DamageWorker_AddInjury</workerClass>
-    <externalViolence>true</externalViolence>
-    <deathMessage>{0} has been shot to death.</deathMessage>
     <hediff>Gunshot</hediff>
-    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
-    <defaultArmorPenetration>0.77</defaultArmorPenetration>
-    <defaultStoppingPower>0.8</defaultStoppingPower>
-    <impactSoundType>Bullet</impactSoundType>
-    <armorCategory>Sharp</armorCategory>
-    <isRanged>true</isRanged>
-    <isExplosive>false</isExplosive>
-    <buildingDamageFactor>1</buildingDamageFactor>
-    <plantDamageFactor>1</plantDamageFactor>
-  </DamageDef>
-
-  <DamageDef>
-    <defName>CannonAPBullet</defName>
-    <label>bullet</label>
-    <workerClass>DamageWorker_AddInjury</workerClass>
-    <externalViolence>true</externalViolence>
-    <deathMessage>{0} has been shot to death.</deathMessage>
-    <hediff>Gunshot</hediff>
-    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
-    <defaultDamage>450</defaultDamage>
-    <defaultArmorPenetration>0.81</defaultArmorPenetration>
-    <defaultStoppingPower>0.8</defaultStoppingPower>
-    <impactSoundType>Bullet</impactSoundType>
-    <armorCategory>Sharp</armorCategory>
-    <isRanged>true</isRanged>
-    <isExplosive>true</isExplosive>
-    <buildingDamageFactor>1</buildingDamageFactor>
-    <plantDamageFactor>1</plantDamageFactor>
-    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
-    <explosionHeatEnergyPerCell>1</explosionHeatEnergyPerCell>
-    <explosionCellMote>Mote_BlastDry</explosionCellMote>
-    <explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
-    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
-    <soundExplosion>Explosion_Bomb</soundExplosion>
-    <combatLogRules>Damage_Bomb</combatLogRules>
-  </DamageDef>
-
-  <DamageDef>
-    <defName>100mmAP</defName>
-    <label>bullet</label>
-    <workerClass>DamageWorker_AddInjury</workerClass>
-    <externalViolence>true</externalViolence>
-    <deathMessage>{0} has been shot to death.</deathMessage>
-    <hediff>Gunshot</hediff>
-    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
     <defaultArmorPenetration>0.8</defaultArmorPenetration>
-    <impactSoundType>Bullet</impactSoundType>
-    <armorCategory>Sharp</armorCategory>
-    <isRanged>true</isRanged>
-    <isExplosive>true</isExplosive>
+    <defaultStoppingPower>0.8</defaultStoppingPower>
+    <buildingDamageFactor>0.8</buildingDamageFactor>
+    <plantDamageFactor>0.4</plantDamageFactor>
+  </DamageDef>
+
+  <DamageDef ParentName="BaseAPShellDamage">
+    <defName>LargeAPBullet</defName>
+    <label>bullet</label>
+    <hediff>Gunshot</hediff>
+    <defaultArmorPenetration>1</defaultArmorPenetration>
     <defaultStoppingPower>1</defaultStoppingPower>
-    <buildingDamageFactor>1</buildingDamageFactor>
-    <plantDamageFactor>1</plantDamageFactor>
-    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
-    <explosionHeatEnergyPerCell>1</explosionHeatEnergyPerCell>
-    <explosionCellMote>Mote_BlastDry</explosionCellMote>
-    <explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
-    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
-    <soundExplosion>Explosion_Bomb</soundExplosion>
-    <combatLogRules>Damage_Bomb</combatLogRules>
+    <buildingDamageFactor>1.2</buildingDamageFactor>
+    <plantDamageFactor>0.5</plantDamageFactor>
+  </DamageDef>
+
+  <DamageDef ParentName="BaseAPShellDamage">
+    <defName>50APBullet</defName>
+    <label>bullet</label>
+    <hediff>Gunshot</hediff>
+    <defaultArmorPenetration>0.5</defaultArmorPenetration>
+    <defaultStoppingPower>0.5</defaultStoppingPower>
+    <buildingDamageFactor>0.2</buildingDamageFactor>
+    <plantDamageFactor>0.1</plantDamageFactor>
+  </DamageDef>
+
+  <DamageDef ParentName="BaseAPShellDamage">
+    <defName>70APBullet</defName>
+    <label>bullet</label>
+    <hediff>Gunshot</hediff>
+    <defaultArmorPenetration>0.7</defaultArmorPenetration>
+    <defaultStoppingPower>0.6</defaultStoppingPower>
+    <buildingDamageFactor>0.3</buildingDamageFactor>
+    <plantDamageFactor>0.1</plantDamageFactor>
+  </DamageDef>
+
+  <DamageDef ParentName="BaseAPShellDamage">
+    <defName>90APBullet</defName>
+    <label>bullet</label>
+    <hediff>Gunshot</hediff>
+    <defaultArmorPenetration>0.9</defaultArmorPenetration>
+    <defaultStoppingPower>0.7</defaultStoppingPower>
+    <buildingDamageFactor>0.37</buildingDamageFactor>
+    <plantDamageFactor>0.15</plantDamageFactor>
+  </DamageDef>
+
+  <DamageDef ParentName="BaseAPShellDamage">
+    <defName>110APBullet</defName>
+    <label>bullet</label>
+    <hediff>Gunshot</hediff>
+    <defaultArmorPenetration>1.1</defaultArmorPenetration>
+    <defaultStoppingPower>0.75</defaultStoppingPower>
+    <buildingDamageFactor>0.44</buildingDamageFactor>
+    <plantDamageFactor>0.2</plantDamageFactor>
+  </DamageDef>
+
+  <DamageDef ParentName="BaseAPShellDamage">
+    <defName>130APBullet</defName>
+    <label>bullet</label>
+    <hediff>Gunshot</hediff>
+    <defaultArmorPenetration>1.3</defaultArmorPenetration>
+    <defaultStoppingPower>0.85</defaultStoppingPower>
+    <buildingDamageFactor>0.5</buildingDamageFactor>
+    <plantDamageFactor>0.25</plantDamageFactor>
+  </DamageDef>
+
+  <DamageDef ParentName="BaseAPShellDamage">
+    <defName>150APBullet</defName>
+    <label>bullet</label>
+    <hediff>Gunshot</hediff>
+    <defaultArmorPenetration>1.5</defaultArmorPenetration>
+    <defaultStoppingPower>1</defaultStoppingPower>
+    <buildingDamageFactor>0.55</buildingDamageFactor>
+    <plantDamageFactor>0.3</plantDamageFactor>
+  </DamageDef>
+
+  <DamageDef ParentName="BaseAPShellDamage">
+    <defName>170APBullet</defName>
+    <label>bullet</label>
+    <hediff>Shredded</hediff>
+    <defaultArmorPenetration>1.7</defaultArmorPenetration>
+    <defaultStoppingPower>1.1</defaultStoppingPower>
+    <buildingDamageFactor>0.6</buildingDamageFactor>
+    <plantDamageFactor>0.35</plantDamageFactor>
+  </DamageDef>
+
+  <DamageDef ParentName="BaseAPShellDamage">
+    <defName>190APBullet</defName>
+    <label>bullet</label>
+    <hediff>Shredded</hediff>
+    <defaultArmorPenetration>0.7</defaultArmorPenetration>
+    <defaultStoppingPower>1.2</defaultStoppingPower>
+    <buildingDamageFactor>0.7</buildingDamageFactor>
+    <plantDamageFactor>0.4</plantDamageFactor>
+  </DamageDef>
+
+  <DamageDef ParentName="BaseAPShellDamage">
+    <defName>SmallSabot</defName>
+    <label>bullet</label>
+    <hediff>Gunshot</hediff>
+    <defaultArmorPenetration>1.7</defaultArmorPenetration>
+    <defaultStoppingPower>0.6</defaultStoppingPower>
+    <buildingDamageFactor>0.4</buildingDamageFactor>
+    <plantDamageFactor>0.1</plantDamageFactor>
+  </DamageDef>
+
+  <DamageDef ParentName="BaseAPShellDamage">
+    <defName>Sabot</defName>
+    <label>bullet</label>
+    <hediff>Gunshot</hediff>
+    <defaultArmorPenetration>2</defaultArmorPenetration>
+    <defaultStoppingPower>0.8</defaultStoppingPower>
+    <buildingDamageFactor>0.4</buildingDamageFactor>
+    <plantDamageFactor>0.1</plantDamageFactor>
   </DamageDef>
 
 </Defs>

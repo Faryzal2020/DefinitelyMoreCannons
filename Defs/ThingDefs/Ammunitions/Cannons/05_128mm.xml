@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingCategoryDef>
+      <defName>128mmShells</defName>
+      <label>128mm shells</label>
+      <parent>ATCShells</parent>
+      <iconPath>Things/Projectile/128Pzgr</iconPath>
+    </ThingCategoryDef>
+
+	<ThingDef ParentName="Base_DMCAmmunitions">
+	    <defName>OneTwentyEightShellAP</defName>
+	    <label>128mm PzGr</label>
+	    <description>A 128mm AP cannon shell.</description>
+	    <graphicData>
+	      	<texPath>Things/Projectile/128Pzgr</texPath>
+	      	<graphicClass>Graphic_Single</graphicClass>
+	    </graphicData>
+	    <statBases>
+	      	<MarketValue>81</MarketValue>
+	    </statBases>
+	    <thingCategories>
+	      	<li>128mmShells</li>
+	    </thingCategories>
+    	<projectileWhenLoaded>Bullet_128mm_AP</projectileWhenLoaded>
+  	</ThingDef>
+
+  	<ThingDef ParentName="BaseBullet">
+	    <defName>Bullet_128mm_AP</defName>
+	    <label>128mm AP Shell</label>
+	    <graphicData>
+	      	<texPath>Things/Projectile/Bullet_Big</texPath>
+	      	<graphicClass>Graphic_Single</graphicClass>
+	    </graphicData>
+	    <projectile>
+	      	<damageDef>130APBullet</damageDef>
+	      	<flyOverhead>false</flyOverhead>
+	      	<damageAmountBase>600</damageAmountBase>
+	      	<speed></speed>
+	    </projectile>
+  	</ThingDef>
+
+  	<RecipeDef>
+	    <defName>Make_128mmAP_x1</defName>
+	    <label>make 128mm PzGr Shell 1x</label>
+	    <description>Turrets that uses this ammunition: Pak 44</description>
+	    <jobString>Making 128mm PzGr shell.</jobString>
+	    <workSpeedStat>SmithingSpeed</workSpeedStat>
+	    <effectWorking>Cook</effectWorking>
+	    <soundWorking>Recipe_Machining</soundWorking>
+	    <workAmount>800</workAmount>
+	    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+	    <ingredients>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Steel</li>
+	            	</thingDefs>
+	        	</filter>
+	        	<count>30</count>
+	        </li>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Chemfuel</li>
+	            </thingDefs>
+	        	</filter>
+	        	<count>6</count>
+	        </li>
+	    </ingredients>
+	    <fixedIngredientFilter>
+	        <thingDefs>
+	        	<li>Steel</li>
+	        	<li>Chemfuel</li>
+	      	</thingDefs>
+	    </fixedIngredientFilter>
+	    <products>
+	      	<OneTwentyEightShellAP>1</OneTwentyEightShellAP>
+	    </products>
+	    <skillRequirements>
+	      	<Crafting>4</Crafting>
+	    </skillRequirements>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      	<li>CNCmachine</li>
+	    </recipeUsers>
+    </RecipeDef>
+
+	<RecipeDef>
+	    <defName>Make_128mmAP_x10</defName>
+	    <label>make 128mm PzGr Shell 10x</label>
+	    <description>Turrets that uses this ammunition: Pak 44</description>
+	    <jobString>Making 128mm PzGr shells.</jobString>
+	    <workSpeedStat>SmithingSpeed</workSpeedStat>
+	    <effectWorking>Cook</effectWorking>
+	    <soundWorking>Recipe_Machining</soundWorking>
+	    <workAmount>6000</workAmount>
+	    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+	    <ingredients>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Steel</li>
+	            	</thingDefs>
+	        	</filter>
+	        	<count>300</count>
+	        </li>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Chemfuel</li>
+	            </thingDefs>
+	        	</filter>
+	        	<count>60</count>
+	        </li>
+	    </ingredients>
+	    <fixedIngredientFilter>
+	        <thingDefs>
+	        	<li>Steel</li>
+	        	<li>Chemfuel</li>
+	      	</thingDefs>
+	    </fixedIngredientFilter>
+	    <products>
+	      	<OneTwentyEightShellAP>10</OneTwentyEightShellAP>
+	    </products>
+	    <skillRequirements>
+	      	<Crafting>4</Crafting>
+	    </skillRequirements>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      	<li>CNCmachine</li>
+	    </recipeUsers>
+    </RecipeDef>
+</Defs>

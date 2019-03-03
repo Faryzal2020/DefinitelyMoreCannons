@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="DMC_BaseMannedTurret">
+	    <defName>Turret_SIDAM_Autocannon</defName>
+	    <label>SIDAM 25</label>
+	    <description>Uses 25mm PMB090 shell. 2m Min range, 80m Max range. Fires a burst of 20 shots at about 1200 RPM and cools down for 1 second between each bursts. Has internal ammo capacity of 600 shells. Explodes with radius of 1 block when destroyed. Uses 500W of power. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+	    <graphicData>
+	        <texPath>Things/Building/MannedSIDAM</texPath>
+	        <graphicClass>Graphic_Single</graphicClass>
+	        <drawSize>(13,13)</drawSize>
+	        <damageData>
+	        	<rect>(0.38,0.2,0.56375,0.8)</rect>
+	        	<cornerTL>Damage/Corner</cornerTL>
+	        </damageData>
+	        <shadowData>
+	        	<offset>(0,0,0)</offset>
+	        	<volume>(2,1.5,2)</volume>
+	        </shadowData>
+	    </graphicData>
+	    <uiIconPath>Things/Icons/MannedSIDAM_MenuIcon</uiIconPath>
+	    <building>
+	        <turretGunDef>TurretGun_SIDAM_Autocannon</turretGunDef>
+	        <turretTopGraphicPath>Things/Building/MannedSIDAM_Top</turretTopGraphicPath>
+	        <turretTopDrawSize>13</turretTopDrawSize>
+	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
+	        <turretBurstCooldownTime>1</turretBurstCooldownTime> <!-- Reload Time -->
+	    </building>
+	    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+	    <size>(2,2)</size> 
+	    <specialDisplayRadius>80</specialDisplayRadius>
+		<costStuffCount>34</costStuffCount>
+	    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	    <costList>
+			<Steel>340</Steel>
+			  <Plasteel>5</Plasteel>  
+			  <ComponentIndustrial>20</ComponentIndustrial>  
+			<ComponentSpacer>15</ComponentSpacer>
+		</costList>
+	    <statBases>
+		    <MaxHitPoints>1800</MaxHitPoints>
+		    <WorkToBuild>4500</WorkToBuild>
+		    <Mass>200</Mass>
+	    </statBases>
+	    <researchPrerequisites>
+	        <li>SIDAM</li>
+	    </researchPrerequisites>
+	    <comps>
+	    	 
+	      <li Class="CompProperties_Explosive">
+	        <explosiveRadius>1</explosiveRadius>
+	        <explosiveDamageType>Bomb</explosiveDamageType>
+	      </li>
+	      	 
+
+	      	 
+	      <li Class="CompProperties_Power">
+	        <compClass>CompPowerTrader</compClass>
+	        <basePowerConsumption>500</basePowerConsumption>
+	      </li>
+	      	 
+
+	       
+	      <li Class="CompProperties_Refuelable">
+	        <fuelLabel>Ammo Belt</fuelLabel>
+	        <fuelGizmoLabel>Ammo</fuelGizmoLabel>
+	        <fuelFilter>
+	          <thingDefs>
+	            <li>SIDAMShell</li>
+	          </thingDefs>
+	        </fuelFilter>
+	        <fuelCapacity>600</fuelCapacity>
+	        <initialFuelPercent>0</initialFuelPercent>
+	        <autoRefuelPercent>0.25</autoRefuelPercent>
+	        <showFuelGizmo>true</showFuelGizmo>
+	        <minimumFueledThreshold>0</minimumFueledThreshold>
+	        <atomicFueling>false</atomicFueling>
+	        <fuelMultiplier>1</fuelMultiplier>
+	        <factorByDifficulty>false</factorByDifficulty>
+	        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+	        <outOfFuelMessage>Cannot shoot: Out of ammo</outOfFuelMessage>
+	        <fuelIconPath>UI/Overlays/Ammo</fuelIconPath>
+	      </li>
+	  	 
+	    </comps>
+	    <!--noAmmoRack
+	    <inspectorTabs>
+	        <li>ITab_Shells</li>
+	    </inspectorTabs>
+	    noAmmoRack-->
+	    <!--notUnderRoof
+	    <placeWorkers>
+	      <li>PlaceWorker_NotUnderRoof</li>
+	    </placeWorkers>
+	    notUnderRoof-->
+	</ThingDef>
+  	
+
+	<!--noAmmoRack<ThingDef ParentName="DMC_MultishellWeapon">noAmmoRack-->
+	 <ThingDef ParentName="DMC_BaseTurretWeapon"> 
+		<defName>TurretGun_SIDAM_Autocannon</defName>
+		<label>turret gun</label>
+		<description>you're supposed to not see this</description>
+		<statBases>
+		    <AccuracyTouch>0.8</AccuracyTouch>
+		    <AccuracyShort>0.89</AccuracyShort>
+		    <AccuracyMedium>0.92</AccuracyMedium>
+		    <AccuracyLong>0.95</AccuracyLong>
+      		 <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown> 
+		</statBases>
+		<verbs>
+		    <li>
+			    <verbClass>Verb_Shoot</verbClass>
+			    <hasStandardCommand>true</hasStandardCommand>
+			    <defaultProjectile>Bullet_25mm_APFSDS</defaultProjectile> 
+			    <warmupTime>0</warmupTime>
+			    <minRange>2</minRange>
+			    <range>80</range>
+        		<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+			    <burstShotCount>20</burstShotCount>
+			    <soundCast>Sound_SIDAM</soundCast>
+			    <muzzleFlashScale>30</muzzleFlashScale>
+			     <consumeFuelPerShot>1</consumeFuelPerShot> 
+			    <requireLineOfSight>true</requireLineOfSight>
+			    <targetParams>
+			        <canTargetLocations>true</canTargetLocations>
+			    </targetParams>
+			    <!--isExplosive <forcedMissRadius>0.1</forcedMissRadius> isExplosive-->
+		    </li>
+		</verbs>
+		<!--noAmmoRack
+		<building>
+		    <fixedStorageSettings>
+			    <filter>
+			        <categories>
+			        	<li>106mmShells</li>
+			        </categories>
+			    </filter>
+		    </fixedStorageSettings>
+		    <defaultStorageSettings>
+			    <filter>
+			        <categories>
+			        	<li>106mmShells</li>
+			        </categories>
+			        <disallowedThingDefs>
+			        </disallowedThingDefs>
+			    </filter>
+		    </defaultStorageSettings>
+		</building>
+		noAmmoRack-->
+	</ThingDef>
+</Defs>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="DMC_BaseMannedTurret">
+	    <defName>Turret_GCT_Howitzer</defName>
+	    <label>GCT 155mm AUF1</label>
+	    <description>Uses the 155mm M795 Shell with 5m explosion radius. 20m Min range, 300m Max range. Fires a burst of 3 rounds at 12 rounds per minute fire rate, then cools down for 9 seconds. Has an internal ammo storage capacity of 42 rounds. Explodes with radius of 2 blocks when destroyed. Consumes 1000W of power. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+	    <graphicData>
+	        <texPath>Things/Building/MannedGCTAuf1</texPath>
+	        <graphicClass>Graphic_Single</graphicClass>
+	        <drawSize>(17,17)</drawSize>
+	        <damageData>
+	        	<rect>(0.38,0.2,0.56375,0.8)</rect>
+	        	<cornerTL>Damage/Corner</cornerTL>
+	        </damageData>
+	        <shadowData>
+	        	<offset>(0,0,0)</offset>
+	        	<volume>(2,1.5,2)</volume>
+	        </shadowData>
+	    </graphicData>
+	    <uiIconPath>Things/Icons/MannedGCTAuf1_MenuIcon</uiIconPath>
+	    <building>
+	        <turretGunDef>TurretGun_GCT_Howitzer</turretGunDef>
+	        <turretTopGraphicPath>Things/Building/MannedGCTAuf1_Top</turretTopGraphicPath>
+	        <turretTopDrawSize>17</turretTopDrawSize>
+	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
+	        <turretBurstCooldownTime>9</turretBurstCooldownTime> <!-- Reload Time -->
+	    </building>
+	    <interactionCellOffset>(0,0,-4)</interactionCellOffset>
+	    <size>(4,4)</size> 
+	    <specialDisplayRadius>300</specialDisplayRadius>
+		<costStuffCount>120</costStuffCount>
+	    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	    <costList>
+			<Steel>1200</Steel>
+			  <Plasteel>20</Plasteel>  
+			  <ComponentIndustrial>8</ComponentIndustrial>  
+			  <ComponentSpacer>2</ComponentSpacer>  
+		</costList>
+	    <statBases>
+		    <MaxHitPoints>2500</MaxHitPoints>
+		    <WorkToBuild>8000</WorkToBuild>
+		    <Mass>200</Mass>
+	    </statBases>
+	    <researchPrerequisites>
+	        <li>155GCT</li>
+	    </researchPrerequisites>
+	    <comps>
+	    	 
+	      <li Class="CompProperties_Explosive">
+	        <explosiveRadius>2</explosiveRadius>
+	        <explosiveDamageType>Bomb</explosiveDamageType>
+	      </li>
+	      	 
+
+	      	 
+	      <li Class="CompProperties_Power">
+	        <compClass>CompPowerTrader</compClass>
+	        <basePowerConsumption>1000</basePowerConsumption>
+	      </li>
+	      	 
+
+	       
+	      <li Class="CompProperties_Refuelable">
+	        <fuelLabel>Ammunitions</fuelLabel>
+	        <fuelGizmoLabel>Ammo</fuelGizmoLabel>
+	        <fuelFilter>
+	          <thingDefs>
+	            <li>Bullet_M795155mm_HE</li>
+	          </thingDefs>
+	        </fuelFilter>
+	        <fuelCapacity>42</fuelCapacity>
+	        <initialFuelPercent>0</initialFuelPercent>
+	        <autoRefuelPercent>0.25</autoRefuelPercent>
+	        <showFuelGizmo>true</showFuelGizmo>
+	        <minimumFueledThreshold>0</minimumFueledThreshold>
+	        <atomicFueling>false</atomicFueling>
+	        <fuelMultiplier>1</fuelMultiplier>
+	        <factorByDifficulty>false</factorByDifficulty>
+	        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+	        <outOfFuelMessage>Cannot shoot: Out of ammo</outOfFuelMessage>
+	        <fuelIconPath>UI/Overlays/Ammo</fuelIconPath>
+	      </li>
+	  	 
+	    </comps>
+	    <!--noAmmoRack
+	    <inspectorTabs>
+	        <li>ITab_Shells</li>
+	    </inspectorTabs>
+	    noAmmoRack-->
+	     
+	    <placeWorkers>
+	      <li>PlaceWorker_NotUnderRoof</li>
+	    </placeWorkers>
+	     
+	</ThingDef>
+  	
+
+	<!--noAmmoRack<ThingDef ParentName="DMC_MultishellWeapon">noAmmoRack-->
+	 <ThingDef ParentName="DMC_BaseTurretWeapon"> 
+		<defName>TurretGun_GCT_Howitzer</defName>
+		<label>turret gun</label>
+		<description>you're supposed to not see this</description>
+		<statBases>
+		    <AccuracyTouch>1</AccuracyTouch>
+		    <AccuracyShort>1</AccuracyShort>
+		    <AccuracyMedium>1</AccuracyMedium>
+		    <AccuracyLong>1</AccuracyLong>
+      		 <RangedWeapon_Cooldown>9</RangedWeapon_Cooldown> 
+		</statBases>
+		<verbs>
+		    <li>
+			    <verbClass>Verb_Shoot</verbClass>
+			    <hasStandardCommand>true</hasStandardCommand>
+			     <defaultProjectile>Bullet_M795155mm_HE</defaultProjectile> 
+			    <warmupTime>0</warmupTime>
+			    <minRange>20</minRange>
+			    <range>300</range>
+        		<ticksBetweenBurstShots>300</ticksBetweenBurstShots>
+			    <burstShotCount>3</burstShotCount>
+			    <soundCast>Sound_155mm</soundCast>
+			    <muzzleFlashScale>40</muzzleFlashScale>
+			     <consumeFuelPerShot>1</consumeFuelPerShot> 
+			    <requireLineOfSight>false</requireLineOfSight>
+			    <targetParams>
+			        <canTargetLocations>true</canTargetLocations>
+			    </targetParams>
+			      <forcedMissRadius>2</forcedMissRadius>  
+		    </li>
+		</verbs>
+		<!--noAmmoRack
+		<building>
+		    <fixedStorageSettings>
+			    <filter>
+			        <categories>
+			        	<li></li>
+			        </categories>
+			    </filter>
+		    </fixedStorageSettings>
+		    <defaultStorageSettings>
+			    <filter>
+			        <categories>
+			        	<li></li>
+			        </categories>
+			        <disallowedThingDefs>
+			        </disallowedThingDefs>
+			    </filter>
+		    </defaultStorageSettings>
+		</building>
+		noAmmoRack-->
+	</ThingDef>
+</Defs>

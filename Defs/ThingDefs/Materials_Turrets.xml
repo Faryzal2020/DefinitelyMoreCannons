@@ -6,7 +6,7 @@
     <label>[OBSOLETE]</label>
     <description>Unused item, Please dismantle this in the CNC Machine to get the materials back</description>
     <graphicData>
-      <texPath>Things/Icons/127mmNaval_MenuIcon</texPath>
+      <texPath>Things/Icons/MannedSKC34_MenuIcon</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.90</drawSize>
     </graphicData>
@@ -25,7 +25,7 @@
     <label>[OBSOLETE]</label>
     <description>Unused item, Please dismantle this in the CNC Machine to get the materials back</description>
     <graphicData>
-      <texPath>Things/Icons/100mmNaval_MenuIcon</texPath>
+      <texPath>Things/Icons/MannedModele53_MenuIcon</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.90</drawSize>
     </graphicData>
@@ -44,7 +44,7 @@
     <label>[OBSOLETE]</label>
     <description>Unused item, Please dismantle this in the CNC Machine to get the materials back</description>
     <graphicData>
-      <texPath>Things/Icons/120mmNaval_MenuIcon</texPath>
+      <texPath>Things/Icons/MannedTAK120_MenuIcon</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.90</drawSize>
     </graphicData>
@@ -63,7 +63,7 @@
     <label>[OBSOLETE]</label>
     <description>Unused item, Please dismantle this in the CNC Machine to get the materials back</description>
     <graphicData>
-      <texPath>Things/Icons/150mmNaval_MenuIcon</texPath>
+      <texPath>Things/Icons/MannedKC36_MenuIcon</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.90</drawSize>
     </graphicData>
@@ -82,7 +82,7 @@
     <label>[OBSOLETE]</label>
     <description>Unused item, Please dismantle this in the CNC Machine to get the materials back</description>
     <graphicData>
-      <texPath>Things/Icons/T127mmNaval_MenuIcon</texPath>
+      <texPath>Things/Icons/MannedType5_MenuIcon</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.90</drawSize>
     </graphicData>
@@ -101,7 +101,7 @@
     <label>[OBSOLETE]</label>
     <description>Unused item, Please dismantle this in the CNC Machine to get the materials back</description>
     <graphicData>
-      <texPath>Things/Icons/150mmHowitzer_MenuIcon</texPath>
+      <texPath>Things/Icons/MannedSig33_MenuIcon</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.90</drawSize>
     </graphicData>
@@ -120,7 +120,7 @@
     <label>[OBSOLETE]</label>
     <description>Unused item, Please dismantle this in the CNC Machine to get the materials back</description>
     <graphicData>
-      <texPath>Things/Icons/288mmHowitzer_MenuIcon</texPath>
+      <texPath>Things/Icons/MannedMk1_MenuIcon</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.90</drawSize>
     </graphicData>
@@ -139,7 +139,7 @@
     <label>[OBSOLETE]</label>
     <description>Unused item, Please dismantle this in the CNC Machine to get the materials back</description>
     <graphicData>
-      <texPath>Things/Icons/600mmHowitzer_MenuIcon</texPath>
+      <texPath>Things/Icons/MannedKarlGerat_MenuIcon</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.90</drawSize>
     </graphicData>
@@ -158,7 +158,7 @@
     <label>[OBSOLETE]</label>
     <description>Unused item, Please dismantle this in the CNC Machine to get the materials back</description>
     <graphicData>
-      <texPath>Things/Icons/6PdrCannon_MenuIcon</texPath>
+      <texPath>Things/Icons/Manned6Pdr_MenuIcon</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.90</drawSize>
     </graphicData>
@@ -177,7 +177,7 @@
     <label>[OBSOLETE]</label>
     <description>Unused item, Please dismantle this in the CNC Machine to get the materials back</description>
     <graphicData>
-      <texPath>Things/Icons/75mmCannon_MenuIcon</texPath>
+      <texPath>Things/Icons/MannedPak40_MenuIcon</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.90</drawSize>
     </graphicData>
@@ -196,7 +196,7 @@
     <label>[OBSOLETE]</label>
     <description>Unused item, Please dismantle this in the CNC Machine to get the materials back</description>
     <graphicData>
-      <texPath>Things/Icons/88mmCannon_MenuIcon</texPath>
+      <texPath>Things/Icons/MannedFlak41_MenuIcon</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.90</drawSize>
     </graphicData>
@@ -215,7 +215,7 @@
     <label>[OBSOLETE]</label>
     <description>Unused item, Please dismantle this in the CNC Machine to get the materials back</description>
     <graphicData>
-      <texPath>Things/Icons/20mmAutocannon_MenuIcon</texPath>
+      <texPath>Things/Icons/MannedFlak38_MenuIcon</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.90</drawSize>
     </graphicData>
@@ -234,7 +234,7 @@
     <label>[OBSOLETE]</label>
     <description>Unused item, Please dismantle this in the CNC Machine to get the materials back</description>
     <graphicData>
-      <texPath>Things/Icons/37mmAutocannon_MenuIcon</texPath>
+      <texPath>Things/Icons/MannedFlakM42_MenuIcon</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.90</drawSize>
     </graphicData>
@@ -253,7 +253,7 @@
     <label>[OBSOLETE]</label>
     <description>Unused item, Please dismantle this in the CNC Machine to get the materials back</description>
     <graphicData>
-      <texPath>Things/Icons/40mmAutocannon_MenuIcon</texPath>
+      <texPath>Things/Icons/MannedFlak28_MenuIcon</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.90</drawSize>
     </graphicData>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingCategoryDef>
+      <defName>ShipunovShells</defName>
+      <label>30mm shells</label>
+      <parent>ACShells</parent>
+      <iconPath>Things/Projectile/3UOF8</iconPath>
+    </ThingCategoryDef>
+
+	<ThingDef ParentName="Base_DMCAmmunitions">
+	    <defName>ShipunovShell</defName>
+	    <label>(30mm) 3UOF8 AP</label>
+	    <description>Turrets that uses this ammunition: Shipunov 2A42</description>
+	    <graphicData>
+	      	<texPath>Things/Projectile/3UOF8</texPath>
+	      	<graphicClass>Graphic_Single</graphicClass>
+	    </graphicData>
+	    <statBases>
+	      	<MarketValue>24.9</MarketValue>
+	    </statBases>
+	    <thingCategories>
+	      	<li>ShipunovShells</li>
+	    </thingCategories>
+    	<projectileWhenLoaded>Bullet_Shipunov30mm_AP</projectileWhenLoaded>
+  	</ThingDef>
+
+  	 
+  	<ThingDef ParentName="BaseBullet">
+	    <defName>Bullet_Shipunov30mm_AP</defName>
+	    <label>(30mm) 3UOF8 AP</label>
+	    <graphicData>
+	      	<texPath>Things/Projectile/Bullet_Small</texPath>
+	      	<graphicClass>Graphic_Single</graphicClass>
+	    </graphicData>
+	    <projectile>
+	      	<damageDef>70APBullet</damageDef>
+	      	<flyOverhead>false</flyOverhead>
+	      	<damageAmountBase>20</damageAmountBase>
+	      	<speed>300</speed>
+	    </projectile>
+  	</ThingDef>
+  	 
+
+  	<!--HE
+  	<ThingDef ParentName="BaseBullet_Explosive">
+	    <defName>Bullet_30mm_AP</defName>
+	    <label>30mm AP Shell</label>
+	    <graphicData>
+	      	<texPath>Things/Projectile/Bullet_Small</texPath>
+	      	<graphicClass>Graphic_Single</graphicClass>
+        	<shaderType>TransparentPostLight</shaderType>
+	    </graphicData>
+	    <projectile>
+	      	<damageDef>3UOF8Damage</damageDef>
+	      	<flyOverhead>false</flyOverhead>
+	      	<explosionRadius>xExplosionRadius</explosionRadius>
+	      	<speed>300</speed>
+	    </projectile>
+  	</ThingDef>
+  	HE-->
+
+  	<RecipeDef>
+	    <defName>Make_30mmAP_x1</defName>
+	    <label>make 30mm 3UOF8 AP Shell 1x</label>
+	    <description>Turrets that uses this ammunition: Shipunov 2A42</description>
+	    <jobString>Making 30mm shell.</jobString>
+	    <workSpeedStat>SmithingSpeed</workSpeedStat>
+	    <effectWorking>Cook</effectWorking>
+	    <soundWorking>Recipe_Machining</soundWorking>
+	    <workAmount>96</workAmount>
+	    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+	    <ingredients>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Steel</li>
+	            	</thingDefs>
+	        	</filter>
+	        	<count>11</count>
+	        </li>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Chemfuel</li>
+	            </thingDefs>
+	        	</filter>
+	        	<count>1</count>
+	        </li>
+	    </ingredients>
+	    <fixedIngredientFilter>
+	        <thingDefs>
+	        	<li>Steel</li>
+	        	<li>Chemfuel</li>
+	      	</thingDefs>
+	    </fixedIngredientFilter>
+	    <products>
+	      	<ShipunovShell>1</ShipunovShell>
+	    </products>
+	    <skillRequirements>
+	      	<Crafting>3</Crafting>
+	    </skillRequirements>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      	<li>CNCmachine</li>
+	    </recipeUsers>
+    </RecipeDef>
+
+	<RecipeDef>
+	    <defName>Make_30mmAP_x10</defName>
+	    <label>make 30mm 3UOF8 AP Shell 10x</label>
+	    <description>Turrets that uses this ammunition: Shipunov 2A42</description>
+	    <jobString>Making 30mm shells.</jobString>
+	    <workSpeedStat>SmithingSpeed</workSpeedStat>
+	    <effectWorking>Cook</effectWorking>
+	    <soundWorking>Recipe_Machining</soundWorking>
+	    <workAmount>720</workAmount>
+	    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+	    <ingredients>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Steel</li>
+	            	</thingDefs>
+	        	</filter>
+	        	<count>110</count>
+	        </li>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Chemfuel</li>
+	            </thingDefs>
+	        	</filter>
+	        	<count>10</count>
+	        </li>
+	    </ingredients>
+	    <fixedIngredientFilter>
+	        <thingDefs>
+	        	<li>Steel</li>
+	        	<li>Chemfuel</li>
+	      	</thingDefs>
+	    </fixedIngredientFilter>
+	    <products>
+	      	<ShipunovShell>10</ShipunovShell>
+	    </products>
+	    <skillRequirements>
+	      	<Crafting>4</Crafting>
+	    </skillRequirements>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      	<li>CNCmachine</li>
+	    </recipeUsers>
+    </RecipeDef>
+</Defs>

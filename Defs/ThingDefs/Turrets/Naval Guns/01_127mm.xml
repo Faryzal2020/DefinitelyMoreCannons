@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="DMC_BaseMannedTurret">
+    <defName>127mmNavalgun</defName>
+    <label>12.7cm SK C/34</label>
+    <description>A manned 12.7cm SK C/34 Naval gun with manual loading mechanisms. Uses the German 12.7cm SprGr Shell. 14 Seconds reload time. 10m Min Range, 150m Max Range. Cannot shoot over walls. Consumes 200W of power for its electric-powered aiming controls. Explodes with radius of 2 blocks when destroyed. Because of the size, this turret cant be placed under a roof. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+    <graphicData>
+      <texPath>Things/Building/MannedSKC34</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(10, 10)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(3,2,3)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Things/Icons/MannedSKC34_MenuIcon</uiIconPath>
+    <building>
+      <turretGunDef>127mmCannon</turretGunDef>
+      <turretTopGraphicPath>Things/Building/MannedSKC34_Top</turretTopGraphicPath>
+      <turretTopDrawSize>11</turretTopDrawSize>
+      <turretBurstCooldownTime>14</turretBurstCooldownTime> <!-- Reload Time -->
+    </building>
+    <interactionCellOffset>(0,0,-4)</interactionCellOffset>
+    <size>(4,4)</size> 
+    <specialDisplayRadius>180</specialDisplayRadius>
+    <costStuffCount>100</costStuffCount>
+    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+    <costList>
+      <Steel>1000</Steel>
+      <Plasteel>100</Plasteel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <statBases>
+      <MaxHitPoints>5500</MaxHitPoints>
+      <WorkToBuild>12000</WorkToBuild>
+      <Mass>200</Mass>
+    </statBases>
+    <researchPrerequisites>
+      <li>127mmNaval</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.0</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <inspectorTabs>
+        <li>ITab_Shells</li>
+    </inspectorTabs>
+  </ThingDef>
+
+  <ThingDef ParentName="DMC_MultishellWeapon">
+    <defName>127mmCannon</defName>
+    <label>127mm_cannon</label>
+    <description>A self-loading large-bore cannon designed to attach to a turret.</description>
+    <statBases>
+      <AccuracyTouch>0.9</AccuracyTouch>
+      <AccuracyShort>0.95</AccuracyShort>
+      <AccuracyMedium>0.99</AccuracyMedium>
+      <AccuracyLong>0.95</AccuracyLong>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <warmupTime>1</warmupTime>
+        <minRange>10</minRange>
+        <range>150</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Sound_Single127mm</soundCast>
+        <muzzleFlashScale>40</muzzleFlashScale>
+        <requireLineOfSight>true</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+            <categories>
+              <li>127mmCannonShells</li>
+            </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <filter>
+            <categories>
+              <li>127mmCannonShells</li>
+            </categories>
+            <disallowedThingDefs>
+            </disallowedThingDefs>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+  </ThingDef>
+</Defs>

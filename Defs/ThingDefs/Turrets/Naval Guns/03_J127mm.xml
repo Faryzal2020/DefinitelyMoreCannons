@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="DMC_BaseMannedTurret">
+    <defName>Twin127mmNavalgun</defName>
+    <label>12.7cm Type 5</label>
+    <description>A manned Double mounted 12.7cm Type 5 Naval gun. It has an automatic ammunition feeder system that takes the ammunitions from an ammunition storage, the storage can hold 80 shells. Fires a salvo of 2 shells with 14 seconds reload time. Consumes 1900W of power for its electric-powered aiming controls and loading systems, 15m min range, 250m max range. Able to fire over walls. Explodes with radius of 4 blocks when destroyed.  Because of the size and its ability to do high angle aiming, this turret cant be placed under a roof. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+    <graphicData>
+      <texPath>Things/Building/MannedType5</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(11, 11)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(3.5,2.2,3.5)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Things/Icons/MannedType5_MenuIcon</uiIconPath>
+    <building>
+      <turretGunDef>Gun_Twin127mmNavalgunTurret</turretGunDef>
+      <turretTopGraphicPath>Things/Building/MannedType5_Top</turretTopGraphicPath>
+      <turretTopDrawSize>10</turretTopDrawSize>
+      <turretBurstCooldownTime>14</turretBurstCooldownTime> <!-- Reload Time -->
+    </building>
+    <interactionCellOffset>(0,0,-5)</interactionCellOffset>
+    <size>(5,5)</size> 
+    <specialDisplayRadius>250</specialDisplayRadius>
+    <costStuffCount>210</costStuffCount>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <costList>
+      <Steel>1700</Steel>
+      <Plasteel>500</Plasteel>
+      <ComponentIndustrial>25</ComponentIndustrial>
+      <ComponentSpacer>18</ComponentSpacer>
+    </costList>
+    <statBases>
+      <MaxHitPoints>12000</MaxHitPoints>
+      <WorkToBuild>26000</WorkToBuild>
+      <Mass>200</Mass>
+    </statBases>
+    <researchPrerequisites>
+      <li>Twin127mmNaval</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>4.0</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1900</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Ammo Rack</fuelLabel>
+        <fuelGizmoLabel>Ammo</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>JOnetwentysevenShell</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>80</fuelCapacity>
+        <initialFuelPercent>0</initialFuelPercent>
+        <autoRefuelPercent>0.5</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>0</minimumFueledThreshold>
+        <atomicFueling>false</atomicFueling>
+        <fuelMultiplier>1</fuelMultiplier>
+        <factorByDifficulty>false</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Out of ammo</outOfFuelMessage>
+        <fuelIconPath>UI/Overlays/Ammo</fuelIconPath>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+  </ThingDef>
+
+  <ThingDef ParentName="DMC_BaseTurretWeapon">
+    <defName>Gun_Twin127mmNavalgunTurret</defName>
+    <label>autocannon</label>
+    <description>A self-loading large-bore cannon designed to attach to a turret.</description>
+    <statBases>
+      <AccuracyTouch>0.9</AccuracyTouch>
+      <AccuracyShort>0.9</AccuracyShort>
+      <AccuracyMedium>1</AccuracyMedium>
+      <AccuracyLong>1.1</AccuracyLong>
+      <RangedWeapon_Cooldown>14</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <requireLineOfSight>false</requireLineOfSight>
+        <defaultProjectile>Bullet_Twin127mmNavalgunTurret</defaultProjectile>
+        <warmupTime>3</warmupTime>
+        <minRange>15</minRange>
+        <range>250</range>
+        <burstShotCount>2</burstShotCount>
+        <soundCast>Sound_Double127mm</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>50</muzzleFlashScale>
+        <consumeFuelPerShot>2</consumeFuelPerShot>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <forcedMissRadius>1</forcedMissRadius>
+      </li>
+    </verbs>
+  </ThingDef>
+</Defs>
