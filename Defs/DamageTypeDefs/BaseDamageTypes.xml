@@ -182,6 +182,16 @@
   </DamageDef>
 
   <DamageDef ParentName="BaseAPShellDamage">
+    <defName>SmallSabot</defName>
+    <label>bullet</label>
+    <hediff>Gunshot</hediff>
+    <defaultArmorPenetration>1.7</defaultArmorPenetration>
+    <defaultStoppingPower>0.6</defaultStoppingPower>
+    <buildingDamageFactor>0.4</buildingDamageFactor>
+    <plantDamageFactor>0.1</plantDamageFactor>
+  </DamageDef>
+
+  <DamageDef ParentName="BaseAPShellDamage">
     <defName>Sabot</defName>
     <label>bullet</label>
     <hediff>Gunshot</hediff>

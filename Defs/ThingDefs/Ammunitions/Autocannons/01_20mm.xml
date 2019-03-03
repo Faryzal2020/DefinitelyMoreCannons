@@ -9,7 +9,7 @@
 
 	<ThingDef ParentName="Base_DMCAmmunitions">
 	    <defName>FlakTwentyMag</defName>
-	    <label>(20mm) 20x20mm  API</label>
+	    <label>(20mm) 20x20mm API Magazine</label>
 	    <description>Turrets that uses this ammunition: Flak 38 Autocannon</description>
 	    <graphicData>
 	      	<texPath>Things/Projectile/20x20mmMag</texPath>
@@ -61,8 +61,8 @@
 
   	<RecipeDef>
 	    <defName>Make_20x20mmMag_x1</defName>
-	    <label>make 20mm 20x20mm  API Shell 1x</label>
-	    <description>Turrets that uses this ammunition: Flak 38 Autocannon</description>
+	    <label>make 20mm 20x20mm API Shell 1x</label>
+	    <description>Turrets that uses this ammunition: 20mm Flak 38 Autocannon</description>
 	    <jobString>Making 20mm shell.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>
 	    <effectWorking>Cook</effectWorking>
@@ -107,8 +107,8 @@
 
 	<RecipeDef>
 	    <defName>Make_20x20mmMag_x10</defName>
-	    <label>make 20mm 20x20mm  API Shell 10x</label>
-	    <description>Turrets that uses this ammunition: Flak 38 Autocannon</description>
+	    <label>make 20mm 20x20mm API Shell 10x</label>
+	    <description>Turrets that uses this ammunition: 20mm Flak 38 Autocannon</description>
 	    <jobString>Making 20mm shells.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>
 	    <effectWorking>Cook</effectWorking>

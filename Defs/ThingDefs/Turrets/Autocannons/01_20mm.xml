@@ -111,7 +111,7 @@
 		    <li>
 			    <verbClass>Verb_Shoot</verbClass>
 			    <hasStandardCommand>true</hasStandardCommand>
-			     <defaultProjectile>FlakTwentyMag</defaultProjectile> 
+			    <defaultProjectile>Bullet_20mmAutocannonTurret</defaultProjectile> 
 			    <warmupTime>0</warmupTime>
 			    <minRange>2</minRange>
 			    <range>40</range>

@@ -4,7 +4,7 @@
 	<ThingDef ParentName="DMC_BaseMannedTurret">
 	    <defName>Turret_SIDAM_Autocannon</defName>
 	    <label>SIDAM 25</label>
-	    <description>Uses 25mm PMB090 shell. 4m Min range, 80m Max range. Fires a burst of 20 shots at about 1200 RPM and cools down for 1 second between each bursts. Has internal ammo capacity of 600 shells. Explodes with radius of 1 block when destroyed. Uses 500W of power.</description>
+	    <description>Uses 25mm PMB090 shell. 2m Min range, 80m Max range. Fires a burst of 20 shots at about 1200 RPM and cools down for 1 second between each bursts. Has internal ammo capacity of 600 shells. Explodes with radius of 1 block when destroyed. Uses 500W of power.</description>
 	    <graphicData>
 	        <texPath>Things/Building/MannedSIDAM</texPath>
 	        <graphicClass>Graphic_Single</graphicClass>
@@ -66,7 +66,7 @@
 	        <fuelGizmoLabel>Ammo</fuelGizmoLabel>
 	        <fuelFilter>
 	          <thingDefs>
-	            <li>Bullet_25mm_APFSDS</li>
+	            <li>SIDAMShell</li>
 	          </thingDefs>
 	        </fuelFilter>
 	        <fuelCapacity>600</fuelCapacity>
@@ -102,19 +102,19 @@
 		<label>turret gun</label>
 		<description>you're supposed to not see this</description>
 		<statBases>
-		    <AccuracyTouch>0.85</AccuracyTouch>
-		    <AccuracyShort>0.9</AccuracyShort>
-		    <AccuracyMedium>0.95</AccuracyMedium>
-		    <AccuracyLong>0.97</AccuracyLong>
+		    <AccuracyTouch>0.8</AccuracyTouch>
+		    <AccuracyShort>0.89</AccuracyShort>
+		    <AccuracyMedium>0.92</AccuracyMedium>
+		    <AccuracyLong>0.95</AccuracyLong>
       		 <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown> 
 		</statBases>
 		<verbs>
 		    <li>
 			    <verbClass>Verb_Shoot</verbClass>
 			    <hasStandardCommand>true</hasStandardCommand>
-			     <defaultProjectile>Bullet_25mm_APFSDS</defaultProjectile> 
+			    <defaultProjectile>Bullet_25mm_APFSDS</defaultProjectile> 
 			    <warmupTime>0</warmupTime>
-			    <minRange>4</minRange>
+			    <minRange>2</minRange>
 			    <range>80</range>
         		<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
 			    <burstShotCount>20</burstShotCount>

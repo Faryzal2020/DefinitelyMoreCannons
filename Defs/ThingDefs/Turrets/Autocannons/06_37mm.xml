@@ -25,7 +25,7 @@
 	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
 	        <turretBurstCooldownTime>0.5</turretBurstCooldownTime> <!-- Reload Time -->
 	    </building>
-	    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+	    <interactionCellOffset>(0,0,-3)</interactionCellOffset>
 	    <size>(3,3)</size> 
 	    <specialDisplayRadius>50</specialDisplayRadius>
 		<costStuffCount>19</costStuffCount>
@@ -111,7 +111,7 @@
 		    <li>
 			    <verbClass>Verb_Shoot</verbClass>
 			    <hasStandardCommand>true</hasStandardCommand>
-			     <defaultProjectile>FlakThirtySeven</defaultProjectile> 
+			    <defaultProjectile>Bullet_37mmAutocannonTurret</defaultProjectile> 
 			    <warmupTime>0</warmupTime>
 			    <minRange>2</minRange>
 			    <range>50</range>

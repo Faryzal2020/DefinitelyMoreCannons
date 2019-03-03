@@ -33,7 +33,7 @@
 	      	<graphicClass>Graphic_Single</graphicClass>
 	    </graphicData>
 	    <projectile>
-	      	<damageDef>Sabot</damageDef>
+	      	<damageDef>SmallSabot</damageDef>
 	      	<flyOverhead>false</flyOverhead>
 	      	<damageAmountBase>12</damageAmountBase>
 	      	<speed>310</speed>
@@ -144,6 +144,52 @@
 	    </products>
 	    <skillRequirements>
 	      	<Crafting>4</Crafting>
+	    </skillRequirements>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      	<li>CNCmachine</li>
+	    </recipeUsers>
+    </RecipeDef>
+
+	<RecipeDef>
+	    <defName>Make_25mmAPFSDS_x100</defName>
+	    <label>make 25mm PMB090 APFSDS Shell 100x</label>
+	    <description>Turrets that uses this ammunition: SIDAM 25 Autocannon</description>
+	    <jobString>Making 25mm shells.</jobString>
+	    <workSpeedStat>SmithingSpeed</workSpeedStat>
+	    <effectWorking>Cook</effectWorking>
+	    <soundWorking>Recipe_Machining</soundWorking>
+	    <workAmount>6500</workAmount>
+	    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+	    <ingredients>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Steel</li>
+	            	</thingDefs>
+	        	</filter>
+	        	<count>700</count>
+	        </li>
+	        <li>
+	        	<filter>
+	            	<thingDefs>
+	            		<li>Chemfuel</li>
+	            </thingDefs>
+	        	</filter>
+	        	<count>100</count>
+	        </li>
+	    </ingredients>
+	    <fixedIngredientFilter>
+	        <thingDefs>
+	        	<li>Steel</li>
+	        	<li>Chemfuel</li>
+	      	</thingDefs>
+	    </fixedIngredientFilter>
+	    <products>
+	      	<SIDAMShell>100</SIDAMShell>
+	    </products>
+	    <skillRequirements>
+	      	<Crafting>8</Crafting>
 	    </skillRequirements>
 	    <workSkill>Crafting</workSkill>
 	    <recipeUsers>
