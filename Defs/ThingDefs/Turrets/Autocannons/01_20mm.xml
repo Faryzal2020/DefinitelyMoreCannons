@@ -4,7 +4,7 @@
 	<ThingDef ParentName="DMC_BaseMannedTurret">
 	    <defName>20mmAutocannon</defName>
 	    <label>20mm Flak 38</label>
-	    <description>A 20mm anti-aircraft autocannon turret. Uses the 20x20mm API magazine with magazine storage of 8 mags. 2m min range, 40m Max Range. Fires with 150 RPM fire rate. Explodes with radius of 1 block when destroyed.</description>
+	    <description>A manned 20mm Flak 38 autocannon turret. Uses the 20x20mm API magazine with magazine storage of 8 mags. 2m min range, 40m Max Range. Fires with 150 RPM fire rate. Explodes with radius of 1 block when destroyed.</description>
 	    <graphicData>
 	        <texPath>Things/Building/MannedFlak38</texPath>
 	        <graphicClass>Graphic_Single</graphicClass>

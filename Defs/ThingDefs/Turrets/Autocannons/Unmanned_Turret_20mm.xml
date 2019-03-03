@@ -4,7 +4,7 @@
   <ThingDef ParentName="DMC_BaseUnmannedTurret">
     <defName>U20mmAutocannon</defName>
     <label>Unmanned 20mm Flak 38</label>
-    <description>A 20mm anti-aircraft cannon turret installed with an AI Module. Uses a magazine feed ammunition, 50m Max Range. Explodes with radius of 1 block when destroyed. Consumes 200W of power.</description>
+    <description>A manned 20mm Flak 38 autocannon turret. Uses the 20x20mm API magazine with magazine storage of 8 mags. 2m min range, 50m Max Range. Fires with 150 RPM fire rate. Explodes with radius of 1 block when destroyed. Explodes with 1 block radius when destroyed. Consumes 200W of power.</description>
     <graphicData>
       <texPath>Things/Building/UnmannedFlak38</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -33,6 +33,7 @@
       <Steel>250</Steel>
       <Plasteel>5</Plasteel>
       <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentSpacer>5</ComponentSpacer>  
       <FCSComputer>1</FCSComputer>
     </costList>
     <statBases>

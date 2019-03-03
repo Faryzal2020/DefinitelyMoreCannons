@@ -33,10 +33,10 @@
 	    <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
 	    <costList>
 			<Steel>900</Steel>
-			  <Plasteel>180</Plasteel> 
+			  <Plasteel>200</Plasteel> 
       		<Gold>30</Gold> 
 			  <ComponentIndustrial>35</ComponentIndustrial>  
-			  <ComponentSpacer>6</ComponentSpacer>  
+			  <ComponentSpacer>15</ComponentSpacer>  
 		</costList>
 	    <statBases>
 		    <MaxHitPoints>6800</MaxHitPoints>
