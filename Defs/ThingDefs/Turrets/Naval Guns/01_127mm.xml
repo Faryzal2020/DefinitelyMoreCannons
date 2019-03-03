@@ -4,7 +4,7 @@
   <ThingDef ParentName="DMC_BaseMannedTurret">
     <defName>127mmNavalgun</defName>
     <label>12.7cm SK C/34</label>
-    <description>A manned 12.7cm SK C/34 Naval gun with manual loading mechanisms. Uses the German 12.7cm SprGr Shell. 14 Seconds reload time. 10m Min Range, 150m Max Range. Cannot shoot over walls. Consumes 200W of power for its electric-powered aiming controls. Explodes with radius of 2 blocks when destroyed. Because of the size, this turret cant be placed under a roof.</description>
+    <description>A manned 12.7cm SK C/34 Naval gun with manual loading mechanisms. Uses the German 12.7cm SprGr Shell. 14 Seconds reload time. 10m Min Range, 150m Max Range. Cannot shoot over walls. Consumes 200W of power for its electric-powered aiming controls. Explodes with radius of 2 blocks when destroyed. Because of the size, this turret cant be placed under a roof. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
     <graphicData>
       <texPath>Things/Building/MannedSKC34</texPath>
       <graphicClass>Graphic_Single</graphicClass>

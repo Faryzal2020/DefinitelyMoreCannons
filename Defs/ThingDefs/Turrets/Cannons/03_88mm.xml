@@ -4,7 +4,7 @@
 	<ThingDef ParentName="DMC_BaseMannedTurret">
 	    <defName>Turret_88mmCannon</defName>
 	    <label>88mm Flak 41</label>
-	    <description>Manned 88mm Flak Cannon. 10 seconds reload. 3m Min Range, 100m Max Range. Doesn't explodes when destroyed.</description>
+	    <description>Uses the 88mm PzGr 39 Shell. 10 seconds reload. 3m Min Range, 100m Max Range. Doesn't explodes when destroyed.</description>
 	    <graphicData>
 	        <texPath>Things/Building/MannedFlak41</texPath>
 	        <graphicClass>Graphic_Single</graphicClass>
@@ -26,7 +26,7 @@
 	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
 	        <turretBurstCooldownTime>11</turretBurstCooldownTime> <!-- Reload Time -->
 	    </building>
-	    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+	    <interactionCellOffset>(0,0,-3)</interactionCellOffset>
 	    <size>(4,4)</size> 
 	    <specialDisplayRadius>100</specialDisplayRadius>
 		<costStuffCount>25</costStuffCount>

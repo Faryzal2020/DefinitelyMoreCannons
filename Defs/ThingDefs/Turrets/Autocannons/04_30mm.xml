@@ -4,7 +4,7 @@
 	<ThingDef ParentName="DMC_BaseMannedTurret">
 	    <defName>Turret_Kugelblitz_Autocannon</defName>
 	    <label>Zwilingsflak MK103</label>
-	    <description>Uses 30mm SprGr shell. 3m Min range, 70m Max range. Fires at a constant rate of 300 Rounds per Minute. Has internal ammo capacity of 200 rounds. Explodes with radius of 1 block when destroyed.</description>
+	    <description>Uses 30mm SprGr shell. 3m Min range, 70m Max range. Fires at a constant rate of 300 Rounds per Minute. Has internal ammo capacity of 200 rounds. Explodes with radius of 1 block when destroyed. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
 	    <graphicData>
 	        <texPath>Things/Building/MannedKugelblitz</texPath>
 	        <graphicClass>Graphic_Single</graphicClass>
@@ -26,7 +26,7 @@
 	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
 	        <turretBurstCooldownTime>0.2</turretBurstCooldownTime> <!-- Reload Time -->
 	    </building>
-	    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+	    <interactionCellOffset>(0,0,-3)</interactionCellOffset>
 	    <size>(3,3)</size> 
 	    <specialDisplayRadius>70</specialDisplayRadius>
 		<costStuffCount>30</costStuffCount>

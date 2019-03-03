@@ -4,7 +4,7 @@
 	<ThingDef ParentName="DMC_BaseMannedTurret">
 	    <defName>Turret_600Howitzer</defName>
 	    <label>60cm Karl Gerät Howitzer</label>
-	    <description>A manned 60cm Howitzer cannon based on "Karl Gerät" Railway Gun, shoots a massive HE shell over walls, 1km max range, 120 seconds reload. Explodes with radius of 4 blocks when destroyed</description>
+	    <description>Uses the 60cm schwere Betongranate HE shell with 9m explosive radius. 25m min range, 400m max range. Has reload rate of 120 seconds. Able to shoot over walls. Explodes with radius of 4 blocks when destroyed. Consumes 500W of power.</description>
 	    <graphicData>
 	        <texPath>Things/Building/MannedKarlGerat</texPath>
 	        <graphicClass>Graphic_Single</graphicClass>
@@ -26,9 +26,9 @@
 	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
 	        <turretBurstCooldownTime>120</turretBurstCooldownTime> <!-- Reload Time -->
 	    </building>
-	    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+	    <interactionCellOffset>(0,0,-3)</interactionCellOffset>
 	    <size>(4,4)</size> 
-	    <specialDisplayRadius>1000</specialDisplayRadius>
+	    <specialDisplayRadius>400</specialDisplayRadius>
 		<costStuffCount>160</costStuffCount>
 	    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	    <costList>
@@ -115,7 +115,7 @@
 			    <!--hasAmmoRack<defaultProjectile></defaultProjectile>hasAmmoRack-->
 			    <warmupTime>0</warmupTime>
 			    <minRange>25</minRange>
-			    <range>1000</range>
+			    <range>400</range>
         		<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
 			    <burstShotCount>1</burstShotCount>
 			    <soundCast>Sound_600mm</soundCast>

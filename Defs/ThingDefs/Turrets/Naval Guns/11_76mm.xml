@@ -4,7 +4,7 @@
 	<ThingDef ParentName="DMC_BaseMannedTurret">
 	    <defName>Turret_Otomelara76_Navalgun</defName>
 	    <label>OTO Melara 76mm</label>
-	    <description>A manned 76mm OTO-Melara Compact Naval gun. Uses the OTO 76mm AP Shell. Has an internal ammunition storage capacity of 200 rounds. Fires a burst of 10 rounds at 100 RPM, and cools down for 2 seconds between each bursts. Consumes 2300W of power for its electric-powered aiming controls and autoloading systems. 10m min range, 200m max range. Explodes with radius of 2 blocks when destroyed. Because of the size, this turret cant be placed under a roof. Cannot shoot over walls.</description>
+	    <description>A manned 76mm OTO-Melara Compact Naval gun. Uses the OTO 76mm AP Shell. Has an internal ammunition storage capacity of 200 rounds. Fires a burst of 10 rounds at 100 RPM, and cools down for 2 seconds between each bursts. Consumes 2300W of power for its electric-powered aiming controls and autoloading systems. 10m min range, 200m max range. Explodes with radius of 2 blocks when destroyed. Because of the size, this turret cant be placed under a roof. Cannot shoot over walls. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
 	    <graphicData>
 	        <texPath>Things/Building/MannedOTOMelara76</texPath>
 	        <graphicClass>Graphic_Single</graphicClass>
@@ -26,7 +26,7 @@
 	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
 	        <turretBurstCooldownTime>2</turretBurstCooldownTime> <!-- Reload Time -->
 	    </building>
-	    <interactionCellOffset>(0,0,-3)</interactionCellOffset>
+	    <interactionCellOffset>(0,0,-4)</interactionCellOffset>
 	    <size>(4,4)</size> 
 	    <specialDisplayRadius>200</specialDisplayRadius>
 		<costStuffCount>90</costStuffCount>

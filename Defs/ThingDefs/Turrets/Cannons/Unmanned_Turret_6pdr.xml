@@ -4,7 +4,7 @@
   <ThingDef ParentName="DMC_BaseUnmannedTurret">
     <defName>Turret_U6PdrCannon</defName>
     <label>Unmanned 6Pdr Cannon</label>
-    <description>Unmanned 6 Pounder (57mm) Cannon. 5m Min Range, 80m Max Range. 4 Seconds Reload. Explodes with 2 blocks radius when destroyed. Consumes 300W of power.</description>
+    <description>Uses the 57mm Shot MK-8T AP shell. 5m Min Range, 80m Max Range. 4 Seconds Reload. Explodes with 2 blocks radius when destroyed. Consumes 300W of power.</description>
     <graphicData>
       <texPath>Things/Building/Unmanned6Pdr</texPath>
       <graphicClass>Graphic_Single</graphicClass>

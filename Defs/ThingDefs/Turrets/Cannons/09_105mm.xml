@@ -4,7 +4,7 @@
 	<ThingDef ParentName="DMC_BaseMannedTurret">
 	    <defName>Turret_Leo1A5_Cannon</defName>
 	    <label>Leopard 1A5 Turret</label>
-	    <description>Uses 105mm DM23 APFSDS shell. 4m Min range, 110m Max range. 6.5 seconds reload. Has internal ammo capacity of 55 rounds. Explodes with radius of 1 block when destroyed.</description>
+	    <description>Uses 105mm DM23 APFSDS shell. 4m Min range, 110m Max range. 6.5 seconds reload. Has internal ammo capacity of 55 rounds. Explodes with radius of 1 block when destroyed. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
 	    <graphicData>
 	        <texPath>Things/Building/MannedLeo1A5</texPath>
 	        <graphicClass>Graphic_Single</graphicClass>
@@ -26,7 +26,7 @@
 	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
 	        <turretBurstCooldownTime>6.5</turretBurstCooldownTime> <!-- Reload Time -->
 	    </building>
-	    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+	    <interactionCellOffset>(0,0,-3)</interactionCellOffset>
 	    <size>(3,3)</size> 
 	    <specialDisplayRadius>110</specialDisplayRadius>
 		<costStuffCount>50</costStuffCount>

@@ -32,7 +32,7 @@
 	      	<graphicClass>Graphic_Single</graphicClass>
 	    </graphicData>
 	    <projectile>
-	      	<damageDef>SmallAPBullet</damageDef>
+	      	<damageDef>90APBullet</damageDef>
 	      	<flyOverhead>false</flyOverhead>
 	      	<damageAmountBase>200</damageAmountBase>
 	      	<speed>310</speed>

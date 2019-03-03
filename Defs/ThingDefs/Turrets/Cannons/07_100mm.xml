@@ -4,7 +4,7 @@
 	<ThingDef ParentName="DMC_BaseMannedTurret">
 	    <defName>Turret_T54_Cannon</defName>
 	    <label>T-54 Turret</label>
-	    <description>Uses 100mm BR-412D shell. 4m Min range, 95m Max range. 7.1 seconds reload. Has internal ammo capacity of 34 rounds. Explodes with radius of 1 block when destroyed.</description>
+	    <description>Uses 100mm BR-412D shell. 4m Min range, 95m Max range. 7.1 seconds reload. Has internal ammo capacity of 34 rounds. Explodes with radius of 1 block when destroyed. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
 	    <graphicData>
 	        <texPath>Things/Building/MannedT54</texPath>
 	        <graphicClass>Graphic_Single</graphicClass>
@@ -26,7 +26,7 @@
 	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
 	        <turretBurstCooldownTime>7.1</turretBurstCooldownTime> <!-- Reload Time -->
 	    </building>
-	    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+	    <interactionCellOffset>(0,0,-3)</interactionCellOffset>
 	    <size>(3,3)</size> 
 	    <specialDisplayRadius>95</specialDisplayRadius>
 		<costStuffCount>45</costStuffCount>

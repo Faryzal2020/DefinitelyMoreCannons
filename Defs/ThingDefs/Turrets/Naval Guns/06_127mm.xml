@@ -4,7 +4,7 @@
 	<ThingDef ParentName="DMC_BaseMannedTurret">
 	    <defName>Turret_Mark16_Navalgun</defName>
 	    <label>5"/54 (12.7 cm) Mark 16</label>
-	    <description>A manned 127mm Mark 16 Naval gun. Uses the 127mm Mk.64 Shell. Has an internal ammunition storage capacity of 50 rounds. Capable of firing 15 Rounds per minute. Consumes 1100W of power for its electric-powered aiming controls and autoloading systems. 15m min range, 150m max range. Explodes with radius of 2 blocks when destroyed. Because of the size, this turret cant be placed under a roof. Cannot shoot over walls.</description>
+	    <description>A manned 127mm Mark 16 Naval gun. Uses the 127mm Mk.64 Shell. Has an internal ammunition storage capacity of 50 rounds. Capable of firing 15 Rounds per minute. Consumes 1100W of power for its electric-powered aiming controls and autoloading systems. 15m min range, 150m max range. Explodes with radius of 2 blocks when destroyed. Because of the size, this turret cant be placed under a roof. Cannot shoot over walls. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
 	    <graphicData>
 	        <texPath>Things/Building/MannedMK16</texPath>
 	        <graphicClass>Graphic_Single</graphicClass>
@@ -26,7 +26,7 @@
 	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
 	        <turretBurstCooldownTime>4</turretBurstCooldownTime> <!-- Reload Time -->
 	    </building>
-	    <interactionCellOffset>(0,0,-4)</interactionCellOffset>
+	    <interactionCellOffset>(0,0,-5)</interactionCellOffset>
 	    <size>(5,5)</size> 
 	    <specialDisplayRadius>150</specialDisplayRadius>
 		<costStuffCount>100</costStuffCount>

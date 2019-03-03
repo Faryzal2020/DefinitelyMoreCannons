@@ -4,7 +4,7 @@
 	<ThingDef ParentName="DMC_BaseMannedTurret">
 	    <defName>Turret_GCT_Howitzer</defName>
 	    <label>GCT 155mm AUF1</label>
-	    <description>Uses the 155mm M795 Shell with 5m explosion radius. 20m Min range, 300m Max range. Fires a burst of 3 rounds at 12 rounds per minute fire rate, then cools down for 9 seconds. Has an internal ammo storage capacity of 42 rounds. Explodes with radius of 2 blocks when destroyed. Consumes 1000W of power.</description>
+	    <description>Uses the 155mm M795 Shell with 5m explosion radius. 20m Min range, 300m Max range. Fires a burst of 3 rounds at 12 rounds per minute fire rate, then cools down for 9 seconds. Has an internal ammo storage capacity of 42 rounds. Explodes with radius of 2 blocks when destroyed. Consumes 1000W of power. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
 	    <graphicData>
 	        <texPath>Things/Building/MannedGCTAuf1</texPath>
 	        <graphicClass>Graphic_Single</graphicClass>
@@ -26,7 +26,7 @@
 	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
 	        <turretBurstCooldownTime>9</turretBurstCooldownTime> <!-- Reload Time -->
 	    </building>
-	    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+	    <interactionCellOffset>(0,0,-4)</interactionCellOffset>
 	    <size>(4,4)</size> 
 	    <specialDisplayRadius>300</specialDisplayRadius>
 		<costStuffCount>120</costStuffCount>

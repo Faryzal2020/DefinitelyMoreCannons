@@ -4,7 +4,7 @@
 	<ThingDef ParentName="DMC_BaseMannedTurret">
 	    <defName>Turret_RARDEN_Autocannon</defName>
 	    <label>L21A1 RARDEN</label>
-	    <description>Uses 30mm HS831A shell. 3m Min range, 70m Max range. Fires a burst of 6 shots at about 92 RPM and cools down for 1.5 second between each bursts. Has internal ammo capacity of 100 3x ammo clips. Explodes with radius of 1 block when destroyed.</description>
+	    <description>Uses 30mm HS831A shell. 3m Min range, 70m Max range. Fires a burst of 6 shots at about 92 RPM and cools down for 1.5 second between each bursts. Has internal ammo capacity of 100 3x ammo clips. Explodes with radius of 1 block when destroyed. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
 	    <graphicData>
 	        <texPath>Things/Building/MannedRarden</texPath>
 	        <graphicClass>Graphic_Single</graphicClass>
@@ -26,7 +26,7 @@
 	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
 	        <turretBurstCooldownTime>1.5</turretBurstCooldownTime> <!-- Reload Time -->
 	    </building>
-	    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+	    <interactionCellOffset>(0,0,-3)</interactionCellOffset>
 	    <size>(3,3)</size> 
 	    <specialDisplayRadius>70</specialDisplayRadius>
 		<costStuffCount>30</costStuffCount>

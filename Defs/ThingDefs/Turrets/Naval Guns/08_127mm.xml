@@ -4,7 +4,7 @@
 	<ThingDef ParentName="DMC_BaseMannedTurret">
 	    <defName>Turret_Otobreda127_Navalgun</defName>
 	    <label>Otobreda 127/54 Compact</label>
-	    <description>A manned 127mm Otobreda Compact Naval gun. Uses the 127mm Mk.64 Shell. Has an internal ammunition storage capacity of 85 rounds. Capable of firing 40 Rounds per minute. Consumes 1200W of power for its electric-powered aiming controls and autoloading systems. 10m min range, 200m max range. Explodes with radius of 2 blocks when destroyed. Because of the size, this turret cant be placed under a roof. Cannot shoot over walls.</description>
+	    <description>A manned 127mm Otobreda Compact Naval gun. Uses the 127mm Mk.64 Shell. Has an internal ammunition storage capacity of 85 rounds. Capable of firing 40 Rounds per minute. Consumes 1200W of power for its electric-powered aiming controls and autoloading systems. 10m min range, 200m max range. Explodes with radius of 2 blocks when destroyed. Because of the size, this turret cant be placed under a roof. Cannot shoot over walls. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
 	    <graphicData>
 	        <texPath>Things/Building/MannedOTOMelara127</texPath>
 	        <graphicClass>Graphic_Single</graphicClass>
@@ -26,7 +26,7 @@
 	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
 	        <turretBurstCooldownTime>1.5</turretBurstCooldownTime> <!-- Reload Time -->
 	    </building>
-	    <interactionCellOffset>(0,0,-4)</interactionCellOffset>
+	    <interactionCellOffset>(0,0,-6)</interactionCellOffset>
 	    <size>(6,6)</size> 
 	    <specialDisplayRadius>200</specialDisplayRadius>
 		<costStuffCount>120</costStuffCount>

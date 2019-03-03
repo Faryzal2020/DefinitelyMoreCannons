@@ -4,7 +4,7 @@
 	<ThingDef ParentName="DMC_BaseMannedTurret">
 	    <defName>Turret_Akatsiya_Howitzer</defName>
 	    <label>2S3 Akatsiya</label>
-	    <description>Uses the 152mm OF-540 Shell with 4m explosion radius. 20m Min range, 180m Max range. 15 Seconds reload. Has an internal ammo storage capacity of 46 rounds. Explodes with radius of 2 blocks when destroyed.</description>
+	    <description>Uses the 152mm OF-540 Shell with 4m explosion radius. 20m Min range, 180m Max range. 15 Seconds reload. Has an internal ammo storage capacity of 46 rounds. Explodes with radius of 2 blocks when destroyed. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
 	    <graphicData>
 	        <texPath>Things/Building/MannedAkatsiya</texPath>
 	        <graphicClass>Graphic_Single</graphicClass>
@@ -26,7 +26,7 @@
 	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
 	        <turretBurstCooldownTime>15</turretBurstCooldownTime> <!-- Reload Time -->
 	    </building>
-	    <interactionCellOffset>(0,0,-3)</interactionCellOffset>
+	    <interactionCellOffset>(0,0,-4)</interactionCellOffset>
 	    <size>(4,4)</size> 
 	    <specialDisplayRadius>180</specialDisplayRadius>
 		<costStuffCount>60</costStuffCount>

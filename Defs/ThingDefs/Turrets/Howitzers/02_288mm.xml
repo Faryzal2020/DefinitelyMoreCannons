@@ -3,8 +3,8 @@
 
 	<ThingDef ParentName="DMC_BaseMannedTurret">
 	    <defName>Turret_288mmHowitzer</defName>
-	    <label>BL 9.2 Inch Mk.I Howitzer</label>
-	    <description>A manned 9.2 Inch (288mm) Howitzer cannon, able to shoot over walls, 300m max range, 50 seconds reload. Explodes with radius of 2 blocks when destroyed.</description>
+	    <label>BL 9.2 Inch (288mm) Mk.I Howitzer</label>
+	    <description>Uses the 9.2 Inch (288mm) Mk.I HE shell with 7m explosive radius. 20m min range, 250m max range. Has a reload rate of 50 seconds. Able to shoot over walls. Explodes with radius of 2 blocks when destroyed.</description>
 	    <graphicData>
 	        <texPath>Things/Building/MannedMk1</texPath>
 	        <graphicClass>Graphic_Single</graphicClass>
@@ -26,9 +26,9 @@
 	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
 	        <turretBurstCooldownTime>50</turretBurstCooldownTime> <!-- Reload Time -->
 	    </building>
-	    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+	    <interactionCellOffset>(0,0,-3)</interactionCellOffset>
 	    <size>(4,4)</size> 
-	    <specialDisplayRadius>300</specialDisplayRadius>
+	    <specialDisplayRadius>250</specialDisplayRadius>
 		<costStuffCount>80</costStuffCount>
 	    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	    <costList>
@@ -115,7 +115,7 @@
 			    <!--hasAmmoRack<defaultProjectile></defaultProjectile>hasAmmoRack-->
 			    <warmupTime>0</warmupTime>
 			    <minRange>20</minRange>
-			    <range>300</range>
+			    <range>250</range>
         		<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
 			    <burstShotCount>1</burstShotCount>
 			    <soundCast>Sound_288mm</soundCast>

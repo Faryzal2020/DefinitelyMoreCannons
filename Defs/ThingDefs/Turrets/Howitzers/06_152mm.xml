@@ -4,7 +4,7 @@
 	<ThingDef ParentName="DMC_BaseMannedTurret">
 	    <defName>Turret_Msta_Howitzer</defName>
 	    <label>2S19 Msta</label>
-	    <description>Uses the 152mm OF-540 Shell with 4m explosion radius. 20m Min range, 220m Max range. 9 Seconds reload. Has an internal ammo storage capacity of 50 rounds. Explodes with radius of 2 blocks when destroyed. Consumes 500W of power.</description>
+	    <description>Uses the 152mm OF-540 Shell with 4m explosion radius. 20m Min range, 220m Max range. 9 Seconds reload. Has an internal ammo storage capacity of 50 rounds. Explodes with radius of 2 blocks when destroyed. Consumes 500W of power. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
 	    <graphicData>
 	        <texPath>Things/Building/MannedMsta</texPath>
 	        <graphicClass>Graphic_Single</graphicClass>
@@ -26,7 +26,7 @@
 	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
 	        <turretBurstCooldownTime>9</turretBurstCooldownTime> <!-- Reload Time -->
 	    </building>
-	    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+	    <interactionCellOffset>(0,0,-5)</interactionCellOffset>
 	    <size>(5,5)</size> 
 	    <specialDisplayRadius>220</specialDisplayRadius>
 		<costStuffCount>90</costStuffCount>

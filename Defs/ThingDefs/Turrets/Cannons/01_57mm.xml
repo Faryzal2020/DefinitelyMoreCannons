@@ -3,8 +3,8 @@
 
 	<ThingDef ParentName="DMC_BaseMannedTurret">
 	    <defName>Turret_6PdrCannon</defName>
-	    <label>6-Pounder Cannon</label>
-	    <description>Manned 6 Pounder (57mm) Cannon. 3m Min Range, 70m Max Range. 4 Seconds Reload. Does not explodes when destroyed.</description>
+	    <label>6-Pounder (57mm) Cannon</label>
+	    <description>Uses the 57mm Shot MK-8T AP shell. 3m Min Range, 70m Max Range. 4 Seconds Reload. Does not explodes when destroyed.</description>
 	    <graphicData>
 	        <texPath>Things/Building/Manned6Pdr</texPath>
 	        <graphicClass>Graphic_Single</graphicClass>
@@ -26,7 +26,7 @@
 	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
 	        <turretBurstCooldownTime>4</turretBurstCooldownTime> <!-- Reload Time -->
 	    </building>
-	    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+	    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
 	    <size>(3,3)</size> 
 	    <specialDisplayRadius>70</specialDisplayRadius>
 		<costStuffCount>20</costStuffCount>

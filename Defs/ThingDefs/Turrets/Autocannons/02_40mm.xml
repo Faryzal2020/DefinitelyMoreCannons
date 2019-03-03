@@ -111,7 +111,7 @@
 		    <li>
 			    <verbClass>Verb_Shoot</verbClass>
 			    <hasStandardCommand>true</hasStandardCommand>
-			     <defaultProjectile>BoforsClip</defaultProjectile> 
+			    <defaultProjectile>Bullet_40mmAutocannonTurret</defaultProjectile> 
 			    <warmupTime>0</warmupTime>
 			    <minRange>2</minRange>
 			    <range>60</range>

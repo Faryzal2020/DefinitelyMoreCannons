@@ -4,7 +4,7 @@
 	<ThingDef ParentName="DMC_BaseMannedTurret">
 	    <defName>Turret_M26_Cannon</defName>
 	    <label>M26 Pershing Turret</label>
-	    <description>Uses 90mm M82 shell. 4m Min range, 90m Max range. 8 seconds reload. Has internal ammo capacity of 70 rounds. Explodes with radius of 1 block when destroyed.</description>
+	    <description>Uses 90mm M82 shell. 4m Min range, 90m Max range. 8 seconds reload. Has internal ammo capacity of 70 rounds. Explodes with radius of 1 block when destroyed. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
 	    <graphicData>
 	        <texPath>Things/Building/MannedM26</texPath>
 	        <graphicClass>Graphic_Single</graphicClass>
@@ -26,7 +26,7 @@
 	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
 	        <turretBurstCooldownTime>8</turretBurstCooldownTime> <!-- Reload Time -->
 	    </building>
-	    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+	    <interactionCellOffset>(0,0,-3)</interactionCellOffset>
 	    <size>(3,3)</size> 
 	    <specialDisplayRadius>90</specialDisplayRadius>
 		<costStuffCount>45</costStuffCount>

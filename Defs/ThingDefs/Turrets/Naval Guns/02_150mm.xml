@@ -4,7 +4,7 @@
   <ThingDef ParentName="DMC_BaseMannedTurret">
     <defName>Turret_150mmCannon</defName>
     <label>15cm KC/36</label>
-    <description>A manned 15cm KC/36 Naval gun with manual loading mechanisms. Uses the German 15cm SprGr Shell. 15 seconds reload time. 20m Min Range, 180m Max Range. Can fire over walls. Consumes 300W of power for its electric-powered aiming controls. Explodes with radius of 3 blocks when destroyed. Because of the size, this turret can't be placed under a roof.</description>
+    <description>A manned 15cm KC/36 Naval gun with manual loading mechanisms. Uses the German 15cm SprGr Shell. 15 seconds reload time. 20m Min Range, 180m Max Range. Can fire over walls. Consumes 300W of power for its electric-powered aiming controls. Explodes with radius of 3 blocks when destroyed. Because of the size, this turret can't be placed under a roof. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
     <graphicData>
       <texPath>Things/Building/MannedKC36</texPath>
       <graphicClass>Graphic_Single</graphicClass>
