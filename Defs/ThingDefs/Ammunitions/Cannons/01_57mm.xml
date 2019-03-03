@@ -41,7 +41,7 @@
 
   	<RecipeDef>
 	    <defName>Make_6PdrAP_x1</defName>
-	    <label>make 6 Pounder Shot MK-8T Shell 1x</label>
+	    <label>make (57mm) 6 Pounder Shot MK-8T Shell 1x</label>
 	    <description>Turrets that uses this ammunition: 6 Pounder Turret</description>
 	    <jobString>Making 6Pdr shell.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>
@@ -87,7 +87,7 @@
 
 	<RecipeDef>
 	    <defName>Make_6PdrAP_x10</defName>
-	    <label>make Shot MK-8T Shell 10x</label>
+	    <label>make (57mm) 6 Pounder Shot MK-8T Shell 10x</label>
 	    <description>Turrets that uses this ammunition: 6 Pounder Turret</description>
 	    <jobString>Making 6Pdr shells.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>

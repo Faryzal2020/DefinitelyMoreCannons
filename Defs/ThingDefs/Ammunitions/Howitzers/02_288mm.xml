@@ -9,7 +9,7 @@
 
 	<ThingDef ParentName="Base_DMCAmmunitions">
 	    <defName>NinePointTwoInchShellHE</defName>
-	    <label>(288mm) Mk.I HE</label>
+	    <label>(288mm) 9.2 Inch Mk.I HE</label>
 	    <description>Turrets that uses this ammunition: BL 9.2-Inch (288mm) Howitzer</description>
 	    <graphicData>
 	      	<texPath>Things/Projectile/MkIHE</texPath>
@@ -61,7 +61,7 @@
 
   	<RecipeDef>
 	    <defName>Make_288mmHE_x1</defName>
-	    <label>make 288mm Mk.I HE Shell 1x</label>
+	    <label>make (288mm) 9.2 Inch Mk.I HE Shell 1x</label>
 	    <description>Turrets that uses this ammunition: BL 9.2-Inch (288mm) Howitzer</description>
 	    <jobString>Making 288mm shell.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>
@@ -107,7 +107,7 @@
 
 	<RecipeDef>
 	    <defName>Make_288mmHE_x10</defName>
-	    <label>make 288mm Mk.I HE Shell 10x</label>
+	    <label>make (288mm) 9.2 Inch Mk.I HE Shell 10x</label>
 	    <description>Turrets that uses this ammunition: BL 9.2-Inch (288mm) Howitzer</description>
 	    <jobString>Making 288mm shells.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>
