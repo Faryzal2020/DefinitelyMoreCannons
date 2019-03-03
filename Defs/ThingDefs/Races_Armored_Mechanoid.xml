@@ -113,6 +113,7 @@
       <max>9999</max>
     </weaponMoney>
     <weaponTags>
+      <li>MechanoidGunHeavy</li>
       <li>AdvMechanoidGunHeavy</li>
     </weaponTags>
   </PawnKindDef>
@@ -193,6 +194,7 @@
       <max>9999</max>
     </weaponMoney>
     <weaponTags>
+      <li>MechanoidGunHeavy</li>
       <li>AdvMechanoidGunHeavy</li>
     </weaponTags>
   </PawnKindDef>

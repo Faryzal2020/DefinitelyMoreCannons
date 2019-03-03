@@ -10,8 +10,8 @@
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
     <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>100</damageAmountBase>
+      <damageDef>SmallSabot</damageDef>
+      <damageAmountBase>60</damageAmountBase>
       <speed>450</speed>
     </projectile>
   </ThingDef>
@@ -74,9 +74,9 @@
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
     <projectile>
-      <damageDef>LargeAPBullet</damageDef>
+      <damageDef>50APBullet</damageDef>
       <flyOverhead>false</flyOverhead>
-      <damageAmountBase>50</damageAmountBase>
+      <damageAmountBase>30</damageAmountBase>
       <speed>200</speed>
     </projectile>
   </ThingDef>
