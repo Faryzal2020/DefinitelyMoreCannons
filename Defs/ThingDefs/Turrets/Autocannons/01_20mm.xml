@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="DMC_BaseMannedTurret">
+	    <defName>20mmAutocannon</defName>
+	    <label>20mm Flak 38</label>
+	    <description>A manned 20mm Flak 38 autocannon turret. Uses the 20x20mm API magazine with magazine storage of 8 mags. 2m min range, 40m Max Range. Fires with 150 RPM fire rate. Explodes with radius of 1 block when destroyed.</description>
+	    <graphicData>
+	        <texPath>Things/Building/MannedFlak38</texPath>
+	        <graphicClass>Graphic_Single</graphicClass>
+	        <drawSize>(9,9)</drawSize>
+	        <damageData>
+        		<rect>(0.2,0.2,0.6,0.6)</rect>
+	        </damageData>
+	        <shadowData>
+		        <volume>(1.5,0.35,1.4)</volume>
+		        <offset>(0,0,-0.05)</offset>
+	        </shadowData>
+	    </graphicData>
+	    <uiIconPath>Things/Icons/MannedFlak38_MenuIcon</uiIconPath>
+	    <building>
+	        <turretGunDef>Gun_20mmAutocannonTurret</turretGunDef>
+	        <turretTopGraphicPath>Things/Building/MannedFlak38_Top</turretTopGraphicPath>
+	        <turretTopDrawSize>9</turretTopDrawSize>
+	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
+	        <turretBurstCooldownTime>0.4</turretBurstCooldownTime> <!-- Reload Time -->
+	    </building>
+	    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+	    <size>(3,3)</size> 
+	    <specialDisplayRadius>40</specialDisplayRadius>
+		<costStuffCount>15</costStuffCount>
+	    <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+	    <costList>
+			<Steel>150</Steel>
+			<!--Plasteel <Plasteel></Plasteel> Plasteel-->
+			  <ComponentIndustrial>1</ComponentIndustrial>  
+			<!--AdvCompo <ComponentSpacer></ComponentSpacer> AdvCompo-->
+		</costList>
+	    <statBases>
+		    <MaxHitPoints>300</MaxHitPoints>
+		    <WorkToBuild>2800</WorkToBuild>
+		    <Mass>200</Mass>
+	    </statBases>
+	    <researchPrerequisites>
+	        <li>Flak38</li>
+	    </researchPrerequisites>
+	    <comps>
+	    	 
+	      <li Class="CompProperties_Explosive">
+	        <explosiveRadius>1</explosiveRadius>
+	        <explosiveDamageType>Bomb</explosiveDamageType>
+	      </li>
+	      	 
+
+	      	<!--usesPower
+	      <li Class="CompProperties_Power">
+	        <compClass>CompPowerTrader</compClass>
+	        <basePowerConsumption>1</basePowerConsumption>
+	      </li>
+	      	usesPower-->
+
+	       
+	      <li Class="CompProperties_Refuelable">
+	        <fuelLabel>Ammo Magazine</fuelLabel>
+	        <fuelGizmoLabel>Ammo</fuelGizmoLabel>
+	        <fuelFilter>
+	          <thingDefs>
+	            <li>FlakTwentyMag</li>
+	          </thingDefs>
+	        </fuelFilter>
+	        <fuelCapacity>8</fuelCapacity>
+	        <initialFuelPercent>0</initialFuelPercent>
+	        <autoRefuelPercent>0.25</autoRefuelPercent>
+	        <showFuelGizmo>true</showFuelGizmo>
+	        <minimumFueledThreshold>0</minimumFueledThreshold>
+	        <atomicFueling>false</atomicFueling>
+	        <fuelMultiplier>1</fuelMultiplier>
+	        <factorByDifficulty>false</factorByDifficulty>
+	        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+	        <outOfFuelMessage>Cannot shoot: Out of ammo</outOfFuelMessage>
+	        <fuelIconPath>UI/Overlays/Ammo</fuelIconPath>
+	      </li>
+	  	 
+	    </comps>
+	    <!--noAmmoRack
+	    <inspectorTabs>
+	        <li>ITab_Shells</li>
+	    </inspectorTabs>
+	    noAmmoRack-->
+	    <!--notUnderRoof
+	    <placeWorkers>
+	      <li>PlaceWorker_NotUnderRoof</li>
+	    </placeWorkers>
+	    notUnderRoof-->
+	</ThingDef>
+  	
+
+	<!--noAmmoRack<ThingDef ParentName="DMC_MultishellWeapon">noAmmoRack-->
+	 <ThingDef ParentName="DMC_BaseTurretWeapon"> 
+		<defName>Gun_20mmAutocannonTurret</defName>
+		<label>turret gun</label>
+		<description>you're supposed to not see this</description>
+		<statBases>
+		    <AccuracyTouch>1</AccuracyTouch>
+		    <AccuracyShort>0.98</AccuracyShort>
+		    <AccuracyMedium>0.96</AccuracyMedium>
+		    <AccuracyLong>0.7</AccuracyLong>
+      		 <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown> 
+		</statBases>
+		<verbs>
+		    <li>
+			    <verbClass>Verb_Shoot</verbClass>
+			    <hasStandardCommand>true</hasStandardCommand>
+			    <defaultProjectile>Bullet_20mmAutocannonTurret</defaultProjectile> 
+			    <warmupTime>0</warmupTime>
+			    <minRange>2</minRange>
+			    <range>40</range>
+        		<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+			    <burstShotCount>1</burstShotCount>
+			    <soundCast>Sound_Flak38</soundCast>
+			    <muzzleFlashScale>30</muzzleFlashScale>
+			     <consumeFuelPerShot>0.05</consumeFuelPerShot> 
+			    <requireLineOfSight>true</requireLineOfSight>
+			    <targetParams>
+			        <canTargetLocations>true</canTargetLocations>
+			    </targetParams>
+			    <!--isExplosive <forcedMissRadius>xForcedMiss</forcedMissRadius> isExplosive-->
+		    </li>
+		</verbs>
+		<!--noAmmoRack
+		<building>
+		    <fixedStorageSettings>
+			    <filter>
+			        <categories>
+			        	<li></li>
+			        </categories>
+			    </filter>
+		    </fixedStorageSettings>
+		    <defaultStorageSettings>
+			    <filter>
+			        <categories>
+			        	<li></li>
+			        </categories>
+			        <disallowedThingDefs>
+			        </disallowedThingDefs>
+			    </filter>
+		    </defaultStorageSettings>
+		</building>
+		noAmmoRack-->
+	</ThingDef>
+</Defs>

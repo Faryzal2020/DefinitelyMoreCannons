@@ -10,31 +10,31 @@
       <defName>ATCShells</defName>
       <label>AT Cannon Shells</label>
       <parent>DMCShells</parent>
-      <iconPath>Things/Icons/Shells_CategoryIcon</iconPath>
+      <iconPath>Things/Icons/Manned6Pdr_MenuIcon</iconPath>
     </ThingCategoryDef>
     <ThingCategoryDef>
       <defName>ACShells</defName>
       <label>Autocannon Shells</label>
       <parent>DMCShells</parent>
-      <iconPath>Things/Icons/Shells_CategoryIcon</iconPath>
+      <iconPath>Things/Icons/MannedFlak38_MenuIcon</iconPath>
     </ThingCategoryDef>
     <ThingCategoryDef>
       <defName>HShells</defName>
       <label>Howitzer Shells</label>
       <parent>DMCShells</parent>
-      <iconPath>Things/Icons/Shells_CategoryIcon</iconPath>
+      <iconPath>Things/Icons/MannedSig33_MenuIcon</iconPath>
     </ThingCategoryDef>
     <ThingCategoryDef>
       <defName>NGShells</defName>
       <label>Naval Gun Shells</label>
       <parent>DMCShells</parent>
-      <iconPath>Things/Icons/Shells_CategoryIcon</iconPath>
+      <iconPath>Things/Icons/MannedSKC34_MenuIcon</iconPath>
     </ThingCategoryDef>
 
     <ThingCategoryDef>
       <defName>CannonMaterials</defName>
       <label>Cannon Turret Building Materials</label>
       <parent>Manufactured</parent>
-      <iconPath>Things/Icons/6PdrCannon_MenuIcon</iconPath>
+      <iconPath>Things/Icons/MenuIcon</iconPath>
     </ThingCategoryDef>
 </Defs>

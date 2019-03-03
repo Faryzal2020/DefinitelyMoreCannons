@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="DMC_BaseMannedTurret">
+	    <defName>Turret_Gvozdika_Howitzer</defName>
+	    <label>2S3 Gvozdika Turret</label>
+	    <description>Uses the 122mm OF-462 Shell with 2m explosion radius. 20m Min range, 150m Max range. 15 Seconds reload. Has an internal ammo storage capacity of 40 rounds. Explodes with radius of 2 blocks when destroyed.</description>
+	    <graphicData>
+	        <texPath>Things/Building/MannedGvozdika</texPath>
+	        <graphicClass>Graphic_Single</graphicClass>
+	        <drawSize>(13,13)</drawSize>
+	        <damageData>
+	        	<rect>(0.38,0.2,0.56375,0.8)</rect>
+	        	<cornerTL>Damage/Corner</cornerTL>
+	        </damageData>
+	        <shadowData>
+	        	<offset>(0,0,0)</offset>
+	        	<volume>(2,1.5,2)</volume>
+	        </shadowData>
+	    </graphicData>
+	    <uiIconPath>Things/Icons/MannedGvozdika_MenuIcon</uiIconPath>
+	    <building>
+	        <turretGunDef>TurretGun_Gvozdika_Howitzer</turretGunDef>
+	        <turretTopGraphicPath>Things/Building/MannedGvozdika_Top</turretTopGraphicPath>
+	        <turretTopDrawSize>13</turretTopDrawSize>
+	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
+	        <turretBurstCooldownTime>15</turretBurstCooldownTime> <!-- Reload Time -->
+	    </building>
+	    <interactionCellOffset>(0,0,-3)</interactionCellOffset>
+	    <size>(3,3)</size> 
+	    <specialDisplayRadius>150</specialDisplayRadius>
+		<costStuffCount>45</costStuffCount>
+	    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+	    <costList>
+			<Steel>450</Steel>
+			<!--Plasteel <Plasteel></Plasteel> Plasteel-->
+			  <ComponentIndustrial>3</ComponentIndustrial>  
+			<!--AdvCompo <ComponentSpacer></ComponentSpacer> AdvCompo-->
+		</costList>
+	    <statBases>
+		    <MaxHitPoints>2000</MaxHitPoints>
+		    <WorkToBuild>5000</WorkToBuild>
+		    <Mass>200</Mass>
+	    </statBases>
+	    <researchPrerequisites>
+	        <li>Gvozdika</li>
+	    </researchPrerequisites>
+	    <comps>
+	    	 
+	      <li Class="CompProperties_Explosive">
+	        <explosiveRadius>2</explosiveRadius>
+	        <explosiveDamageType>Bomb</explosiveDamageType>
+	      </li>
+	      	 
+
+	      	<!--usesPower
+	      <li Class="CompProperties_Power">
+	        <compClass>CompPowerTrader</compClass>
+	        <basePowerConsumption>1</basePowerConsumption>
+	      </li>
+	      	usesPower-->
+
+	       
+	      <li Class="CompProperties_Refuelable">
+	        <fuelLabel>Ammunitions</fuelLabel>
+	        <fuelGizmoLabel>Ammo</fuelGizmoLabel>
+	        <fuelFilter>
+	          <thingDefs>
+	            <li>Bullet_OF-462122mm_HE</li>
+	          </thingDefs>
+	        </fuelFilter>
+	        <fuelCapacity>40</fuelCapacity>
+	        <initialFuelPercent>0</initialFuelPercent>
+	        <autoRefuelPercent>0.25</autoRefuelPercent>
+	        <showFuelGizmo>true</showFuelGizmo>
+	        <minimumFueledThreshold>0</minimumFueledThreshold>
+	        <atomicFueling>false</atomicFueling>
+	        <fuelMultiplier>1</fuelMultiplier>
+	        <factorByDifficulty>false</factorByDifficulty>
+	        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+	        <outOfFuelMessage>Cannot shoot: Out of ammo</outOfFuelMessage>
+	        <fuelIconPath>UI/Overlays/Ammo</fuelIconPath>
+	      </li>
+	  	 
+	    </comps>
+	    <!--noAmmoRack
+	    <inspectorTabs>
+	        <li>ITab_Shells</li>
+	    </inspectorTabs>
+	    noAmmoRack-->
+	     
+	    <placeWorkers>
+	      <li>PlaceWorker_NotUnderRoof</li>
+	    </placeWorkers>
+	     
+	</ThingDef>
+  	
+
+	<!--noAmmoRack<ThingDef ParentName="DMC_MultishellWeapon">noAmmoRack-->
+	 <ThingDef ParentName="DMC_BaseTurretWeapon"> 
+		<defName>TurretGun_Gvozdika_Howitzer</defName>
+		<label>turret gun</label>
+		<description>you're supposed to not see this</description>
+		<statBases>
+		    <AccuracyTouch>1</AccuracyTouch>
+		    <AccuracyShort>1</AccuracyShort>
+		    <AccuracyMedium>1</AccuracyMedium>
+		    <AccuracyLong>1</AccuracyLong>
+      		 <RangedWeapon_Cooldown>15</RangedWeapon_Cooldown> 
+		</statBases>
+		<verbs>
+		    <li>
+			    <verbClass>Verb_Shoot</verbClass>
+			    <hasStandardCommand>true</hasStandardCommand>
+			     <defaultProjectile>Bullet_OF-462122mm_HE</defaultProjectile> 
+			    <warmupTime>0</warmupTime>
+			    <minRange>20</minRange>
+			    <range>150</range>
+        		<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+			    <burstShotCount>1</burstShotCount>
+			    <soundCast>Sound_122mm</soundCast>
+			    <muzzleFlashScale>30</muzzleFlashScale>
+			     <consumeFuelPerShot>1</consumeFuelPerShot> 
+			    <requireLineOfSight>false</requireLineOfSight>
+			    <targetParams>
+			        <canTargetLocations>true</canTargetLocations>
+			    </targetParams>
+			      <forcedMissRadius>2</forcedMissRadius>  
+		    </li>
+		</verbs>
+		<!--noAmmoRack
+		<building>
+		    <fixedStorageSettings>
+			    <filter>
+			        <categories>
+			        	<li></li>
+			        </categories>
+			    </filter>
+		    </fixedStorageSettings>
+		    <defaultStorageSettings>
+			    <filter>
+			        <categories>
+			        	<li></li>
+			        </categories>
+			        <disallowedThingDefs>
+			        </disallowedThingDefs>
+			    </filter>
+		    </defaultStorageSettings>
+		</building>
+		noAmmoRack-->
+	</ThingDef>
+</Defs>

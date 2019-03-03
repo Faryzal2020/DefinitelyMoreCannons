@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="DMC_BaseMannedTurret">
+    <defName>100mmNavalgun</defName>
+    <label>100mm Modele 53</label>
+    <description>A manned 100mm Model 53 Naval gun. Uses the 100mm OEA F1 Shell. Has an internal ammunition feeder rack with capacity of 100 rounds. Capable of firing 60 Rounds per minute. Consumes 2000W of power for its electric-powered aiming controls and autoloading systems. 14m min range, 150m max range. Explodes with radius of 3 blocks when destroyed. Because of the size, this turret cant be placed under a roof. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+    <graphicData>
+      <texPath>Things/Building/MannedModele53</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(8, 8)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(3.5,2.2,3.5)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Things/Icons/MannedModele53_MenuIcon</uiIconPath>
+    <building>
+      <turretGunDef>Gun_100mmNavalgunTurret</turretGunDef>
+      <turretTopGraphicPath>Things/Building/MannedModele53_Top</turretTopGraphicPath>
+      <turretTopDrawSize>12</turretTopDrawSize>
+      <turretBurstCooldownTime>1</turretBurstCooldownTime> <!-- Reload Time -->
+    </building>
+    <interactionCellOffset>(0,0,-6)</interactionCellOffset>
+    <size>(6,6)</size> 
+    <specialDisplayRadius>150</specialDisplayRadius>
+    <costStuffCount>150</costStuffCount>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <costList>
+      <Steel>1500</Steel>
+      <Plasteel>200</Plasteel>
+      <ComponentIndustrial>30</ComponentIndustrial>
+      <ComponentSpacer>6</ComponentSpacer>
+    </costList>
+    <statBases>
+      <MaxHitPoints>11000</MaxHitPoints>
+      <WorkToBuild>17000</WorkToBuild>
+      <Mass>200</Mass>
+    </statBases>
+    <researchPrerequisites>
+      <li>100mmNaval</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>3.0</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>2000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Ammo Belt</fuelLabel>
+        <fuelGizmoLabel>Ammo</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>OneHundredmmShell</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>100</fuelCapacity>
+        <initialFuelPercent>0</initialFuelPercent>
+        <autoRefuelPercent>0.5</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>0</minimumFueledThreshold>
+        <atomicFueling>false</atomicFueling>
+        <fuelMultiplier>1</fuelMultiplier>
+        <factorByDifficulty>false</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Out of ammo</outOfFuelMessage>
+        <fuelIconPath>UI/Overlays/Ammo</fuelIconPath>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+  </ThingDef>
+
+  <ThingDef ParentName="DMC_BaseTurretWeapon">
+    <defName>Gun_100mmNavalgunTurret</defName>
+    <label>autocannon</label>
+    <description>A self-loading large-bore cannon designed to attach to a turret.</description>
+    <statBases>
+      <AccuracyTouch>0.98</AccuracyTouch>
+      <AccuracyShort>0.98</AccuracyShort>
+      <AccuracyMedium>0.98</AccuracyMedium>
+      <AccuracyLong>1</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_100mmNavalgunTurret</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <minRange>14</minRange>
+        <range>150</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Sound_Naval100mm</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>40</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+</Defs>

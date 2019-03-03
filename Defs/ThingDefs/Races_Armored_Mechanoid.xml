@@ -7,7 +7,7 @@
       <PsychicSensitivity>0</PsychicSensitivity>
       <ToxicSensitivity>0</ToxicSensitivity>
       <Flammability>0</Flammability>
-      <ComfyTemperatureMin>-150</ComfyTemperatureMin>
+      <ComfyTemperatureMin>-300</ComfyTemperatureMin>
       <ComfyTemperatureMax>300</ComfyTemperatureMax>
     </statBases>
     <race>
@@ -23,15 +23,15 @@
       </li>
       <li>
         <damageDef>Bomb</damageDef>
-        <multiplier>0.7</multiplier>
+        <multiplier>0.8</multiplier>
       </li>
       <li>
         <damageDef>EMP</damageDef>
-        <multiplier>0.9</multiplier>
+        <multiplier>1.2</multiplier>
       </li>
       <li>
-        <damageDef>100mmAP</damageDef>
-        <multiplier>0.7</multiplier>
+        <damageDef>Sabot</damageDef>
+        <multiplier>1.5</multiplier>
       </li>
     </damageMultipliers>
   </ThingDef>
@@ -86,6 +86,7 @@
       <Steel>1000</Steel>
       <Plasteel>200</Plasteel>
       <ComponentIndustrial>5</ComponentIndustrial>
+      <CompositeAlloy>5</CompositeAlloy>
     </butcherProducts>
   </ThingDef>
 
@@ -93,6 +94,7 @@
     <defName>Mech_ArmoredCentipede</defName>
     <label>armored centipede</label>
     <race>Mech_ArmoredCentipede</race>
+    <defaultFactionType>Mechanoid</defaultFactionType>
     <combatPower>600</combatPower>
     <lifeStages>
       <li>
@@ -112,6 +114,7 @@
     </weaponMoney>
     <weaponTags>
       <li>MechanoidGunHeavy</li>
+      <li>AdvMechanoidGunHeavy</li>
     </weaponTags>
   </PawnKindDef>
 
@@ -164,6 +167,7 @@
       <Steel>5000</Steel>
       <Plasteel>500</Plasteel>
       <ComponentIndustrial>10</ComponentIndustrial>
+      <CompositeAlloy>10</CompositeAlloy>
     </butcherProducts>
   </ThingDef>
 
@@ -171,6 +175,7 @@
     <defName>Mech_AdvArmoredCentipede</defName>
     <label>advanced armored centipede</label>
     <race>Mech_AdvArmoredCentipede</race>
+    <defaultFactionType>Mechanoid</defaultFactionType>
     <combatPower>1000</combatPower>
     <lifeStages>
       <li>
@@ -190,6 +195,7 @@
     </weaponMoney>
     <weaponTags>
       <li>MechanoidGunHeavy</li>
+      <li>AdvMechanoidGunHeavy</li>
     </weaponTags>
   </PawnKindDef>
 </Defs>

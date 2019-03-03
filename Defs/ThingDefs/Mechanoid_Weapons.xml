@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Mechanoid_Railgun</defName>
+    <label>mechanoid railgun shot</label>
+    <graphicData>
+      <texPath>Things/Projectile/Charge_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>SmallSabot</damageDef>
+      <damageAmountBase>60</damageAmountBase>
+      <speed>450</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>Gun_Mechanoid_Railgun</defName>
+    <label>mechanoid railgun</label>
+    <description>A mechanoid-made large caliber electromagnetic railgun.</description>
+    <graphicData>
+      <texPath>Things/Weapons/mechanoid_railgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1400</MarketValue>
+      <Mass>22</Mass>
+      <AccuracyTouch>0.83</AccuracyTouch>
+      <AccuracyShort>0.9</AccuracyShort>
+      <AccuracyMedium>0.95</AccuracyMedium>
+      <AccuracyLong>0.95</AccuracyLong>
+      <RangedWeapon_Cooldown>7</RangedWeapon_Cooldown>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <menuHidden>True</menuHidden>
+    <destroyOnDrop>true</destroyOnDrop>
+    <tradeability>None</tradeability>
+    <weaponTags>
+      <li>AdvMechanoidGunHeavy</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Mechanoid_Railgun</defaultProjectile>
+        <warmupTime>5</warmupTime>
+        <range>100</range>
+        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Sound_Railgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>20</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Mechanoid_Autocannon</defName>
+    <label>mechanoid autocannon shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>50APBullet</damageDef>
+      <flyOverhead>false</flyOverhead>
+      <damageAmountBase>30</damageAmountBase>
+      <speed>200</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>Gun_Mechanoid_Autocannon</defName>
+    <label>mechanoid autocannon</label>
+    <description>A mechanoid-made 40mm autocannon.</description>
+    <graphicData>
+      <texPath>Things/Weapons/mechanoid_autocannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>0.78</AccuracyTouch>
+      <AccuracyShort>0.86</AccuracyShort>
+      <AccuracyMedium>0.92</AccuracyMedium>
+      <AccuracyLong>0.92</AccuracyLong>
+      <MarketValue>1400</MarketValue>
+      <Mass>18</Mass>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <menuHidden>True</menuHidden>
+    <destroyOnDrop>true</destroyOnDrop>
+    <generateCommonality>0.5</generateCommonality>
+    <tradeability>None</tradeability>
+    <weaponTags>
+      <li>AdvMechanoidGunHeavy</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Mechanoid_Autocannon</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>65</range>
+        <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+        <burstShotCount>6</burstShotCount>
+        <soundCast>Sound_40mm</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>15</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+</Defs>

@@ -2,68 +2,148 @@
 <Defs>
   <ResearchProjectDef>
     <defName>127mmNaval</defName>
-    <label>127mm naval gun</label>
-    <description>A manned single 127mm naval gun turret that shoots HE shells over long distances.</description>
-    <baseCost>2000</baseCost>
+    <label>127mm SK C/34</label>
+    <description>A manned 12.7cm SK C/34 Naval gun with manual loading mechanisms. Uses the German 12.7cm SprGr Shell. 14 Seconds reload time. 10m Min Range, 150m Max Range. Cannot shoot over walls. Consumes 200W of power for its electric-powered aiming controls. Explodes with radius of 2 blocks when destroyed. Because of the size, this turret cant be placed under a roof. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+    <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>NavalGuns</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>1</researchViewY>
-    <tab>DMC_NavalGuns</tab>
-  </ResearchProjectDef>
-  <ResearchProjectDef>
-    <defName>100mmNaval</defName>
-    <label>100mm naval gun</label>
-    <description>A fast-firing manned single 100mm naval gun turret that uses a belt-feed ammo consists of 100 shells.</description>
-    <baseCost>3500</baseCost>
-    <techLevel>Industrial</techLevel>
-    <prerequisites>
-      <li>127mmNaval</li>
-    </prerequisites>
-    <researchViewX>2</researchViewX>
-    <researchViewY>1</researchViewY>
-    <tab>DMC_NavalGuns</tab>
-  </ResearchProjectDef>
-  <ResearchProjectDef>
-    <defName>120mmNaval</defName>
-    <label>120mm naval gun</label>
-    <description>A fast-firing manned single 120mm naval gun turret that uses a belt-feed ammo consists of 52 shells.</description>
-    <baseCost>4000</baseCost>
-    <techLevel>Industrial</techLevel>
-    <prerequisites>
-      <li>100mmNaval</li>
-    </prerequisites>
-    <researchViewX>3</researchViewX>
-    <researchViewY>1</researchViewY>
-    <tab>DMC_NavalGuns</tab>
+    <researchViewX>7</researchViewX>
+    <researchViewY>4</researchViewY>
+    <tab>DMC_General</tab>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
     <defName>150mmNaval</defName>
-    <label>Heavy: 150mm naval gun</label>
-    <description>A manned single mounted 15cm naval gun turret that can shoot over walls, has a relatively high fire rate and very durable.</description>
-    <baseCost>3500</baseCost>
+    <label>150mm KC/36</label>
+    <description>A manned 15cm KC/36 Naval gun with manual loading mechanisms. Uses the German 15cm SprGr Shell. 15 seconds reload time. 20m Min Range, 180m Max Range. Can fire over walls. Consumes 300W of power for its electric-powered aiming controls. Explodes with radius of 3 blocks when destroyed. Because of the size, this turret can't be placed under a roof. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+    <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>HeavyNavalGuns</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>4</researchViewY>
-    <tab>DMC_NavalGuns</tab>
+    <researchViewX>9</researchViewX>
+    <researchViewY>4.1</researchViewY>
+    <tab>DMC_General</tab>
   </ResearchProjectDef>  
   <ResearchProjectDef>
     <defName>Twin127mmNaval</defName>
-    <label>Heavy: 127mm naval gun</label>
-    <description>A manned dual mounted 127mm naval gun turret that can shoot over walls, has a relatively high fire rate and very durable.</description>
-    <baseCost>4200</baseCost>
+    <label>Double 127mm Type 5</label>
+    <description>A manned Double mounted 12.7cm Type 5 Naval gun. It has an automatic ammunition feeder system that takes the ammunitions from an ammunition storage, the storage can hold 80 shells. Fires a salvo of 2 shells with 14 seconds reload time. Consumes 1900W of power for its electric-powered aiming controls and loading systems, 15m min range, 250m max range. Able to fire over walls. Explodes with radius of 4 blocks when destroyed.  Because of the size and its ability to do high angle aiming, this turret cant be placed under a roof. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+    <baseCost>2000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
-      <li>150mmNaval</li>
+      <li>HeavyNavalGuns</li>
     </prerequisites>
-    <researchViewX>2</researchViewX>
-    <researchViewY>4</researchViewY>
-    <tab>DMC_NavalGuns</tab>
+    <researchViewX>9</researchViewX>
+    <researchViewY>4.7</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Twin150mmNaval</defName>
+    <label>Double 150mm K C/36T</label>
+      <description>A manned Double mounted 150mm KC/36T Naval gun. Uses the German 15cm SprGr Shell. Has an internal ammunition feeder rack with capacity of 75 rounds. Fires a salvo of 2 shells. Reload rate is 18 seconds. Consumes 2000W of power for its electric-powered aiming controls and loading systems, 20m min range, 300m max range. Able to fire over walls. Explodes with radius of 4 blocks when destroyed.  Because of the size and its ability to do high angle aiming, this turret cannot be placed under a roof. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>HeavyNavalGuns</li>
+    </prerequisites>
+    <researchViewX>9</researchViewX>
+    <researchViewY>5.3</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Twin203mmNaval</defName>
+    <label>Double 203mm SK C/34</label>
+      <description>A manned Double mounted 203mm SK C/34 Naval gun. Uses the German 20.3cm SprGr Shell. Has an internal ammunition feeder rack with capacity of 55 rounds. Fires a salvo of 2 shells with 19 seconds reload time. Consumes 2200W of power for its electric-powered aiming controls and loading systems, 30m min range, 350m max range. Able to fire over walls. Explodes with radius of 5 blocks when destroyed.  Because of the size and its ability to do high angle aiming, this turret cannot be placed under a roof. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>HeavyNavalGuns</li>
+    </prerequisites>
+    <researchViewX>9</researchViewX>
+    <researchViewY>5.9</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+
+  <!-- //////// Rapid Firing //////// -->
+  <ResearchProjectDef>
+    <defName>127mmMk16</defName>
+    <label>127mm Mark 16</label>
+      <description>A manned 127mm Mark 16 Naval gun. Uses the 127mm Mk.64 Shell. Has an internal ammunition storage capacity of 50 rounds. Capable of firing 15 Rounds per minute. Consumes 1100W of power for its electric-powered aiming controls and autoloading systems. 15m min range, 150m max range. Explodes with radius of 2 blocks when destroyed. Because of the size, this turret cant be placed under a roof. Cannot shoot over walls. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>RFNavalGuns</li>
+    </prerequisites>
+    <researchViewX>9</researchViewX>
+    <researchViewY>3</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>127mmMk45</defName>
+    <label>127mm Mark 45</label>
+      <description>A manned 127mm Mark 45 Naval gun, more accurate than the Mark 16. Uses the 127mm Mk.64 Shell. Has an internal ammunition storage capacity of 50 rounds. Capable of firing 20 Rounds per minute. Consumes 1200W of power for its electric-powered aiming controls and autoloading systems. 15m min range, 200m max range. Explodes with radius of 2 blocks when destroyed. Because of the size, this turret cant be placed under a roof. Cannot shoot over walls. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>127mmMk16</li>
+    </prerequisites>
+    <researchViewX>10</researchViewX>
+    <researchViewY>3</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>127mmOtobreda</defName>
+    <label>127mm Otobreda Compact</label>
+      <description>A manned 127mm Otobreda Compact Naval gun. Uses the 127mm Mk.64 Shell. Has an internal ammunition storage capacity of 85 rounds. Capable of firing 40 Rounds per minute. Consumes 1200W of power for its electric-powered aiming controls and autoloading systems. 10m min range, 200m max range. Explodes with radius of 2 blocks when destroyed. Because of the size, this turret cant be placed under a roof. Cannot shoot over walls. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>127mmMk45</li>
+    </prerequisites>
+    <researchViewX>11</researchViewX>
+    <researchViewY>3</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>100mmNaval</defName>
+    <label>100mm Modele 53</label>
+    <description>A manned 100mm Model 53 Naval gun. Uses the 100mm OEA F1 Shell. Has an internal ammunition feeder rack with capacity of 100 rounds. Capable of firing 60 Rounds per minute. Consumes 2000W of power for its electric-powered aiming controls and autoloading systems. 14m min range, 150m max range. Explodes with radius of 3 blocks when destroyed. Because of the size, this turret cant be placed under a roof. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>127mmOtobreda</li>
+    </prerequisites>
+    <researchViewX>12</researchViewX>
+    <researchViewY>3</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>120mmNaval</defName>
+    <label>120mm TAK 120</label>
+    <description>A manned 120mm Naval gun based on Swedish 120mm/46 (4.7") TAK120 Naval gun. Uses a complex ready-rack ammunition feed with total capacity of 52 rounds. This turret fires 6 round burst at 80 Rounds per minute fire rate, cools down for 2 seconds after each bursts. Consumes 2500W of power for its electric-powered aiming controls. 15m min range, 250m max range. Explodes with radius of 3 blocks when destroyed. Because of the size, this turret cant be placed under a roof. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>100mmNaval</li>
+    </prerequisites>
+    <researchViewX>13</researchViewX>
+    <researchViewY>2.5</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>76mmNaval</defName>
+    <label>76mm OTO Melara</label>
+      <description>A manned 76mm OTO-Melara Compact Naval gun. Uses the OTO 76mm AP Shell. Has an internal ammunition storage capacity of 200 rounds. Fires a burst of 10 rounds at 100 RPM, and cools down for 2 seconds between each bursts. Consumes 2300W of power for its electric-powered aiming controls and autoloading systems. 10m min range, 200m max range. Explodes with radius of 2 blocks when destroyed. Because of the size, this turret cant be placed under a roof. Cannot shoot over walls. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>100mmNaval</li>
+    </prerequisites>
+    <researchViewX>13</researchViewX>
+    <researchViewY>3.5</researchViewY>
+    <tab>DMC_General</tab>
   </ResearchProjectDef>
 </Defs>

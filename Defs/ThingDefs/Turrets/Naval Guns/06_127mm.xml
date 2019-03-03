@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="DMC_BaseMannedTurret">
+	    <defName>Turret_Mark16_Navalgun</defName>
+	    <label>5"/54 (12.7 cm) Mark 16</label>
+	    <description>A manned 127mm Mark 16 Naval gun. Uses the 127mm Mk.64 Shell. Has an internal ammunition storage capacity of 50 rounds. Capable of firing 15 Rounds per minute. Consumes 1100W of power for its electric-powered aiming controls and autoloading systems. 15m min range, 150m max range. Explodes with radius of 2 blocks when destroyed. Because of the size, this turret cant be placed under a roof. Cannot shoot over walls. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+	    <graphicData>
+	        <texPath>Things/Building/MannedMK16</texPath>
+	        <graphicClass>Graphic_Single</graphicClass>
+	        <drawSize>(16,16)</drawSize>
+	        <damageData>
+	        	<rect>(0.38,0.2,0.56375,0.8)</rect>
+	        	<cornerTL>Damage/Corner</cornerTL>
+	        </damageData>
+	        <shadowData>
+	        	<offset>(0,0,0)</offset>
+	        	<volume>(4,1.5,4)</volume>
+	        </shadowData>
+	    </graphicData>
+	    <uiIconPath>Things/Icons/MannedMK16_MenuIcon</uiIconPath>
+	    <building>
+	        <turretGunDef>TurretGun_Mark16_Navalgun</turretGunDef>
+	        <turretTopGraphicPath>Things/Building/MannedMK16_Top</turretTopGraphicPath>
+	        <turretTopDrawSize>16</turretTopDrawSize>
+	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
+	        <turretBurstCooldownTime>4</turretBurstCooldownTime> <!-- Reload Time -->
+	    </building>
+	    <interactionCellOffset>(0,0,-5)</interactionCellOffset>
+	    <size>(5,5)</size> 
+	    <specialDisplayRadius>150</specialDisplayRadius>
+		<costStuffCount>100</costStuffCount>
+	    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+	    <costList>
+			<Steel>1000</Steel>
+			  <Plasteel>100</Plasteel>  
+			  <ComponentIndustrial>20</ComponentIndustrial>  
+			  <ComponentSpacer>3</ComponentSpacer>  
+		</costList>
+	    <statBases>
+		    <MaxHitPoints>8000</MaxHitPoints>
+		    <WorkToBuild>16000</WorkToBuild>
+		    <Mass>200</Mass>
+	    </statBases>
+	    <researchPrerequisites>
+	        <li>127mmMk16</li>
+	    </researchPrerequisites>
+	    <comps>
+	    	 
+	      <li Class="CompProperties_Explosive">
+	        <explosiveRadius>2</explosiveRadius>
+	        <explosiveDamageType>Bomb</explosiveDamageType>
+	      </li>
+	      	 
+
+	      	 
+	      <li Class="CompProperties_Power">
+	        <compClass>CompPowerTrader</compClass>
+	        <basePowerConsumption>1100</basePowerConsumption>
+	      </li>
+	      	 
+
+	       
+	      <li Class="CompProperties_Refuelable">
+	        <fuelLabel>Ammunitions</fuelLabel>
+	        <fuelGizmoLabel>Ammo</fuelGizmoLabel>
+	        <fuelFilter>
+	          <thingDefs>
+	            <li>Bullet_MK64127mm_AP</li>
+	          </thingDefs>
+	        </fuelFilter>
+	        <fuelCapacity>50</fuelCapacity>
+	        <initialFuelPercent>0</initialFuelPercent>
+	        <autoRefuelPercent>0.25</autoRefuelPercent>
+	        <showFuelGizmo>true</showFuelGizmo>
+	        <minimumFueledThreshold>0</minimumFueledThreshold>
+	        <atomicFueling>false</atomicFueling>
+	        <fuelMultiplier>1</fuelMultiplier>
+	        <factorByDifficulty>false</factorByDifficulty>
+	        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+	        <outOfFuelMessage>Cannot shoot: Out of ammo</outOfFuelMessage>
+	        <fuelIconPath>UI/Overlays/Ammo</fuelIconPath>
+	      </li>
+	  	 
+	    </comps>
+	    <!--noAmmoRack
+	    <inspectorTabs>
+	        <li>ITab_Shells</li>
+	    </inspectorTabs>
+	    noAmmoRack-->
+	     
+	    <placeWorkers>
+	      <li>PlaceWorker_NotUnderRoof</li>
+	    </placeWorkers>
+	     
+	</ThingDef>
+  	
+
+	<!--noAmmoRack<ThingDef ParentName="DMC_MultishellWeapon">noAmmoRack-->
+	 <ThingDef ParentName="DMC_BaseTurretWeapon"> 
+		<defName>TurretGun_Mark16_Navalgun</defName>
+		<label>turret gun</label>
+		<description>you're supposed to not see this</description>
+		<statBases>
+		    <AccuracyTouch>0.85</AccuracyTouch>
+		    <AccuracyShort>0.9</AccuracyShort>
+		    <AccuracyMedium>0.95</AccuracyMedium>
+		    <AccuracyLong>1</AccuracyLong>
+      		 <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown> 
+		</statBases>
+		<verbs>
+		    <li>
+			    <verbClass>Verb_Shoot</verbClass>
+			    <hasStandardCommand>true</hasStandardCommand>
+			     <defaultProjectile>Bullet_MK64127mm_AP</defaultProjectile> 
+			    <warmupTime>0</warmupTime>
+			    <minRange>15</minRange>
+			    <range>150</range>
+        		<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+			    <burstShotCount>1</burstShotCount>
+			    <soundCast>Sound_Single127mm</soundCast>
+			    <muzzleFlashScale>40</muzzleFlashScale>
+			     <consumeFuelPerShot>1</consumeFuelPerShot> 
+			    <requireLineOfSight>true</requireLineOfSight>
+			    <targetParams>
+			        <canTargetLocations>true</canTargetLocations>
+			    </targetParams>
+			    <!--isExplosive <forcedMissRadius>1</forcedMissRadius> isExplosive-->
+		    </li>
+		</verbs>
+		<!--noAmmoRack
+		<building>
+		    <fixedStorageSettings>
+			    <filter>
+			        <categories>
+			        	<li></li>
+			        </categories>
+			    </filter>
+		    </fixedStorageSettings>
+		    <defaultStorageSettings>
+			    <filter>
+			        <categories>
+			        	<li></li>
+			        </categories>
+			        <disallowedThingDefs>
+			        </disallowedThingDefs>
+			    </filter>
+		    </defaultStorageSettings>
+		</building>
+		noAmmoRack-->
+	</ThingDef>
+</Defs>

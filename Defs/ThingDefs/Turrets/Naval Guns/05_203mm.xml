@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="DMC_BaseMannedTurret">
+	    <defName>Turret_SKC34_Navalgun</defName>
+	    <label>20.3cm SK C/34</label>
+	    <description>A manned Double mounted 203mm SK C/34 Naval gun. Uses the German 20.3cm SprGr Shell. Has an internal ammunition feeder rack with capacity of 55 rounds. Fires a salvo of 2 shells with 19 seconds reload time. Consumes 2200W of power for its electric-powered aiming controls and loading systems, 30m min range, 350m max range. Able to fire over walls. Explodes with radius of 5 blocks when destroyed.  Because of the size and its ability to do high angle aiming, this turret cannot be placed under a roof. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+	    <graphicData>
+	        <texPath>Things/Building/Manned203SKC34</texPath>
+	        <graphicClass>Graphic_Single</graphicClass>
+	        <drawSize>(25,25)</drawSize>
+	        <damageData>
+	        	<rect>(0.38,0.2,0.56375,0.8)</rect>
+	        	<cornerTL>Damage/Corner</cornerTL>
+	        </damageData>
+	        <shadowData>
+	        	<offset>(0,0,0)</offset>
+	        	<volume>(2,1.5,2)</volume>
+	        </shadowData>
+	    </graphicData>
+	    <uiIconPath>Things/Icons/Manned203SKC34_MenuIcon</uiIconPath>
+	    <building>
+	        <turretGunDef>TurretGun_SKC34_Navalgun</turretGunDef>
+	        <turretTopGraphicPath>Things/Building/Manned203SKC34_Top</turretTopGraphicPath>
+	        <turretTopDrawSize>25</turretTopDrawSize>
+	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
+	        <turretBurstCooldownTime>19</turretBurstCooldownTime> <!-- Reload Time -->
+	    </building>
+	    <interactionCellOffset>(0,0,-8)</interactionCellOffset>
+	    <size>(8,8)</size> 
+	    <specialDisplayRadius>350</specialDisplayRadius>
+		<costStuffCount>235</costStuffCount>
+	    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	    <costList>
+			<Steel>2000</Steel>
+			  <Plasteel>550</Plasteel>  
+			  <ComponentIndustrial>30</ComponentIndustrial>  
+			  <ComponentSpacer>25</ComponentSpacer>  
+		</costList>
+	    <statBases>
+		    <MaxHitPoints>24000</MaxHitPoints>
+		    <WorkToBuild>30000</WorkToBuild>
+		    <Mass>200</Mass>
+	    </statBases>
+	    <researchPrerequisites>
+	        <li>Twin203mmNaval</li>
+	    </researchPrerequisites>
+	    <comps>
+	    	 
+	      <li Class="CompProperties_Explosive">
+	        <explosiveRadius>5</explosiveRadius>
+	        <explosiveDamageType>Bomb</explosiveDamageType>
+	      </li>
+	      	 
+
+	      	 
+	      <li Class="CompProperties_Power">
+	        <compClass>CompPowerTrader</compClass>
+	        <basePowerConsumption>2200</basePowerConsumption>
+	      </li>
+	      	 
+
+	       
+	      <li Class="CompProperties_Refuelable">
+	        <fuelLabel>Ammunitions</fuelLabel>
+	        <fuelGizmoLabel>Ammo</fuelGizmoLabel>
+	        <fuelFilter>
+	          <thingDefs>
+	            <li>Bullet_203SprGr203mm_HE</li>
+	          </thingDefs>
+	        </fuelFilter>
+	        <fuelCapacity>55</fuelCapacity>
+	        <initialFuelPercent>0</initialFuelPercent>
+	        <autoRefuelPercent>0.25</autoRefuelPercent>
+	        <showFuelGizmo>true</showFuelGizmo>
+	        <minimumFueledThreshold>0</minimumFueledThreshold>
+	        <atomicFueling>false</atomicFueling>
+	        <fuelMultiplier>1</fuelMultiplier>
+	        <factorByDifficulty>false</factorByDifficulty>
+	        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+	        <outOfFuelMessage>Cannot shoot: Out of ammo</outOfFuelMessage>
+	        <fuelIconPath>UI/Overlays/Ammo</fuelIconPath>
+	      </li>
+	  	 
+	    </comps>
+	    <!--noAmmoRack
+	    <inspectorTabs>
+	        <li>ITab_Shells</li>
+	    </inspectorTabs>
+	    noAmmoRack-->
+	     
+	    <placeWorkers>
+	      <li>PlaceWorker_NotUnderRoof</li>
+	    </placeWorkers>
+	     
+	</ThingDef>
+  	
+
+	<!--noAmmoRack<ThingDef ParentName="DMC_MultishellWeapon">noAmmoRack-->
+	 <ThingDef ParentName="DMC_BaseTurretWeapon"> 
+		<defName>TurretGun_SKC34_Navalgun</defName>
+		<label>turret gun</label>
+		<description>you're supposed to not see this</description>
+		<statBases>
+		    <AccuracyTouch>1</AccuracyTouch>
+		    <AccuracyShort>1</AccuracyShort>
+		    <AccuracyMedium>1</AccuracyMedium>
+		    <AccuracyLong>1</AccuracyLong>
+      		 <RangedWeapon_Cooldown>19</RangedWeapon_Cooldown> 
+		</statBases>
+		<verbs>
+		    <li>
+			    <verbClass>Verb_Shoot</verbClass>
+			    <hasStandardCommand>true</hasStandardCommand>
+			     <defaultProjectile>Bullet_203SprGr203mm_HE</defaultProjectile> 
+			    <warmupTime>3</warmupTime>
+			    <minRange>30</minRange>
+			    <range>350</range>
+        		<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+			    <burstShotCount>2</burstShotCount>
+			    <soundCast>Sound_203mm</soundCast>
+			    <muzzleFlashScale>45</muzzleFlashScale>
+			     <consumeFuelPerShot>1</consumeFuelPerShot> 
+			    <requireLineOfSight>false</requireLineOfSight>
+			    <targetParams>
+			        <canTargetLocations>true</canTargetLocations>
+			    </targetParams>
+			      <forcedMissRadius>1</forcedMissRadius>  
+		    </li>
+		</verbs>
+		<!--noAmmoRack
+		<building>
+		    <fixedStorageSettings>
+			    <filter>
+			        <categories>
+			        	<li></li>
+			        </categories>
+			    </filter>
+		    </fixedStorageSettings>
+		    <defaultStorageSettings>
+			    <filter>
+			        <categories>
+			        	<li></li>
+			        </categories>
+			        <disallowedThingDefs>
+			        </disallowedThingDefs>
+			    </filter>
+		    </defaultStorageSettings>
+		</building>
+		noAmmoRack-->
+	</ThingDef>
+</Defs>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="DMC_BaseMannedTurret">
+	    <defName>Turret_Otomelara76_Navalgun</defName>
+	    <label>OTO Melara 76mm</label>
+	    <description>A manned 76mm OTO-Melara Compact Naval gun. Uses the OTO 76mm AP Shell. Has an internal ammunition storage capacity of 200 rounds. Fires a burst of 10 rounds at 100 RPM, and cools down for 2 seconds between each bursts. Consumes 2300W of power for its electric-powered aiming controls and autoloading systems. 10m min range, 200m max range. Explodes with radius of 2 blocks when destroyed. Because of the size, this turret cant be placed under a roof. Cannot shoot over walls. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+	    <graphicData>
+	        <texPath>Things/Building/MannedOTOMelara76</texPath>
+	        <graphicClass>Graphic_Single</graphicClass>
+	        <drawSize>(16,16)</drawSize>
+	        <damageData>
+	        	<rect>(0.38,0.2,0.56375,0.8)</rect>
+	        	<cornerTL>Damage/Corner</cornerTL>
+	        </damageData>
+	        <shadowData>
+	        	<offset>(0,0,0)</offset>
+	        	<volume>(2,1.5,2)</volume>
+	        </shadowData>
+	    </graphicData>
+	    <uiIconPath>Things/Icons/MannedOTOMelara76_MenuIcon</uiIconPath>
+	    <building>
+	        <turretGunDef>TurretGun_Otobreda76_Navalgun</turretGunDef>
+	        <turretTopGraphicPath>Things/Building/MannedOTOMelara76_Top</turretTopGraphicPath>
+	        <turretTopDrawSize>16</turretTopDrawSize>
+	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
+	        <turretBurstCooldownTime>2</turretBurstCooldownTime> <!-- Reload Time -->
+	    </building>
+	    <interactionCellOffset>(0,0,-4)</interactionCellOffset>
+	    <size>(4,4)</size> 
+	    <specialDisplayRadius>200</specialDisplayRadius>
+		<costStuffCount>90</costStuffCount>
+	    <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+	    <costList>
+			<Steel>900</Steel>
+			  <Plasteel>200</Plasteel> 
+      		<Gold>30</Gold> 
+			  <ComponentIndustrial>35</ComponentIndustrial>  
+			  <ComponentSpacer>15</ComponentSpacer>  
+		</costList>
+	    <statBases>
+		    <MaxHitPoints>6800</MaxHitPoints>
+		    <WorkToBuild>20000</WorkToBuild>
+		    <Mass>200</Mass>
+	    </statBases>
+	    <researchPrerequisites>
+	        <li>76mmNaval</li>
+	    </researchPrerequisites>
+	    <comps>
+	    	 
+	      <li Class="CompProperties_Explosive">
+	        <explosiveRadius>2</explosiveRadius>
+	        <explosiveDamageType>Bomb</explosiveDamageType>
+	      </li>
+	      	 
+
+	      	 
+	      <li Class="CompProperties_Power">
+	        <compClass>CompPowerTrader</compClass>
+	        <basePowerConsumption>2300</basePowerConsumption>
+	      </li>
+	      	 
+
+	       
+	      <li Class="CompProperties_Refuelable">
+	        <fuelLabel>Ammunitions</fuelLabel>
+	        <fuelGizmoLabel>Ammo</fuelGizmoLabel>
+	        <fuelFilter>
+	          <thingDefs>
+	            <li>Bullet_76AP76mm_AP</li>
+	          </thingDefs>
+	        </fuelFilter>
+	        <fuelCapacity>200</fuelCapacity>
+	        <initialFuelPercent>0</initialFuelPercent>
+	        <autoRefuelPercent>0.25</autoRefuelPercent>
+	        <showFuelGizmo>true</showFuelGizmo>
+	        <minimumFueledThreshold>0</minimumFueledThreshold>
+	        <atomicFueling>false</atomicFueling>
+	        <fuelMultiplier>1</fuelMultiplier>
+	        <factorByDifficulty>false</factorByDifficulty>
+	        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+	        <outOfFuelMessage>Cannot shoot: Out of ammo</outOfFuelMessage>
+	        <fuelIconPath>UI/Overlays/Ammo</fuelIconPath>
+	      </li>
+	  	 
+	    </comps>
+	    <!--noAmmoRack
+	    <inspectorTabs>
+	        <li>ITab_Shells</li>
+	    </inspectorTabs>
+	    noAmmoRack-->
+	     
+	    <placeWorkers>
+	      <li>PlaceWorker_NotUnderRoof</li>
+	    </placeWorkers>
+	     
+	</ThingDef>
+  	
+
+	<!--noAmmoRack<ThingDef ParentName="DMC_MultishellWeapon">noAmmoRack-->
+	 <ThingDef ParentName="DMC_BaseTurretWeapon"> 
+		<defName>TurretGun_Otobreda76_Navalgun</defName>
+		<label>turret gun</label>
+		<description>you're supposed to not see this</description>
+		<statBases>
+		    <AccuracyTouch>2</AccuracyTouch>
+		    <AccuracyShort>2</AccuracyShort>
+		    <AccuracyMedium>2</AccuracyMedium>
+		    <AccuracyLong>2</AccuracyLong>
+      		 <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown> 
+		</statBases>
+		<verbs>
+		    <li>
+			    <verbClass>Verb_Shoot</verbClass>
+			    <hasStandardCommand>true</hasStandardCommand>
+			     <defaultProjectile>Bullet_76AP76mm_AP</defaultProjectile> 
+			    <warmupTime>0</warmupTime>
+			    <minRange>10</minRange>
+			    <range>200</range>
+        		<ticksBetweenBurstShots>36</ticksBetweenBurstShots>
+			    <burstShotCount>10</burstShotCount>
+			    <soundCast>Sound_Single127mm</soundCast>
+			    <muzzleFlashScale>35</muzzleFlashScale>
+			     <consumeFuelPerShot>1</consumeFuelPerShot> 
+			    <requireLineOfSight>true</requireLineOfSight>
+			    <targetParams>
+			        <canTargetLocations>true</canTargetLocations>
+			    </targetParams>
+			    <!--isExplosive <forcedMissRadius>1</forcedMissRadius> isExplosive-->
+		    </li>
+		</verbs>
+		<!--noAmmoRack
+		<building>
+		    <fixedStorageSettings>
+			    <filter>
+			        <categories>
+			        	<li></li>
+			        </categories>
+			    </filter>
+		    </fixedStorageSettings>
+		    <defaultStorageSettings>
+			    <filter>
+			        <categories>
+			        	<li></li>
+			        </categories>
+			        <disallowedThingDefs>
+			        </disallowedThingDefs>
+			    </filter>
+		    </defaultStorageSettings>
+		</building>
+		noAmmoRack-->
+	</ThingDef>
+</Defs>

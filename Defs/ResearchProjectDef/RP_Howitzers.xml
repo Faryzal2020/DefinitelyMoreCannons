@@ -3,40 +3,93 @@
   <ResearchProjectDef>
     <defName>sIG33Howitzer</defName>
     <label>15cm sIG 33</label>
-    <description>A 15cm howitzer based on sIG 33 Heavy Infantry Gun .</description>
+      <description>Uses the 150mm I Gr 33 Shell with 4m explosive radius. 15m min range, 150m max range. Has a reload rate of 30 seconds. Able to shoot over walls. Explodes with radius of 2 blocks when destroyed.</description>
     <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>Howitzers</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>1</researchViewY>
-    <tab>DMC_Howitzers</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>4.5</researchViewY>
+    <tab>DMC_General</tab>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>mark1howitzer</defName>
     <label>9.7 Inch Howitzer</label>
-    <description>A big 9.7 Inch howitzer based on BL 9.2 Inch Howitzer.</description>
+      <description>Uses the 9.2 Inch (288mm) Mk.I HE shell with 7m explosive radius. 20m min range, 250m max range. Has a reload rate of 50 seconds. Able to shoot over walls. Explodes with radius of 2 blocks when destroyed.</description>
     <baseCost>2000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>sIG33Howitzer</li>
     </prerequisites>
-    <researchViewX>2</researchViewX>
-    <researchViewY>1</researchViewY>
-    <tab>DMC_Howitzers</tab>
+    <researchViewX>3</researchViewX>
+    <researchViewY>4.5</researchViewY>
+    <tab>DMC_General</tab>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>KarlGerat</defName>
     <label>60cm Karl Gerät</label>
-    <description>A massive 60cm howitzer based on "Karl Gerät" Railway gun.</description>
+      <description>Uses the 60cm schwere Betongranate HE shell with 9m explosive radius. 25m min range, 400m max range. Has reload rate of 120 seconds. Able to shoot over walls. Explodes with radius of 4 blocks when destroyed. Consumes 500W of power.</description>
     <baseCost>3000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>mark1howitzer</li>
     </prerequisites>
+    <researchViewX>4</researchViewX>
+    <researchViewY>4.5</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Gvozdika</defName>
+    <label>122mm 2S1 Gvozdika</label>
+      <description>Uses the 122mm OF-462 Shell with 2m explosion radius. 20m Min range, 150m Max range. 15 Seconds reload. Has an internal ammo storage capacity of 40 rounds. Explodes with radius of 2 blocks when destroyed.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Howitzers</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>5.5</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Akatsiya</defName>
+    <label>152mm 2S3 Akatsiya</label>
+      <description>Uses the 152mm OF-540 Shell with 4m explosion radius. 20m Min range, 180m Max range. 15 Seconds reload. Has an internal ammo storage capacity of 46 rounds. Explodes with radius of 2 blocks when destroyed. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Gvozdika</li>
+    </prerequisites>
     <researchViewX>3</researchViewX>
-    <researchViewY>1</researchViewY>
-    <tab>DMC_Howitzers</tab>
+    <researchViewY>5.5</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Msta</defName>
+    <label>152mm 2S19 Msta</label>
+      <description>Uses the 152mm OF-540 Shell with 4m explosion radius. 20m Min range, 220m Max range. 9 Seconds reload. Has an internal ammo storage capacity of 50 rounds. Explodes with radius of 2 blocks when destroyed. Consumes 500W of power. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Akatsiya</li>
+    </prerequisites>
+    <researchViewX>4</researchViewX>
+    <researchViewY>5.5</researchViewY>
+    <tab>DMC_General</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>155GCT</defName>
+    <label>155mm GCT AUF1</label>
+      <description>Uses the 155mm M795 Shell with 5m explosion radius. 20m Min range, 300m Max range. Fires a burst of 3 rounds at 12 rounds per minute fire rate, then cools down for 9 seconds. Has an internal ammo storage capacity of 42 rounds. Explodes with radius of 2 blocks when destroyed. Consumes 1000W of power. With this turret you can build a wall between the colonist and the turret to protect the colonist.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Msta</li>
+    </prerequisites>
+    <researchViewX>5</researchViewX>
+    <researchViewY>5.5</researchViewY>
+    <tab>DMC_General</tab>
   </ResearchProjectDef>
 </Defs>
