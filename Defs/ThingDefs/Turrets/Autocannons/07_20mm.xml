@@ -4,7 +4,7 @@
 	<ThingDef ParentName="DMC_BaseMannedTurret">
 	    <defName>Turret_RH202_Autocannon</defName>
 	    <label>Rheinmetall Mk 20 RH-202</label>
-	    <description>Uses 20mm HS827 shell. 3m Min range, 70m Max range. Fires a burst of 15 shots at about 720 RPM and cools down for 1.5 second between each bursts. Has internal ammo capacity of 1250 shells. Explodes with radius of 1 block when destroyed. Uses 100W of power.</description>
+	    <description>Uses 20mm HS827 shell. 3m Min range, 70m Max range. Fires a burst of 15 shots at about 720 RPM and cools down for 1.5 second between each bursts. Has internal ammo capacity of 1250 shells. Explodes with radius of 1 block when destroyed. Uses 500W of power.</description>
 	    <graphicData>
 	        <texPath>Things/Building/MannedRH202</texPath>
 	        <graphicClass>Graphic_Single</graphicClass>
@@ -34,7 +34,7 @@
 	    <costList>
 			<Steel>260</Steel>
 			  <Plasteel>2</Plasteel>  
-			  <ComponentIndustrial>4</ComponentIndustrial>  
+			  <ComponentIndustrial>20</ComponentIndustrial>  
 			<!--AdvCompo <ComponentSpacer></ComponentSpacer> AdvCompo-->
 		</costList>
 	    <statBases>
@@ -56,7 +56,7 @@
 	      	 
 	      <li Class="CompProperties_Power">
 	        <compClass>CompPowerTrader</compClass>
-	        <basePowerConsumption>100</basePowerConsumption>
+	        <basePowerConsumption>500</basePowerConsumption>
 	      </li>
 	      	 
 

@@ -37,7 +37,7 @@
     <destroyOnDrop>true</destroyOnDrop>
     <tradeability>None</tradeability>
     <weaponTags>
-      <li>MechanoidGunHeavy</li>
+      <li>AdvMechanoidGunHeavy</li>
     </weaponTags>
     <verbs>
       <li>
@@ -104,7 +104,7 @@
     <generateCommonality>0.5</generateCommonality>
     <tradeability>None</tradeability>
     <weaponTags>
-      <li>MechanoidGunHeavy</li>
+      <li>AdvMechanoidGunHeavy</li>
     </weaponTags>
     <verbs>
       <li>

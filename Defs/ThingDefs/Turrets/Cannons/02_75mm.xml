@@ -4,7 +4,7 @@
 	<ThingDef ParentName="DMC_BaseMannedTurret">
 	    <defName>Turret_75mmCannon</defName>
 	    <label>75mm Pak 40</label>
-	    <description>Manned 75mm Pak 40 Field Gun. 3m Min Range, 90m Max Range. Doesn't explode when destroyed</description>
+	    <description>Manned 75mm Pak 40 Field Gun. 5 seconds reload. 3m Min Range, 90m Max Range. Doesn't explode when destroyed.</description>
 	    <graphicData>
 	        <texPath>Things/Building/MannedPak40</texPath>
 	        <graphicClass>Graphic_Single</graphicClass>

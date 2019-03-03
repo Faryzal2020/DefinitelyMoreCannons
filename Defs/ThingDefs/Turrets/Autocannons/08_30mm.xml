@@ -34,7 +34,7 @@
 	    <costList>
 			<Steel>300</Steel>
 			  <Plasteel>4</Plasteel>  
-			  <ComponentIndustrial>4</ComponentIndustrial>  
+			  <ComponentIndustrial>10</ComponentIndustrial>  
 			<!--AdvCompo <ComponentSpacer></ComponentSpacer> AdvCompo-->
 		</costList>
 	    <statBases>

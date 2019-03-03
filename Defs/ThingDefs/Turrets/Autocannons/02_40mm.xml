@@ -4,7 +4,7 @@
 	<ThingDef ParentName="DMC_BaseMannedTurret">
 	    <defName>40mmAutocannon</defName>
 	    <label>40mm Flak 28 Bofors</label>
-	    <description>A 40mm automatic cannon turret. Uses 4x40mm Ammunition Clips with ammunition storage of 20 clips, 70m max range. Explodes with radius of 1 block when destroyed.</description>
+	    <description>A 40mm automatic cannon turret. Uses 4x40mm Ammunition Clips with ammunition storage of 20 clips. 2m min range, 60m max range. Explodes with radius of 1 block when destroyed.</description>
 	    <graphicData>
 	        <texPath>Things/Building/MannedFlak28</texPath>
 	        <graphicClass>Graphic_Single</graphicClass>

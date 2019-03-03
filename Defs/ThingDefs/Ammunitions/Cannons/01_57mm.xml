@@ -9,7 +9,7 @@
 
 	<ThingDef ParentName="Base_DMCAmmunitions">
 	    <defName>SixPounderShellAP</defName>
-	    <label>(6Pdr/57mm) Shot MK-8T</label>
+	    <label>(6 Pounder) Shot MK-8T</label>
 	    <description>Turrets that uses this ammunition: 6Pdr Cannon</description>
 	    <graphicData>
 	      	<texPath>Things/Projectile/6PdrAPC</texPath>
@@ -41,7 +41,7 @@
 
   	<RecipeDef>
 	    <defName>Make_6PdrAP_x1</defName>
-	    <label>make Shot MK-8T Shell 1x</label>
+	    <label>make 6 Pounder Shot MK-8T Shell 1x</label>
 	    <description>Turrets that uses this ammunition: 6 Pounder Turret</description>
 	    <jobString>Making 6Pdr shell.</jobString>
 	    <workSpeedStat>SmithingSpeed</workSpeedStat>

@@ -4,7 +4,7 @@
 	<ThingDef ParentName="DMC_BaseMannedTurret">
 	    <defName>Turret_BS3_Cannon</defName>
 	    <label>100mm BS-3</label>
-	    <description>Uses BR-412D shell. 3m Min range, 100m Max range. 10 seconds reload.</description>
+	    <description>Uses the BR-412D shell. 3m Min range, 100m Max range. 10 seconds reload.</description>
 	    <graphicData>
 	        <texPath>Things/Building/MannedBS3</texPath>
 	        <graphicClass>Graphic_Single</graphicClass>

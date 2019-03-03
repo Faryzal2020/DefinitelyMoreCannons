@@ -4,7 +4,7 @@
 	<ThingDef ParentName="DMC_BaseMannedTurret">
 	    <defName>Turret_M40_Cannon</defName>
 	    <label>M40 Recoilless Rifle</label>
-	    <description>Uses 106mm M344 HEAT shell. 4m Min range, 100m Max range. 5 seconds reload.</description>
+	    <description>Uses the 106mm M344 HEAT shell. Shoots a salvo of 2 rounds. 4m Min range, 100m Max range. 5 seconds reload.</description>
 	    <graphicData>
 	        <texPath>Things/Building/MannedM40</texPath>
 	        <graphicClass>Graphic_Single</graphicClass>

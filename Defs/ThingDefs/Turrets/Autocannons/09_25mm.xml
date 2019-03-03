@@ -4,7 +4,7 @@
 	<ThingDef ParentName="DMC_BaseMannedTurret">
 	    <defName>Turret_SIDAM_Autocannon</defName>
 	    <label>SIDAM 25</label>
-	    <description>Uses 25mm PMB090 shell. 4m Min range, 80m Max range. Fires a burst of 20 shots at about 1200 RPM and cools down for 1 second between each bursts. Has internal ammo capacity of 600 shells. Explodes with radius of 1 block when destroyed. Uses 100W of power.</description>
+	    <description>Uses 25mm PMB090 shell. 4m Min range, 80m Max range. Fires a burst of 20 shots at about 1200 RPM and cools down for 1 second between each bursts. Has internal ammo capacity of 600 shells. Explodes with radius of 1 block when destroyed. Uses 500W of power.</description>
 	    <graphicData>
 	        <texPath>Things/Building/MannedSIDAM</texPath>
 	        <graphicClass>Graphic_Single</graphicClass>
@@ -34,8 +34,8 @@
 	    <costList>
 			<Steel>340</Steel>
 			  <Plasteel>5</Plasteel>  
-			  <ComponentIndustrial>5</ComponentIndustrial>  
-			<!--AdvCompo <ComponentSpacer></ComponentSpacer> AdvCompo-->
+			  <ComponentIndustrial>20</ComponentIndustrial>  
+			<ComponentSpacer>15</ComponentSpacer>
 		</costList>
 	    <statBases>
 		    <MaxHitPoints>1800</MaxHitPoints>
@@ -56,7 +56,7 @@
 	      	 
 	      <li Class="CompProperties_Power">
 	        <compClass>CompPowerTrader</compClass>
-	        <basePowerConsumption>100</basePowerConsumption>
+	        <basePowerConsumption>500</basePowerConsumption>
 	      </li>
 	      	 
 
