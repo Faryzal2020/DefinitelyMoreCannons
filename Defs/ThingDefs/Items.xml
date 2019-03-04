@@ -308,8 +308,8 @@
   </ThingDef>
 
   <ThingDef ParentName="ArmorHelmetMakeableBase">
-    <defName>Apparel_PowerArmorHelmet</defName>
-    <label>marine helmet</label>
+    <defName>Apparel_CompositePowerArmorHelmet</defName>
+    <label>composite marine helmet</label>
     <description>A marine armor helmet made with composite alloys. Significantly increases its capabilities of stopping large caliber armour piercing bullets and against heat hazards.</description>
     <techLevel>Spacer</techLevel>
     <recipeMaker>
