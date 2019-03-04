@@ -66,7 +66,7 @@
 	        <fuelGizmoLabel>Ammo</fuelGizmoLabel>
 	        <fuelFilter>
 	          <thingDefs>
-	            <li>150CannonBullet_Shell_HighExplosive</li>
+	            <li>OneHundredFiftyShell</li>
 	          </thingDefs>
 	        </fuelFilter>
 	        <fuelCapacity>75</fuelCapacity>

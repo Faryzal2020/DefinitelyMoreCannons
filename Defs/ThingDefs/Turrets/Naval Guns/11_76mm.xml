@@ -67,7 +67,7 @@
 	        <fuelGizmoLabel>Ammo</fuelGizmoLabel>
 	        <fuelFilter>
 	          <thingDefs>
-	            <li>Bullet_76AP76mm_AP</li>
+	            <li>NavalSeventySix</li>
 	          </thingDefs>
 	        </fuelFilter>
 	        <fuelCapacity>200</fuelCapacity>

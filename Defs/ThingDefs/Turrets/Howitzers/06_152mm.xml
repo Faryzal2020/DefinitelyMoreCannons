@@ -66,7 +66,7 @@
 	        <fuelGizmoLabel>Ammo</fuelGizmoLabel>
 	        <fuelFilter>
 	          <thingDefs>
-	            <li>Bullet_OF-540152mm_HE</li>
+	            <li>AkatsiyaShell</li>
 	          </thingDefs>
 	        </fuelFilter>
 	        <fuelCapacity>50</fuelCapacity>

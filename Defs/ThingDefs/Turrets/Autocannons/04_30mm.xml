@@ -66,7 +66,7 @@
 	        <fuelGizmoLabel>Ammo</fuelGizmoLabel>
 	        <fuelFilter>
 	          <thingDefs>
-	            <li>Bullet_Kugel30mm_AP</li>
+	            <li>KugelblitzShell</li>
 	          </thingDefs>
 	        </fuelFilter>
 	        <fuelCapacity>200</fuelCapacity>

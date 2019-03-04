@@ -66,7 +66,7 @@
 	        <fuelGizmoLabel>Ammo</fuelGizmoLabel>
 	        <fuelFilter>
 	          <thingDefs>
-	            <li>Bullet_105mm_APFSDS</li>
+	            <li>OneOFiveShellAP</li>
 	          </thingDefs>
 	        </fuelFilter>
 	        <fuelCapacity>55</fuelCapacity>
