@@ -53,7 +53,7 @@
 	    <projectile>
 	      	<damageDef>MkIHEDamage</damageDef>
 	      	<flyOverhead>true</flyOverhead>
-	      	<explosionRadius>7</explosionRadius>
+	      	<explosionRadius>6</explosionRadius>
 	      	<speed>80</speed>
 	    </projectile>
   	</ThingDef>

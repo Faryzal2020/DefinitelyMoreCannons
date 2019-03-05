@@ -4,7 +4,7 @@
 	<ThingDef ParentName="DMC_BaseMannedTurret">
 	    <defName>Turret_288mmHowitzer</defName>
 	    <label>BL 9.2 Inch (288mm) Mk.I Howitzer</label>
-	    <description>Uses the 9.2 Inch (288mm) Mk.I HE shell with 7m explosive radius. 20m min range, 250m max range. Has a reload rate of 50 seconds. Able to shoot over walls. Explodes with radius of 2 blocks when destroyed.</description>
+	    <description>Uses the 9.2 Inch (288mm) Mk.I HE shell with 6m explosive radius. 20m min range, 250m max range. Has a reload rate of 50 seconds. Able to shoot over walls. Explodes with radius of 2 blocks when destroyed.</description>
 	    <graphicData>
 	        <texPath>Things/Building/MannedMk1</texPath>
 	        <graphicClass>Graphic_Single</graphicClass>
@@ -27,7 +27,7 @@
 	        <turretBurstCooldownTime>50</turretBurstCooldownTime> <!-- Reload Time -->
 	    </building>
 	    <interactionCellOffset>(0,0,-3)</interactionCellOffset>
-	    <size>(4,4)</size> 
+	    <size>(4,6)</size> 
 	    <specialDisplayRadius>250</specialDisplayRadius>
 		<costStuffCount>80</costStuffCount>
 	    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
@@ -113,7 +113,7 @@
 			    <verbClass>Verb_Shoot</verbClass>
 			    <hasStandardCommand>true</hasStandardCommand>
 			    <!--hasAmmoRack<defaultProjectile></defaultProjectile>hasAmmoRack-->
-			    <warmupTime>0</warmupTime>
+			    <warmupTime>1</warmupTime>
 			    <minRange>20</minRange>
 			    <range>250</range>
         		<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
@@ -125,7 +125,7 @@
 			    <targetParams>
 			        <canTargetLocations>true</canTargetLocations>
 			    </targetParams>
-			      <forcedMissRadius>3</forcedMissRadius>  
+			      <forcedMissRadius>4</forcedMissRadius>  
 		    </li>
 		</verbs>
 		 

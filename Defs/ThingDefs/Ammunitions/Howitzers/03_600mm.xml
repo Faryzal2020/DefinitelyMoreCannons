@@ -53,7 +53,7 @@
 	    <projectile>
 	      	<damageDef>schwereBetongranateDamage</damageDef>
 	      	<flyOverhead>true</flyOverhead>
-	      	<explosionRadius>9</explosionRadius>
+	      	<explosionRadius>8</explosionRadius>
 	      	<speed>80</speed>
 	    </projectile>
   	</ThingDef>
@@ -76,7 +76,7 @@
 	            		<li>Steel</li>
 	            	</thingDefs>
 	        	</filter>
-	        	<count>120</count>
+	        	<count>240</count>
 	        </li>
 	        <li>
 	        	<filter>
@@ -84,7 +84,7 @@
 	            		<li>Chemfuel</li>
 	            </thingDefs>
 	        	</filter>
-	        	<count>80</count>
+	        	<count>240</count>
 	        </li>
 	    </ingredients>
 	    <fixedIngredientFilter>
@@ -122,7 +122,7 @@
 	            		<li>Steel</li>
 	            	</thingDefs>
 	        	</filter>
-	        	<count>1200</count>
+	        	<count>2400</count>
 	        </li>
 	        <li>
 	        	<filter>
@@ -130,7 +130,7 @@
 	            		<li>Chemfuel</li>
 	            </thingDefs>
 	        	</filter>
-	        	<count>800</count>
+	        	<count>2400</count>
 	        </li>
 	    </ingredients>
 	    <fixedIngredientFilter>

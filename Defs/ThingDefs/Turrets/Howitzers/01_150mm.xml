@@ -113,7 +113,7 @@
 			    <verbClass>Verb_Shoot</verbClass>
 			    <hasStandardCommand>true</hasStandardCommand>
 			    <!--hasAmmoRack<defaultProjectile></defaultProjectile>hasAmmoRack-->
-			    <warmupTime>0</warmupTime>
+			    <warmupTime>1</warmupTime>
 			    <minRange>15</minRange>
 			    <range>150</range>
         		<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
@@ -125,7 +125,7 @@
 			    <targetParams>
 			        <canTargetLocations>true</canTargetLocations>
 			    </targetParams>
-			      <forcedMissRadius>3</forcedMissRadius>  
+			      <forcedMissRadius>4</forcedMissRadius>  
 		    </li>
 		</verbs>
 		 

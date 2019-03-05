@@ -84,7 +84,7 @@
 	            		<li>Chemfuel</li>
 	            </thingDefs>
 	        	</filter>
-	        	<count>32</count>
+	        	<count>96</count>
 	        </li>
 	    </ingredients>
 	    <fixedIngredientFilter>
@@ -130,7 +130,7 @@
 	            		<li>Chemfuel</li>
 	            </thingDefs>
 	        	</filter>
-	        	<count>320</count>
+	        	<count>960</count>
 	        </li>
 	    </ingredients>
 	    <fixedIngredientFilter>

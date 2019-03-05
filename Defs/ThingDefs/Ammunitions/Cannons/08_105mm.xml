@@ -35,7 +35,7 @@
 	    <projectile>
 	      	<damageDef>Sabot</damageDef>
 	      	<flyOverhead>false</flyOverhead>
-	      	<damageAmountBase>600</damageAmountBase>
+	      	<damageAmountBase>700</damageAmountBase>
 	      	<speed>450</speed>
 	    </projectile>
   	</ThingDef>

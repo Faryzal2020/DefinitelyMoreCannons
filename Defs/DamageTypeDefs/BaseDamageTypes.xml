@@ -64,21 +64,21 @@
   <DamageDef ParentName="BaseHEShellDamage">
     <defName>MkIHEDamage</defName>
     <label>bullet</label>
-    <defaultDamage>500</defaultDamage>
+    <defaultDamage>450</defaultDamage>
     <minDamageToFragment>200</minDamageToFragment>
     <deathMessage>{0} has died from an artillery explosion.</deathMessage>
     <defaultStoppingPower>1</defaultStoppingPower>
-    <defaultArmorPenetration>1.5</defaultArmorPenetration>
+    <defaultArmorPenetration>1.1</defaultArmorPenetration>
   </DamageDef>
 
   <DamageDef ParentName="BaseHEShellDamage">
     <defName>schwereBetongranateDamage</defName>
     <label>bullet</label>
-    <defaultDamage>1000</defaultDamage>
-    <minDamageToFragment>1000</minDamageToFragment>
+    <defaultDamage>700</defaultDamage>
+    <minDamageToFragment>300</minDamageToFragment>
     <deathMessage>{0} has died from an artillery explosion.</deathMessage>
     <defaultStoppingPower>2</defaultStoppingPower>
-    <defaultArmorPenetration>2</defaultArmorPenetration>
+    <defaultArmorPenetration>1.2</defaultArmorPenetration>
   </DamageDef>
 
   <DamageDef ParentName="BaseHEShellDamage">
@@ -278,8 +278,8 @@
     <defName>SmallSabot</defName>
     <label>bullet</label>
     <hediff>Gunshot</hediff>
-    <defaultArmorPenetration>1.7</defaultArmorPenetration>
-    <defaultStoppingPower>0.6</defaultStoppingPower>
+    <defaultArmorPenetration>1.6</defaultArmorPenetration>
+    <defaultStoppingPower>0.5</defaultStoppingPower>
     <buildingDamageFactor>0.4</buildingDamageFactor>
     <plantDamageFactor>0.1</plantDamageFactor>
   </DamageDef>

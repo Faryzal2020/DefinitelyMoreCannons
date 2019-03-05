@@ -61,6 +61,7 @@
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>HeavyNavalGuns</li>
+      <li>AdvancedFabrication</li>
     </prerequisites>
     <researchViewX>9</researchViewX>
     <researchViewY>5.9</researchViewY>

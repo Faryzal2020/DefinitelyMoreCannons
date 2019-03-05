@@ -34,7 +34,7 @@
 	    <projectile>
 	      	<damageDef>130APBullet</damageDef>
 	      	<flyOverhead>false</flyOverhead>
-	      	<damageAmountBase>600</damageAmountBase>
+	      	<damageAmountBase>800</damageAmountBase>
 	      	<speed></speed>
 	    </projectile>
   	</ThingDef>

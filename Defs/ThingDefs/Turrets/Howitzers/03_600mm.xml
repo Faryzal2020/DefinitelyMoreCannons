@@ -4,11 +4,11 @@
 	<ThingDef ParentName="DMC_BaseMannedTurret">
 	    <defName>Turret_600Howitzer</defName>
 	    <label>60cm Karl Gerät Howitzer</label>
-	    <description>Uses the 60cm schwere Betongranate HE shell with 9m explosive radius. 25m min range, 400m max range. Has reload rate of 120 seconds. Able to shoot over walls. Explodes with radius of 4 blocks when destroyed. Consumes 500W of power.</description>
+	    <description>Uses the 60cm schwere Betongranate HE shell with 8m explosive radius. 25m min range, 400m max range. Has reload rate of 120 seconds. Able to shoot over walls. Explodes with radius of 4 blocks when destroyed. Consumes 500W of power.</description>
 	    <graphicData>
 	        <texPath>Things/Building/MannedKarlGerat</texPath>
 	        <graphicClass>Graphic_Single</graphicClass>
-	        <drawSize>(13,13)</drawSize>
+	        <drawSize>(14,14)</drawSize>
 	        <damageData>
 	        	<rect>(0.38,0.2,0.56375,0.8)</rect>
 	        	<cornerTL>Damage/Corner</cornerTL>
@@ -22,12 +22,12 @@
 	    <building>
 	        <turretGunDef>600Howitzer_Turret</turretGunDef>
 	        <turretTopGraphicPath>Things/Building/MannedKarlGerat_Top</turretTopGraphicPath>
-	        <turretTopDrawSize>7</turretTopDrawSize>
+	        <turretTopDrawSize>8</turretTopDrawSize>
 	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
 	        <turretBurstCooldownTime>120</turretBurstCooldownTime> <!-- Reload Time -->
 	    </building>
-	    <interactionCellOffset>(0,0,-3)</interactionCellOffset>
-	    <size>(4,4)</size> 
+	    <interactionCellOffset>(3,0,-4)</interactionCellOffset>
+	    <size>(7,7)</size> 
 	    <specialDisplayRadius>400</specialDisplayRadius>
 		<costStuffCount>160</costStuffCount>
 	    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
@@ -113,7 +113,7 @@
 			    <verbClass>Verb_Shoot</verbClass>
 			    <hasStandardCommand>true</hasStandardCommand>
 			    <!--hasAmmoRack<defaultProjectile></defaultProjectile>hasAmmoRack-->
-			    <warmupTime>0</warmupTime>
+			    <warmupTime>1</warmupTime>
 			    <minRange>25</minRange>
 			    <range>400</range>
         		<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
@@ -125,7 +125,7 @@
 			    <targetParams>
 			        <canTargetLocations>true</canTargetLocations>
 			    </targetParams>
-			      <forcedMissRadius>3</forcedMissRadius>  
+			      <forcedMissRadius>5</forcedMissRadius>  
 		    </li>
 		</verbs>
 		 
