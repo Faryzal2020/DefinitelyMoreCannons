@@ -26,10 +26,10 @@
     <isExplosive>true</isExplosive>
     <hediff>Shredded</hediff>
     <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
-    <defaultArmorPenetration>0.5</defaultArmorPenetration>
+    <defaultArmorPenetration>0.8</defaultArmorPenetration>
     <buildingDamageFactor>2</buildingDamageFactor>
     <plantDamageFactor>2</plantDamageFactor>
-    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionAffectOutsidePartsOnly>true</explosionAffectOutsidePartsOnly>
     <explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
     <explosionCellMote>Mote_BlastFlame</explosionCellMote>
     <explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
@@ -58,7 +58,6 @@
     <minDamageToFragment>200</minDamageToFragment>
     <deathMessage>{0} has died from an artillery explosion.</deathMessage>
     <defaultStoppingPower>0.8</defaultStoppingPower>
-    <defaultArmorPenetration>1</defaultArmorPenetration>
   </DamageDef>
 
   <DamageDef ParentName="BaseHEShellDamage">
@@ -68,7 +67,6 @@
     <minDamageToFragment>400</minDamageToFragment>
     <deathMessage>{0} has died from an artillery explosion.</deathMessage>
     <defaultStoppingPower>1</defaultStoppingPower>
-    <defaultArmorPenetration>1.1</defaultArmorPenetration>
   </DamageDef>
 
   <DamageDef ParentName="BaseHEShellDamage">
@@ -78,7 +76,6 @@
     <minDamageToFragment>600</minDamageToFragment>
     <deathMessage>{0} has died from an artillery explosion.</deathMessage>
     <defaultStoppingPower>2</defaultStoppingPower>
-    <defaultArmorPenetration>1.2</defaultArmorPenetration>
   </DamageDef>
 
   <DamageDef ParentName="BaseHEShellDamage">
@@ -88,7 +85,6 @@
     <minDamageToFragment>150</minDamageToFragment>
     <deathMessage>{0} has died from an artillery explosion.</deathMessage>
     <defaultStoppingPower>1.5</defaultStoppingPower>
-    <defaultArmorPenetration>0.8</defaultArmorPenetration>
   </DamageDef>
 
   <DamageDef ParentName="BaseHEShellDamage">
@@ -98,7 +94,6 @@
     <minDamageToFragment>300</minDamageToFragment>
     <deathMessage>{0} has died from an artillery explosion.</deathMessage>
     <defaultStoppingPower>1.8</defaultStoppingPower>
-    <defaultArmorPenetration>1</defaultArmorPenetration>
   </DamageDef>
 
   <DamageDef ParentName="BaseHEShellDamage">
@@ -108,7 +103,6 @@
     <minDamageToFragment>350</minDamageToFragment>
     <deathMessage>{0} has died from an artillery explosion.</deathMessage>
     <defaultStoppingPower>2</defaultStoppingPower>
-    <defaultArmorPenetration>1.1</defaultArmorPenetration>
   </DamageDef>
 
   <DamageDef ParentName="BaseHEShellDamage">
@@ -128,7 +122,6 @@
     <minDamageToFragment>550</minDamageToFragment>
     <deathMessage>{0} has died from an artillery explosion.</deathMessage>
     <defaultStoppingPower>1.8</defaultStoppingPower>
-    <defaultArmorPenetration>1</defaultArmorPenetration>
   </DamageDef>
 
   <DamageDef ParentName="BaseHEShellDamage">
@@ -138,7 +131,6 @@
     <minDamageToFragment>500</minDamageToFragment>
     <deathMessage>{0} has died from an artillery explosion.</deathMessage>
     <defaultStoppingPower>1.5</defaultStoppingPower>
-    <defaultArmorPenetration>0.8</defaultArmorPenetration>
   </DamageDef>
 
   <DamageDef ParentName="BaseHEShellDamage">
@@ -148,7 +140,6 @@
     <minDamageToFragment>600</minDamageToFragment>
     <deathMessage>{0} has died from an artillery explosion.</deathMessage>
     <defaultStoppingPower>2.3</defaultStoppingPower>
-    <defaultArmorPenetration>1.4</defaultArmorPenetration>
   </DamageDef>
 
     <!-- AP Shells -->
