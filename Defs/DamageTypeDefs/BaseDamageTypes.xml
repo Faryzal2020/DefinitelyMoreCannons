@@ -55,7 +55,7 @@
     <defName>IGr33Damage</defName>
     <label>bullet</label>
     <defaultDamage>200</defaultDamage>
-    <minDamageToFragment>100</minDamageToFragment>
+    <minDamageToFragment>200</minDamageToFragment>
     <deathMessage>{0} has died from an artillery explosion.</deathMessage>
     <defaultStoppingPower>0.8</defaultStoppingPower>
     <defaultArmorPenetration>1</defaultArmorPenetration>
@@ -64,8 +64,8 @@
   <DamageDef ParentName="BaseHEShellDamage">
     <defName>MkIHEDamage</defName>
     <label>bullet</label>
-    <defaultDamage>450</defaultDamage>
-    <minDamageToFragment>200</minDamageToFragment>
+    <defaultDamage>400</defaultDamage>
+    <minDamageToFragment>400</minDamageToFragment>
     <deathMessage>{0} has died from an artillery explosion.</deathMessage>
     <defaultStoppingPower>1</defaultStoppingPower>
     <defaultArmorPenetration>1.1</defaultArmorPenetration>
@@ -75,7 +75,7 @@
     <defName>schwereBetongranateDamage</defName>
     <label>bullet</label>
     <defaultDamage>700</defaultDamage>
-    <minDamageToFragment>300</minDamageToFragment>
+    <minDamageToFragment>600</minDamageToFragment>
     <deathMessage>{0} has died from an artillery explosion.</deathMessage>
     <defaultStoppingPower>2</defaultStoppingPower>
     <defaultArmorPenetration>1.2</defaultArmorPenetration>
@@ -84,8 +84,8 @@
   <DamageDef ParentName="BaseHEShellDamage">
     <defName>OF-462Damage</defName>
     <label>bullet</label>
-    <defaultDamage>380</defaultDamage>
-    <minDamageToFragment>400</minDamageToFragment>
+    <defaultDamage>230</defaultDamage>
+    <minDamageToFragment>150</minDamageToFragment>
     <deathMessage>{0} has died from an artillery explosion.</deathMessage>
     <defaultStoppingPower>1.5</defaultStoppingPower>
     <defaultArmorPenetration>0.8</defaultArmorPenetration>
@@ -94,8 +94,8 @@
   <DamageDef ParentName="BaseHEShellDamage">
     <defName>OF-540Damage</defName>
     <label>bullet</label>
-    <defaultDamage>480</defaultDamage>
-    <minDamageToFragment>500</minDamageToFragment>
+    <defaultDamage>380</defaultDamage>
+    <minDamageToFragment>300</minDamageToFragment>
     <deathMessage>{0} has died from an artillery explosion.</deathMessage>
     <defaultStoppingPower>1.8</defaultStoppingPower>
     <defaultArmorPenetration>1</defaultArmorPenetration>
@@ -104,8 +104,8 @@
   <DamageDef ParentName="BaseHEShellDamage">
     <defName>M795Damage</defName>
     <label>bullet</label>
-    <defaultDamage>500</defaultDamage>
-    <minDamageToFragment>550</minDamageToFragment>
+    <defaultDamage>410</defaultDamage>
+    <minDamageToFragment>350</minDamageToFragment>
     <deathMessage>{0} has died from an artillery explosion.</deathMessage>
     <defaultStoppingPower>2</defaultStoppingPower>
     <defaultArmorPenetration>1.1</defaultArmorPenetration>
@@ -135,7 +135,7 @@
     <defName>Type1Damage</defName>
     <label>bullet</label>
     <defaultDamage>500</defaultDamage>
-    <minDamageToFragment>400</minDamageToFragment>
+    <minDamageToFragment>500</minDamageToFragment>
     <deathMessage>{0} has died from an artillery explosion.</deathMessage>
     <defaultStoppingPower>1.5</defaultStoppingPower>
     <defaultArmorPenetration>0.8</defaultArmorPenetration>
@@ -144,8 +144,8 @@
   <DamageDef ParentName="BaseHEShellDamage">
     <defName>203SprGrDamage</defName>
     <label>bullet</label>
-    <defaultDamage>800</defaultDamage>
-    <minDamageToFragment>850</minDamageToFragment>
+    <defaultDamage>610</defaultDamage>
+    <minDamageToFragment>600</minDamageToFragment>
     <deathMessage>{0} has died from an artillery explosion.</deathMessage>
     <defaultStoppingPower>2.3</defaultStoppingPower>
     <defaultArmorPenetration>1.4</defaultArmorPenetration>
