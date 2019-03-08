@@ -8,7 +8,7 @@
 	    <graphicData>
 	        <texPath>Things/Building/MannedFlak38</texPath>
 	        <graphicClass>Graphic_Single</graphicClass>
-	        <drawSize>(9,9)</drawSize>
+	        <drawSize>(7,7)</drawSize>
 	        <damageData>
         		<rect>(0.2,0.2,0.6,0.6)</rect>
 	        </damageData>
@@ -21,12 +21,12 @@
 	    <building>
 	        <turretGunDef>Gun_20mmAutocannonTurret</turretGunDef>
 	        <turretTopGraphicPath>Things/Building/MannedFlak38_Top</turretTopGraphicPath>
-	        <turretTopDrawSize>9</turretTopDrawSize>
+	        <turretTopDrawSize>7</turretTopDrawSize>
 	        <turretBurstWarmupTime>0</turretBurstWarmupTime>
 	        <turretBurstCooldownTime>0.4</turretBurstCooldownTime> <!-- Reload Time -->
 	    </building>
-	    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
-	    <size>(3,3)</size> 
+	    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+	    <size>(2,2)</size> 
 	    <specialDisplayRadius>40</specialDisplayRadius>
 		<costStuffCount>15</costStuffCount>
 	    <constructionSkillPrerequisite>2</constructionSkillPrerequisite>

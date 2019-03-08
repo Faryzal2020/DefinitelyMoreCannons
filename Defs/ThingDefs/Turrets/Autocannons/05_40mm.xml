@@ -35,7 +35,7 @@
 			<Steel>450</Steel>
 			  <Plasteel>5</Plasteel>  
 			  <ComponentIndustrial>5</ComponentIndustrial>  
-			  <ComponentSpacer>1</ComponentSpacer>  
+			  <ComponentSpacer>15</ComponentSpacer>  
 		</costList>
 	    <statBases>
 		    <MaxHitPoints>3000</MaxHitPoints>

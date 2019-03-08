@@ -8,7 +8,7 @@
     <graphicData>
       <texPath>Things/Building/UnmannedFlak38</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(9, 9)</drawSize>
+      <drawSize>(7,7)</drawSize>
       <damageData>
         <rect>(0.38,0.2,0.56375,0.8)</rect>
         <cornerTL>Damage/Corner</cornerTL>
@@ -22,10 +22,10 @@
     <building>
       <turretGunDef>U20mmAutocannonGun</turretGunDef>
       <turretTopGraphicPath>Things/Building/UnmannedFlak38_Top</turretTopGraphicPath>
-      <turretTopDrawSize>9</turretTopDrawSize>
+      <turretTopDrawSize>7</turretTopDrawSize>
       <turretBurstCooldownTime>0.4</turretBurstCooldownTime> <!-- Reload Time -->
     </building>
-    <size>(3,3)</size> 
+    <size>(2,2)</size> 
     <specialDisplayRadius>50</specialDisplayRadius>
     <costStuffCount>25</costStuffCount>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>

@@ -33,7 +33,7 @@
 	    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	    <costList>
 			<Steel>1200</Steel>
-			  <Plasteel>20</Plasteel>  
+			<Plasteel>100</Plasteel> 
 			  <ComponentIndustrial>8</ComponentIndustrial>  
 			  <ComponentSpacer>2</ComponentSpacer>  
 		</costList>

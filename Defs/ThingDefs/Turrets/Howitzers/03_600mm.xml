@@ -33,7 +33,7 @@
 	    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	    <costList>
 			<Steel>1600</Steel>
-			<!--Plasteel <Plasteel></Plasteel> Plasteel-->
+			<Plasteel>200</Plasteel>
 			  <ComponentIndustrial>10</ComponentIndustrial>  
 			<!--AdvCompo <ComponentSpacer></ComponentSpacer> AdvCompo-->
 		</costList>

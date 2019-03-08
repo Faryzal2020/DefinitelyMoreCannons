@@ -35,7 +35,7 @@
 			<Steel>260</Steel>
 			  <Plasteel>2</Plasteel>  
 			  <ComponentIndustrial>20</ComponentIndustrial>  
-			<!--AdvCompo <ComponentSpacer></ComponentSpacer> AdvCompo-->
+			<ComponentSpacer>5</ComponentSpacer>
 		</costList>
 	    <statBases>
 		    <MaxHitPoints>1000</MaxHitPoints>
