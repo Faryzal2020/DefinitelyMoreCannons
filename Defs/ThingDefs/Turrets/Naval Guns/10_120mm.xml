@@ -63,7 +63,7 @@
         </fuelFilter>
         <fuelCapacity>52</fuelCapacity>
         <initialFuelPercent>0</initialFuelPercent>
-        <autoRefuelPercent>0.5</autoRefuelPercent>
+        <autoRefuelPercent>0.99</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>0</minimumFueledThreshold>
         <atomicFueling>false</atomicFueling>
