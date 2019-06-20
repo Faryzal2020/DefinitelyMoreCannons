@@ -19,6 +19,9 @@
 	    </graphicData>
 	    <uiIconPath>Things/Icons/MannedPak44_MenuIcon</uiIconPath>
     	<minifiedDef>MinifiedThing</minifiedDef>
+	    <thingCategories>
+	      <li>BuildingsSecurity</li>
+	    </thingCategories>
 	    <building>
 	        <turretGunDef>TurretGun_Pak44_Cannon</turretGunDef>
 	        <turretTopGraphicPath>Things/Building/MannedPak44_Top</turretTopGraphicPath>

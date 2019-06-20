@@ -19,6 +19,9 @@
 	    </graphicData>
 	    <uiIconPath>Things/Icons/MannedFlak28_MenuIcon</uiIconPath>
     	<minifiedDef>MinifiedThing</minifiedDef>
+	    <thingCategories>
+	      <li>BuildingsSecurity</li>
+	    </thingCategories>
 	    <building>
 	        <turretGunDef>Gun_40mmAutocannonTurret</turretGunDef>
 	        <turretTopGraphicPath>Things/Building/MannedFlak28_Top</turretTopGraphicPath>

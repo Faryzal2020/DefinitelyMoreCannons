@@ -19,6 +19,9 @@
 	    </graphicData>
 	    <uiIconPath>Things/Icons/MannedBS3_MenuIcon</uiIconPath>
     	<minifiedDef>MinifiedThing</minifiedDef>
+	    <thingCategories>
+	      <li>BuildingsSecurity</li>
+	    </thingCategories>
 	    <building>
 	        <turretGunDef>TurretGun_BS3_Cannon</turretGunDef>
 	        <turretTopGraphicPath>Things/Building/MannedBS3_Top</turretTopGraphicPath>
