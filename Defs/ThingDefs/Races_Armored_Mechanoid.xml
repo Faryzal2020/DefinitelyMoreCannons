@@ -36,6 +36,33 @@
     </damageMultipliers>
   </ThingDef>
 
+  <ThingDef ParentName="BaseMechanoid_DMC" Name="BaseMechanoidWalker" Abstract="True">
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <baseBodySize>1.0</baseBodySize>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+          <soundCall>Pawn_Mech_Scyther_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>
+        <min>1000</min>
+        <max>2000</max>
+      </soundCallIntervalRange>
+    </race>
+    <butcherProducts>
+      <Steel>200</Steel>
+      <Plasteel>30</Plasteel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <CompositeAlloy>8</CompositeAlloy>
+    </butcherProducts>
+  </ThingDef>
+
   <!-- Armored Centipede -->
   
   <ThingDef ParentName="BaseMechanoid_DMC">
@@ -196,6 +223,83 @@
     <weaponTags>
       <li>MechanoidGunHeavy</li>
       <li>AdvMechanoidGunHeavy</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <!-- Shielder -->
+  <ThingDef ParentName="BaseMechanoidWalker">
+    <defName>Mech_Shielder</defName>
+    <label>shielder</label>
+    <description>Looks similiar to the Scyther but equipped with hexagonal shield blocks instead of a pair of scythes. Moves as fast as the Scyther but can withstand so much more damage.</description>
+    <statBases>
+      <MoveSpeed>4.7</MoveSpeed>
+      <ArmorRating_Blunt>1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>2</ArmorRating_Sharp>
+    </statBases>
+    <tools>
+      <li>
+        <label>left shield</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftShield</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right shield</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightShield</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>MechShielder</body>
+      <baseHealthScale>20</baseHealthScale>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>Mech_Shielder</defName>
+    <label>shielder</label>
+    <race>Mech_Shielder</race>
+    <combatPower>800</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Shielder</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>
+      <min>0</min>
+      <max>0</max>
+    </weaponMoney>
+    <weaponTags>
     </weaponTags>
   </PawnKindDef>
 </Defs>

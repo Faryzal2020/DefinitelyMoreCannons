@@ -123,4 +123,28 @@
     <bleedRate>0</bleedRate>
     <alive>false</alive>
   </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>MechShield</defName>
+    <label>shield</label>
+    <hitPoints>20000</hitPoints>
+    <frostbiteVulnerability>0</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+  </BodyPartDef>
+
+  <BodyPartGroupDef>
+    <defName>LeftShield</defName>
+    <label>left shield</label>
+    <labelShort>shield</labelShort>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>RightShield</defName>
+    <label>right shield</label>
+    <labelShort>shield</labelShort>
+  </BodyPartGroupDef>
 </Defs>
