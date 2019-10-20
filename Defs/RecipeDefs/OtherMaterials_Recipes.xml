@@ -26,7 +26,7 @@
             <li>Gold</li>
           </thingDefs>
         </filter>
-        <count>20</count>
+        <count>2</count>
       </li>
       <li>
         <filter>
@@ -48,6 +48,7 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>Steel</li>
+        <li>Gold</li>
         <li>ComponentIndustrial</li>
         <li>ComponentSpacer</li>
       </thingDefs>
